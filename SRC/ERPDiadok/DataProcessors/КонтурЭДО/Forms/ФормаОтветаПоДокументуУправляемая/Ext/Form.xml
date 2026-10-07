@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Отказ в подписи</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаОтказатьВПодписи" id="4">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ОтказатьВПодписи</CommandName>
+				<ExtendedTooltip name="ФормаОтказатьВПодписиРасширеннаяПодсказка" id="39"/>
+			</Button>
+			<Button name="КнопкаЗакрыть" id="6">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="КнопкаЗакрытьРасширеннаяПодсказка" id="40"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Комментарий" id="1">
+			<DataPath>Комментарий</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий по отказу</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Top</TitleLocation>
+			<Height>7</Height>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="41"/>
+		</InputField>
+		<LabelDecoration name="ДекорацияПодписантЗаголовок" id="8">
+			<Font bold="true" kind="AutoFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отказ будет подписан сертификатом:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияПодписантЗаголовокКонтекстноеМеню" id="9"/>
+			<ExtendedTooltip name="ДекорацияПодписантЗаголовокРасширеннаяПодсказка" id="42"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаПодписант" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подписант</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа новые форматы подписант</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПодписантРасширеннаяПодсказка" id="43"/>
+			<ChildItems>
+				<PictureDecoration name="КартинкаСертификат" id="16">
+					<Width>1</Width>
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка сертификат</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="КартинкаСертификатКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="КартинкаСертификатРасширеннаяПодсказка" id="44"/>
+				</PictureDecoration>
+				<LabelField name="ПредставлениеПодписанта" id="19">
+					<DataPath>ПредставлениеПодписанта</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="ПредставлениеПодписантаКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ПредставлениеПодписантаРасширеннаяПодсказка" id="45"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаМЧД" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа п ф н ф доверенность</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаМЧДРасширеннаяПодсказка" id="46"/>
+			<ChildItems>
+				<LabelDecoration name="ЗаголовокМЧД" id="30">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доверенность</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ЗаголовокМЧДКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ЗаголовокМЧДРасширеннаяПодсказка" id="47"/>
+				</LabelDecoration>
+				<UsualGroup name="ГруппаВыбораМЧД" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа п ф н ф доверенность поля</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа п ф н ф доверенность поля</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВыбораМЧДРасширеннаяПодсказка" id="48"/>
+					<ChildItems>
+						<InputField name="ВыбраннаяМЧД" id="35">
+							<DataPath>ВыбраннаяМЧД</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ClearButton>true</ClearButton>
+							<OpenButton>true</OpenButton>
+							<ListChoiceMode>true</ListChoiceMode>
+							<TextEdit>false</TextEdit>
+							<ContextMenu name="ВыбраннаяМЧДКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="ВыбраннаяМЧДРасширеннаяПодсказка" id="49"/>
+							<Events>
+								<Event name="OnChange">ВыбраннаяМЧДПриИзменении</Event>
+								<Event name="Opening">ВыбраннаяМЧДОткрытие</Event>
+							</Events>
+						</InputField>
+						<Button name="НастроитьМЧД" id="38">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.НастроитьМЧД</CommandName>
+							<ExtendedTooltip name="НастроитьМЧДРасширеннаяПодсказка" id="50"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКонтрагентНеПоддерживаетМЧД" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа п ф н ф доверенность</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа п ф н ф доверенность</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКонтрагентНеПоддерживаетМЧДРасширеннаяПодсказка" id="52"/>
+			<ChildItems>
+				<PictureDecoration name="КартинкаКонтрагентНеПоддерживаетМЧД" id="56">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка контрагент не поддерживает МЧД</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="КартинкаКонтрагентНеПоддерживаетМЧДКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="КартинкаКонтрагентНеПоддерживаетМЧДРасширеннаяПодсказка" id="58"/>
+				</PictureDecoration>
+				<LabelDecoration name="НадписьКонтрагентНеПоддерживаетМЧД" id="53">
+					<Width>15</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оператор контрагента не поддерживает передачу машиночитаемой доверенности (МЧД) в роуминг. До 01.09.2023 доверенность можно не прикладывать.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НадписьКонтрагентНеПоддерживаетМЧДКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="НадписьКонтрагентНеПоддерживаетМЧДРасширеннаяПодсказка" id="55"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонтурЭДО</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Комментарий" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПредставлениеПодписанта" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление подписанта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КонтекстМЧД" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>КонтекстМЧД</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ВыбраннаяМЧД" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доверенность</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>200</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресЯщика" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес ящика</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>500</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГрупповоеДействие" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Групповое действие</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТребуетсяМЧД" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Требуется МЧД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="TraceId" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Trace id</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Действие" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Действие</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КонтрагентПоддерживаетМЧД" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контрагент поддерживает МЧД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОтказатьВПодписи" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отказать в подписи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отказать в подписи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтказатьВПодписи</Action>
+		</Command>
+		<Command name="НастроитьМЧД" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить доверенность</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить МЧД</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастроитьМЧД</Action>
+		</Command>
+	</Commands>
+</Form>

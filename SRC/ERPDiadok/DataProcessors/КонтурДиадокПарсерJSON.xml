@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<DataProcessor uuid="ace5704f-b3d4-4468-a27f-d67d937731ec">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.КонтурДиадокПарсерJSON" category="Object">
+				<xr:TypeId>c87eaf00-289b-43d0-af68-448d701e5b47</xr:TypeId>
+				<xr:ValueId>dfd8735a-3805-4cfa-83e4-3bee1937fd5e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.КонтурДиадокПарсерJSON" category="Manager">
+				<xr:TypeId>622ddb11-34f1-4417-b84b-8a9f339b9ae6</xr:TypeId>
+				<xr:ValueId>aa34f84e-298c-40ac-9356-d3fa6c911e89</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>КонтурДиадокПарсерJSON</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контур.Диадок: Парсер JSON</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Обработка для чтения и записи текста JSON</Comment>
+			<UseStandardCommands>false</UseStandardCommands>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>КлиентскиеВызовы</Form>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

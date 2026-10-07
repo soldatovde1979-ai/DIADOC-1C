@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="UniversalMessage" targetNamespace="UniversalMessage">
+	<xs:element name="UniversalMessage" type="UniversalMessage"/>
+	<xs:simpleType name="string20">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="0"/>
+			<xs:maxLength value="20"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string60">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="0"/>
+			<xs:maxLength value="60"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string100">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="0"/>
+			<xs:maxLength value="100"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string255">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="0"/>
+			<xs:maxLength value="255"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string10000">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="0"/>
+			<xs:maxLength value="10000"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="UniversalMessage">
+		<xs:sequence>
+			<xs:element name="UniversalMessageInfos">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="UniversalMessageInfo" type="UniversalMessageInfo" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Sender" type="PersonInfo" minOccurs="0"/>
+			<xs:element name="Recipient" type="PersonInfo" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="UniversalMessageInfo">
+		<xs:sequence>
+			<xs:element name="PlainText" type="string10000" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="StatusCode" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="1999"/>
+					<xs:enumeration value="2999"/>
+					<xs:enumeration value="3999"/>
+					<xs:enumeration value="4002"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="PersonInfo">
+		<xs:sequence>
+			<xs:element name="Fio" type="Fio" minOccurs="0"/>
+			<xs:element name="Contacts" type="Contacts" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="Position" type="string255"/>
+		<xs:attribute name="UseDefaultPersonInfo" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="true"/>
+					<xs:enumeration value="false"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="Fio">
+		<xs:attribute name="LastName" type="string60" use="required"/>
+		<xs:attribute name="FirstName" type="string60" use="required"/>
+		<xs:attribute name="MiddleName" type="string60"/>
+	</xs:complexType>
+	<xs:complexType name="Contacts">
+		<xs:sequence>
+			<xs:element name="Phones" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Phone" type="string20" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Emails" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Email" type="string100" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="OtherContactInfo" type="string255"/>
+	</xs:complexType>
+</xs:schema>

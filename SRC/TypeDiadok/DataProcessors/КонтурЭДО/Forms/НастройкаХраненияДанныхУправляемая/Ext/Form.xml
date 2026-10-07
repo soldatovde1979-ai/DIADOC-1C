@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Width>75</Width>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="Заголовок" id="1">
+			<SkipOnInput>false</SkipOnInput>
+			<TextColor>style:FormTextColor</TextColor>
+			<Font ref="sys:DefaultGUIFont" faceName="Arial" height="16" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Хранение данных</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ЗаголовокКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ЗаголовокРасширеннаяПодсказка" id="13"/>
+		</LabelDecoration>
+		<LabelDecoration name="ТекстОсновной" id="16">
+			<SkipOnInput>false</SkipOnInput>
+			<TextColor>style:FormTextColor</TextColor>
+			<Font ref="sys:DefaultGUIFont" faceName="Arial" height="12" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Для работы модуля в вашу конфигурацию требуется добавить дополнительные объекты Диадока - справочники, регистры сведений. Добавление объектов не меняет структуру 1С и не влияет на обновление конфигурации.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ТекстОсновнойКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ТекстОсновнойРасширеннаяПодсказка" id="18"/>
+		</LabelDecoration>
+		<LabelDecoration name="ГиперссылкаИнструкции" id="19">
+			<SkipOnInput>false</SkipOnInput>
+			<Font ref="sys:DefaultGUIFont" faceName="Arial" height="12" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подробнее в инструкции</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="ГиперссылкаИнструкцииКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ГиперссылкаИнструкцииРасширеннаяПодсказка" id="21"/>
+			<Events>
+				<Event name="Click">ГиперссылкаИнструкцииНажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="ТекстДополнительный" id="11">
+			<SkipOnInput>false</SkipOnInput>
+			<TextColor>style:ButtonTextColor</TextColor>
+			<Font ref="sys:DefaultGUIFont" faceName="Arial" height="12" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохраните файл, он потребуется для обновления. Обновить конфигурацию может сотрудник, отвечающий за сопровождение базы (как правило, программист 1С)..
+
+</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ТекстДополнительныйКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="ТекстДополнительныйРасширеннаяПодсказка" id="14"/>
+		</LabelDecoration>
+		<Button name="Сохранить" id="10">
+			<Type>UsualButton</Type>
+			<SkipOnInput>false</SkipOnInput>
+			<CommandName>Form.Command.СохранитьКонфигурациюВФайл</CommandName>
+			<BackColor>#FAD25B</BackColor>
+			<Font ref="sys:DefaultGUIFont" faceName="Arial" height="10" kind="WindowsFont"/>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить файл обновления</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СохранитьРасширеннаяПодсказка" id="15"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонтурЭДО</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СохранитьКонфигурациюВФайл" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить конфигурацию в файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить конфигурацию в файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьКонфигурациюВФайл</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ИспользоватьТиповуюПодсистему1С">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>

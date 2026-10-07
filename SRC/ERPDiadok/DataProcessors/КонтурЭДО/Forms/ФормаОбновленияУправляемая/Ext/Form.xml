@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>История обновлений модуля</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаТекстОбновления" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа текст обновления</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа текст обновления</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаТекстОбновленияРасширеннаяПодсказка" id="56"/>
+			<ChildItems>
+				<LabelDecoration name="НадписьУспокаивающая" id="3">
+					<Width>98</Width>
+					<Font ref="style:TextFont" faceName="Arial" height="11" kind="StyleItem"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ваш модуль содержит доработки. Для его обновления обратитесь к вашему администратору или оставьте заявку на обновление модуля техподдержкой. Обновление не влияет на работу 1С, все ваши данные будут сохранены.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НадписьУспокаивающаяКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="НадписьУспокаивающаяРасширеннаяПодсказка" id="57"/>
+				</LabelDecoration>
+				<PictureDecoration name="Декорация1" id="6">
+					<Height>1</Height>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="58"/>
+				</PictureDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<HTMLDocumentField name="ПолеНовости" id="9">
+			<DataPath>ПолеНовости</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<Width>80</Width>
+			<ContextMenu name="ПолеНовостиКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="ПолеНовостиРасширеннаяПодсказка" id="59"/>
+		</HTMLDocumentField>
+		<UsualGroup name="ГруппаДляОбновленияМодуля" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа для обновления модуля</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа для обновления модуля</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>98</Width>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДляОбновленияМодуляРасширеннаяПодсказка" id="60"/>
+			<ChildItems>
+				<LabelDecoration name="Декорация2" id="14">
+					<Font ref="style:TextFont" height="8" kind="StyleItem"/>
+					<ContextMenu name="Декорация2КонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="61"/>
+				</LabelDecoration>
+				<LabelDecoration name="НадписьВерсияМодуля" id="17">
+					<Width>80</Width>
+					<Font ref="style:TextFont" faceName="Arial" height="11" kind="StyleItem"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&lt;Текущая версия модуля 5.25.01 будет обновлена до версии 5.27.01&gt;</v8:content>
+						</v8:item>
+					</Title>
+					<TitleHeight>1</TitleHeight>
+					<ContextMenu name="НадписьВерсияМодуляКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="НадписьВерсияМодуляРасширеннаяПодсказка" id="62"/>
+				</LabelDecoration>
+				<LabelDecoration name="Декорация3" id="20">
+					<Height>1</Height>
+					<ContextMenu name="Декорация3КонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="63"/>
+				</LabelDecoration>
+				<UsualGroup name="ПанельКнопокСДоработками" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Панель кнопок с доработками</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Панель кнопок с доработками</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ПанельКнопокСДоработкамиРасширеннаяПодсказка" id="64"/>
+					<ChildItems>
+						<Button name="КнопкаОставитьЗаявкуНаОбновление" id="25">
+							<Type>UsualButton</Type>
+							<Width>31</Width>
+							<Height>2</Height>
+							<CommandName>Form.Command.ОставитьЗаявкуНаОбновление</CommandName>
+							<BackColor>web:Gold</BackColor>
+							<Font ref="style:TextFont" faceName="Arial" height="11" kind="StyleItem" scale="100"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Оставить заявку на обновление</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КнопкаОставитьЗаявкуНаОбновлениеРасширеннаяПодсказка" id="65"/>
+						</Button>
+						<Button name="КнопкаСкачатьОбновлениеМодуля" id="27">
+							<Type>UsualButton</Type>
+							<Width>28</Width>
+							<Height>2</Height>
+							<CommandName>Form.Command.СкачатьОбновлениеМодуля</CommandName>
+							<Font ref="style:TextFont" faceName="Arial" height="11" kind="StyleItem"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Скачать обновление модуля</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КнопкаСкачатьОбновлениеМодуляРасширеннаяПодсказка" id="66"/>
+						</Button>
+						<UsualGroup name="Группа2" id="29">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="67"/>
+							<ChildItems>
+								<PictureDecoration name="ДекорацияНадписьОнлайнКонсультант" id="31">
+									<Width>2</Width>
+									<Height>2</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Декорация надпись онлайн консультант</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="ДекорацияНадписьОнлайнКонсультантКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="ДекорацияНадписьОнлайнКонсультантРасширеннаяПодсказка" id="68"/>
+								</PictureDecoration>
+								<LabelDecoration name="НадписьОнлайнКонсультант" id="34">
+									<Width>32</Width>
+									<Height>2</Height>
+									<Font ref="style:TextFont" faceName="Arial" height="11" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Нужна помощь</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="НадписьОнлайнКонсультантКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="НадписьОнлайнКонсультантРасширеннаяПодсказка" id="69"/>
+									<Events>
+										<Event name="Click">НадписьОнлайнКонсультантНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ПанельКнопокБезДоработок" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Панель кнопок без доработок</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Панель кнопок без доработок</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>97</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ПанельКнопокБезДоработокРасширеннаяПодсказка" id="70"/>
+					<ChildItems>
+						<Button name="КнопкаСкачатьОбновлениеМодуля1" id="39">
+							<Type>UsualButton</Type>
+							<Width>28</Width>
+							<Height>2</Height>
+							<CommandName>Form.Command.СкачатьОбновлениеМодуля</CommandName>
+							<BackColor>web:Gold</BackColor>
+							<Font ref="style:TextFont" faceName="Arial" height="11" kind="StyleItem"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Скачать обновление модуля</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КнопкаСкачатьОбновлениеМодуля1РасширеннаяПодсказка" id="71"/>
+						</Button>
+						<UsualGroup name="Группа3" id="41">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="72"/>
+							<ChildItems>
+								<PictureDecoration name="ДекорацияНадписьОнлайнКонсультант1" id="43">
+									<Width>2</Width>
+									<Height>2</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Декорация надпись онлайн консультант</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="ДекорацияНадписьОнлайнКонсультант1КонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="ДекорацияНадписьОнлайнКонсультант1РасширеннаяПодсказка" id="73"/>
+								</PictureDecoration>
+								<LabelDecoration name="НадписьОнлайнКонсультант1" id="46">
+									<Height>2</Height>
+									<Font ref="style:TextFont" faceName="Arial" height="11" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Нужна помощь</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="НадписьОнлайнКонсультант1КонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="НадписьОнлайнКонсультант1РасширеннаяПодсказка" id="74"/>
+									<Events>
+										<Event name="Click">НадписьОнлайнКонсультантНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа4" id="49">
+							<Height>2</Height>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="75"/>
+							<ChildItems>
+								<PictureDecoration name="ДекорацияНадписьПисьмоВТехподдержку" id="51">
+									<Width>2</Width>
+									<Height>2</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Декорация надпись письмо в поддержку</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="ДекорацияНадписьПисьмоВТехподдержкуКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="ДекорацияНадписьПисьмоВТехподдержкуРасширеннаяПодсказка" id="76"/>
+								</PictureDecoration>
+								<LabelDecoration name="НадписьПисьмоВТехподдержку" id="54">
+									<Height>2</Height>
+									<Font ref="style:TextFont" faceName="Arial" height="11" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Написать письмо в поддержку</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="НадписьПисьмоВТехподдержкуКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="НадписьПисьмоВТехподдержкуРасширеннаяПодсказка" id="77"/>
+									<Events>
+										<Event name="Click">НадписьПисьмоВТехподдержкуНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонтурЭДО</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПолеНовости" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле новости</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДанныеДляОбновленияМодуля" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные для обновления модуля</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОставитьЗаявкуНаОбновление" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оставить заявку на обновление</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оставить заявку на обновление</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнопкаОставитьЗаявкуНаОбновление</Action>
+		</Command>
+		<Command name="СкачатьОбновлениеМодуля" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скачать обновление модуля</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скачать обновление модуля</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнопкаСкачатьОбновлениеМодуля</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="НоваяВерсия">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>10</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+		<Parameter name="ТекущаяВерсия">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>10</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>

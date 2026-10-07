@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Полномочия для подписания входящих документов</v8:content>
+		</v8:item>
+	</Title>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаСохранить" id="1">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Сохранить</CommandName>
+				<ExtendedTooltip name="ФормаСохранитьРасширеннаяПодсказка" id="131"/>
+			</Button>
+			<Button name="ФормаОтменить" id="3">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.Close</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Отменить</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаОтменитьРасширеннаяПодсказка" id="132"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Подписант" id="5">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписант</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ПодписантРасширеннаяПодсказка" id="133"/>
+			<ChildItems>
+				<LabelDecoration name="ПодписантЗаголовок" id="7">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сертификат</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПодписантЗаголовокКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ПодписантЗаголовокРасширеннаяПодсказка" id="134"/>
+				</LabelDecoration>
+				<PictureDecoration name="КартинкаСертификат" id="10">
+					<Width>1</Width>
+					<Height>1</Height>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="КартинкаСертификатКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="КартинкаСертификатРасширеннаяПодсказка" id="135"/>
+				</PictureDecoration>
+				<LabelField name="ПредставлениеПодписанта" id="13">
+					<DataPath>ПредставлениеПодписанта</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="ПредставлениеПодписантаКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ПредставлениеПодписантаРасширеннаяПодсказка" id="136"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Организация" id="84">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписант</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="137"/>
+			<ChildItems>
+				<LabelDecoration name="ОрганизацияЗаголовок" id="86">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ОрганизацияЗаголовокКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="ОрганизацияЗаголовокРасширеннаяПодсказка" id="138"/>
+				</LabelDecoration>
+				<LabelField name="ОрганизацияЗначение" id="92">
+					<DataPath>ОрганизацияПодписанта</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="ОрганизацияЗначениеКонтекстноеМеню" id="93"/>
+					<ExtendedTooltip name="ОрганизацияЗначениеРасширеннаяПодсказка" id="139"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРеквизитыПодписанта" id="159">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа реквизиты подписанта</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<ChildrenAlign>None</ChildrenAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРеквизитыПодписантаРасширеннаяПодсказка" id="160"/>
+			<ChildItems>
+				<InputField name="ОбластьПолномочий" id="81">
+					<DataPath>ОбластьПолномочий</DataPath>
+					<ListChoiceMode>true</ListChoiceMode>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="ОбластьПолномочийКонтекстноеМеню" id="82"/>
+					<ExtendedTooltip name="ОбластьПолномочийРасширеннаяПодсказка" id="140"/>
+				</InputField>
+				<InputField name="СтатусРаботника" id="16">
+					<DataPath>СтатусРаботника</DataPath>
+					<ListChoiceMode>true</ListChoiceMode>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="СтатусРаботникаКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="СтатусРаботникаРасширеннаяПодсказка" id="141"/>
+					<Events>
+						<Event name="OnChange">СтатусРаботникаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Должность" id="95">
+					<DataPath>Должность</DataPath>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="ДолжностьКонтекстноеМеню" id="96"/>
+					<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="142"/>
+				</InputField>
+				<InputField name="СотрудникОрганизацииОснованиеПолномочий" id="35">
+					<DataPath>ОснованияПолномочий</DataPath>
+					<TitleLocation>Left</TitleLocation>
+					<Height>2</Height>
+					<MultiLine>true</MultiLine>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="СотрудникОрганизацииОснованиеПолномочийКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="СотрудникОрганизацииОснованиеПолномочийРасширеннаяПодсказка" id="143"/>
+				</InputField>
+				<InputField name="СотрудникИнойОрганизацииОснованиеПолномочийОрганизации" id="58">
+					<DataPath>ОснованияПолномочийОрганизации</DataPath>
+					<TitleLocation>Left</TitleLocation>
+					<Height>2</Height>
+					<MultiLine>true</MultiLine>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="СотрудникИнойОрганизацииОснованиеПолномочийОрганизацииКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="СотрудникИнойОрганизацииОснованиеПолномочийОрганизацииРасширеннаяПодсказка" id="144"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСвидетельствоОРегистрацииИП" id="98">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа свидетельство о регистрации ИП</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСвидетельствоОРегистрацииИПРасширеннаяПодсказка" id="145"/>
+			<ChildItems>
+				<Pages name="ГруппаСвидетельствоОРегистрацииИП_Значение" id="103">
+					<PagesRepresentation>None</PagesRepresentation>
+					<ExtendedTooltip name="ГруппаСвидетельствоОРегистрацииИП_ЗначениеРасширеннаяПодсказка" id="147"/>
+					<ChildItems>
+						<Page name="СтраницаСвидетельствоОРегистрацииИП_ЗначениеЗаполнить" id="105">
+							<Group>AlwaysHorizontal</Group>
+							<ExtendedTooltip name="СтраницаСвидетельствоОРегистрацииИП_ЗначениеЗаполнитьРасширеннаяПодсказка" id="148"/>
+							<ChildItems>
+								<LabelDecoration name="ЗаголовокСвидетельствоОРегистрацииИП" id="100">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Свидетельство о регистрации ИП:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ЗаголовокСвидетельствоОРегистрацииИПКонтекстноеМеню" id="101"/>
+									<ExtendedTooltip name="ЗаголовокСвидетельствоОРегистрацииИПРасширеннаяПодсказка" id="146"/>
+								</LabelDecoration>
+								<LabelDecoration name="ГиперссылкаСвидетельствоОРегистрацииИП_ЗначениеЗаполнить" id="107">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заполнить</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ГиперссылкаСвидетельствоОРегистрацииИП_ЗначениеЗаполнитьКонтекстноеМеню" id="108"/>
+									<ExtendedTooltip name="ГиперссылкаСвидетельствоОРегистрацииИП_ЗначениеЗаполнитьРасширеннаяПодсказка" id="149"/>
+									<Events>
+										<Event name="Click">ГиперссылкаСвидетельствоОРегистрацииИП_ЗначениеЗаполнитьНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</Page>
+						<Page name="СтраницаСвидетельствоОРегистрацииИП_Значение" id="110">
+							<ExtendedTooltip name="СтраницаСвидетельствоОРегистрацииИП_ЗначениеРасширеннаяПодсказка" id="150"/>
+							<ChildItems>
+								<InputField name="СвидетельствоОРегистрацииИП" id="112">
+									<DataPath>СвидетельствоОРегистрацииИП</DataPath>
+									<TitleLocation>Left</TitleLocation>
+									<ContextMenu name="СвидетельствоОРегистрацииИПКонтекстноеМеню" id="113"/>
+									<ExtendedTooltip name="СвидетельствоОРегистрацииИПРасширеннаяПодсказка" id="151"/>
+								</InputField>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаИныеСведения" id="115">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа свидетельство о регистрации ИП</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИныеСведенияРасширеннаяПодсказка" id="152"/>
+			<ChildItems>
+				<Pages name="ГруппаИныеСведенияЗначение" id="120">
+					<PagesRepresentation>None</PagesRepresentation>
+					<ExtendedTooltip name="ГруппаИныеСведенияЗначениеРасширеннаяПодсказка" id="154"/>
+					<ChildItems>
+						<Page name="СтраницаИныеСведенияЗначениеЗаполнить" id="122">
+							<Group>AlwaysHorizontal</Group>
+							<ExtendedTooltip name="СтраницаИныеСведенияЗначениеЗаполнитьРасширеннаяПодсказка" id="155"/>
+							<ChildItems>
+								<LabelDecoration name="ЗаголовокИныеСведения" id="117">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Иные сведения</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ЗаголовокИныеСведенияКонтекстноеМеню" id="118"/>
+									<ExtendedTooltip name="ЗаголовокИныеСведенияРасширеннаяПодсказка" id="153"/>
+								</LabelDecoration>
+								<LabelDecoration name="ГиперссылкаИныеСведенияЗначениеЗаполнить" id="124">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заполнить</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ГиперссылкаИныеСведенияЗначениеЗаполнитьКонтекстноеМеню" id="125"/>
+									<ExtendedTooltip name="ГиперссылкаИныеСведенияЗначениеЗаполнитьРасширеннаяПодсказка" id="156"/>
+									<Events>
+										<Event name="Click">ГиперссылкаИныеСведенияЗначениеЗаполнитьНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</Page>
+						<Page name="СтраницаИныеСведенияЗначение" id="127">
+							<Group>AlwaysHorizontal</Group>
+							<ExtendedTooltip name="СтраницаИныеСведенияЗначениеРасширеннаяПодсказка" id="157"/>
+							<ChildItems>
+								<InputField name="ИныеСведения" id="129">
+									<DataPath>ИныеСведения</DataPath>
+									<TitleLocation>Left</TitleLocation>
+									<ContextMenu name="ИныеСведенияКонтекстноеМеню" id="130"/>
+									<ExtendedTooltip name="ИныеСведенияРасширеннаяПодсказка" id="158"/>
+								</InputField>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонтурЭДО</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПредставлениеПодписанта" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление подписанта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОрганизацияПодписанта" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация подписанта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>1000</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбластьПолномочий" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Область полномочий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СтатусРаботника" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус работника</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Должность" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Должность</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>128</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОснованияПолномочий" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основания
+полномочий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>255</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОснованияПолномочийОрганизации" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основания
+полномочий
+организации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>255</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИныеСведения" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Иные сведения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>255</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СвидетельствоОРегистрацииИП" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свидетельство о регистрации ИП</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПолномочияПодписанта" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полномочия подписанта</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="АдресЯщика" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес ящика</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидТитула" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид титула</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПодписантСотрудникОрганизации" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписант сотрудник организации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПокупательПродавец" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Покупатель продавец</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>10</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипыКонтента" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Типы контента</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ТипКонтента" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип контента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Сохранить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сохранить</Action>
+		</Command>
+	</Commands>
+</Form>

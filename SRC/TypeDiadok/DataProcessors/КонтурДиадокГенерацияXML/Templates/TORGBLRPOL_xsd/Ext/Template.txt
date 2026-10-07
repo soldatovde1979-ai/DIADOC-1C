@@ -1,0 +1,441 @@
+﻿<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="TORGBLRPOL" targetNamespace="TORGBLRPOL" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="DeliveryNote" type="tns:DeliveryNote"/>
+	<xs:complexType name="DeliveryNote">
+		<xs:sequence>
+			<xs:element name="DeliveryNoteType" >
+				<xs:annotation>
+					<xs:documentation>Вид сообщения</xs:documentation>
+					<xs:appinfo>Вид накладной</xs:appinfo>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="3"/>
+						<xs:enumeration value="270"/>
+						<xs:enumeration value="701"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DocumentID" >
+				<xs:annotation>
+					<xs:documentation>Уникальный номер электронного сообщения (иного документа)</xs:documentation>
+					<xs:appinfo>Номер электронного документа</xs:appinfo>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="35"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CreationDateTime">
+				<xs:annotation>
+					<xs:documentation>Дата и время создания накладной (иного документа)
+			Формат: ГГГГММДДЧЧММСС</xs:documentation>
+					<xs:appinfo>Дата создания электронного документа </xs:appinfo>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:totalDigits value="14"/>
+						<xs:minExclusive value="10000000000000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="FunctionCode">
+				<xs:annotation>
+					<xs:documentation>Функция электронной накладной:
+			11 = Ответ                       21 = Ответ с составлением акта приемки                          31 = Копия</xs:documentation>
+					<xs:appinfo>Функция электронной накладной</xs:appinfo>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="3"/>
+						<xs:enumeration value="11"/>
+						<xs:enumeration value="21"/>
+						<xs:enumeration value="31"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ReferenceDocument" type="tns:ReferenceDocument">
+				<xs:annotation>
+					<xs:documentation>Информация о накладной, на которую дается ответ</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ID" >
+							<xs:annotation>
+								<xs:documentation>Номер накладной (иного документа), на которую (-ый) дается ответ</xs:documentation>
+								<xs:appinfo>Номер электронного документа, на который ссылается текущий</xs:appinfo>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="1"/>
+									<xs:maxLength value="35"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="Date">
+							<xs:annotation>
+								<xs:documentation>Дата и время создания накладной (иного документа), на которую (-ый) дается ответ                                                 Формат: ГГГГММДДЧЧММСС          </xs:documentation>
+								<xs:appinfo>Дата и время электронного документа, на который ссылается текущий</xs:appinfo>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:integer">
+									<xs:totalDigits value="14"/>
+									<xs:minExclusive value="10000000000000"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DeliveryNoteID">
+				<xs:annotation>
+					<xs:documentation>Номер накладной (иного документа)</xs:documentation>
+					<xs:appinfo>Серия и номер накладной, на которую ссылается текущий документ</xs:appinfo>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="43"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DeliveryNoteDate">
+				<xs:annotation>
+					<xs:documentation>Дата накладной (иного документа)</xs:documentation>
+					<xs:appinfo>Дата накладной, на которую ссылается текущий документ</xs:appinfo>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minExclusive value="10000000"/>
+						<xs:totalDigits value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Report" type="tns:Report" minOccurs="0" maxOccurs="100">
+				<xs:annotation>
+					<xs:documentation>Информация о составленных актах</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ReportID">
+							<xs:annotation>
+								<xs:documentation>Номер акта</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:maxLength value="1000"/>
+									<xs:minLength value="1"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="ReportDate">
+							<xs:annotation>
+								<xs:documentation>Дата составления акта</xs:documentation>
+								<xs:appinfo>Дата составления акта</xs:appinfo>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:integer">
+									<xs:totalDigits value="8"/>
+									<xs:minExclusive value="10000000"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="ReportName">
+							<xs:annotation>
+								<xs:documentation>Название акта</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:maxLength value="512"/>
+									<xs:minLength value="1"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Shipper" type="tns:Shipper" >
+				<xs:annotation>
+					<xs:documentation>Грузоотправитель</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Receiver" type="tns:Receiver" >
+				<xs:annotation>
+					<xs:documentation>Грузополучатель</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ShipTo" type="tns:ShipTo" minOccurs="1"/>
+			<xs:element name="ExtraField" type="tns:ExtraField" minOccurs="0" maxOccurs="500">
+				<xs:annotation>
+					<xs:documentation>Дополнительные поля в накладной</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="FieldName">
+							<xs:annotation>
+								<xs:documentation>Название поля текстом</xs:documentation>
+								<xs:appinfo>Название дополнительного поля ответа на накладную</xs:appinfo>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="1"/>
+									<xs:maxLength value="255"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="FieldCode" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Код поля</xs:documentation>
+								<xs:appinfo>Код дополнительного поля ответа на накладную</xs:appinfo>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="0"/>
+									<xs:maxLength value="6"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="FieldValue">
+							<xs:annotation>
+								<xs:documentation>Значение поля</xs:documentation>
+								<xs:appinfo>Название дополнительного поля ответа на накладную</xs:appinfo>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="1"/>
+									<xs:maxLength value="2560"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="MessageHeader">
+		<xs:sequence>
+			<xs:element name="MessageID">
+				<xs:annotation>
+					<xs:documentation>Уникальный номер сообщения, который присваивается отправителем</xs:documentation>
+					<xs:appinfo>Уникальный номер сообщения</xs:appinfo>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="14"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MsgDateTime">
+				<xs:annotation>
+					<xs:documentation>Дата и время создания сообщения</xs:documentation>
+					<xs:appinfo>Дата и время создания сообщения</xs:appinfo>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:totalDigits value="14"/>
+						<xs:minExclusive value="10000000000000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MessageType">
+				<xs:annotation>
+					<xs:documentation>Тип сообщения</xs:documentation>
+					<xs:appinfo>Тип сообщения</xs:appinfo>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="6"/>
+						<xs:enumeration value="BLRDNR"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MsgSenderID">
+				<xs:annotation>
+					<xs:documentation>GLN номер отправителя сообщения</xs:documentation>
+					<xs:appinfo>GLN номер отправителя</xs:appinfo>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="13"/>
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MsgReceiverID">
+				<xs:annotation>
+					<xs:documentation>GLN номер получателя сообщения</xs:documentation>
+					<xs:appinfo>GLN номер получателя</xs:appinfo>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="13"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TestIndicator" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Индикатор тестового сообщения:
+						1 = Тестовое сообщение</xs:documentation>
+					<xs:appinfo>Индикатор тестового сообщения</xs:appinfo>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="1"/>
+						<xs:enumeration value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="FormType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Тип формы:							0 = Типовая							1 = Факторинг
+
+4 = Иной документ</xs:documentation>
+					<xs:appinfo>Тип формы</xs:appinfo>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:enumeration value="0"/>
+						<xs:enumeration value="1"/>
+						<xs:enumeration value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="UserID" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Идентификатор пользователя, который будет подписывать сообщение</xs:documentation>
+					<xs:appinfo>Идентификатор пользователя, который будет подписывать сообщение</xs:appinfo>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="35"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Shipper">
+		<xs:annotation>
+			<xs:documentation>Грузоотправитель</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="GLN" type="tns:GLN">
+				<xs:annotation>
+					<xs:appinfo>GLN грузоотправителя</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Name" type="tns:Name">
+				<xs:annotation>
+					<xs:appinfo>Нименование грузоотправителя</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Address" type="tns:Address">
+				<xs:annotation>
+					<xs:appinfo>Адрес грузоотправителя</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VATRegistrationNumber" type="tns:VATRegistrationNumber">
+				<xs:annotation>
+					<xs:documentation>УНП номер </xs:documentation>
+					<xs:appinfo>УНП грузоотправителя</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Receiver">
+		<xs:annotation>
+			<xs:documentation>Грузополучатель</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="GLN" type="tns:GLN" minOccurs="0">
+				<xs:annotation>
+					<xs:appinfo>GLN грузополучателя</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Name" type="tns:Name">
+				<xs:annotation>
+					<xs:appinfo>Наименование грузополучателя</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Address" type="tns:Address">
+				<xs:annotation>
+					<xs:appinfo>Адрес грузополучателя</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VATRegistrationNumber" type="tns:VATRegistrationNumber">
+				<xs:annotation>
+					<xs:documentation>УНП номер </xs:documentation>
+					<xs:appinfo>УНП грузополучателя</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="GLN">
+		<xs:annotation>
+			<xs:documentation>GLN номер </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="13"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Name">
+		<xs:annotation>
+			<xs:documentation>Название</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="275"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Address">
+		<xs:annotation>
+			<xs:documentation>Адрес</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="140"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="VATRegistrationNumber">
+		<xs:annotation>
+			<xs:documentation>УНП номер</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="15"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="ShipTo">
+		<xs:annotation>
+			<xs:documentation>Пункт разгрузки</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Contact" minOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Контактное лицо, которое отвечает за получение груза со стороны грузополучателя
+			Принял грузополучатель</xs:documentation>
+					<xs:appinfo>Принял грузополучатель</xs:appinfo>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="150"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Security">
+		<xs:sequence>
+			<xs:element name="SecurityID"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Сведения об авансах</v8:content>
+		</v8:item>
+	</Title>
+	<Width>60</Width>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="СведенияОбАвансахСохранить" id="22">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Сохранить</CommandName>
+				<ExtendedTooltip name="СведенияОбАвансахСохранитьРасширеннаяПодсказка" id="36"/>
+			</Button>
+			<Button name="СведенияОбАвансахОтменить" id="68">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Отменить</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="СведенияОбАвансахОтменитьРасширеннаяПодсказка" id="69"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="СведенияОбАвансах" id="1">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>СведенияОбАвансах</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СведенияОбАвансахКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СведенияОбАвансахКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<ButtonGroup name="ГруппаОсновныхКнопок" id="26">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа основных кнопок</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа основных кнопок</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ГруппаОсновныхКнопокРасширеннаяПодсказка" id="35"/>
+						<ChildItems>
+							<Button name="СведенияОбАвансахДобавить" id="20">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Item.СведенияОбАвансах.StandardCommand.Add</CommandName>
+								<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="СведенияОбАвансахДобавитьРасширеннаяПодсказка" id="37"/>
+							</Button>
+							<Button name="СведенияОбАвансахСкопировать" id="28">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Item.СведенияОбАвансах.StandardCommand.Copy</CommandName>
+								<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="СведенияОбАвансахСкопироватьРасширеннаяПодсказка" id="38"/>
+							</Button>
+							<Button name="СведенияОбАвансахУдалить" id="24">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Item.СведенияОбАвансах.StandardCommand.Delete</CommandName>
+								<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="СведенияОбАвансахУдалитьРасширеннаяПодсказка" id="39"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<ButtonGroup name="ГруппаДополнительныхКнопок" id="34">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа дополнительных кнопок</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа дополнительных кнопок</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ГруппаДополнительныхКнопокРасширеннаяПодсказка" id="40"/>
+						<ChildItems>
+							<Button name="СведенияОбАвансахПереместитьВверх" id="30">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.СведенияОбАвансах.StandardCommand.MoveUp</CommandName>
+								<ExtendedTooltip name="СведенияОбАвансахПереместитьВверхРасширеннаяПодсказка" id="41"/>
+							</Button>
+							<Button name="СведенияОбАвансахПереместитьВниз" id="32">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.СведенияОбАвансах.StandardCommand.MoveDown</CommandName>
+								<ExtendedTooltip name="СведенияОбАвансахПереместитьВнизРасширеннаяПодсказка" id="42"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СведенияОбАвансахРасширеннаяПодсказка" id="43"/>
+			<SearchStringAddition name="СведенияОбАвансахСтрокаПоиска" id="44">
+				<AdditionSource>
+					<Item>СведенияОбАвансах</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СведенияОбАвансахСтрокаПоискаКонтекстноеМеню" id="45"/>
+				<ExtendedTooltip name="СведенияОбАвансахСтрокаПоискаРасширеннаяПодсказка" id="46"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СведенияОбАвансахСостояниеПросмотра" id="47">
+				<AdditionSource>
+					<Item>СведенияОбАвансах</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СведенияОбАвансахСостояниеПросмотраКонтекстноеМеню" id="48"/>
+				<ExtendedTooltip name="СведенияОбАвансахСостояниеПросмотраРасширеннаяПодсказка" id="49"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СведенияОбАвансахУправлениеПоиском" id="50">
+				<AdditionSource>
+					<Item>СведенияОбАвансах</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СведенияОбАвансахУправлениеПоискомКонтекстноеМеню" id="51"/>
+				<ExtendedTooltip name="СведенияОбАвансахУправлениеПоискомРасширеннаяПодсказка" id="52"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="СведенияОбАвансахDate" id="53">
+					<DataPath>СведенияОбАвансах.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="СведенияОбАвансахDateКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="СведенияОбАвансахDateРасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<InputField name="СведенияОбАвансахNumber" id="56">
+					<DataPath>СведенияОбАвансах.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ClearButton>true</ClearButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="СведенияОбАвансахNumberКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="СведенияОбАвансахNumberРасширеннаяПодсказка" id="58"/>
+					<Events>
+						<Event name="OnChange">СведенияОбАвансахНомерПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="СведенияОбАвансахRevisionDate" id="62">
+					<DataPath>СведенияОбАвансах.RevisionDate</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СведенияОбАвансахRevisionDateКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="СведенияОбАвансахRevisionDateРасширеннаяПодсказка" id="64"/>
+					<Events>
+						<Event name="OnChange">СведенияОбАвансахRevisionDateПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="СведенияОбАвансахRevisionNumber" id="65">
+					<DataPath>СведенияОбАвансах.RevisionNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ClearButton>true</ClearButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СведенияОбАвансахRevisionNumberКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="СведенияОбАвансахRevisionNumberРасширеннаяПодсказка" id="67"/>
+					<Events>
+						<Event name="OnChange">СведенияОбАвансахRevisionNumberПриИзменении</Event>
+					</Events>
+				</InputField>
+				<CheckBoxField name="СведенияОбАвансахIsRevision" id="59">
+					<DataPath>СведенияОбАвансах.IsRevision</DataPath>
+					<Enabled>false</Enabled>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СведенияОбАвансахIsRevisionКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="СведенияОбАвансахIsRevisionРасширеннаяПодсказка" id="61"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонтурЭДО</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СведенияОбАвансах" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения об авансах</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Columns>
+				<Column name="Date" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Number" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>255</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="IsRevision" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это исправление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="RevisionDate" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата исправления</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="RevisionNumber" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер исправления</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДокументЭДО" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ ЭДО</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ЭтоВнешняяОбработка" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это внешняя обработка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Сохранить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сохранить</Action>
+		</Command>
+	</Commands>
+</Form>

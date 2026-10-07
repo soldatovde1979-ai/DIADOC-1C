@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<DataProcessor uuid="c8202d51-62ca-4d92-b9a2-bd41189e5a4b">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.КонтурДиадокГенерацияXML" category="Object">
+				<xr:TypeId>92da98d3-f394-4856-b2e1-c1132f7bed8b</xr:TypeId>
+				<xr:ValueId>577a2412-abff-461d-b177-0e76cb278757</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.КонтурДиадокГенерацияXML" category="Manager">
+				<xr:TypeId>5a1edd46-96b7-433d-a650-a06c5270b7b4</xr:TypeId>
+				<xr:ValueId>a9668f57-d701-4e78-810b-96b2a109ca1b</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>КонтурДиадокГенерацияXML</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контур.Диадок: Генерация XML</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Template>КодыРегионов</Template>
+			<Template>ОКЕИ</Template>
+			<Template>ОКВ</Template>
+			<Template>Proto_xsd</Template>
+			<Template>ON_SCHFDOPPR_xsd</Template>
+			<Template>ON_SCHFDOPPOK_xsd</Template>
+			<Template>ON_NSCHFDOPPR_xsd</Template>
+			<Template>ON_NSCHFDOPPOK_xsd</Template>
+			<Template>ON_KORSCHFDOPPR_xsd</Template>
+			<Template>ON_KORSCHFDOPPOK_xsd</Template>
+			<Template>DP_TOVTORGPR_xsd</Template>
+			<Template>DP_TOVTORGPOK_xsd</Template>
+			<Template>DP_REZRUISP_xsd</Template>
+			<Template>DP_REZRUZAK_xsd</Template>
+			<Template>DP_PTORG12_xsd</Template>
+			<Template>DP_ZAKTPRM_xsd</Template>
+			<Template>ON_SCHET_xsd</Template>
+			<Template>DP_PRIRASXPRIN_xsd</Template>
+			<Template>DP_PRIRASXSVED_xsd</Template>
+			<Template>ON_NKORSCHFDOPPOK_xsd</Template>
+			<Template>ON_NKORSCHFDOPPR_xsd</Template>
+			<Template>ON_AKTSVEROTP_xsd</Template>
+			<Template>ON_AKTSVERPOL_xsd</Template>
+			<Template>Signer_xsd</Template>
+			<Template>ОКСМ</Template>
+			<Template>ON_NSCHFDOPPOK_1_997_02_05_02_01_xsd</Template>
+			<Template>ON_NSCHFDOPPR_1_997_01_05_02_01_xsd</Template>
+			<Template>ON_NSCHFDOPPOK_1_997_02_05_03_01_xsd</Template>
+			<Template>ON_NSCHFDOPPR_1_997_01_05_03_01_xsd</Template>
+			<Template>UniversalMessage_xsd</Template>
+			<Template>ON_CHETOP_1_998_01_05_01_03_xsd</Template>
+			<Template>TORGBLRPOL_xsd</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

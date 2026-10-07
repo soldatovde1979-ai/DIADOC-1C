@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<DataProcessor uuid="bc39fd13-8601-4120-a03e-696f0d1a57e1">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.КонтурДиадокЦентрПоддержки" category="Object">
+				<xr:TypeId>d5505f5e-dc7c-4635-93c3-e402dd48039b</xr:TypeId>
+				<xr:ValueId>a7ec0c97-88cf-4603-a83a-faae905aa3fd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.КонтурДиадокЦентрПоддержки" category="Manager">
+				<xr:TypeId>e813f563-90da-4c5a-ab48-900d8b4d93fb</xr:TypeId>
+				<xr:ValueId>f2b747ce-bef6-4bcb-8c03-e7acc84442f7</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>КонтурДиадокЦентрПоддержки</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контур.Диадок: Центр поддержки</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<DefaultForm>DataProcessor.КонтурДиадокЦентрПоддержки.Form.Форма_Обычная</DefaultForm>
+			<AuxiliaryForm>DataProcessor.КонтурДиадокЦентрПоддержки.Form.Форма</AuxiliaryForm>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>Форма</Form>
+			<Form>Форма_Обычная</Form>
+			<Form>_____________Модули</Form>
+			<Form>ЦП_ОбщиеМодули</Form>
+			<Form>ЦП_Сервис</Form>
+			<Form>ЦП_Сервис_ОФ</Form>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

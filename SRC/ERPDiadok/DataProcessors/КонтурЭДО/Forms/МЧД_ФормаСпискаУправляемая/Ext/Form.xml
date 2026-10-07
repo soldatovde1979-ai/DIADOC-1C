@@ -1,0 +1,850 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Доверенности</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаДобавленияДоверенностиИСпискаОрганизаций" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа добавления доверенности и списка организаций</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа добавления доверенности и списка организаций</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Height>2</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДобавленияДоверенностиИСпискаОрганизацийРасширеннаяПодсказка" id="248"/>
+			<ChildItems>
+				<InputField name="ИдентификаторЯщика" id="5">
+					<DataPath>ИдентификаторЯщика</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Left</TitleLocation>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ChoiceButton>false</ChoiceButton>
+					<ListChoiceMode>true</ListChoiceMode>
+					<BorderColor>#A0A0A0</BorderColor>
+					<ContextMenu name="ИдентификаторЯщикаКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ИдентификаторЯщикаРасширеннаяПодсказка" id="249"/>
+					<Events>
+						<Event name="OnChange">ИдентификаторЯщикаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<CommandBar name="КоманднаяПанельДобавитьДоверенность" id="2">
+					<Visible>false</Visible>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Командная панель добавить доверенность</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<HorizontalLocation>Right</HorizontalLocation>
+					<ExtendedTooltip name="КоманднаяПанельДобавитьДоверенностьРасширеннаяПодсказка" id="250"/>
+					<ChildItems>
+						<Popup name="ГруппаДобавитьДоверенность" id="207">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Добавить доверенность</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа добавить доверенность</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ГруппаДобавитьДоверенностьРасширеннаяПодсказка" id="251"/>
+							<ChildItems>
+								<Button name="ЗагрузитьВВебВерсииДиадока" id="4">
+									<Type>CommandBarButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.ЗагрузитьВВебВерсииДиадока</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Загрузить в веб-версии Диадока</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ЗагрузитьВВебВерсииДиадокаРасширеннаяПодсказка" id="252"/>
+								</Button>
+								<Button name="ВыпуститьНовую" id="209">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ВыпуститьНовую</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выпустить новую</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ВыпуститьНовуюРасширеннаяПодсказка" id="253"/>
+								</Button>
+							</ChildItems>
+						</Popup>
+					</ChildItems>
+				</CommandBar>
+				<Button name="ДобавитьДоверенность" id="247">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.ДобавитьДоверенность</CommandName>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ДобавитьДоверенностьРасширеннаяПодсказка" id="254"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаДоверенности" id="92">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа доверенности</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа доверенности</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаДоверенностиРасширеннаяПодсказка" id="255"/>
+			<ChildItems>
+				<Page name="ГруппаСписок" id="94">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа список</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа список</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСписокРасширеннаяПодсказка" id="256"/>
+					<ChildItems>
+						<Table name="СписокДоверенностей" id="11">
+							<Representation>List</Representation>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>СписокДоверенностей</DataPath>
+							<BorderColor>style:FormBackColor</BorderColor>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+							</CommandSet>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СписокДоверенностейКонтекстноеМеню" id="12"/>
+							<AutoCommandBar name="СписокДоверенностейКоманднаяПанель" id="13">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокДоверенностейРасширеннаяПодсказка" id="257"/>
+							<SearchStringAddition name="СписокДоверенностейСтрокаПоиска" id="258">
+								<AdditionSource>
+									<Item>СписокДоверенностей</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокДоверенностейСтрокаПоискаКонтекстноеМеню" id="259"/>
+								<ExtendedTooltip name="СписокДоверенностейСтрокаПоискаРасширеннаяПодсказка" id="260"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокДоверенностейСостояниеПросмотра" id="261">
+								<AdditionSource>
+									<Item>СписокДоверенностей</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокДоверенностейСостояниеПросмотраКонтекстноеМеню" id="262"/>
+								<ExtendedTooltip name="СписокДоверенностейСостояниеПросмотраРасширеннаяПодсказка" id="263"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокДоверенностейУправлениеПоиском" id="264">
+								<AdditionSource>
+									<Item>СписокДоверенностей</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокДоверенностейУправлениеПоискомКонтекстноеМеню" id="265"/>
+								<ExtendedTooltip name="СписокДоверенностейУправлениеПоискомРасширеннаяПодсказка" id="266"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СписокДоверенностейВыбор</Event>
+							</Events>
+							<ChildItems>
+								<PictureField name="СписокДоверенностейКартинкаПоУмолчанию" id="57">
+									<DataPath>СписокДоверенностей.КартинкаДоверенностьПоУмолчанию</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>1</Width>
+									<Height>2</Height>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="СписокДоверенностейКартинкаПоУмолчаниюКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="СписокДоверенностейКартинкаПоУмолчаниюРасширеннаяПодсказка" id="267"/>
+								</PictureField>
+								<InputField name="СписокДоверенностейПредставлениеПредставителяИДоверителя" id="67">
+									<DataPath>СписокДоверенностей.ПредставлениеПредставителяИДоверителя</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Height>2</Height>
+									<ContextMenu name="СписокДоверенностейПредставлениеПредставителяИДоверителяКонтекстноеМеню" id="68"/>
+									<ExtendedTooltip name="СписокДоверенностейПредставлениеПредставителяИДоверителяРасширеннаяПодсказка" id="268"/>
+								</InputField>
+								<LabelField name="СписокДоверенностейСрокДействия" id="18">
+									<DataPath>СписокДоверенностей.СрокДействия</DataPath>
+									<VerticalAlign>Center</VerticalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>15</Width>
+									<Height>2</Height>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДФ="'до' dd.MM.yyyy 'г.'"</v8:content>
+										</v8:item>
+									</Format>
+									<ContextMenu name="СписокДоверенностейСрокДействияКонтекстноеМеню" id="19"/>
+									<ExtendedTooltip name="СписокДоверенностейСрокДействияРасширеннаяПодсказка" id="269"/>
+								</LabelField>
+								<LabelField name="СписокДоверенностейПоУмолчанию" id="64">
+									<DataPath>СписокДоверенностей.ПоУмолчанию</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Доверенность, назначенная по умолчанию, будет автоматически подставляться в отправленных документах</v8:content>
+										</v8:item>
+									</ToolTip>
+									<VerticalAlign>Center</VerticalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<CellHyperlink>true</CellHyperlink>
+									<Width>16</Width>
+									<Height>2</Height>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>БЛ='Назначить по умолчанию'; БИ='По умолчанию'</v8:content>
+										</v8:item>
+									</Format>
+									<Hiperlink>true</Hiperlink>
+									<TextColor>#3366FE</TextColor>
+									<ContextMenu name="СписокДоверенностейПоУмолчаниюКонтекстноеМеню" id="65"/>
+									<ExtendedTooltip name="СписокДоверенностейПоУмолчаниюРасширеннаяПодсказка" id="270"/>
+								</LabelField>
+								<ColumnGroup name="ГруппаКолонокПроблемыИПолномочия" id="286">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Полномочия и реквизиты</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Полномочия и реквизиты</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="ГруппаКолонокПроблемыИПолномочияРасширеннаяПодсказка" id="287"/>
+									<ChildItems>
+										<PictureField name="СписокДоверенностейПолномочияИРеквизиты" id="20">
+											<DataPath>СписокДоверенностей.ПолномочияИРеквизиты</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Полномочия и реквизиты</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<CellHyperlink>true</CellHyperlink>
+											<ShowInHeader>false</ShowInHeader>
+											<Width>2</Width>
+											<Height>2</Height>
+											<Hyperlink>true</Hyperlink>
+											<BorderColor>style:FormBackColor</BorderColor>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="СписокДоверенностейПолномочияИРеквизитыКонтекстноеМеню" id="21"/>
+											<ExtendedTooltip name="СписокДоверенностейПолномочияИРеквизитыРасширеннаяПодсказка" id="271"/>
+										</PictureField>
+										<InputField name="СписокДоверенностейЕстьПроблемыСМЧД" id="288">
+											<DataPath>СписокДоверенностей.ЕстьПроблемыСМЧД</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="СписокДоверенностейЕстьПроблемыСМЧДКонтекстноеМеню" id="289"/>
+											<ExtendedTooltip name="СписокДоверенностейЕстьПроблемыСМЧДРасширеннаяПодсказка" id="290"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаИнформация" id="96">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа информация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа информация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="ГруппаИнформацияРасширеннаяПодсказка" id="272"/>
+					<ChildItems>
+						<LabelDecoration name="ИнформацияОтступСлева" id="98">
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ИнформацияОтступСлеваКонтекстноеМеню" id="99"/>
+							<ExtendedTooltip name="ИнформацияОтступСлеваРасширеннаяПодсказка" id="273"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаТекстаНетДоверенности" id="101">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа текста нет доверенности</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа текста нет доверенности</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>50</Width>
+							<Height>8</Height>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ChildItemsWidth>Equal</ChildItemsWidth>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаТекстаНетДоверенностиРасширеннаяПодсказка" id="274"/>
+							<ChildItems>
+								<LabelDecoration name="НадписьНетДоверенностиОтступСверху" id="103">
+									<Height>4</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>true</VerticalStretch>
+									<ContextMenu name="НадписьНетДоверенностиОтступСверхуКонтекстноеМеню" id="104"/>
+									<ExtendedTooltip name="НадписьНетДоверенностиОтступСверхуРасширеннаяПодсказка" id="275"/>
+								</LabelDecoration>
+								<PictureField name="АдресКартинкиПоиск" id="125">
+									<DataPath>АдресВХранилищеКартинкиПоиск</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<Height>3</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Border width="1">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+									</Border>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="АдресКартинкиПоискКонтекстноеМеню" id="126"/>
+									<ExtendedTooltip name="АдресКартинкиПоискРасширеннаяПодсказка" id="276"/>
+								</PictureField>
+								<LabelDecoration name="НадписьНетДоверенности" id="109">
+									<Height>4</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" faceName="Arial" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>У вас пока нет доверенности для работы
+с документами в Диадоке.</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="НадписьНетДоверенностиКонтекстноеМеню" id="110"/>
+									<ExtendedTooltip name="НадписьНетДоверенностиРасширеннаяПодсказка" id="277"/>
+								</LabelDecoration>
+								<LabelDecoration name="НадписьНетДоверенностиОтступСнизу" id="120">
+									<Height>5</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>true</VerticalStretch>
+									<ContextMenu name="НадписьНетДоверенностиОтступСнизуКонтекстноеМеню" id="121"/>
+									<ExtendedTooltip name="НадписьНетДоверенностиОтступСнизуРасширеннаяПодсказка" id="278"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="ИнформацияОтступСправа" id="123">
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ИнформацияОтступСправаКонтекстноеМеню" id="124"/>
+							<ExtendedTooltip name="ИнформацияОтступСправаРасширеннаяПодсказка" id="279"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="ГруппаПодвал" id="162">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подвал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подвал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПодвалРасширеннаяПодсказка" id="280"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаИнструкция" id="167">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа инструкция</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа инструкция</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаИнструкцияРасширеннаяПодсказка" id="281"/>
+					<ChildItems>
+						<PictureField name="КартинкаГиперссылки" id="169">
+							<DataPath>АдресВХранилищеКартинкиИнструкция</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>2</Width>
+							<Height>1</Height>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Hyperlink>true</Hyperlink>
+							<Border width="1">
+								<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+							</Border>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="КартинкаГиперссылкиКонтекстноеМеню" id="170"/>
+							<ExtendedTooltip name="КартинкаГиперссылкиРасширеннаяПодсказка" id="282"/>
+							<Events>
+								<Event name="Click">КартинкаГиперссылкиНажатие</Event>
+							</Events>
+						</PictureField>
+						<LabelDecoration name="ГиперссылкаКакДобавитьДоверенность" id="159">
+							<HorizontalStretch>true</HorizontalStretch>
+							<TextColor>#1C55AD</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Как добавить доверенность в Диадок?</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ГиперссылкаКакДобавитьДоверенностьКонтекстноеМеню" id="160"/>
+							<ExtendedTooltip name="ГиперссылкаКакДобавитьДоверенностьРасширеннаяПодсказка" id="283"/>
+							<Events>
+								<Event name="Click">ГиперссылкаКакДобавитьДоверенностьНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<CommandBar name="КоманднаяПанельНижняя" id="60">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Командная панель нижняя</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Командная панель нижняя</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<HorizontalLocation>Right</HorizontalLocation>
+					<ExtendedTooltip name="КоманднаяПанельНижняяРасширеннаяПодсказка" id="284"/>
+					<ChildItems>
+						<Button name="ОбновитьДанные" id="28">
+							<Type>CommandBarButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Command.ОбновитьДанные</CommandName>
+							<TextColor>#414141</TextColor>
+							<BorderColor>#A0A0A0</BorderColor>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ОбновитьДанныеРасширеннаяПодсказка" id="285"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонтурЭДО</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СписокДоверенностей" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список доверенностей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="СрокДействия" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Срок действия</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПолномочияИРеквизиты" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Полномочия и реквизиты</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Идентификатор" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИстекаетСрок" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Истекает срок</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПоУмолчанию" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По умолчанию</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КартинкаДоверенностьПоУмолчанию" id="8">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПредставлениеПредставителяИДоверителя" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доверенность</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЕстьПроблемыСМЧД" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть проблемы СМЧД</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>30</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ИдентификаторЯщика" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор ящика</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="АдресВХранилищеКартинкиОсновнаяДоверенность" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес в хранилище картинки основная доверенность</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресВХранилищеКартинкиИнформацияПоДоверенности" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес в хранилище картинки информация по доверенности</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресВХранилищеКартинкиПоиск" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес в хранилище картинки поиск</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресВХранилищеКартинкиИнструкция" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес в хранилище картинки инструкция</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КонтрактыМЧД" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контракты МЧД</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="TraceId" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Trace id</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СписокДоверенностейСрокДействия</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СписокДоверенностей.СрокДействия</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Формат</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">ДФ=''ММММ гггг ""г.""''</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьВВебВерсииДиадока" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить в веб-версии диадока</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить в веб версии диадока</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьВВебВерсииДиадока</Action>
+		</Command>
+		<Command name="ОбновитьДанные" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьДанные</Action>
+		</Command>
+		<Command name="ВыпуститьНовую" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выпустить новую</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выпустить новую</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыпуститьНовую</Action>
+		</Command>
+		<Command name="ДобавитьДоверенность" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить доверенность</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить доверенность</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьДоверенность</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ИдентификаторЯщика">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

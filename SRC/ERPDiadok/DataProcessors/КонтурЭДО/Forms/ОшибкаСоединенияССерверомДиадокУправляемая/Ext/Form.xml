@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Width>50</Width>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="НадписьНетПодключения" id="1">
+			<Width>50</Width>
+			<Height>2</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Font ref="sys:DefaultGUIFont" faceName="Arial" height="16" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нет подключения к серверу Диадока</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="НадписьНетПодключенияКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НадписьНетПодключенияРасширеннаяПодсказка" id="46"/>
+		</LabelDecoration>
+		<LabelDecoration name="НадписьПроверьтеПодключение" id="3">
+			<Width>50</Width>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Font ref="sys:DefaultGUIFont" faceName="Arial" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверьте подключение к интернету или попробуйте настроить прокси.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="НадписьПроверьтеПодключениеКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="НадписьПроверьтеПодключениеРасширеннаяПодсказка" id="47"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаЖурналДиагностики" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Журнал диагностики</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Журнал диагностики</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЖурналДиагностикиРасширеннаяПодсказка" id="48"/>
+			<ChildItems>
+				<PictureDecoration name="КартинкаЖурналДиагностики" id="6">
+					<Width>2</Width>
+					<Height>2</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Журнал диагностики</v8:content>
+						</v8:item>
+					</Title>
+					<PictureSize>AutoSize</PictureSize>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="КартинкаЖурналДиагностикиКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="КартинкаЖурналДиагностикиРасширеннаяПодсказка" id="49"/>
+				</PictureDecoration>
+				<LabelDecoration name="НадписьЖурналДиагностики" id="8">
+					<Width>32</Width>
+					<Height>2</Height>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<TextColor>#3366FF</TextColor>
+					<Font ref="sys:DefaultGUIFont" faceName="Arial" height="12" kind="WindowsFont"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Журнал диагностики соединения</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<VerticalAlign>Center</VerticalAlign>
+					<ContextMenu name="НадписьЖурналДиагностикиКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="НадписьЖурналДиагностикиРасширеннаяПодсказка" id="50"/>
+					<Events>
+						<Event name="Click">НадписьЖурналДиагностикиНажатие</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНастроитьПрокси" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить прокси</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить прокси</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>40</Width>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНастроитьПроксиРасширеннаяПодсказка" id="51"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНадписьНастройкиПрокси" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа надпись настройки прокси</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа надпись настройки прокси</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНадписьНастройкиПроксиРасширеннаяПодсказка" id="52"/>
+					<ChildItems>
+						<PictureDecoration name="КартинкаНастроитьПрокси" id="11">
+							<Width>2</Width>
+							<Height>2</Height>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настроить прокси</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>AutoSize</PictureSize>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="КартинкаНастроитьПроксиКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="КартинкаНастроитьПроксиРасширеннаяПодсказка" id="53"/>
+						</PictureDecoration>
+						<LabelDecoration name="НадписьНастроитьПрокси" id="13">
+							<Width>29</Width>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<TextColor>#3366FF</TextColor>
+							<Font ref="sys:DefaultGUIFont" faceName="Arial" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настроить прокси</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<VerticalAlign>Center</VerticalAlign>
+							<ContextMenu name="НадписьНастроитьПроксиКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="НадписьНастроитьПроксиРасширеннаяПодсказка" id="54"/>
+							<Events>
+								<Event name="Click">НадписьНастроитьПроксиНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаЦентрПоддержки" id="74">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа центр поддержки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа центр поддержки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЦентрПоддержкиРасширеннаяПодсказка" id="75"/>
+					<ChildItems>
+						<PictureDecoration name="КартинкаНужнаПомощь" id="79">
+							<Width>2</Width>
+							<Height>2</Height>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Картинка нужна помощь</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>AutoSize</PictureSize>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="КартинкаНужнаПомощьКонтекстноеМеню" id="80"/>
+							<ExtendedTooltip name="КартинкаНужнаПомощьРасширеннаяПодсказка" id="81"/>
+						</PictureDecoration>
+						<LabelDecoration name="НадписьНужнаПомощь" id="76">
+							<Width>29</Width>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<TextColor>#3366FF</TextColor>
+							<Font ref="sys:DefaultGUIFont" faceName="Arial" height="12" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Нужна помощь</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<VerticalAlign>Center</VerticalAlign>
+							<ContextMenu name="НадписьНужнаПомощьКонтекстноеМеню" id="77"/>
+							<ExtendedTooltip name="НадписьНужнаПомощьРасширеннаяПодсказка" id="78"/>
+							<Events>
+								<Event name="Click">НужнаПомощьНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаНастройкаПроксиСервера" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка прокси сервера</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка прокси сервера</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастройкаПроксиСервераРасширеннаяПодсказка" id="55"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияОтступСлеваНастройкиПрокси" id="43">
+							<Width>2</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ДекорацияОтступСлеваНастройкиПроксиКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="ДекорацияОтступСлеваНастройкиПроксиРасширеннаяПодсказка" id="56"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаНастройкиПроксиОбщая" id="45">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройки прокси общая</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройки прокси общая</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНастройкиПроксиОбщаяРасширеннаяПодсказка" id="57"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаРежимПрокси" id="30">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа режим прокси</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Режим прокси-сервера</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаРежимПроксиРасширеннаяПодсказка" id="58"/>
+									<ChildItems>
+										<RadioButtonField name="РежимПроксиСервера" id="31">
+											<DataPath>РежимПрокси</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<RadioButtonType>Auto</RadioButtonType>
+											<ColumnsCount>1</ColumnsCount>
+											<ContextMenu name="РежимПроксиСервераКонтекстноеМеню" id="32"/>
+											<ExtendedTooltip name="РежимПроксиСервераРасширеннаяПодсказка" id="59"/>
+											<Events>
+												<Event name="OnChange">РежимПроксиСервераПриИзменении</Event>
+											</Events>
+										</RadioButtonField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаНастройкиПроксиМодуля" id="34">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа настройки прокси модуля</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ручные настройки прокси</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаНастройкиПроксиМодуляРасширеннаяПодсказка" id="60"/>
+									<ChildItems>
+										<InputField name="АдресПроксиСервера" id="16">
+											<DataPath>АдресПроксиСервера</DataPath>
+											<Width>25</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="АдресПроксиСервераКонтекстноеМеню" id="17"/>
+											<ExtendedTooltip name="АдресПроксиСервераРасширеннаяПодсказка" id="61"/>
+											<Events>
+												<Event name="OnChange">АдресПроксиСервераПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ПортПроксиСервера" id="22">
+											<DataPath>ПортПроксиСервера</DataPath>
+											<HorizontalAlign>Left</HorizontalAlign>
+											<Width>25</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ЧН=; ЧГ=</v8:content>
+												</v8:item>
+											</EditFormat>
+											<MinValue xsi:type="xs:decimal">0</MinValue>
+											<MaxValue xsi:type="xs:decimal">65535</MaxValue>
+											<ContextMenu name="ПортПроксиСервераКонтекстноеМеню" id="23"/>
+											<ExtendedTooltip name="ПортПроксиСервераРасширеннаяПодсказка" id="62"/>
+											<Events>
+												<Event name="OnChange">ПортПроксиСервераПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ЛогинПроксиСервера" id="18">
+											<DataPath>ЛогинПроксиСервера</DataPath>
+											<Width>25</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ЛогинПроксиСервераКонтекстноеМеню" id="19"/>
+											<ExtendedTooltip name="ЛогинПроксиСервераРасширеннаяПодсказка" id="63"/>
+											<Events>
+												<Event name="OnChange">ЛогинПроксиСервераПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ПарольПроксиСервера" id="20">
+											<DataPath>ПарольПроксиСервера</DataPath>
+											<Width>18</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<PasswordMode>true</PasswordMode>
+											<ContextMenu name="ПарольПроксиСервераКонтекстноеМеню" id="21"/>
+											<ExtendedTooltip name="ПарольПроксиСервераРасширеннаяПодсказка" id="64"/>
+											<Events>
+												<Event name="OnChange">ПарольПроксиСервераПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<CommandBar name="ГруппаКоманднаяПанель" id="42">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа командная панель</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа командная панель</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<HorizontalLocation>Center</HorizontalLocation>
+									<ExtendedTooltip name="ГруппаКоманднаяПанельРасширеннаяПодсказка" id="65"/>
+									<ChildItems>
+										<Button name="УстановитьСоединение" id="24">
+											<Type>CommandBarButton</Type>
+											<DefaultButton>true</DefaultButton>
+											<Width>22</Width>
+											<Height>1</Height>
+											<CommandName>Form.Command.УстановитьСоединение</CommandName>
+											<BackColor>#FAD25B</BackColor>
+											<Font bold="true" kind="AutoFont"/>
+											<ExtendedTooltip name="УстановитьСоединениеРасширеннаяПодсказка" id="66"/>
+										</Button>
+									</ChildItems>
+								</CommandBar>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="ДекорацияРазделитель" id="35">
+			<Height>1</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
+			<ContextMenu name="ДекорацияРазделительКонтекстноеМеню" id="36"/>
+			<ExtendedTooltip name="ДекорацияРазделительРасширеннаяПодсказка" id="67"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаПодсказка" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подсказка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подсказка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Height>6</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПодсказкаРасширеннаяПодсказка" id="68"/>
+			<ChildItems>
+				<LabelDecoration name="ДекорацияОтступСлева" id="40">
+					<Visible>false</Visible>
+					<Height>3</Height>
+					<VerticalStretch>false</VerticalStretch>
+					<ContextMenu name="ДекорацияОтступСлеваКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ДекорацияОтступСлеваРасширеннаяПодсказка" id="69"/>
+				</LabelDecoration>
+				<UsualGroup name="ГруппаПодсказкаПодвал" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информационная надпись подвал</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа подсказка подвал</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Height>4</Height>
+					<VerticalStretch>false</VerticalStretch>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПодсказкаПодвалРасширеннаяПодсказка" id="70"/>
+					<ChildItems>
+						<PictureDecoration name="КартинкаПодсказка" id="26">
+							<Width>10</Width>
+							<Height>4</Height>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подсказка</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="КартинкаПодсказкаКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="КартинкаПодсказкаРасширеннаяПодсказка" id="71"/>
+						</PictureDecoration>
+						<LabelDecoration name="НадписьПодсказка" id="28">
+							<Width>40</Width>
+							<Height>4</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<TextColor>#4A4A4A</TextColor>
+							<Font ref="sys:DefaultGUIFont" faceName="Arial" height="12" bold="true" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>С настройкой соединения может помочь системный администратор вашей организации</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Center</VerticalAlign>
+							<ContextMenu name="НадписьПодсказкаКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="НадписьПодсказкаРасширеннаяПодсказка" id="72"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="ДекорацияОтступСправа" id="38">
+					<Visible>false</Visible>
+					<VerticalStretch>false</VerticalStretch>
+					<ContextMenu name="ДекорацияОтступСправаКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ДекорацияОтступСправаРасширеннаяПодсказка" id="73"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонтурЭДО</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="АдресПроксиСервера" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЛогинПроксиСервера" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Логин</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПарольПроксиСервера" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПортПроксиСервера" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Порт</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимПрокси" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим прокси</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимыПрокси" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режимы прокси</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ПоказатьНастройкиПрокси" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать настройки прокси</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="УстановитьСоединение" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить соединение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить соединение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьСоединение</Action>
+		</Command>
+	</Commands>
+</Form>

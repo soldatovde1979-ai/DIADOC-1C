@@ -1,0 +1,813 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.20">
+	<ConfigVersions>
+		<Metadata name="CommonCommand.КонтурДиадокОткрыть" id="aeaf9b41-b44a-4d67-b0d9-33c708368da5" configVersion="3a492aef3e829683a00f5d3b40bebc5ae70db125"/>
+		<Metadata name="CommonCommand.КонтурДиадокОткрыть.CommandModule" id="aeaf9b41-b44a-4d67-b0d9-33c708368da5.2" configVersion="928e502189229a975c0081e3e0ceba15b670a8f5"/>
+		<Metadata name="CommonModule.КонтурДиадокВызовСервера" id="94abf3a0-19fc-409e-973a-4464e18616a6" configVersion="4dfa6e94e9bd7efea2e26bc916672293e930eb8c"/>
+		<Metadata name="CommonModule.КонтурДиадокВызовСервера.Module" id="94abf3a0-19fc-409e-973a-4464e18616a6.0" configVersion="23017e1aaa8725f481dcc5a7ab8745f3caa3c79d"/>
+		<Metadata name="CommonModule.КонтурДиадокКлиент" id="b4544c97-0b44-4013-be25-68f1a4757f5e" configVersion="8a8f58ea5b866869c0427e059391c55317b6c665"/>
+		<Metadata name="CommonModule.КонтурДиадокКлиент.Module" id="b4544c97-0b44-4013-be25-68f1a4757f5e.0" configVersion="f33633e939c9544a05e142d739e92f021b843ee2"/>
+		<Metadata name="CommonModule.КонтурДиадокКоннекторHTTP" id="86fc6cf9-5c99-4717-8613-b57dc5345dad" configVersion="945fd65060591d17dd0cecab265d647614429581"/>
+		<Metadata name="CommonModule.КонтурДиадокКоннекторHTTP.Module" id="86fc6cf9-5c99-4717-8613-b57dc5345dad.0" configVersion="4f2378c162ad26ce84fa35abe5a7a63526103f41"/>
+		<Metadata name="CommonModule.КонтурДиадокКоннекторHTTPДвоичныеДанные82Служебный" id="09f312ec-87a3-4ce6-a385-3809c97b7931" configVersion="1683ece7fa269b6e5d4367f8c5f3b814338192dc"/>
+		<Metadata name="CommonModule.КонтурДиадокКоннекторHTTPДвоичныеДанные82Служебный.Module" id="09f312ec-87a3-4ce6-a385-3809c97b7931.0" configVersion="8e14df540bee533c0d84c3648fa057f83fdd3883"/>
+		<Metadata name="CommonModule.КонтурДиадокКоннекторHTTPСлужебный83" id="07790675-126b-4f5e-a739-ef4d3daee35d" configVersion="dad6b04edcd7b139487df6e9f1d4edf2685fa593"/>
+		<Metadata name="CommonModule.КонтурДиадокКоннекторHTTPСлужебный83.Module" id="07790675-126b-4f5e-a739-ef4d3daee35d.0" configVersion="6affee20cb51e7cb62d112cf6b0f6c05ea4141e0"/>
+		<Metadata name="CommonModule.КонтурДиадокКоннекторHTTPСлужебныйПовтИсп" id="6e9ed7bf-3b0a-4cc6-a293-f66fb726c1ec" configVersion="7bc6e1014a43cde214ce8a61033372ff4863a366"/>
+		<Metadata name="CommonModule.КонтурДиадокКоннекторHTTPСлужебныйПовтИсп.Module" id="6e9ed7bf-3b0a-4cc6-a293-f66fb726c1ec.0" configVersion="78471c7b156d44128b3552d1b3756447f83e34ed"/>
+		<Metadata name="CommonModule.КонтурДиадокКоннекторHTTPХешMD5КлиентСервер" id="ef9de869-76c5-4866-bb22-79478ca8cee6" configVersion="3c0ade3a56253280f24c2fea2f1a1d6f643c82e7"/>
+		<Metadata name="CommonModule.КонтурДиадокКоннекторHTTPХешMD5КлиентСервер.Module" id="ef9de869-76c5-4866-bb22-79478ca8cee6.0" configVersion="3f57b6f679c417f1d61fb008feeac27dd9535041"/>
+		<Metadata name="CommonModule.КонтурДиадокСервер" id="5badb723-41cc-4843-8a64-aab1b364b2c8" configVersion="ef239a25c5e2bc7fa3dcafbbf0b6756a31e2076a"/>
+		<Metadata name="CommonModule.КонтурДиадокСервер.Module" id="5badb723-41cc-4843-8a64-aab1b364b2c8.0" configVersion="bac15251d8cb0fab506d8f84abd84b59198ed93d"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдJSONКлиентСервер" id="88ca38e3-4a88-4fa7-b7f4-96df9306cfe3" configVersion="0ece193e0a261524c10d66bbfeb6b880a000e21b"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдJSONКлиентСервер.Module" id="88ca38e3-4a88-4fa7-b7f4-96df9306cfe3.0" configVersion="9f58f09e3021d2cede9839964c8e14ddeae4fd7c"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдДиалогиКлиент" id="e8034d0e-307c-4667-a3f6-898565c668f8" configVersion="109da7963bd487b16f621b986e0b3ecfd15298fd"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдДиалогиКлиент.Module" id="e8034d0e-307c-4667-a3f6-898565c668f8.0" configVersion="1de1177e918959ed3cb945ace9191dc5c79a17d4"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдДиалогиСлужебный83Клиент" id="cb395175-b275-4ea4-b748-0930b2f877a7" configVersion="68f580f362b517581503ec682d103ad6ee8fd594"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдДиалогиСлужебный83Клиент.Module" id="cb395175-b275-4ea4-b748-0930b2f877a7.0" configVersion="02c0a6b9019e1b8980f80892fe6757afdf5bc2ce"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдКоллекцииКлиентСервер" id="75968e9f-41e7-4438-a31c-3cee8ee27e5d" configVersion="b5ca734036ea37adc2fcb5a2993a9d4ef330fd8e"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдКоллекцииКлиентСервер.Module" id="75968e9f-41e7-4438-a31c-3cee8ee27e5d.0" configVersion="6363777ef6c63048c2f8fe0ae6ff9f43e5ec9fed"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдОСКлиентСервер" id="f6465fde-de2b-4789-83cb-2bd5a145a263" configVersion="e98ebce0dc04a848f1326fd3ed5058f163382c6f"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдОСКлиентСервер.Module" id="f6465fde-de2b-4789-83cb-2bd5a145a263.0" configVersion="f4b43ca8f961850d7656a9c7b92a3344e656fd51"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдОбщегоНазначения" id="858dcd5a-dfe2-4d1e-9bf7-e6a21664b403" configVersion="a297731fc5bb280147ba6ee4ba782e599d83ca6c"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдОбщегоНазначения.Module" id="858dcd5a-dfe2-4d1e-9bf7-e6a21664b403.0" configVersion="aa64cd151a17504f8dad63b1e6dd8a487d23e671"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдОбщегоНазначенияКлиент" id="0d4a64a1-8a75-4d1c-a4f5-7fb12a1303e2" configVersion="eaa2f65b2b2994c352585cc889aca20dbd6661b3"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдОбщегоНазначенияКлиент.Module" id="0d4a64a1-8a75-4d1c-a4f5-7fb12a1303e2.0" configVersion="b6ab33c975efb6cd4ae65bead7f0ee9a3890e498"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдОбщегоНазначенияКлиентСервер" id="4ff1ca94-7713-40c8-ba4e-78f4184259bf" configVersion="594b3dc24afc23faf6023e30bfa426a07f7f0543"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдОбщегоНазначенияКлиентСервер.Module" id="4ff1ca94-7713-40c8-ba4e-78f4184259bf.0" configVersion="3684a1bc250e4c51c4efc4773f74a40b5752818e"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдОбщегоНазначенияПовтИсп" id="1bd10900-f7cf-4bd1-84fa-1b5fb1ea3e02" configVersion="fb4741e87526496cca3f7f8a6e3b8b94215ed53e"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдОбщегоНазначенияПовтИсп.Module" id="1bd10900-f7cf-4bd1-84fa-1b5fb1ea3e02.0" configVersion="763ef67e56331870388f271a8b85eff86c1ed242"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдОбщегоНазначенияСлужебный83Клиент" id="c1f66021-6fa9-46a9-8aeb-eed6ddbddeea" configVersion="4c97797d1eb6eae20c6955c052e275c26009660e"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдОбщегоНазначенияСлужебный83Клиент.Module" id="c1f66021-6fa9-46a9-8aeb-eed6ddbddeea.0" configVersion="91040f77539cd200aefdcd23ff5f33b6ee16d747"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдСтрКлиентСервер" id="2707c955-ef24-41af-83bd-527e0ad73bba" configVersion="9e46b579038d52619f37b8abccd4ef6acfe38091"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдСтрКлиентСервер.Module" id="2707c955-ef24-41af-83bd-527e0ad73bba.0" configVersion="bee0d6d1df648a30fa387950f15e391438d3d642"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдСтрСлужебный83КлиентСервер" id="eb79a6be-9aa0-4bbb-bad0-1356fb07e319" configVersion="be939edee4211feee66e7e5c7f83acd8b7dd2a82"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдСтрСлужебный83КлиентСервер.Module" id="eb79a6be-9aa0-4bbb-bad0-1356fb07e319.0" configVersion="5d162c3cc284a55fb970f8dade6568599df87359"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдФСКлиент" id="b02e9837-d459-494f-9a75-96afdbd574be" configVersion="d81bb3e35c8a5683473a7d648c94d4d7adbf8635"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдФСКлиент.Module" id="b02e9837-d459-494f-9a75-96afdbd574be.0" configVersion="2be67a316595968c8e5bd811289ae1a1a9c361e2"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдФССлужебный8315Клиент" id="b4abcd42-465c-473c-bf91-fcd4ea9fd9a3" configVersion="8a023ea69cd7c4c1a4af20839ea081d8e20a58e9"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдФССлужебный8315Клиент.Module" id="b4abcd42-465c-473c-bf91-fcd4ea9fd9a3.0" configVersion="ee098e5c60fe8cbeb4447eb5170a5fd8175911c7"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдФССлужебный83Клиент" id="c00e686f-977c-492e-83fb-ac0100fc1982" configVersion="96f059971e1c00eaecb3aed115234925d493f883"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдФССлужебный83Клиент.Module" id="c00e686f-977c-492e-83fb-ac0100fc1982.0" configVersion="ba009005b4528963ced77d952d20297b908018d6"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдФССлужебныйКлиент" id="d3860d94-fc4e-4142-8f88-2bb2a78cffde" configVersion="7a90e0a5f5ffcbf447d9b6a42849444de34cc30c"/>
+		<Metadata name="CommonModule.КонтурДиадокСтдФССлужебныйКлиент.Module" id="d3860d94-fc4e-4142-8f88-2bb2a78cffde.0" configVersion="3d71911865afeac1bb0c3758c3b34bd89120bd2a"/>
+		<Metadata name="CommonModule.КонтурИнтеграцияМодульДиадок" id="e6cb2a77-8667-45a1-b62a-c71aa2d2036d" configVersion="a3368ad6e97e562a886bc654c0cd3720d9417419"/>
+		<Metadata name="CommonModule.КонтурИнтеграцияМодульДиадок.Module" id="e6cb2a77-8667-45a1-b62a-c71aa2d2036d.0" configVersion="8648eeddeaea39a3c99e5d538588167f63b1a9cd"/>
+		<Metadata name="CommonModule.КонтурИнтеграцияМодульДиадокВызовСервера" id="5c4f656c-fb1b-43cb-bebc-632617ea24a8" configVersion="171b32725fc65c2dd9e1fb3ef8e56a2cea10ddb1"/>
+		<Metadata name="CommonModule.КонтурИнтеграцияМодульДиадокВызовСервера.Module" id="5c4f656c-fb1b-43cb-bebc-632617ea24a8.0" configVersion="01ea234020bc07d588f13764b174ed9efa13eed9"/>
+		<Metadata name="CommonModule.КонтурИнтеграцияМодульДиадокКлиент" id="997ec0bc-4a77-4045-90a9-6956eb988441" configVersion="1c2df5237d955793cd5dc26a1dd1527c97249ad9"/>
+		<Metadata name="CommonModule.КонтурИнтеграцияМодульДиадокКлиент.Module" id="997ec0bc-4a77-4045-90a9-6956eb988441.0" configVersion="f1edf67b345b496b3965004f3e224254faa84af6"/>
+		<Metadata name="CommonModule.КонтурИнтеграцияМодульДиадокКлиентСервер" id="8ef77dac-ecce-4112-9509-9065db7198a8" configVersion="30850e648879947735cb4e3f2f0caa52440ebb43"/>
+		<Metadata name="CommonModule.КонтурИнтеграцияМодульДиадокКлиентСервер.Module" id="8ef77dac-ecce-4112-9509-9065db7198a8.0" configVersion="0bf1b21dec78bbc0470ad88394489f203688f362"/>
+		<Metadata name="CommonPicture.КонтурДиадок" id="088d19b1-d0ca-410d-ac5d-7cb4dae8c9d4" configVersion="89ced21723d3bd7ee66a41a0161b6e4aa8acffa8"/>
+		<Metadata name="CommonPicture.КонтурДиадок.Picture" id="088d19b1-d0ca-410d-ac5d-7cb4dae8c9d4.0" configVersion="48130baec88b223dda59ddc7d36802bfa90b1dda"/>
+		<Metadata name="Configuration.КонтурДиадок" id="40590d10-6436-474d-bee9-9a4a84942a18" configVersion="2b3f7a9a6c3c8352d304a0d1cac6d4405b63ebe2"/>
+		<Metadata name="Configuration.КонтурДиадок.MainSectionCommandInterface" id="61a7f539-24a1-4db6-8a23-d9daa640a764.9" configVersion="bacf668db2fe1efb1961b492e1e9e2413076b8d1"/>
+		<Metadata name="Configuration.КонтурДиадок.SessionModule" id="61a7f539-24a1-4db6-8a23-d9daa640a764.7" configVersion="095a50aed13e0a3be5358e7d7f50ddc67ae33bc5"/>
+		<Metadata name="DataProcessor.ДД_подключаемыйМодуль" id="d7d0dd0a-727e-44d0-b1be-223d2a6c137d" configVersion="04ade7ec702da8aa8408f55330197d228ba6c159"/>
+		<Metadata name="DataProcessor.ДД_подключаемыйМодуль.ObjectModule" id="d7d0dd0a-727e-44d0-b1be-223d2a6c137d.0" configVersion="32004497d7d34cfd22b3cfa4395ac91d7209b163"/>
+		<Metadata name="DataProcessor.КонтурДиадокАпдейтКлиент" id="5fd0a082-8aca-489c-965b-be7970b6fe1f" configVersion="5ab2f9870466c609b5236d08cb8859a9c673514f"/>
+		<Metadata name="DataProcessor.КонтурДиадокАпдейтКлиент.ObjectModule" id="5fd0a082-8aca-489c-965b-be7970b6fe1f.0" configVersion="5b50af5a662b32d1d339140bcd7d83fad44bc878"/>
+		<Metadata name="DataProcessor.КонтурДиадокАутентификатор" id="1e641340-1fff-4343-b438-409011492c69" configVersion="2fcb8de422a6a9202c48d6c9710d971a1669b754"/>
+		<Metadata name="DataProcessor.КонтурДиадокАутентификатор.Form.ГенераторQr" id="88ea9fe9-c358-42ca-8bfb-f5f15cb23119" configVersion="b44307afb0c3281958d3063f18d5d61d19438cf2"/>
+		<Metadata name="DataProcessor.КонтурДиадокАутентификатор.Form.ГенераторQr.Form" id="88ea9fe9-c358-42ca-8bfb-f5f15cb23119.0" configVersion="43b99835d5f00d60197927ace48ee4c888eaae5b"/>
+		<Metadata name="DataProcessor.КонтурДиадокАутентификатор.Form.ГенераторQr_ОФ" id="928471ae-f804-44eb-be9e-a22f87ef40be" configVersion="b86d0d34003e5a5d1643e16caee1e6f66cf864aa"/>
+		<Metadata name="DataProcessor.КонтурДиадокАутентификатор.Form.ГенераторQr_ОФ.Form" id="928471ae-f804-44eb-be9e-a22f87ef40be.0" configVersion="30c8156f0242dd03a24a05c486c4e5d475b53da6"/>
+		<Metadata name="DataProcessor.КонтурДиадокАутентификатор.Form.Клиент" id="e6ebad45-742f-479e-9f2b-25198a9fcf9a" configVersion="0228653a6b62999f05687a92e7d568129409834e"/>
+		<Metadata name="DataProcessor.КонтурДиадокАутентификатор.Form.Клиент.Form" id="e6ebad45-742f-479e-9f2b-25198a9fcf9a.0" configVersion="8d28a93cdd808d56d03fc58af1d146d55216365f"/>
+		<Metadata name="DataProcessor.КонтурДиадокАутентификатор.Form.Клиент_ОФ" id="bf1c2951-cd6e-4ca5-b96d-0640d886c51e" configVersion="ebf47df7a7dc5214e391831d09102c9b50ca7cc7"/>
+		<Metadata name="DataProcessor.КонтурДиадокАутентификатор.Form.Клиент_ОФ.Form" id="bf1c2951-cd6e-4ca5-b96d-0640d886c51e.0" configVersion="388db08d5e2405396b6898004dfb3f24b3db9e65"/>
+		<Metadata name="DataProcessor.КонтурДиадокАутентификатор.ObjectModule" id="1e641340-1fff-4343-b438-409011492c69.0" configVersion="75e0cb7835d92874c773020d2e4eff3ace7fa107"/>
+		<Metadata name="DataProcessor.КонтурДиадокАутентификатор.Template.QrLib" id="67181ebd-cdc6-46ce-9616-db1920de98db" configVersion="3ecb98f66f1b29b370aee705f203b1e200d1e7cc"/>
+		<Metadata name="DataProcessor.КонтурДиадокАутентификатор.Template.QrLib.Template" id="67181ebd-cdc6-46ce-9616-db1920de98db.0" configVersion="b6603a6a7bedf514f71b1e7059721e9ae31b35c9"/>
+		<Metadata name="DataProcessor.КонтурДиадокАутентификаторХранилище" id="12cd9e49-e4a7-483b-90a6-74b5613b9e72" configVersion="72e5343345646b027d9dfdf2c7771c7f85c48446"/>
+		<Metadata name="DataProcessor.КонтурДиадокАутентификаторХранилище.ObjectModule" id="12cd9e49-e4a7-483b-90a6-74b5613b9e72.0" configVersion="c8fbd59d16507e74f11bafba9e1e5263e1c77a50"/>
+		<Metadata name="DataProcessor.КонтурДиадокВнешниеСервисы" id="9aa4fee8-9fa1-4435-a3f5-15fc8dd9db4b" configVersion="39ce44fa498d2fe9a17e9e946925fb31155721ff"/>
+		<Metadata name="DataProcessor.КонтурДиадокВнешниеСервисы.Form.КлиентскиеВызовы" id="64735da1-2879-4cad-8db8-71ab5392a917" configVersion="bb5b86da59f18e76cd48be9d172c5445bd9cfbe6"/>
+		<Metadata name="DataProcessor.КонтурДиадокВнешниеСервисы.Form.КлиентскиеВызовы.Form" id="64735da1-2879-4cad-8db8-71ab5392a917.0" configVersion="5af01a16d2bebd10c8781d8f4a35ae8050eabff3"/>
+		<Metadata name="DataProcessor.КонтурДиадокВнешниеСервисы.Form.ФормаОтладкиКриптографии" id="7e5da28e-89fd-4262-a801-d4bdd3fbac06" configVersion="ef4c1b8253a15c2b447acacdce9b0139d55c80d7"/>
+		<Metadata name="DataProcessor.КонтурДиадокВнешниеСервисы.Form.ФормаОтладкиКриптографии.Form" id="7e5da28e-89fd-4262-a801-d4bdd3fbac06.0" configVersion="1a94d8a1285e4509f3113e015999179246b1b12c"/>
+		<Metadata name="DataProcessor.КонтурДиадокВнешниеСервисы.Form.ФормаОтладкиКриптографияУправляемая" id="fbbae687-a567-4ce6-98fb-78b174f89766" configVersion="5f132b5c4ac1f19550c0bd54433fddbd7be10007"/>
+		<Metadata name="DataProcessor.КонтурДиадокВнешниеСервисы.Form.ФормаОтладкиКриптографияУправляемая.Form" id="fbbae687-a567-4ce6-98fb-78b174f89766.0" configVersion="6e91e1a5a2b1bc27120b9628784af85668c761a5"/>
+		<Metadata name="DataProcessor.КонтурДиадокВнешниеСервисы.Form.ФормаСертификатаУправляемая" id="9ab9c309-052b-4773-8b39-15634ef98208" configVersion="094a79b7a2c27905917eddd03130f354b2f6bd9c"/>
+		<Metadata name="DataProcessor.КонтурДиадокВнешниеСервисы.Form.ФормаСертификатаУправляемая.Form" id="9ab9c309-052b-4773-8b39-15634ef98208.0" configVersion="de67e74a8a0e6e6ad24879bec8b25930cf6ca8ca"/>
+		<Metadata name="DataProcessor.КонтурДиадокВнешниеСервисы.ObjectModule" id="9aa4fee8-9fa1-4435-a3f5-15fc8dd9db4b.0" configVersion="fbdc35cb9f4731c6123a55860c5d51ff0a127188"/>
+		<Metadata name="DataProcessor.КонтурДиадокВызовыПМ" id="d876a4c5-67d8-45ad-9a84-247e16994954" configVersion="69c04c9493c745ee22b52e18937a8aedf529861c"/>
+		<Metadata name="DataProcessor.КонтурДиадокВызовыПМ.Form.КлиентскиеВызовы" id="7b7a7aca-5d58-469e-8733-31f8f6330b07" configVersion="49cacdc21059ec2d8962367fce35637107162354"/>
+		<Metadata name="DataProcessor.КонтурДиадокВызовыПМ.Form.КлиентскиеВызовы.Form" id="7b7a7aca-5d58-469e-8733-31f8f6330b07.0" configVersion="5ac0ecb4604eb0a5f5cba63856ba586111bb6cad"/>
+		<Metadata name="DataProcessor.КонтурДиадокВызовыПМ.ObjectModule" id="d876a4c5-67d8-45ad-9a84-247e16994954.0" configVersion="964d493ff7d85378cf875fb861f7f1cf8a845750"/>
+		<Metadata name="DataProcessor.КонтурДиадокВызовыПМ.Template.ТипыДокументов" id="c3f83ade-bef3-422d-a9ae-df9dbb52babb" configVersion="88879c9985282c3c6c30c32dcd8bd1b8dbb1a9ce"/>
+		<Metadata name="DataProcessor.КонтурДиадокВызовыПМ.Template.ТипыДокументов.Template" id="c3f83ade-bef3-422d-a9ae-df9dbb52babb.0" configVersion="c797553bca19ba32b2791c1931cf10aa40dcc995"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML" id="e936d6cb-620a-41a1-9554-0887bd2735a8" configVersion="68e6e108537069476dcd6f3eef5dd3d4ccf532f1"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.ObjectModule" id="e936d6cb-620a-41a1-9554-0887bd2735a8.0" configVersion="c64af66d863f3e9134b90e463f0ba3a8cedd4373"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.DP_PRIRASXPRIN_xsd" id="d596173d-d6a1-495f-b2b7-b2d09547f18e" configVersion="17ba36493ecc97254833eb5639e6bc14d3be426d"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.DP_PRIRASXPRIN_xsd.Template" id="d596173d-d6a1-495f-b2b7-b2d09547f18e.0" configVersion="49e776381131fb6e7eb655d06153ea7e706a0997"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.DP_PRIRASXSVED_xsd" id="d885aa91-1ec5-4a92-acac-87fdb68c853f" configVersion="7d0ec62bee73d5787f0caa4f866ad79ebf1a13c4"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.DP_PRIRASXSVED_xsd.Template" id="d885aa91-1ec5-4a92-acac-87fdb68c853f.0" configVersion="fee22d1210899df566fade4f444afe24c42f9e9b"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.DP_PTORG12_xsd" id="57a92497-1166-484b-a121-43be719ca0db" configVersion="adee63c21d5a362cfbaf64c6b6bc05021434c889"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.DP_PTORG12_xsd.Template" id="57a92497-1166-484b-a121-43be719ca0db.0" configVersion="58ea9968cad9701952aa8101388b38ee6079e8ff"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.DP_REZRUISP_xsd" id="072defe4-a824-4400-b6ab-aa452c37fee6" configVersion="b06ba0e4173910478dd8fdbfd212f0f4a85cdc19"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.DP_REZRUISP_xsd.Template" id="072defe4-a824-4400-b6ab-aa452c37fee6.0" configVersion="59b24a1196e00a89770152a769b4f71f649cff7f"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.DP_REZRUZAK_xsd" id="ea687f97-3900-4e9f-82b6-b30cc882ea02" configVersion="85dc6c9d8a48986eddcb24dc9995038638521e71"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.DP_REZRUZAK_xsd.Template" id="ea687f97-3900-4e9f-82b6-b30cc882ea02.0" configVersion="70bf6b852167ec42eec2c6d4adf1abad172a0c7a"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.DP_TOVTORGPOK_xsd" id="13ed694e-a095-4c43-be7a-0e8b600c0426" configVersion="fe79c70d09eb99d869d6e27b0bb2ed6491f2f064"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.DP_TOVTORGPOK_xsd.Template" id="13ed694e-a095-4c43-be7a-0e8b600c0426.0" configVersion="0cf3c816e930ab19ce0e6bc1b4292c11e0b07c7a"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.DP_TOVTORGPR_xsd" id="e8421c07-a651-4cdc-b682-5c2b6bcc7763" configVersion="e4227c1de5e57adcf27dabff2a90b1c46eb77bf1"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.DP_TOVTORGPR_xsd.Template" id="e8421c07-a651-4cdc-b682-5c2b6bcc7763.0" configVersion="128b495873af9d8f1a59f114e7c035ad76ead3f2"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.DP_ZAKTPRM_xsd" id="03cb3fca-c766-4fa3-a179-7519223a25ce" configVersion="8d6fce6565d06777698f4c23754ba5c509c43d32"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.DP_ZAKTPRM_xsd.Template" id="03cb3fca-c766-4fa3-a179-7519223a25ce.0" configVersion="6cd9972c55c00a78a288aba02dacc4b87a570da8"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_AKTSVEROTP_xsd" id="08af9f4c-2720-4f1c-8298-128514add457" configVersion="6bdc802e9c969b20766d26a7ba8399a74997a549"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_AKTSVEROTP_xsd.Template" id="08af9f4c-2720-4f1c-8298-128514add457.0" configVersion="a2e09075828a3951c5f5fe20a1ee04798a6d1031"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_AKTSVERPOL_xsd" id="9dbacc8d-735f-4ab2-917a-06f889fca5d2" configVersion="4e299e6fc1f4f749caa4629e28a4701e8ec08ca3"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_AKTSVERPOL_xsd.Template" id="9dbacc8d-735f-4ab2-917a-06f889fca5d2.0" configVersion="4df5ed87e2fcad5b45570fd3858f44bede6c0fd1"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_CHETOP_1_998_01_05_01_03_xsd" id="3a41443f-ebfd-476b-bb0b-d7c9e38f1c7e" configVersion="bf2db56e98d288a40111355a007ae49ccea659af"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_CHETOP_1_998_01_05_01_03_xsd.Template" id="3a41443f-ebfd-476b-bb0b-d7c9e38f1c7e.0" configVersion="c62b0a0e3ba51c0214e45dfe3c1b6cf8cb8ef7d4"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_KORSCHFDOPPOK_xsd" id="5c4c1814-6c28-4161-93d4-1e6baad9bd68" configVersion="96101fd23501920854be747bc8a2cb63dfba9fb0"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_KORSCHFDOPPOK_xsd.Template" id="5c4c1814-6c28-4161-93d4-1e6baad9bd68.0" configVersion="c6ea832502cf8f18ef6c2a60fea1bb0abc83180f"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_KORSCHFDOPPR_xsd" id="ef7eab33-56c0-4f46-b93d-eb66f9871911" configVersion="5d93b1e054e85480e2bddaaf3ff46b446bda6bb7"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_KORSCHFDOPPR_xsd.Template" id="ef7eab33-56c0-4f46-b93d-eb66f9871911.0" configVersion="ef0bd26c5ce40f94b2860aa16a20185694c0d855"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_NKORSCHFDOPPOK_xsd" id="035ec977-1326-44ea-8523-406ea1f0b8e3" configVersion="5a254c16932a403a446a119d1f002309e10f0333"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_NKORSCHFDOPPOK_xsd.Template" id="035ec977-1326-44ea-8523-406ea1f0b8e3.0" configVersion="570f6bd7a2d381e38e9f8b41ab5061bc0edfb990"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_NKORSCHFDOPPR_xsd" id="cca8ddf8-4209-484d-a68c-923ba101f3c8" configVersion="5d009258eb0c19778033ce7d2540c2bf1a6263d4"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_NKORSCHFDOPPR_xsd.Template" id="cca8ddf8-4209-484d-a68c-923ba101f3c8.0" configVersion="390f678dbfc8ffdf99e7ee4c9e8e32f13fb8089c"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_NSCHFDOPPOK_1_997_02_05_02_01_xsd" id="acdbb3fa-c416-42df-bfa5-fda5c6c88c6d" configVersion="9a1e98a956ea7ba35b8a0acdc692dd19e2cadca8"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_NSCHFDOPPOK_1_997_02_05_02_01_xsd.Template" id="acdbb3fa-c416-42df-bfa5-fda5c6c88c6d.0" configVersion="8c49c0eb2b3c0e8b67b9652c6b47cb6c8767b015"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_NSCHFDOPPOK_1_997_02_05_03_01_xsd" id="ef7968c0-2aed-4950-a98b-7ca508a93a59" configVersion="01e0f0bcc99df3b7f7ee50e8e24b67acc081208d"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_NSCHFDOPPOK_1_997_02_05_03_01_xsd.Template" id="ef7968c0-2aed-4950-a98b-7ca508a93a59.0" configVersion="8212ca4ffb11cfb0713ce8aa8b2feff3131e9a80"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_NSCHFDOPPOK_xsd" id="7ad57363-e418-4fe7-8247-12d60bdc4fca" configVersion="be9c0bb8bbf84af53ff3f50c15e85138357cca92"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_NSCHFDOPPOK_xsd.Template" id="7ad57363-e418-4fe7-8247-12d60bdc4fca.0" configVersion="813135a5754211c61065571f435bc40983056625"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_NSCHFDOPPR_1_997_01_05_02_01_xsd" id="b7cf6d25-85f6-4a53-94fc-95c981b9f3f1" configVersion="f7800f56acdfb55ff69d4c0f58fef07f33130061"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_NSCHFDOPPR_1_997_01_05_02_01_xsd.Template" id="b7cf6d25-85f6-4a53-94fc-95c981b9f3f1.0" configVersion="6c6cf46d1e1e10393ce176c75d0be70b703a8ce3"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_NSCHFDOPPR_1_997_01_05_03_01_xsd" id="e06bec01-b5ef-4002-b01f-61e744bd5ad0" configVersion="df046fb6dd7258fe900d59542ddec5af543a542d"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_NSCHFDOPPR_1_997_01_05_03_01_xsd.Template" id="e06bec01-b5ef-4002-b01f-61e744bd5ad0.0" configVersion="5481a42ea761915d7ec342d3145e25996be1e750"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_NSCHFDOPPR_xsd" id="78e8337c-2c7a-455e-8e5d-5c98f3156401" configVersion="3cd03cde0cbe041d0570342dc10e5edba08ee3b9"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_NSCHFDOPPR_xsd.Template" id="78e8337c-2c7a-455e-8e5d-5c98f3156401.0" configVersion="b09cbfc8416f14ec852caa9dbdab60ddc669269f"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_SCHET_xsd" id="2f63561a-366a-46d7-9eab-842caa1cc58c" configVersion="8471355304fe2d8eab225929354ab327693431e0"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_SCHET_xsd.Template" id="2f63561a-366a-46d7-9eab-842caa1cc58c.0" configVersion="154c1d70e384a177fbbf56cd9f93c073e56c351c"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_SCHFDOPPOK_xsd" id="69c5a04d-3225-4ec6-8e10-da321a8dd92c" configVersion="96aaf9a0f1744fabf049f53e1309cb2c71563598"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_SCHFDOPPOK_xsd.Template" id="69c5a04d-3225-4ec6-8e10-da321a8dd92c.0" configVersion="351544a9f50d1d8af40cbcca4db663a9da6d93d5"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_SCHFDOPPR_xsd" id="6a0194f8-aeb2-432b-b24b-ca2b59a3f424" configVersion="ec7a939221be9805aee41b66b4f655edc735a5f2"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ON_SCHFDOPPR_xsd.Template" id="6a0194f8-aeb2-432b-b24b-ca2b59a3f424.0" configVersion="3f1600252d3c278790d8a19e999914c75df18e26"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.Proto_xsd" id="56613b90-5a7f-428d-a92c-80af5233af62" configVersion="aec912ba4de09db9c9704b57e9ec622443e0709d"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.Proto_xsd.Template" id="56613b90-5a7f-428d-a92c-80af5233af62.0" configVersion="97453408a7a3f8c73b4f428961385a54643e9062"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.Signer_xsd" id="f36fca9c-df13-481a-8cfe-56a5771b92e5" configVersion="7637237b79b5c1793744eeb91bfb991e78cbca31"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.Signer_xsd.Template" id="f36fca9c-df13-481a-8cfe-56a5771b92e5.0" configVersion="ff05cf9d7c27c58d47d58b4b311c836f68be013c"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.TORGBLRPOL_xsd" id="999f226c-e459-4fad-946d-1e224978a5eb" configVersion="3d14fcac5c7313710c05202531b8aee5ac783ec3"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.TORGBLRPOL_xsd.Template" id="999f226c-e459-4fad-946d-1e224978a5eb.0" configVersion="c8f887df1282eb13792ea0af47ea9104473ba3a0"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.UniversalMessage_xsd" id="bc54d011-6c53-4783-b6cc-56ce5efa9e4c" configVersion="5a1843a934fcdcc91deb9093ece83642ebd97925"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.UniversalMessage_xsd.Template" id="bc54d011-6c53-4783-b6cc-56ce5efa9e4c.0" configVersion="85a18caea53759ce7a64a1ca4fc47b9baae79356"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.КодыРегионов" id="c9dea16f-c1de-467d-8bcd-720d2c00bfd4" configVersion="1356d5078f5896d18ccc6fedd53a323f81e74a16"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.КодыРегионов.Template" id="c9dea16f-c1de-467d-8bcd-720d2c00bfd4.0" configVersion="4a60f27c9f35e900e092b0080c42e4e1d3d84c79"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ОКВ" id="ecddd481-67db-441d-979a-20cf64eedb0b" configVersion="b7db379816afee0a7d7ccd4a65380dd877359e11"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ОКВ.Template" id="ecddd481-67db-441d-979a-20cf64eedb0b.0" configVersion="49f23c3a4400eac6af621ce482d14314fc431c69"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ОКЕИ" id="dbdbe255-af77-4486-ad1d-87d88445127a" configVersion="c8e4b8a761b922811b306771460352e617be7500"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ОКЕИ.Template" id="dbdbe255-af77-4486-ad1d-87d88445127a.0" configVersion="f4e61da5b3c20fd9c35586248d64b4009fb85623"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ОКСМ" id="e8bd2e77-4df3-4cda-a632-978d03a6ce57" configVersion="a39581f08517902ac884bc568c3ff8e78dd271ad"/>
+		<Metadata name="DataProcessor.КонтурДиадокГенерацияXML.Template.ОКСМ.Template" id="e8bd2e77-4df3-4cda-a632-978d03a6ce57.0" configVersion="628543d2a8bcff561e0416d3ff92dda5b9ae1254"/>
+		<Metadata name="DataProcessor.КонтурДиадокИнтеграцияУТ11" id="a0605223-9228-4370-93dc-c2587daf98b0" configVersion="485bc68ffae36807069d7a80ab4453a0840f1d00"/>
+		<Metadata name="DataProcessor.КонтурДиадокИнтеграцияУТ11.Form.ПодключаемыйМодуль" id="b8c9f021-2d3e-498b-9099-3cc414225aeb" configVersion="c6ec4f111e61f720ae1b2470fe7e6bc34574d557"/>
+		<Metadata name="DataProcessor.КонтурДиадокИнтеграцияУТ11.Form.ПодключаемыйМодуль.Form" id="b8c9f021-2d3e-498b-9099-3cc414225aeb.0" configVersion="196f80f827757225e62cffad59870dda800dae27"/>
+		<Metadata name="DataProcessor.КонтурДиадокИнтеграцияУТ11.ObjectModule" id="a0605223-9228-4370-93dc-c2587daf98b0.0" configVersion="df47a5a6835b06d0bc8d63a5f1035baa5320f4da"/>
+		<Metadata name="DataProcessor.КонтурДиадокКлиентУведомлений" id="9e738425-22cd-4a36-a7cb-171b5518c50d" configVersion="d1a8fccb5866e1f7bf162a85985768c6aad02562">
+			<Metadata name="DataProcessor.КонтурДиадокКлиентУведомлений.Attribute.___Коннектор" id="18d943cc-7c98-4d5b-b1f1-5088d34403af"/>
+		</Metadata>
+		<Metadata name="DataProcessor.КонтурДиадокКлиентУведомлений.ObjectModule" id="9e738425-22cd-4a36-a7cb-171b5518c50d.0" configVersion="8325c5e292e92ddb007d49a1c21eaa3665247aeb"/>
+		<Metadata name="DataProcessor.КонтурДиадокКоннекторHTTP" id="a94ab017-0c99-4b42-b7e0-da250b0af6a4" configVersion="2829b9e4368982e782798704325072db6ac2a67c"/>
+		<Metadata name="DataProcessor.КонтурДиадокКоннекторHTTP.ObjectModule" id="a94ab017-0c99-4b42-b7e0-da250b0af6a4.0" configVersion="7b4f40647d0e620606f76f6ba7c9618c8d7e87dd"/>
+		<Metadata name="DataProcessor.КонтурДиадокКоннекторHTTPДвоичныеДанные82Служебный" id="839fd744-caea-4400-b0ba-89cdf8fc9a46" configVersion="1bcff1285dcbd439508196300585a5458fe3ee19"/>
+		<Metadata name="DataProcessor.КонтурДиадокКоннекторHTTPДвоичныеДанные82Служебный.ObjectModule" id="839fd744-caea-4400-b0ba-89cdf8fc9a46.0" configVersion="97b653468cefcdb9296dccea67caf753567ed601"/>
+		<Metadata name="DataProcessor.КонтурДиадокКоннекторHTTPСлужебный83" id="a2155310-5d56-4623-b5d6-f6af4b7fcd89" configVersion="b1e53150c41f798b787af9ceaf283e1abb929b7e"/>
+		<Metadata name="DataProcessor.КонтурДиадокКоннекторHTTPСлужебный83.ObjectModule" id="a2155310-5d56-4623-b5d6-f6af4b7fcd89.0" configVersion="25dd6422c452211405c5c4f4679dc2627d4a2ca3"/>
+		<Metadata name="DataProcessor.КонтурДиадокКоннекторHTTPХешMD5" id="97d31586-d30b-4eeb-af29-090c3249aef5" configVersion="c5b56ac552898b4ed591a810594e9e3aef37f0e5"/>
+		<Metadata name="DataProcessor.КонтурДиадокКоннекторHTTPХешMD5.ObjectModule" id="97d31586-d30b-4eeb-af29-090c3249aef5.0" configVersion="4e597259476a9870e283bbdedb6b14aff7a8760f"/>
+		<Metadata name="DataProcessor.КонтурДиадокМенеджерИнтеграции" id="89053eb4-f6a8-455f-97cc-3ffb46ccac52" configVersion="ba91ff245cb573b6dd9a0602831d49d8f8c04fe1"/>
+		<Metadata name="DataProcessor.КонтурДиадокМенеджерИнтеграции.Form.Форма" id="66099447-efc7-4186-922e-a0dc29331385" configVersion="8c52d71824f99f60cf1024507ad6729175bedd4d"/>
+		<Metadata name="DataProcessor.КонтурДиадокМенеджерИнтеграции.Form.Форма.Form" id="66099447-efc7-4186-922e-a0dc29331385.0" configVersion="4f1c137613ea69e6f269fe39c7ec736fdae1afb0"/>
+		<Metadata name="DataProcessor.КонтурДиадокМенеджерИнтеграции.ObjectModule" id="89053eb4-f6a8-455f-97cc-3ffb46ccac52.0" configVersion="35217e11cf206357d0e59b14e15a3ad1db8519ab"/>
+		<Metadata name="DataProcessor.КонтурДиадокМенеджерКриптографии" id="bf55cee4-3475-4217-9532-86eca5d9d72b" configVersion="009140ded2f9cc4a7c789f9d9de3fb82561e60ed"/>
+		<Metadata name="DataProcessor.КонтурДиадокМенеджерКриптографии.Form.КлиентскиеВызовы" id="151609e1-aeca-4a33-8af8-2579e993cca2" configVersion="f18be8c9446721a3e6d56058703b6c0ff156ee70"/>
+		<Metadata name="DataProcessor.КонтурДиадокМенеджерКриптографии.Form.КлиентскиеВызовы.Form" id="151609e1-aeca-4a33-8af8-2579e993cca2.0" configVersion="a35efbbbf7b9233ae2483c3ff9d666647805a2c7"/>
+		<Metadata name="DataProcessor.КонтурДиадокМенеджерКриптографии.ObjectModule" id="bf55cee4-3475-4217-9532-86eca5d9d72b.0" configVersion="baf36ae3bdeadaaefd047ffa778e511d1fa63dac"/>
+		<Metadata name="DataProcessor.КонтурДиадокМетодыAPI" id="7386e3da-3cde-48e5-af23-61dfffbf1ae1" configVersion="0d7d094b5477231aa4ad8e45e2fae8c1b6f80281"/>
+		<Metadata name="DataProcessor.КонтурДиадокМетодыAPI.ObjectModule" id="7386e3da-3cde-48e5-af23-61dfffbf1ae1.0" configVersion="38e05175634192b4b5c3f72f9ee9f52c2797533e"/>
+		<Metadata name="DataProcessor.КонтурДиадокМетрики" id="087a1e30-7e51-4c7e-8f63-7bd048e90810" configVersion="225880ef4579e0708d5f50306dc572e0fdfd7169"/>
+		<Metadata name="DataProcessor.КонтурДиадокМетрики.ObjectModule" id="087a1e30-7e51-4c7e-8f63-7bd048e90810.0" configVersion="1fcd8c0a2ab58d7e0ef2b1df1c23a90fdf25363d"/>
+		<Metadata name="DataProcessor.КонтурДиадокОнлайнСчета" id="fb6c76fa-b265-4923-b77c-290b8b7d1618" configVersion="e685cf9f61413e552d1a8bb8bee3812ddbd0acfa"/>
+		<Metadata name="DataProcessor.КонтурДиадокОнлайнСчета.Form.КлиентскиеВызовы" id="34e448b7-fc96-4844-b408-b7044752983e" configVersion="84118f34a869f191c8153b54f7f5c218a5e31ff5"/>
+		<Metadata name="DataProcessor.КонтурДиадокОнлайнСчета.Form.КлиентскиеВызовы.Form" id="34e448b7-fc96-4844-b408-b7044752983e.0" configVersion="bd3141626a6a83d96898155f9c5b03721e6c169c"/>
+		<Metadata name="DataProcessor.КонтурДиадокОнлайнСчета.Form.ФормаСчетовНаОплату" id="3a127243-bb25-4402-b65b-5f8ac9c521c8" configVersion="9df6b405d18ea7085ae6ebbf3b4a1f539d3713a3"/>
+		<Metadata name="DataProcessor.КонтурДиадокОнлайнСчета.Form.ФормаСчетовНаОплату.Form" id="3a127243-bb25-4402-b65b-5f8ac9c521c8.0" configVersion="99dec6b1eb82502d1ccffc65ab4d70264941447a"/>
+		<Metadata name="DataProcessor.КонтурДиадокОнлайнСчета.Form.ФормаСчетовНаОплатуУправляемая" id="47ccbe9c-3366-4228-8fbc-ae22361493c8" configVersion="4e2f738cb9a2453e278d84f68656af31f03c8596"/>
+		<Metadata name="DataProcessor.КонтурДиадокОнлайнСчета.Form.ФормаСчетовНаОплатуУправляемая.Form" id="47ccbe9c-3366-4228-8fbc-ae22361493c8.0" configVersion="15656b8dba3fa780c0bc0b32e8a40757901f34bb"/>
+		<Metadata name="DataProcessor.КонтурДиадокОнлайнСчета.ObjectModule" id="fb6c76fa-b265-4923-b77c-290b8b7d1618.0" configVersion="8277a880a1135dc3b6d88310b2d3da5fcc498ee8"/>
+		<Metadata name="DataProcessor.КонтурДиадокПарсерJSON" id="ace5704f-b3d4-4468-a27f-d67d937731ec" configVersion="5cb2c5278b5becc82a30549b4a6711e318b9c9bf"/>
+		<Metadata name="DataProcessor.КонтурДиадокПарсерJSON.Form.КлиентскиеВызовы" id="50d1925b-254e-458f-a7c0-2a922f305310" configVersion="ab48cb65d78874346542825080c6a31012460659"/>
+		<Metadata name="DataProcessor.КонтурДиадокПарсерJSON.Form.КлиентскиеВызовы.Form" id="50d1925b-254e-458f-a7c0-2a922f305310.0" configVersion="57a484606d0a412f6e2de0be42b2e947ddb0f77b"/>
+		<Metadata name="DataProcessor.КонтурДиадокПарсерJSON.ObjectModule" id="ace5704f-b3d4-4468-a27f-d67d937731ec.0" configVersion="508fe3a866dc38cae66936b9736fe3cc752cf855"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы" id="589c5b95-78a3-4983-bf64-2837b8f5f0ed" configVersion="78be78422254df3136e72d0a374a4ea4ab44d803"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.ObjectModule" id="589c5b95-78a3-4983-bf64-2837b8f5f0ed.0" configVersion="85e7d962638401bf60851b5fdb36f6acb7ee79ae"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.Акт" id="35d8b9bf-5742-4bbd-84d9-8019f9c64a0b" configVersion="451cdfb0690f66f1278c3c936cb3ee95dbff5c56"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.Акт.Template" id="35d8b9bf-5742-4bbd-84d9-8019f9c64a0b.0" configVersion="ec5e559a8e45827c790dee579a9a7fd1d063e855"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.АктСверки_405_БезРазногласий" id="7e6b0f55-e33e-49d8-9270-26eb8bdc924d" configVersion="d2a9c23d961ef757cac3b6a3ba34cfc0abaaad0b"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.АктСверки_405_БезРазногласий.Template" id="7e6b0f55-e33e-49d8-9270-26eb8bdc924d.0" configVersion="736a95b4a01460a3ca3f31dbbf9c2d9bdc9d56a4"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.АктСверки_405_СРазногласиями" id="d99448df-210e-44df-8b80-c3848ff4a193" configVersion="49b39517af1a14bfa234b2602aed9be9018591f5"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.АктСверки_405_СРазногласиями.Template" id="d99448df-210e-44df-8b80-c3848ff4a193.0" configVersion="39ec9430a3327f482e5fd7b2b48055c308aac073"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.АктУПД" id="777b1955-d438-4d19-b043-23bcf2b72f1e" configVersion="d2ba743df838b8097acd60afb406491b873affd1"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.АктУПД.Template" id="777b1955-d438-4d19-b043-23bcf2b72f1e.0" configVersion="aa35905798f4b50cd08a81b14ff23b091d013c9b"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.КСФ1137" id="ab728ac1-5a44-449f-829e-6d60205d6301" configVersion="11d09eee4281be73a1fea355b02a4a0e44eb0b49"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.КСФ1137.Template" id="ab728ac1-5a44-449f-829e-6d60205d6301.0" configVersion="ae23c13e25de2cd81563eac069b678c875c996a6"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.КСФ1137_1096_Прослеж" id="f12af345-3a7b-4f4e-b378-8337f4fc33f0" configVersion="621e2d37fbec526b1d4a95977b8c55602b2063ae"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.КСФ1137_1096_Прослеж.Template" id="f12af345-3a7b-4f4e-b378-8337f4fc33f0.0" configVersion="48635e3cf5aeab717910bc8c03296e0dcb4a39ed"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.КСФ1137_534" id="cd566e4c-71a2-4a66-a46a-e4e168bfa3a2" configVersion="2e3d44761c8fa96cf4b9839b8ac1c7fb05850823"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.КСФ1137_534.Template" id="cd566e4c-71a2-4a66-a46a-e4e168bfa3a2.0" configVersion="0540053fb5a9de5e96a82caef3e27b7d27b63bc2"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.КСФ1137_534_Прослеж" id="8066333d-fe0a-43fb-b4f3-695bcfda77c4" configVersion="32fc75afe210d6dad96126aa0c4f3d8ebe806ba2"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.КСФ1137_534_Прослеж.Template" id="8066333d-fe0a-43fb-b4f3-695bcfda77c4.0" configVersion="06db5849974640e5a904cd60223d310c31df1cd6"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.КодыРегионов" id="18cdb546-99e6-4ed7-b084-d53be29e4e90" configVersion="179e8d9d6c8818abb94077ee67f5a2ae1689aa1e"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.КодыРегионов.Template" id="18cdb546-99e6-4ed7-b084-d53be29e4e90.0" configVersion="4a60f27c9f35e900e092b0080c42e4e1d3d84c79"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.НадписьДокументЗашифрован" id="f6760488-9d7a-4966-ba54-a28521574797" configVersion="3ba687fee7e5e1fdd1db1f3ef4bddc708fa8735c"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.НадписьДокументЗашифрован.Template" id="f6760488-9d7a-4966-ba54-a28521574797.0" configVersion="920f44289a783f3fe536f0791fd4ce1b909acb40"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.ОКВ" id="6a949bde-b5dc-435d-aae8-fb532479380b" configVersion="1d9927a1a0b707d3ab73313879ee138c94aa8f62"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.ОКВ.Template" id="6a949bde-b5dc-435d-aae8-fb532479380b.0" configVersion="2383ac8e27430ec87c1b449aef0bba94142bef6e"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.ОКЕИ" id="5842f8d3-2722-42a7-bc40-84ecfe0abaad" configVersion="44d6e69d40155efab4b6e5bca8cece7f5a87c66c"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.ОКЕИ.Template" id="5842f8d3-2722-42a7-bc40-84ecfe0abaad.0" configVersion="b7eeba2f2997a6fab1aada596c0c0051b3bb0094"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.ОКСМ" id="47beb55e-ff8e-4538-a257-042994ebb406" configVersion="4b4390d0205aefab5ff95406ff64615b15ed07f5"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.ОКСМ.Template" id="47beb55e-ff8e-4538-a257-042994ebb406.0" configVersion="628543d2a8bcff561e0416d3ff92dda5b9ae1254"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.ПФ_MXL_АктСверкиВзаиморасчетов" id="a2087c21-557a-4ab3-9dec-1882fc83c8ee" configVersion="795e0de087fab62da72c1a4ae625c32d18fdd713"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.ПФ_MXL_АктСверкиВзаиморасчетов.Template" id="a2087c21-557a-4ab3-9dec-1882fc83c8ee.0" configVersion="c39396a05c1fec5c1c07d8a0b81f030cd603539d"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.ПФ_MXL_ОшибкиФормированияПечатнойФормы" id="e2813d0e-ae2f-42d9-8905-6a171e281f36" configVersion="b02ca69c2be177c4108e306abb263b85258121fd"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.ПФ_MXL_ОшибкиФормированияПечатнойФормы.Template" id="e2813d0e-ae2f-42d9-8905-6a171e281f36.0" configVersion="0e2396ea5bef3da5a15685b2564709f4b87d3dff"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.ПФ_MXL_ПечатнаяФормаОтсутствует" id="0a322304-686d-4a11-b62a-484ea7563a3a" configVersion="8d75b809745a3ca0bc4f1dbb97a4c84ad50a7c43"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.ПФ_MXL_ПечатнаяФормаОтсутствует.Template" id="0a322304-686d-4a11-b62a-484ea7563a3a.0" configVersion="3528ddb34f7dd99321b9ae9a6c933485845ced29"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.ПФ_MXL_СчетНаОплату" id="be2092bd-b3d4-44b2-8fc2-216f7df2ffbb" configVersion="60fc31c099a16b643ed79facdc79ae44f3c8033d"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.ПФ_MXL_СчетНаОплату.Template" id="be2092bd-b3d4-44b2-8fc2-216f7df2ffbb.0" configVersion="710ed391ab261faa44c9a27bab330595f1209b4e"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.СФ1137" id="41c0f389-373d-4921-ad7b-f6e74ad0bc95" configVersion="dd1e2a99db15140ae4b0eec4094e3f9480013b2e"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.СФ1137.Template" id="41c0f389-373d-4921-ad7b-f6e74ad0bc95.0" configVersion="600585466cf750bb9ce514a7e2defb237f3c9434"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.СФ1137_1096_Прослеж" id="3d2e463b-0989-46ee-bf4d-0100ff4f22c4" configVersion="1cd89417f9645c3f09773e78f42191721a050ad5"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.СФ1137_1096_Прослеж.Template" id="3d2e463b-0989-46ee-bf4d-0100ff4f22c4.0" configVersion="44ed7159a161d020886ff72b82d806521793a2eb"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.СФ1137_534" id="9fea92c5-7d69-431e-a580-837e780ca96f" configVersion="7329bf1ed229f082538aeb6569f7198af65be95a"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.СФ1137_534.Template" id="9fea92c5-7d69-431e-a580-837e780ca96f.0" configVersion="f99cd1df4362bd79d4055c46e6534f08ac9051d0"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.СФ1137_534_Прослеж" id="2f25628f-48aa-48c6-9262-dfdadfd26f18" configVersion="c82ee914401fc5c040c6b2c8b89ca3396c7398d2"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.СФ1137_534_Прослеж.Template" id="2f25628f-48aa-48c6-9262-dfdadfd26f18.0" configVersion="43b8fa89a1ce18a32ea26b2dda70d58a68994496"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.СчетНаОплату_29" id="3cb1e705-d906-4b85-b41e-7e4fb927c052" configVersion="b15628fd8cf6be31d55ff2b785f155082d070e21"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.СчетНаОплату_29.Template" id="3cb1e705-d906-4b85-b41e-7e4fb927c052.0" configVersion="ceef84e20efb80b7826717f04718fe9e7c17dba5"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.ТОРГ12" id="c663a280-b029-44d8-8fa7-0c420f7c44a1" configVersion="af81b9fdcc2fdfaade08fe1064b2f5fee7c4b99b"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.ТОРГ12.Template" id="c663a280-b029-44d8-8fa7-0c420f7c44a1.0" configVersion="a5994bcc9aeed80b848655efd3916acff93892ef"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.УКД" id="145cdbd6-12e7-465e-a627-27c06326de80" configVersion="34e05039f67e36291d1bcc3eda2195e476ccaed2"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.УКД.Template" id="145cdbd6-12e7-465e-a627-27c06326de80.0" configVersion="85d3233a6e7a544f7ecb0c3c32da346e0940df90"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.УКД_1096_Прослеж" id="3727b66f-0b1e-4f17-ad27-52c0a33f9804" configVersion="d54c698a20e5f6113097edb1e731baeae3f11bfe"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.УКД_1096_Прослеж.Template" id="3727b66f-0b1e-4f17-ad27-52c0a33f9804.0" configVersion="bcea32d16952a1738ce5b601d9279517a09cf2f7"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.УКД_534" id="2eabc9e5-c6ff-4fff-9bd3-f1b147eda09a" configVersion="1d4a349a88d05c1e255abd0038142b88e3f93bf3"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.УКД_534.Template" id="2eabc9e5-c6ff-4fff-9bd3-f1b147eda09a.0" configVersion="6229deaf01a3f42debcbb719f4e8f0846c982966"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.УКД_534_Прослеж" id="0075f835-58db-46df-9df6-11c05a5652c4" configVersion="2a1c1d8289226ec70eeb6a74767d42cfdb76871e"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.УКД_534_Прослеж.Template" id="0075f835-58db-46df-9df6-11c05a5652c4.0" configVersion="517c68ceaf9b0179f52acba6bf8af2af7c6da8c7"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.УПД" id="0f5cc909-a7a5-41eb-afb1-d95b95efc4fd" configVersion="251db0ccca7369891c951e9d283e926e970c86aa"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.УПД.Template" id="0f5cc909-a7a5-41eb-afb1-d95b95efc4fd.0" configVersion="12aef04bfe86a4ebb0a661e51602bd7c51934db4"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.УПД_1096_Прослеж" id="0bb5fd0d-26d0-4254-8525-a13ee7c2410b" configVersion="2b4ecb234f479204c566cf31925d1ae713c6fa3e"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.УПД_1096_Прослеж.Template" id="0bb5fd0d-26d0-4254-8525-a13ee7c2410b.0" configVersion="364ad09527c8e8dea35e296b850e3c9affd7443d"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.УПД_534" id="200bca24-fcce-4906-96f5-c3d4417e27ce" configVersion="a344a4fb8a96cceb48af0665034d7fac79eac0bc"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.УПД_534.Template" id="200bca24-fcce-4906-96f5-c3d4417e27ce.0" configVersion="bec99909115774a524f27e6cdb414e754575c730"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.УПД_534_Прослеж" id="1b83e103-38ce-4697-a588-11ebee8320b8" configVersion="33a79eb36f6ef3b276a9eb98467a84f97d607eb3"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.УПД_534_Прослеж.Template" id="1b83e103-38ce-4697-a588-11ebee8320b8.0" configVersion="e5286a0c4e0e7411ccd7627d166001ec2e9c1380"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.Штампы" id="73ab11ea-744c-4a8d-8075-4d508f65a510" configVersion="4e251732518d7436efe1851d180ec9c3f4487bd1"/>
+		<Metadata name="DataProcessor.КонтурДиадокПечатныеФормы.Template.Штампы.Template" id="73ab11ea-744c-4a8d-8075-4d508f65a510.0" configVersion="5a0a5c99f270f1072a8027280f0c527b1a7405c2"/>
+		<Metadata name="DataProcessor.КонтурДиадокПлагин1С" id="c5cdccf8-5553-42da-960b-9527ef5d47ee" configVersion="c8de81cd05956ff74290b2f41f6f448aded9754c"/>
+		<Metadata name="DataProcessor.КонтурДиадокПлагин1С.Form.КлиентскиеВызовы" id="0ed7bc90-3cf6-4810-aee9-d3d64f062998" configVersion="3389011ba3c33dca98e57560480ba986213a27d9"/>
+		<Metadata name="DataProcessor.КонтурДиадокПлагин1С.Form.КлиентскиеВызовы.Form" id="0ed7bc90-3cf6-4810-aee9-d3d64f062998.0" configVersion="ed72a63e8416286070a58b72cd13b16d26c9a57c"/>
+		<Metadata name="DataProcessor.КонтурДиадокПлагин1С.Form.ФормаОтладки" id="0c57f5c3-537e-47c3-82b6-1824ad44a801" configVersion="9c56c724ecca633dacb3760a51fb1feff3768e52"/>
+		<Metadata name="DataProcessor.КонтурДиадокПлагин1С.Form.ФормаОтладки.Form" id="0c57f5c3-537e-47c3-82b6-1824ad44a801.0" configVersion="d68aff76b750bb7c66b9937db4f9c4286e442946"/>
+		<Metadata name="DataProcessor.КонтурДиадокПлагин1С.Form.ФормаОтладкиУправляемая" id="01213894-11fa-480e-868c-2490d2060015" configVersion="d9b038e453a7b885a4352c2ba05b93d73bc67170"/>
+		<Metadata name="DataProcessor.КонтурДиадокПлагин1С.Form.ФормаОтладкиУправляемая.Form" id="01213894-11fa-480e-868c-2490d2060015.0" configVersion="2d594f899880c4a4874aedf8ab9121cdf0c2d382"/>
+		<Metadata name="DataProcessor.КонтурДиадокПлагин1С.ObjectModule" id="c5cdccf8-5553-42da-960b-9527ef5d47ee.0" configVersion="ff93452d4c9ad4c648dcbd97e9103d724049b1a9"/>
+		<Metadata name="DataProcessor.КонтурДиадокПлагин1С.Template.Plugin" id="26852d1f-4e6a-47eb-9fb4-7840a9368652" configVersion="7fb55ad342897e7ad3413eec400e7e0ebbf966d3"/>
+		<Metadata name="DataProcessor.КонтурДиадокПлагин1С.Template.Plugin.Template" id="26852d1f-4e6a-47eb-9fb4-7840a9368652.0" configVersion="ed1a735037e018824d1c2164f7e8baf80b923434"/>
+		<Metadata name="DataProcessor.КонтурДиадокПлагины" id="1b839e52-206d-4787-9904-660c78070db2" configVersion="35e0eb7a96419892ae0f9689819be7d97deb141b"/>
+		<Metadata name="DataProcessor.КонтурДиадокПлагины.Form.МодульКлиента" id="91820cf6-3a84-4460-8f9e-127c90c34049" configVersion="3d457130c0ff32fe3dd2c933fb90a3e2fdc2fd6a"/>
+		<Metadata name="DataProcessor.КонтурДиадокПлагины.Form.МодульКлиента.Form" id="91820cf6-3a84-4460-8f9e-127c90c34049.0" configVersion="73ece211e88c99b0545887a0a55af6bbc4c825f2"/>
+		<Metadata name="DataProcessor.КонтурДиадокПлагины.Form.Форма" id="ef7758af-8080-4f21-b5f1-0a96e5af5ef3" configVersion="2bab3d4f1b111922692eb42ebc4ff32ab082c8d3"/>
+		<Metadata name="DataProcessor.КонтурДиадокПлагины.Form.Форма.Form" id="ef7758af-8080-4f21-b5f1-0a96e5af5ef3.0" configVersion="1b1ebb019beb6ea29b0d31287c77bd3613869645"/>
+		<Metadata name="DataProcessor.КонтурДиадокПлагины.Form.Форма_БиблиотекаПлагинов" id="2f11fbd1-0c6c-4f2b-a00f-75dfad7f279b" configVersion="2a99f7d80f155a3676ccb2a8fcdf0b4a9a5361cf"/>
+		<Metadata name="DataProcessor.КонтурДиадокПлагины.Form.Форма_БиблиотекаПлагинов.Form" id="2f11fbd1-0c6c-4f2b-a00f-75dfad7f279b.0" configVersion="56b1497863c18f2c480970e122c37b0fefec3367"/>
+		<Metadata name="DataProcessor.КонтурДиадокПлагины.Form.Форма_БиблиотекаПлагинов_Обычная" id="d057699a-8035-4f55-a7b5-617b2711c2e8" configVersion="bc14735c7105496ebfa01a14d72b6ade6bd53bdf"/>
+		<Metadata name="DataProcessor.КонтурДиадокПлагины.Form.Форма_БиблиотекаПлагинов_Обычная.Form" id="d057699a-8035-4f55-a7b5-617b2711c2e8.0" configVersion="865a1388f6e1b77add03ed9db73afed2f7ac70dd"/>
+		<Metadata name="DataProcessor.КонтурДиадокПлагины.Form.Форма_Обычная" id="d28762b6-52ba-4f5f-8dea-a80645fe4ec5" configVersion="5b72807aac675292878c530369025921b8f42ba0"/>
+		<Metadata name="DataProcessor.КонтурДиадокПлагины.Form.Форма_Обычная.Form" id="d28762b6-52ba-4f5f-8dea-a80645fe4ec5.0" configVersion="d56f75ea1737c2c645064c65f77c2038127ec6d0"/>
+		<Metadata name="DataProcessor.КонтурДиадокПлагины.ObjectModule" id="1b839e52-206d-4787-9904-660c78070db2.0" configVersion="0baf09d7e2561fc22a257c945b97f03e7bbe1c3d"/>
+		<Metadata name="DataProcessor.КонтурДиадокРаботаСЛогистикой" id="a9843f04-d2e2-4070-8724-b4ae910a90f7" configVersion="ccca761eb77e329f1156b36d02e2acc9fefde09c"/>
+		<Metadata name="DataProcessor.КонтурДиадокРаботаСЛогистикой.Form.КлиентскиеВызовы" id="e02bd3a9-a738-42fd-8789-e484553309ec" configVersion="f7781daae6f76039af1598dd79c18cc5d4190715"/>
+		<Metadata name="DataProcessor.КонтурДиадокРаботаСЛогистикой.Form.КлиентскиеВызовы.Form" id="e02bd3a9-a738-42fd-8789-e484553309ec.0" configVersion="96b2d311bf4d7d6dfba2dc1437d105a114afa5c5"/>
+		<Metadata name="DataProcessor.КонтурДиадокРаботаСЛогистикой.ObjectModule" id="a9843f04-d2e2-4070-8724-b4ae910a90f7.0" configVersion="3f85c9c9c280b6b765dcc6faadb12890de680f49"/>
+		<Metadata name="DataProcessor.КонтурДиадокРаботаСМаркировкой" id="12f4108d-af70-4ebe-8d9b-2381e5e50354" configVersion="09427b0452b80ef3b9b371e27c496b0c292189f7"/>
+		<Metadata name="DataProcessor.КонтурДиадокРаботаСМаркировкой.ObjectModule" id="12f4108d-af70-4ebe-8d9b-2381e5e50354.0" configVersion="c5af2a8abc5e4a30c56b17b7a72a0a20a7d47b89"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтандартУФ" id="7a97afea-35d3-4374-bd20-e668d63520f4" configVersion="7d2e2bf09e218197313bb4bfa1b662ab18cab8e9">
+			<Metadata name="DataProcessor.КонтурДиадокСтандартУФ.Attribute.ПараметрыКлиентСервер" id="9e9801f3-5837-4c7c-b075-defdbb62a440"/>
+		</Metadata>
+		<Metadata name="DataProcessor.КонтурДиадокСтандартУФ.ObjectModule" id="7a97afea-35d3-4374-bd20-e668d63520f4.0" configVersion="1eccaa6193167a896babfeb539f038d184578c34"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтандартУФ.Template.АктСверкиВзаиморасчетов" id="7886db7b-9d79-44fe-9479-fe4f95ce9639" configVersion="f6eeaec1947d6216f23e00c89263a654032e2f86"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтандартУФ.Template.АктСверкиВзаиморасчетов.Template" id="7886db7b-9d79-44fe-9479-fe4f95ce9639.0" configVersion="4ea5c2d52fae828a81919e406eb11b664b3bdb5b"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтандартУФ.Template.Модуль_ИнтеграцияАльфаАвто6" id="aa22e999-3efe-49e5-a315-2b12fd079fa7" configVersion="6e94d90f245eca4dc5fe787327080fec43aae321"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтандартУФ.Template.Модуль_ИнтеграцияАльфаАвто6.Template" id="aa22e999-3efe-49e5-a315-2b12fd079fa7.0" configVersion="0876bb6cec4e6f0abf3a6c169db6bb77157fe702"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтандартУФ.Template.Модуль_ИнтеграцияБГУ20" id="faf85bcc-323a-4d53-b596-9acc2ab49856" configVersion="975e6f7e91b28e79ac4d977102b930714edb0ae0"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтандартУФ.Template.Модуль_ИнтеграцияБГУ20.Template" id="faf85bcc-323a-4d53-b596-9acc2ab49856.0" configVersion="53dfc49d5173d66f1ad19ac1e61a04fbe44e1441"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтандартУФ.Template.Модуль_ИнтеграцияБП30" id="6c2c5dfe-19ba-4126-a0ba-80c8893cab37" configVersion="b349d0806da254762d98079311eaf2cb88a0a0d8"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтандартУФ.Template.Модуль_ИнтеграцияБП30.Template" id="6c2c5dfe-19ba-4126-a0ba-80c8893cab37.0" configVersion="521f1e7badef27b4e1f37c3bb2654074cc77dedd"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтандартУФ.Template.Модуль_ИнтеграцияРозница" id="412f1689-b855-45ec-9dad-29d1dff60743" configVersion="1e4a7a40ec4a2036f5036c70d403c6f4670d62da"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтандартУФ.Template.Модуль_ИнтеграцияРозница.Template" id="412f1689-b855-45ec-9dad-29d1dff60743.0" configVersion="1c5aa8aa322c8db03cb70003808d6c4945ef514a"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтандартУФ.Template.Модуль_ИнтеграцияУНФ16" id="31bcb55d-62cf-402d-824d-8b0b38768901" configVersion="3d5ab067273bf802a5dd5939dfca837a840c6f5b"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтандартУФ.Template.Модуль_ИнтеграцияУНФ16.Template" id="31bcb55d-62cf-402d-824d-8b0b38768901.0" configVersion="2402f9128b936b41d2829b962b0a5431e81de950"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтандартУФ.Template.Модуль_ИнтеграцияУТ11" id="bd336844-6a15-4640-bf86-852e6ee48f7c" configVersion="2d4f15e7b3b1183db1c1e0770fe70044cdfea2e9"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтандартУФ.Template.Модуль_ИнтеграцияУТ11.Template" id="bd336844-6a15-4640-bf86-852e6ee48f7c.0" configVersion="3a5d0235b524250bb54a13148412f09a8d2c262b"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтандартУФ.Template.Модуль_ИнтеграцияУниверсальный" id="51e501e3-c0d2-4462-a5a2-ceab3ffbb65d" configVersion="e9d951bf2304e8e4de57c14aa0f2d4ce7a6fa7f4"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтандартУФ.Template.Модуль_ИнтеграцияУниверсальный.Template" id="51e501e3-c0d2-4462-a5a2-ceab3ffbb65d.0" configVersion="b4049791486dcda1e4a6f3ca0a564fced000ed89"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтандартУФ.Template.СчетНаОплату" id="eb3c3117-fcc0-4b77-a909-db2e067ddfb5" configVersion="fe308145e1238503ed6f75dfdb45e6f048872eee"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтандартУФ.Template.СчетНаОплату.Template" id="eb3c3117-fcc0-4b77-a909-db2e067ddfb5.0" configVersion="41676ae1986c19634e52f554fb0e431f9e220d28"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтандартУФ_Модуль_ИнтеграцияУТ11" id="91977617-751b-4b78-ab62-015b2adfdd3b" configVersion="507756449392a4247e43c86dde81811cace48ec2"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтандартУФ_Модуль_ИнтеграцияУТ11.ObjectModule" id="91977617-751b-4b78-ab62-015b2adfdd3b.0" configVersion="6b2dc66b58bc545de4cd17c026a7571c66e849bd"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтандартУФ_Модуль_ИнтеграцияУниверсальный" id="dc53c1f9-f245-48d8-a664-ace5d5a3b7dd" configVersion="0c62dd4bdf67ec6066747aaf25815b2213da3c4e"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтандартУФ_Модуль_ИнтеграцияУниверсальный.ObjectModule" id="dc53c1f9-f245-48d8-a664-ace5d5a3b7dd.0" configVersion="1cd6996cd46fce1eb468585e3ceba889df3ecb69"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтд" id="0ee7c344-d589-40d2-acbc-dccc032a9cf5" configVersion="8ad26e5e102d8171fd957d3485286cfd5a938172"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтд.Form.Клиент" id="add4b20f-3f44-4358-9731-89bdf9873287" configVersion="f652aa266dcb9cb138d309aacb7de22a50b12d4f"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтд.Form.Клиент.Form" id="add4b20f-3f44-4358-9731-89bdf9873287.0" configVersion="6a7c91e0d1a2d3fef32657b5ace62b57acccf600"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдJSON" id="51a69a32-2480-4e94-9a6a-f2cbeb638443" configVersion="68b74b213d125061ed1e26e61c93a8d6f83ae848"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдJSON.Form.Клиент" id="2fb87642-4522-45c1-88ad-4834648c3ae6" configVersion="105323efc31a37ec5d76124d870c9ee987c64eda"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдJSON.Form.Клиент.Form" id="2fb87642-4522-45c1-88ad-4834648c3ae6.0" configVersion="174429855e2cb9caf2a89c17114aca26cf724f3e"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдJSON.ObjectModule" id="51a69a32-2480-4e94-9a6a-f2cbeb638443.0" configVersion="b30ed0ebcd2b1907dadd0b3cdaa6046313dffeb8"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдДиалоги" id="5940404a-a939-453b-bf76-764c53e768de" configVersion="adf3f22236cd1a811aad65b448adab2016f9f881"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдДиалоги.Form.Клиент" id="4e4ff2d0-a4ee-452a-a3ee-97f56e1030ce" configVersion="154c25210c8fd9883ee0fa910874a0136b095200"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдДиалоги.Form.Клиент.Form" id="4e4ff2d0-a4ee-452a-a3ee-97f56e1030ce.0" configVersion="38c6f97ee429bcbc1308301fed0570e2dedb6837"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдДиалоги.Form.КлиентСлужебный83" id="1e9f9739-ba35-4d1c-a61b-7c59f11ba79d" configVersion="977d72b304ae1e1f98124d1668590e9e57529d0e"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдДиалоги.Form.КлиентСлужебный83.Form" id="1e9f9739-ba35-4d1c-a61b-7c59f11ba79d.0" configVersion="61adcdcbec14b85e34f41bc5541378ba76848564"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдКоллекции" id="07f01371-373a-4d9b-9b0c-2291f0bc6099" configVersion="76de5816161ea6e0d9e51f98d559e6fbeda5ba8a"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдКоллекции.Form.Клиент" id="becca787-67ff-4cd3-aaf1-bc7fa351687a" configVersion="4a6345ef8ec749f415ae6a2cd0d268ff9f1c9c94"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдКоллекции.Form.Клиент.Form" id="becca787-67ff-4cd3-aaf1-bc7fa351687a.0" configVersion="2dc64b26dbe6cfe2e49000ee8f8aeb0cc773804a"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдКоллекции.ObjectModule" id="07f01371-373a-4d9b-9b0c-2291f0bc6099.0" configVersion="22942cc04c79b0c3ca00eedb63be20d47eee7a7f"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдОС" id="74c2866f-97d1-4e3f-9b37-db1cc56598ca" configVersion="0eff42e3de2a5ead86a2009c322e7bb2add43bfd"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдОС.Form.Клиент" id="e5c8bf8f-5eca-4851-a55b-f98221c4d855" configVersion="b7bec2d22b64ec19a52f6995dcfbce4cf5ee8aa9"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдОС.Form.Клиент.Form" id="e5c8bf8f-5eca-4851-a55b-f98221c4d855.0" configVersion="da00f468859060110dead44cc2713980067bbc33"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдОС.ObjectModule" id="74c2866f-97d1-4e3f-9b37-db1cc56598ca.0" configVersion="e6debc32a3b690a27bdea5ca39006a8ca0feccf6"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдОбщегоНазначения" id="0395a7ee-4b1a-4424-a3bd-78bb1878c4b5" configVersion="f1a390868bbbc3f24ca792efe845cc7002c7fb7b"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдОбщегоНазначения.Form.Клиент" id="9c5c7a94-9ea0-4f57-9819-d9f9b400bdf8" configVersion="a69792d0828852df30beaf5beded64283d714716"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдОбщегоНазначения.Form.Клиент.Form" id="9c5c7a94-9ea0-4f57-9819-d9f9b400bdf8.0" configVersion="98de6e423da6b28e482ccd5cd237e4b6d569905e"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдОбщегоНазначения.Form.Клиент83" id="5485e94d-6baf-429c-9d84-ec2c01ec8433" configVersion="f96df8ebd62a58baf9deba6fc202658d9e057ffb"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдОбщегоНазначения.Form.Клиент83.Form" id="5485e94d-6baf-429c-9d84-ec2c01ec8433.0" configVersion="92cc85b1d172cd3bf4826857fc0a3721d509e668"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдОбщегоНазначения.ObjectModule" id="0395a7ee-4b1a-4424-a3bd-78bb1878c4b5.0" configVersion="4d73c6e8b929ed3771e77fed784b98cd6d4a0f50"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдСтр" id="5671c907-88d3-43b5-9dbc-d964f80b0360" configVersion="4ce0979e9a8d1b003c53f139cbaab8d78c213f7b"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдСтр.Form.Клиент" id="ede5bf6b-e5b4-43f6-bfe9-04eedaa8f782" configVersion="5913cbfbd3612e70c36a907e7b77baf3b5c6cd61"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдСтр.Form.Клиент.Form" id="ede5bf6b-e5b4-43f6-bfe9-04eedaa8f782.0" configVersion="9450cc3a0b4de4f05f3991ccd1730ea48d1d05cf"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдСтр.ObjectModule" id="5671c907-88d3-43b5-9dbc-d964f80b0360.0" configVersion="3dcb422deef2a02c4d51bbba8a3d09fea36d838c"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдСтрСлужебный83" id="25869b98-d3ff-42ef-a5b1-8169c8355c1e" configVersion="4db6a5c91290603b2c23edec126d3d27a342480d"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдСтрСлужебный83.Form.Клиент" id="e11ab4c1-14e0-435a-81b7-adb1394f7de4" configVersion="99d15a4afa32b3295d2ad577cd24d6bde8a2a875"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдСтрСлужебный83.Form.Клиент.Form" id="e11ab4c1-14e0-435a-81b7-adb1394f7de4.0" configVersion="090a8a99dde6023194ef578399b98251cb3e79e3"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдСтрСлужебный83.ObjectModule" id="25869b98-d3ff-42ef-a5b1-8169c8355c1e.0" configVersion="29cf5b47c4e84a681acb87e337ade9bc1fda1b16"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдФС" id="28c36e0e-3418-4a07-bd92-6a0cc53a8f81" configVersion="890c30ce9a72785c97ff59844a2f805ee148a74c"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдФС.Form.Клиент" id="3cca9351-2819-4fbd-9a6f-5264f8c35d2b" configVersion="4851387b578198d40a9a673c3282106ff1857e68"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдФС.Form.Клиент.Form" id="3cca9351-2819-4fbd-9a6f-5264f8c35d2b.0" configVersion="ef2850b80113bf6d959b6cd5f29e21f078fd69ee"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдФС.Form.КлиентСлужебный" id="8e504e99-d7aa-4e08-a655-3bcdba7c1db0" configVersion="e4e521bc1b6698e9020339da1fb2ec64a039823e"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдФС.Form.КлиентСлужебный.Form" id="8e504e99-d7aa-4e08-a655-3bcdba7c1db0.0" configVersion="b8a774d96895d56893b5a26ca5683f2191c91992"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдФС.Form.КлиентСлужебный83" id="2c5710ca-8c08-4a10-a75e-21c6e1c89da4" configVersion="9ffed4f8ddd37c5f82780841cbf1418253c51658"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдФС.Form.КлиентСлужебный83.Form" id="2c5710ca-8c08-4a10-a75e-21c6e1c89da4.0" configVersion="6549b66850f1c277dc621ba22a3f124116413858"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдФС.Form.КлиентСлужебный8315" id="bf25114a-97e1-455d-9923-db790a0805a3" configVersion="59e894d315db5f99c376b3cf9b93d089f05aae07"/>
+		<Metadata name="DataProcessor.КонтурДиадокСтдФС.Form.КлиентСлужебный8315.Form" id="bf25114a-97e1-455d-9923-db790a0805a3.0" configVersion="8aed6db2945c25749ec23d4ade9ca75342d32a92"/>
+		<Metadata name="DataProcessor.КонтурДиадокХранениеДанных" id="74835fc7-0fbc-4603-bfca-26f62f0f1883" configVersion="f9274d4cd32835781fc8be96c5b28fd13040e338"/>
+		<Metadata name="DataProcessor.КонтурДиадокХранениеДанных.ObjectModule" id="74835fc7-0fbc-4603-bfca-26f62f0f1883.0" configVersion="d05d334ab1a15bde13bd1ad350f8657cf74c677f"/>
+		<Metadata name="DataProcessor.КонтурДиадокХранениеДанных.Template.ТаблицаПерекодировки" id="e13503e0-105c-449a-8cc7-f9d40c2eb738" configVersion="be584e6f68358a6f3199e127b72eafe706f12b7e"/>
+		<Metadata name="DataProcessor.КонтурДиадокХранениеДанных.Template.ТаблицаПерекодировки.Template" id="e13503e0-105c-449a-8cc7-f9d40c2eb738.0" configVersion="fd53d0f3f5bcddb77c1fb561e8bfecd1096bb4ee"/>
+		<Metadata name="DataProcessor.КонтурДиадокЦентрПоддержки" id="bc39fd13-8601-4120-a03e-696f0d1a57e1" configVersion="33dec5019ce2b3f308b90d8e6a4f50300436e02f"/>
+		<Metadata name="DataProcessor.КонтурДиадокЦентрПоддержки.Form._____________Модули" id="8aa95481-79cb-436d-b783-ab4290c5debb" configVersion="e6c19a8f9045669923aedbe422619d317fe833d8"/>
+		<Metadata name="DataProcessor.КонтурДиадокЦентрПоддержки.Form._____________Модули.Form" id="8aa95481-79cb-436d-b783-ab4290c5debb.0" configVersion="110e0f878da899d79f8406abb318a8854c88e943"/>
+		<Metadata name="DataProcessor.КонтурДиадокЦентрПоддержки.Form.Форма" id="a5601f3d-a7b2-413b-8928-9a62a3496f82" configVersion="4103fa12f82b1cc0a1b76eb53aa1cf76c5223b69"/>
+		<Metadata name="DataProcessor.КонтурДиадокЦентрПоддержки.Form.Форма.Form" id="a5601f3d-a7b2-413b-8928-9a62a3496f82.0" configVersion="ee6cb5b5e05ad3fed120cadc5a129c7671074df9"/>
+		<Metadata name="DataProcessor.КонтурДиадокЦентрПоддержки.Form.Форма_Обычная" id="f3ddcdc2-851f-43c3-b25e-8f6ff88e69dd" configVersion="37bb5f0e2c2594129141ab49bf0f0d1079827a84"/>
+		<Metadata name="DataProcessor.КонтурДиадокЦентрПоддержки.Form.Форма_Обычная.Form" id="f3ddcdc2-851f-43c3-b25e-8f6ff88e69dd.0" configVersion="aec3dbe2f0b55df825db0a6b6d1a3e5c31806df7"/>
+		<Metadata name="DataProcessor.КонтурДиадокЦентрПоддержки.Form.ЦП_ОбщиеМодули" id="24a4b203-bfef-46a7-8df3-9800528d12a9" configVersion="724b99b45de847867d9d45e857cbc9acc4fc1074"/>
+		<Metadata name="DataProcessor.КонтурДиадокЦентрПоддержки.Form.ЦП_ОбщиеМодули.Form" id="24a4b203-bfef-46a7-8df3-9800528d12a9.0" configVersion="ff0729fa193a050593713176dcd411a1362267da"/>
+		<Metadata name="DataProcessor.КонтурДиадокЦентрПоддержки.Form.ЦП_Сервис" id="068f4b23-9ec7-4e05-a7e0-25ebad657265" configVersion="e497e26bed09206eaace05c5c89882f6177485ce"/>
+		<Metadata name="DataProcessor.КонтурДиадокЦентрПоддержки.Form.ЦП_Сервис.Form" id="068f4b23-9ec7-4e05-a7e0-25ebad657265.0" configVersion="b46fbbf0fc82fa1f4abbda68c9bde59810405829"/>
+		<Metadata name="DataProcessor.КонтурДиадокЦентрПоддержки.Form.ЦП_Сервис_ОФ" id="953eac25-6a25-478e-9851-3b660f921143" configVersion="a6d676f84238cdfeeb8bee61515b378dbfb8d726"/>
+		<Metadata name="DataProcessor.КонтурДиадокЦентрПоддержки.Form.ЦП_Сервис_ОФ.Form" id="953eac25-6a25-478e-9851-3b660f921143.0" configVersion="114189b46954a8bb2c528056c4f3748907d5257d"/>
+		<Metadata name="DataProcessor.КонтурДиадокЦентрПоддержки.ObjectModule" id="bc39fd13-8601-4120-a03e-696f0d1a57e1.0" configVersion="90100f9c704bd173d59b345ca1a073807ad779c0"/>
+		<Metadata name="DataProcessor.КонтурДиадокШлюзАвторизации" id="c00be400-0c44-4e8e-99ed-5e2d307342a5" configVersion="078cd2369881ac3bc92c4f85391621a3ffce27a5">
+			<Metadata name="DataProcessor.КонтурДиадокШлюзАвторизации.Attribute.___HTTP" id="a028e062-3c69-416d-acab-74c63654254e"/>
+		</Metadata>
+		<Metadata name="DataProcessor.КонтурДиадокШлюзАвторизации.ObjectModule" id="c00be400-0c44-4e8e-99ed-5e2d307342a5.0" configVersion="d3a1deb106f44ab4148cb9acea6dbdd258484666"/>
+		<Metadata name="DataProcessor.КонтурДиадокЭмуляторТабДокумента" id="32a7b934-7be9-464d-aa6e-c4fbfced3690" configVersion="d8134d12ceae66dca8e01172a4ec5b00be5c0f90">
+			<Metadata name="DataProcessor.КонтурДиадокЭмуляторТабДокумента.Attribute.ТочностьПечати" id="1415511e-9ea2-4efe-abd3-f2af959dabef"/>
+			<Metadata name="DataProcessor.КонтурДиадокЭмуляторТабДокумента.Attribute.ИспользуемоеИмяФайла" id="9b378b23-fbea-4ad0-b1a5-4fdef671f4d4"/>
+			<Metadata name="DataProcessor.КонтурДиадокЭмуляторТабДокумента.Attribute.ОриентацияСтраницы" id="bdb8cff6-10ea-4313-b9f3-5d9b5f18068b"/>
+		</Metadata>
+		<Metadata name="DataProcessor.КонтурДиадокЭмуляторТабДокумента.ObjectModule" id="32a7b934-7be9-464d-aa6e-c4fbfced3690.0" configVersion="27f6a575cf2cf913b07011e4c9e37b74be267c84"/>
+		<Metadata name="DataProcessor.КонтурДиадокЯдро" id="5fad6e3b-4c44-45ed-8d0f-0ed6461547f9" configVersion="1f979bcd80b4f5dd778748bda6423ea25097702c">
+			<Metadata name="DataProcessor.КонтурДиадокЯдро.Attribute.ОбщийКонтекстКлиентСервер" id="3f82f856-897a-449c-b1e7-b372d665574b"/>
+		</Metadata>
+		<Metadata name="DataProcessor.КонтурДиадокЯдро.Form.КлиентскиеВызовы" id="0ec6ee0b-b416-4597-a762-ada6c0432e90" configVersion="53f6cf0b91b6af56a48b5928fea948497b88666f"/>
+		<Metadata name="DataProcessor.КонтурДиадокЯдро.Form.КлиентскиеВызовы.Form" id="0ec6ee0b-b416-4597-a762-ada6c0432e90.0" configVersion="51820966000eb2c9cce3f22e7d5156e28c2999e0"/>
+		<Metadata name="DataProcessor.КонтурДиадокЯдро.ObjectModule" id="5fad6e3b-4c44-45ed-8d0f-0ed6461547f9.0" configVersion="385fc20355ecf9b7486df59c958e6b01dba58d46"/>
+		<Metadata name="DataProcessor.КонтурЭДО" id="857ef796-7153-444d-8e29-2ab2fa20b1c8" configVersion="94ede1de8a3978767a3bc9906c2f8e3b4c6add19">
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ВидЭлДокументаID" id="017ec735-5824-4643-865e-a0b3528e07d4"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.LetterId" id="024bad82-1891-4070-8b10-79853668d911"/>
+			<Metadata name="DataProcessor.КонтурЭДО.Attribute.ОбщийКонтекстКлиентСервер" id="0427575c-24fa-4414-9d48-1b515ebf48f1"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ДатаДокумента" id="069b67f0-3569-49ce-bd60-b0ffccf08020"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ПодразделениеПолучатель" id="0d0f0a16-89a0-4c70-8156-c7cbb4f11807"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ДополнительныйСтатус" id="1327865a-a7a4-4ce4-871c-a3e58278842e"/>
+			<Metadata name="DataProcessor.КонтурЭДО.Attribute.АдресаСКДОтбора" id="19b2c11c-1c6e-41d7-9094-e60231a559c2"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.Шаблон" id="2326f154-9128-4d4e-8dff-33073bbcb816"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ВидПакета" id="25f3bbfa-008f-4b05-8687-1734b5f12f7d"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.СтатусПКФНСКритичность" id="2ac1a3a2-b811-4bbc-aa55-08f5d4e74a91"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.СтатусМЧДКритичность" id="2b40b07f-8bd3-49e5-87b2-3f31c8c894e5"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ДействиеВ1С" id="2dac4847-35bf-409c-aa91-fa76f3cd8fbd"/>
+			<Metadata name="DataProcessor.КонтурЭДО.Attribute.ПараметрыКлиентСерверМетрика" id="30a737f6-072e-440b-953c-3a5a86bcdb88"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ПодразделениеОтправитель" id="33b39b4f-09ea-45a8-a292-78605d2359ce"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ДанныеДокумента" id="37393f6a-6076-4b9c-85e3-5f02acf39284"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ОбъектМаршрутизации" id="46a755dd-40cb-42cf-b290-0d5045e79474"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ДопРеквизит3" id="47be0fda-4eef-421b-b39c-5d0db8101c84"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.СуммыДокументовПакета" id="494fae3e-eaf3-4acd-b582-9bb3ab9f0535"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ВидПакетаID" id="4b8158e0-2841-40af-8184-d161714ca397"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ДопРеквизит5" id="4d42383e-ac65-4add-9007-6485d75c9d0e"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.Архивный" id="5232968a-46c2-4247-92ba-a5ded60111a4"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ИндексИконкиПакета" id="56d91450-4e6e-490a-b167-d08f5ee97496"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.Направление" id="5abbba27-d913-424e-a0d9-6987655dd259"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ТипКонтента" id="5db7beb6-a9e4-4456-896f-60793b23dabf"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ДатаОтправки" id="603444db-233a-4eda-b370-b1db04eec601"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ДатыДокументовПакета" id="60a270be-f37a-4298-ad29-7d787aea81ee"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.НомераДокументовПакета" id="6144ef60-a1cd-487b-a6f3-9c8fce360485"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.СтатусМЧД" id="64c92f63-cfde-449a-9a3f-425eb54385fd"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ДействиеВДД" id="6569acd7-9c35-4711-92d1-89fee44a96b3"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ПредставлениеКонтрагентаЭДО" id="65d1c42d-c6ba-40f5-81af-9a19af612524"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.Организация" id="65d8b676-b97e-434d-975a-195c5265c71e"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.DocumentId" id="6b3aa2f7-d0f2-407c-a2b3-90b8950cd5c9"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ОшибкиПроверкиТекстПакета" id="6c8a819b-7246-4ac0-aa46-1fe0f24f2ace"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.АнализПроведен" id="70795854-0a10-424d-b7d3-df5dd176f2aa"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ПредставлениеДокументаДиадок" id="752d8d02-cd21-4a84-be6d-30f180f06ff3"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.Контрагент" id="78361dae-f288-4e4c-8f8a-1c8b595a2e00"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ДопРеквизит2" id="78e60ce7-0cd3-4867-9f61-5b717e0a3b40"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.СуммаДокумента" id="7b0038d1-ddb2-40ea-8dac-ef4b96197dda"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.Статус" id="817e86ec-cb17-4fb3-b324-1f46e70b9df5"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.КлючОсновногоПакета" id="836130f1-3826-418d-94d5-1e6850a6c7f5"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.Ключ" id="85775d5b-dffa-417a-baab-0a61ee492409"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ТребуемоеДействие" id="895a48da-f233-45e7-9731-d639e1cdf26b"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.СодержимоеПакета" id="8f6ca9f1-1dc6-4063-8152-35ddb088d0a8"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.Подразделение" id="8fe5f7b7-58b9-494a-ba2d-02eeeb0632b7"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ВидЭлДокумента" id="9020dc9a-d8c1-4853-8da3-15ceceae107b"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ИмяФайла" id="908fb870-4d79-43bb-92f9-188842a618ef"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ДопРеквизит1" id="9a44f214-a950-4712-9d45-db3d330adb5b"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ИмяКартинки" id="9cd90990-1c30-44ef-9763-761173e467ff"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ТипДокумента" id="9de1b36b-0cb2-4a72-be74-fc0b59b4d8a4"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.НомерДокумента" id="9e5606a7-c485-4aa6-baab-621a59c7ed8b"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ВнешнийСтатус" id="9e587b87-af13-4fa5-bf75-939629b5ae6f"/>
+			<Metadata name="DataProcessor.КонтурЭДО.Attribute.КомпоновщикНастроекОтбора_Контрагенты" id="a39e3dd4-924e-4bc0-b663-2d149a2c117e"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.Пакет" id="a58efd1a-afe9-41f3-8f3e-3dbc16fa3734"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.Флажок" id="b086e5cb-3c66-4770-a3a0-e5ee8ad2ef78"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ДокументЭДО" id="b08f0c15-6f28-4261-9385-f306e1e5805f"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ДопРеквизит4" id="bf115283-db7d-49c0-b910-6b41b84912f1"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.СтатусТЭДО" id="c4006937-fccc-4077-bf77-f58e2c5602e2"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.Документ" id="c4204b3b-de40-4dc1-a70d-7331adbd9a06"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов" id="c5f87b34-98b5-4725-9d21-54d6e9ce2ace"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ТребуетсяРасшифровка" id="cde676d9-4632-438d-bacc-0f9ec3059720"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.СтатусПКФНС" id="dab5241d-4830-461d-a555-774aea0882d1"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.Метка" id="dfe33617-1328-4b5e-9ccf-cbc51975f4b6"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ДатаПолучения" id="e5a7fff2-3778-4736-b768-0a417ee9b922"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.Видимость" id="e62509e5-156e-4ab3-bebe-3fbb501edcd5"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ОшибкиПроверкиТекст" id="e79f5f8e-fcec-4c32-a610-0f28d0811655"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ЗаблокированныйПакет" id="ed2e5052-aa39-422f-a46f-08f184bddfad"/>
+			<Metadata name="DataProcessor.КонтурЭДО.Attribute.КомпоновщикНастроекОтбора" id="ee55d9c9-f305-4b9c-ba22-bdc8551eb9fb"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.ФункцияДокумента" id="f4994ead-ad62-4b96-b741-2f538a793fb1"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.BoxId" id="f81bad1a-c362-4a34-b5ae-d3e630a81eb8"/>
+			<Metadata name="DataProcessor.КонтурЭДО.TabularSection.СписокДокументов.Attribute.КоличествоДокументовПакета" id="f9169a6d-215a-4794-9310-423f739c2618"/>
+		</Metadata>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.________________СЕРВИСНЫЕ_ФОРМЫ______________" id="a9c65ce4-2a15-4350-a35d-828a6eaded6c" configVersion="70a5e4fe039242e23fbbc613b22fd459a55e6df4"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.________________СЕРВИСНЫЕ_ФОРМЫ______________.Form" id="a9c65ce4-2a15-4350-a35d-828a6eaded6c.0" configVersion="c8f924ce752f21ffef650c230c8cd945b0c9f7f7"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form._______________ВРЕМЕННЫЕ_МОДУЛИ______________" id="61807072-58ac-4bad-ae85-55704eed76bd" configVersion="0ab5d7fa56c1b3a2efd995fa8cc4fa8077a135f8"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form._______________ВРЕМЕННЫЕ_МОДУЛИ______________.Form" id="61807072-58ac-4bad-ae85-55704eed76bd.0" configVersion="0bbfb70e8436986e2c735a02d18e32ff7b2eb5d8"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form._______________ФОРМЫ_СПРАВОЧНИКОВ___________" id="e017d60d-4bfa-48e6-a1ff-e7a5f5ba5c02" configVersion="26a9ec27383eec80a55a5fa155c2c2840d89ae44"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form._______________ФОРМЫ_СПРАВОЧНИКОВ___________.Form" id="e017d60d-4bfa-48e6-a1ff-e7a5f5ba5c02.0" configVersion="b234cfc01a0d74e3dc49ede3f0c3be10df34c22f"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Авторизация" id="7b9fcfc9-bd50-49e8-8069-afbefe67fdcf" configVersion="4472aca8cbfa6e778be0d65a9c7444bdfd3f15c1"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Авторизация.Form" id="7b9fcfc9-bd50-49e8-8069-afbefe67fdcf.0" configVersion="b30d584bba3e15fe665364586c1eeec015f9acce"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.АвторизацияУправляемая" id="94ad61f7-12ab-43ea-9010-927ff72419a8" configVersion="7640a7a43736f366d79116c4ec13ea43fddc44e5"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.АвторизацияУправляемая.Form" id="94ad61f7-12ab-43ea-9010-927ff72419a8.0" configVersion="509b0d81198b1ce2f00f7dacfc12750f5d912284"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.АутхКонфигурацияПриложенияУправляемая" id="6af111e5-fd48-4f44-8bc1-cb8226937978" configVersion="81aa2aa71f6b98b7516ddf43d3f32058bf26c14f"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.АутхКонфигурацияПриложенияУправляемая.Form" id="6af111e5-fd48-4f44-8bc1-cb8226937978.0" configVersion="aa1bfbabe4c051eb5b9c744c4b956ef539459708"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ГенерацияШаблонаКодаПМ" id="361d6d2c-2e1b-4cf7-9fb8-471e854013cb" configVersion="8f1afc4e7330ece621e3e64b2d65656540e636f6"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ГенерацияШаблонаКодаПМ.Form" id="361d6d2c-2e1b-4cf7-9fb8-471e854013cb.0" configVersion="320ad8bf08754a1c9b84698274c01afe16b1c7e3"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ГенерацияШаблонаКодаПМУправляемая" id="afc357da-c78b-46bb-9e03-c6a245f0da74" configVersion="577152a7bd802baf869664bfa8a44d315c7be5b9"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ГенерацияШаблонаКодаПМУправляемая.Form" id="afc357da-c78b-46bb-9e03-c6a245f0da74.0" configVersion="756ebb0650698f9999b050e6d7cb57e0de2e90e9"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Госключ_ФормаВводаСНИЛСOIDУправляемая" id="f68de268-4982-424a-85c7-ae3f5b13082c" configVersion="a5462c75ee73300818923cc9daabe6b631c28258"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Госключ_ФормаВводаСНИЛСOIDУправляемая.Form" id="f68de268-4982-424a-85c7-ae3f5b13082c.0" configVersion="786ff08f13c844ace1e916a1990ea7e2bd7eddde"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Госключ_ФормаОжиданияПодписанияУправляемая" id="eb7fc989-aced-4f73-b095-9a3c3d4935bd" configVersion="094292fe2c671a0fa201bce97eb63205e1667e02"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Госключ_ФормаОжиданияПодписанияУправляемая.Form" id="eb7fc989-aced-4f73-b095-9a3c3d4935bd.0" configVersion="44644e6b1acb555ec2107c9880cc28efedcd3cda"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ДополнительныеСведения" id="1c0b3a5d-61ae-4cad-a4f2-023d7d655ba7" configVersion="ef2750388268299ebe38269fac11cbac59b5f662"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ДополнительныеСведения.Form" id="1c0b3a5d-61ae-4cad-a4f2-023d7d655ba7.0" configVersion="244bca4ae67284426d236eed2f5ea4d631fbe44a"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ДополнительныеСведенияУправляемая" id="5c197914-1b70-4c2f-9776-d9d43e4b7e4a" configVersion="a4061ea9721592e7ce01a44919981e6f0f32ac32"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ДополнительныеСведенияУправляемая.Form" id="5c197914-1b70-4c2f-9776-d9d43e4b7e4a.0" configVersion="5c03e5a8fd9e4a056ba6edab8a46562575289a8f"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ЖурналДиагностики" id="ded81a84-392b-42cd-9032-aa9d16ef2207" configVersion="6486a45ded189bb5c33f19ec25f14c910e3f3dc5"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ЖурналДиагностики.Form" id="ded81a84-392b-42cd-9032-aa9d16ef2207.0" configVersion="60383a666abb6908fdb57c234b8008e2a619baca"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ЖурналДиагностикиУправляемая" id="8495756f-f396-4a3d-9eed-6aa8012e12c7" configVersion="8c5a9e87d93e834f3bd2bf6b74f16a0cfd6930f4"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ЖурналДиагностикиУправляемая.Form" id="8495756f-f396-4a3d-9eed-6aa8012e12c7.0" configVersion="cca6594e340f5307cee62fa8ce3132ba5af3a32c"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ИндикацияПрогрессаОбработкиДанных" id="2ab7bb44-9133-4f23-8f90-bfcf7acafdd7" configVersion="3f01780f9d9740832d48e7f576cfb462f4f43634"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ИндикацияПрогрессаОбработкиДанных.Form" id="2ab7bb44-9133-4f23-8f90-bfcf7acafdd7.0" configVersion="4ec38fcb5487b508f66ce31a98eb2e8051cb9d9b"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ИндикацияПрогрессаОбработкиДанныхУправляемая" id="0ad1cb5a-2efd-40a4-8166-945e508c2631" configVersion="6eb19674d9d0f25e4a7fa65497398a0c68ec721e"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ИндикацияПрогрессаОбработкиДанныхУправляемая.Form" id="0ad1cb5a-2efd-40a4-8166-945e508c2631.0" configVersion="8ba9619b76f2c9043f5dd046614f6d2dab073ad9"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Контрагенты_ФормаСопоставления" id="68f2ce80-6773-4598-a40a-e1515a3e6c32" configVersion="ebd432214ca3c660bea164537b71f1b70d4d8ce7"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Контрагенты_ФормаСопоставления.Form" id="68f2ce80-6773-4598-a40a-e1515a3e6c32.0" configVersion="257bd89f40a91cd4491513727786eedfc116d97f"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Контрагенты_ФормаСопоставленияУправляемая" id="8d30a131-b83a-4474-a44e-fc7a9ebb6614" configVersion="89d10fa2c2216039ddf3ff75c9153f98e01a82a0"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Контрагенты_ФормаСопоставленияУправляемая.Form" id="8d30a131-b83a-4474-a44e-fc7a9ebb6614.0" configVersion="c7f4bc6fb299f708a3f7c4a055f7237e7504bb7d"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Контрагенты_ФормаСпискаV2" id="2170a4ec-5651-42be-9ae2-db09083e3544" configVersion="43aeadba2af8fb671c968fc2c5424f84b79aaab9"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Контрагенты_ФормаСпискаV2.Form" id="2170a4ec-5651-42be-9ae2-db09083e3544.0" configVersion="7d281763e493fb5ea14729250bee81881542e3de"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Контрагенты_ФормаСпискаV2Управляемая" id="e3af2486-dbce-4839-9b90-7413351bd10e" configVersion="fba4e0fea799f15d047c82d4a5c6dd68c71cd0c3"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Контрагенты_ФормаСпискаV2Управляемая.Form" id="e3af2486-dbce-4839-9b90-7413351bd10e.0" configVersion="3660a198463e5494b94c37514fff5d367172aa5f"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Контрагенты_ФормаФильтров" id="0e6062b0-9b9e-4a9e-86d0-11ff933cdbe4" configVersion="cfd2d05240e17bcb32f42cda796ac0cce81ca6c0"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Контрагенты_ФормаФильтров.Form" id="0e6062b0-9b9e-4a9e-86d0-11ff933cdbe4.0" configVersion="fa972c2607c12175349ecd220ad09d128b62476d"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Контрагенты_ФормаФильтровУправляемая" id="8db99379-a0b3-468e-b943-15fcec8d8fd6" configVersion="0a8fda66c1742151ecaadfeb646b8d726f435897"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Контрагенты_ФормаФильтровУправляемая.Form" id="8db99379-a0b3-468e-b943-15fcec8d8fd6.0" configVersion="ba837b7d992d7784f1651a3669c9ec6252a94066"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.МЧД_ФормаВыбора" id="9e4a6c4c-a9f3-438a-96ea-0e1788d80bb0" configVersion="f4c5ad2773338319439da610744a0a3eaa9027b7"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.МЧД_ФормаВыбора.Form" id="9e4a6c4c-a9f3-438a-96ea-0e1788d80bb0.0" configVersion="fac8523e867ac5e074277034a290116a77a0ff4f"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.МЧД_ФормаВыбораУправляемая" id="6f97b4d9-15c6-4d9c-a149-517eda273aed" configVersion="b1d0a0991a5ce7c5d0f702292b870f3336168a3e"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.МЧД_ФормаВыбораУправляемая.Form" id="6f97b4d9-15c6-4d9c-a149-517eda273aed.0" configVersion="56915fefc9ca5136a7fb9e4ebe1ee428f68af476"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.МЧД_ФормаДобавления" id="67514fb8-aa7e-4468-8a8d-2e681017ad24" configVersion="701c9dee00daea230381f1bf73489692017cccc8"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.МЧД_ФормаДобавления.Form" id="67514fb8-aa7e-4468-8a8d-2e681017ad24.0" configVersion="d057d36c549d1472a17467024cc50e18dcf50254"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.МЧД_ФормаДобавленияУправляемая" id="6aeb335c-7203-4a65-b1da-7f528f0621ac" configVersion="11e64890350770bf9dc53912a73c5b982ca04fc0"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.МЧД_ФормаДобавленияУправляемая.Form" id="6aeb335c-7203-4a65-b1da-7f528f0621ac.0" configVersion="08b488a4d13419ff3b80338d568f33add3d84af5"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.МЧД_ФормаСписка" id="9fb82c46-ec60-497b-a7b6-f5ecb6de9d2c" configVersion="1b56cd8d91e5164063f08c4b2b1b816d0d66c3d7"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.МЧД_ФормаСписка.Form" id="9fb82c46-ec60-497b-a7b6-f5ecb6de9d2c.0" configVersion="3a39844ca8c92c015446eef464e741c915705dc9"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.МЧД_ФормаСпискаУправляемая" id="63e96a49-e13d-4c5a-aa97-d13ae69139e0" configVersion="a52b0bd5e2fc2f9e2a303dfca1ad976ee60c316e"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.МЧД_ФормаСпискаУправляемая.Form" id="63e96a49-e13d-4c5a-aa97-d13ae69139e0.0" configVersion="25ed21472ac1e0f3c8448b577656c166d2f6c7df"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.МастерПервогоЗапуска" id="027e0f02-ddc3-4b95-b21a-19e1909c5eea" configVersion="20a23ed0e8154415384ce500197b544a7e53bfae"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.МастерПервогоЗапуска.Form" id="027e0f02-ddc3-4b95-b21a-19e1909c5eea.0" configVersion="db1bae5e70565a26f00076cc3cb015803cc33d5e"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.МастерПервогоЗапускаУправляемая" id="35d9350d-cc44-49a2-8213-fc15ceb1467f" configVersion="cba0d4d664cb730056741caf1805347bca4fe32f"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.МастерПервогоЗапускаУправляемая.Form" id="35d9350d-cc44-49a2-8213-fc15ceb1467f.0" configVersion="892b0b0471e85566e14f2ebbd91fbe4ce5c27e77"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Модуль_Платформа" id="8f98dfc4-5d5f-4a32-87fc-6b25dee25871" configVersion="379971f0da29ef990c88fdefdd026d32b44ed9ca"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Модуль_Платформа.Form" id="8f98dfc4-5d5f-4a32-87fc-6b25dee25871.0" configVersion="487b4638dd9069bbdd9958ef690e9ab6eb47529e"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Модуль_ПлатформаУправляемая" id="74927280-0a2e-4be9-8038-84dc112935c1" configVersion="ff768d030ab810ecd3fade1865afda287319cadc"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Модуль_ПлатформаУправляемая.Form" id="74927280-0a2e-4be9-8038-84dc112935c1.0" configVersion="ea8e4957f96a7895d616fbbba536c0a618dc3359"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Модуль_СинхронныеМодальныеВызовы" id="95023343-50f6-487d-a237-f069ade8908d" configVersion="b551940d487fa6a9147694443f43caa63f8d2ae3"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Модуль_СинхронныеМодальныеВызовы.Form" id="95023343-50f6-487d-a237-f069ade8908d.0" configVersion="6bfbf063c03d9ad76896f5776c8b9c8c1a014da6"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.НастройкаПериода" id="ff58bf45-b77f-4c42-88cc-338662ee14fc" configVersion="049c9429b57d6b44f9fff1d231950ec7995e83fb"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.НастройкаПериода.Form" id="ff58bf45-b77f-4c42-88cc-338662ee14fc.0" configVersion="0902d854985ae410a95cb5b537f2a79d2d9a6041"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.НастройкаПериодаУправляемая" id="25dce014-634c-4d8b-867a-ad10be2aab6e" configVersion="78816d1ea99720ec6c718bbc1c041380e20ab383"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.НастройкаПериодаУправляемая.Form" id="25dce014-634c-4d8b-867a-ad10be2aab6e.0" configVersion="3e62863d23b32faee99867cef3741bf5032f7a68"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.НастройкаПечатныхФорм" id="dd458878-9ac1-443f-83a7-2be9594c71c1" configVersion="63704f74d30bd857950fa0901d895215413303b3"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.НастройкаПечатныхФорм.Form" id="dd458878-9ac1-443f-83a7-2be9594c71c1.0" configVersion="e5f1db3b0d8483138fd65d5b1393355a68b22e51"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.НастройкаПечатныхФормУправляемая" id="4b7df9d5-02d9-461d-8133-0e534fd1f5c0" configVersion="00eb64722ff31501359f9eb665f18ffd4c835b04"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.НастройкаПечатныхФормУправляемая.Form" id="4b7df9d5-02d9-461d-8133-0e534fd1f5c0.0" configVersion="73646aba4f8fb87ee86ae46a6a919761076da2aa"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.НастройкаХраненияДанных" id="8dd90b13-a9cc-4667-b07d-8d9144c0e1b1" configVersion="e66aff14eae613ca07f495a8b4e3669637fbf739"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.НастройкаХраненияДанных.Form" id="8dd90b13-a9cc-4667-b07d-8d9144c0e1b1.0" configVersion="ceaf2aed9b371fca5772c3f698a097a4461e610f"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.НастройкаХраненияДанныхУправляемая" id="9a9cb36f-0d20-4989-824b-4cf84c7fbc19" configVersion="ab93afba0c7a617c26006e51d18a65f8a53757b7"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.НастройкаХраненияДанныхУправляемая.Form" id="9a9cb36f-0d20-4989-824b-4cf84c7fbc19.0" configVersion="e3def3fd9ed741419e20859f68558202d648edc2"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Настройки" id="823dc826-a6ac-44ed-9696-ab733ed579d8" configVersion="988283d951e6ec4a3c6defbfabf5ed647c4c51fb"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Настройки.Form" id="823dc826-a6ac-44ed-9696-ab733ed579d8.0" configVersion="83acfce8bc754029d3dce072ded217ac086c732d"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.НастройкиУправляемая" id="1cc06a2d-5ad5-4b09-b260-58766187a490" configVersion="ad332f1efebed5de33a9282170572d92451685a1"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.НастройкиУправляемая.Form" id="1cc06a2d-5ad5-4b09-b260-58766187a490.0" configVersion="ad105595096df8df309263dfc33acd41988578e9"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Организации_ФормаСписка" id="6f60984f-863a-4fb3-ae1e-167e7dff8e98" configVersion="b5fb6a610d7c181720c467f5f720947fdb42f05a"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Организации_ФормаСписка.Form" id="6f60984f-863a-4fb3-ae1e-167e7dff8e98.0" configVersion="d993c16fc333c43f1530cbb89e662bfcae7278a7"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Организации_ФормаСпискаУправляемая" id="abcd7aef-9be9-443d-9cba-7bdc1f5a7a40" configVersion="10c8432c3e05b448cb8e27dc599f5b8236c875d1"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Организации_ФормаСпискаУправляемая.Form" id="abcd7aef-9be9-443d-9cba-7bdc1f5a7a40.0" configVersion="dbc0f7864b85e9ed8c6131c01f678f544db2392a"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ОтзывОРаботеМодуля" id="92059a24-3766-4fc7-9dae-12a1f60e51b8" configVersion="03199f722f34775563f81af30692f693a335c1b9"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ОтзывОРаботеМодуля.Form" id="92059a24-3766-4fc7-9dae-12a1f60e51b8.0" configVersion="ea1458c8d51937784810ecc6bd3dc2383d1f7607"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ОтзывОРаботеМодуляУправляемая" id="a12e591a-da8c-49b2-8bdc-10e3585e467e" configVersion="f9b9cc24cecde838598301a3ec4e540fd6ff8e22"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ОтзывОРаботеМодуляУправляемая.Form" id="a12e591a-da8c-49b2-8bdc-10e3585e467e.0" configVersion="4b605bf62d4846f81ff11fa835cae8d78c20696f"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ОшибкаСоединенияССерверомДиадок" id="e943493a-cf13-4b79-b706-920678e4c351" configVersion="e41098c2e04242c7a5b2ddce2bab53582528326a"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ОшибкаСоединенияССерверомДиадок.Form" id="e943493a-cf13-4b79-b706-920678e4c351.0" configVersion="b0c6b1335a205979957b784862e880c9b864c738"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ОшибкаСоединенияССерверомДиадокУправляемая" id="b1493bef-b880-4060-9343-74d3c8d67f59" configVersion="b88dd90a33afeba1d3bef656f289722d4b9df833"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ОшибкаСоединенияССерверомДиадокУправляемая.Form" id="b1493bef-b880-4060-9343-74d3c8d67f59.0" configVersion="bc16a25f2dc2c8e1c1056d70f2237dd2019ef0c3"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ПараметрыСозданияУчетныхДокументов" id="4342ac37-7021-441d-9664-201e5cb9db74" configVersion="67ea68b40faa5b7c78477e162bc5f2e551223141"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ПараметрыСозданияУчетныхДокументов.Form" id="4342ac37-7021-441d-9664-201e5cb9db74.0" configVersion="8a5dd66ac78c97ba38342dea44feeb507a7a2428"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ПараметрыСозданияУчетныхДокументовУправляемая" id="0146ad4a-e921-43ff-b6c5-a02cf97ad7ea" configVersion="f5d6252ef77bcb41a7651ec6d4c31a563c2fffee"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ПараметрыСозданияУчетныхДокументовУправляемая.Form" id="0146ad4a-e921-43ff-b6c5-a02cf97ad7ea.0" configVersion="9682511f8b42194f3821a4be5589c2e657548d87"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ПодпискиИОплата" id="82afb5a3-f314-4c09-b94b-b51ce7e9666a" configVersion="4987262a9aaf5f887f18560309cd6e3ecdb0b2dc"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ПодпискиИОплата.Form" id="82afb5a3-f314-4c09-b94b-b51ce7e9666a.0" configVersion="5f9ef69e557e65c4fbd88bbec98b25d19344fa15"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ПодпискиИОплатаУправляемая" id="c18d2750-13b1-4425-a230-25860f621920" configVersion="328a4f0bd2cc671d12d18e5b9c1ae24732c99ba2"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ПодпискиИОплатаУправляемая.Form" id="c18d2750-13b1-4425-a230-25860f621920.0" configVersion="49d518645894dfb0dbb520e56b0deeed71701fa3"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Подразделения_ФормаСписка" id="8c89a957-c6e7-4a31-8a47-084ab32e36e6" configVersion="4dfe6decce1b451bf81d86ffafb9da057246c6ca"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Подразделения_ФормаСписка.Form" id="8c89a957-c6e7-4a31-8a47-084ab32e36e6.0" configVersion="0fec7d9b969bef21c242a0597f8ccffe7f12d063"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Подразделения_ФормаСпискаУправляемая" id="97d77fcb-7914-4fbe-89b7-b59eb539d4b4" configVersion="e7a02122e79b0326b038611def165728a62f5ac3"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Подразделения_ФормаСпискаУправляемая.Form" id="97d77fcb-7914-4fbe-89b7-b59eb539d4b4.0" configVersion="efa545b074c602678f9079f01d5167fcded1ccdb"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ПомощникПоискаДокумента" id="e0a1caaa-75ce-4922-97f1-8ddd4d4e5451" configVersion="4f5d143a2ea66d222b1f5a66de9653d954f6f0b2"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ПомощникПоискаДокумента.Form" id="e0a1caaa-75ce-4922-97f1-8ddd4d4e5451.0" configVersion="aa6bb668d81dff07832b823d4f399983ecf6e55c"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ПомощникПоискаДокументаУправляемая" id="74c27f8e-ec9b-41b0-abd0-6084ad7f8ba9" configVersion="baca6aad192f6c1633a9dc6eef5feaa49e354283"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ПомощникПоискаДокументаУправляемая.Form" id="74c27f8e-ec9b-41b0-abd0-6084ad7f8ba9.0" configVersion="d93793f2ad57a1267d3f20a7a112bc4132ad9534"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.РедактированиеДоверенности" id="1a750b05-bb85-446e-a516-778744218444" configVersion="aa4e707ef9f0b4117a60b03d1bcf5bbe2bf31fe0"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.РедактированиеДоверенности.Form" id="1a750b05-bb85-446e-a516-778744218444.0" configVersion="97ab220861867c92ee91621a2110d33984eec2df"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.РедактированиеДоверенностиУправляемая" id="b30d464a-2348-4f51-a2e5-e2fb7c4b627f" configVersion="0f9a3e0ef97bf9450b384e1605c07d9ed998c119"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.РедактированиеДоверенностиУправляемая.Form" id="b30d464a-2348-4f51-a2e5-e2fb7c4b627f.0" configVersion="316ace082878aa79a41959792e2311bb8e83889b"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.РедактированиеОснованияПолномочий" id="9c81204a-176c-46f6-a3b6-f5e00352fa29" configVersion="798c1b4734dec16a8dcfc9fb575000e014f676fb"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.РедактированиеОснованияПолномочий.Form" id="9c81204a-176c-46f6-a3b6-f5e00352fa29.0" configVersion="9cbbb3f2d4d665aa3070b89cc3d87c1d508dab0b"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.РедактированиеОснованияПолномочийУправляемая" id="38fce5a9-068d-4a09-ac2c-ed28e22da893" configVersion="aba35675df8de104734e2a83774c589cfdb13a2c"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.РедактированиеОснованияПолномочийУправляемая.Form" id="38fce5a9-068d-4a09-ac2c-ed28e22da893.0" configVersion="d0827360b6b2832a76e0ed7022b2186d481ef92e"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.РедактированиеПолномочий" id="975d1310-e414-41ce-8bce-bb6ca1b1065a" configVersion="c56bd7d22b709d423c4f8bdc484fe9a5cfe10901"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.РедактированиеПолномочий.Form" id="975d1310-e414-41ce-8bce-bb6ca1b1065a.0" configVersion="fd6fea8d09853b913ee3249b80f514a46219edc3"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.РедактированиеПолномочийУправляемая" id="991e9baa-d8d4-4b78-8ee2-87f543e0eaee" configVersion="b5f5c789f7b2b02fa1473d549021d71b62745fed"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.РедактированиеПолномочийУправляемая.Form" id="991e9baa-d8d4-4b78-8ee2-87f543e0eaee.0" configVersion="3dabfa3de92833a2cf664b053ffff13d984671ae"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.СведенияОбАвансах" id="f8ffa505-5e72-4bc6-9568-a57826a63c80" configVersion="bd750ffcefdc191962befc461c4142da527aff21"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.СведенияОбАвансах.Form" id="f8ffa505-5e72-4bc6-9568-a57826a63c80.0" configVersion="2fefff4e6fd74b61f7ac00cacd8a141082a86ff3"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.СведенияОбАвансахУправляемая" id="3fc1db64-2c8f-4577-9411-e7ed6d6b439f" configVersion="b3e044a2186ae6bea4bdb2b82f86bc33a3dca5e8"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.СведенияОбАвансахУправляемая.Form" id="3fc1db64-2c8f-4577-9411-e7ed6d6b439f.0" configVersion="695aecd83a357c937ec61b60369f8ed98da22818"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Согласование" id="bfbdc74f-d129-4c86-b85f-634dbb418bff" configVersion="a4e215b6b2f58b5eae5f861b3f9193c10800f026"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Согласование.Form" id="bfbdc74f-d129-4c86-b85f-634dbb418bff.0" configVersion="709c78e25ec0163acc6b0bfa2ae8d54b8f27af0e"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.СогласованиеУправляемая" id="25ad6561-fbff-4f9d-8665-d713438b046e" configVersion="b45480171fb4daa18c1d9211b36299f84775e7a6"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.СогласованиеУправляемая.Form" id="25ad6561-fbff-4f9d-8665-d713438b046e.0" configVersion="b87b4adb20d3a46cefabc921735089bbdac406fa"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.СозданиеДокументовУчета" id="57968f96-1395-44cb-ad27-4bc24c91bd11" configVersion="8241d8b910d54c31caf2929726feb33ac633d5f3"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.СозданиеДокументовУчета.Form" id="57968f96-1395-44cb-ad27-4bc24c91bd11.0" configVersion="e436def1cc019110a3affa25fb284fcd81ac5b63"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.СозданиеДокументовУчетаУправляемая" id="0dcf8194-6acf-4590-a53a-d6b8a5690da3" configVersion="3d6c3280499495e84811e3abf35864313e8b00cd"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.СозданиеДокументовУчетаУправляемая.Form" id="0dcf8194-6acf-4590-a53a-d6b8a5690da3.0" configVersion="a853bf86c9ba3e1addb124300561e99c5a551a5a"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.СопоставлениеКонтрагентов" id="e6bac8a5-efe1-4aed-a47b-4dc4c4d8e9f5" configVersion="de9156aec9915336be476b6293a19d0eac3b3738"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.СопоставлениеКонтрагентов.Form" id="e6bac8a5-efe1-4aed-a47b-4dc4c4d8e9f5.0" configVersion="743c7258bc037c7741dfad30b6da0b7677dd9530"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.СопоставлениеКонтрагентовУправляемая" id="9e40a69a-f64c-4d6a-b244-65c6d5675847" configVersion="b5497782f35ab8bcecce146ba121ab53044f085e"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.СопоставлениеКонтрагентовУправляемая.Form" id="9e40a69a-f64c-4d6a-b244-65c6d5675847.0" configVersion="11cb911d6c76c5519cd34727a7ca0ba28c60d667"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.СопоставлениеНоменклатуры" id="dbc520e7-a865-4cdc-8097-b68dd71a9b07" configVersion="ceba384b58adc7f663db0524a9e1503491c0fcd7"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.СопоставлениеНоменклатуры.Form" id="dbc520e7-a865-4cdc-8097-b68dd71a9b07.0" configVersion="7ee49c3491929ee88327b325b3919feadb681095"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.СопоставлениеНоменклатурыУправляемая" id="3aeb5ceb-4b6b-49da-bc74-1795648348d7" configVersion="3471b234d3eca61c1c478db3051bf3075d1f0956"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.СопоставлениеНоменклатурыУправляемая.Form" id="3aeb5ceb-4b6b-49da-bc74-1795648348d7.0" configVersion="ebcc47b0246dcd53bef12f582c34cbe25baccfaa"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.СопоставлениеПакетовИВидовДокументовПМ" id="2f90c107-717e-49a3-ac35-389b2d43d0ac" configVersion="d8e853a901cf4c1c57b5c7beb247a33431b1e316"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.СопоставлениеПакетовИВидовДокументовПМ.Form" id="2f90c107-717e-49a3-ac35-389b2d43d0ac.0" configVersion="a97d587e072578bd6271859520503fa8238e7453"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.СопоставлениеПакетовИВидовДокументовПМУправляемая" id="36a47881-b016-42eb-afe3-1f23e3027b2e" configVersion="5bc74875c4b587151232837d858e51fa0809d72e"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.СопоставлениеПакетовИВидовДокументовПМУправляемая.Form" id="36a47881-b016-42eb-afe3-1f23e3027b2e.0" configVersion="3262e1ce81b13da6a57e4d5065a67b1ab89fe94b"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ТитулПокупателя" id="0eeda5d9-2ffa-4b0d-9048-886c7e9c1ff2" configVersion="34b7876e09b5eb4966f673a1b88570c55cbe7557"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ТитулПокупателя.Form" id="0eeda5d9-2ffa-4b0d-9048-886c7e9c1ff2.0" configVersion="c9b8c0d8386bef38ae83530d9096c01940c8f044"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ТитулПокупателяУправляемая" id="6daf8f41-065e-41aa-aea4-d201020b4e46" configVersion="4290c4da5db6363cdb7e3cd28a5a895e165c9767"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ТитулПокупателяУправляемая.Form" id="6daf8f41-065e-41aa-aea4-d201020b4e46.0" configVersion="3b0dfd071d7f74d1211c8f2e481a66626a858d16"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.УведомлениеОбУспешномАвтообновлении" id="c94fdfb8-e11f-4d46-b2b7-af72e80995d8" configVersion="0a48c528ca91459cb248fa69350212830637efa5"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.УведомлениеОбУспешномАвтообновлении.Form" id="c94fdfb8-e11f-4d46-b2b7-af72e80995d8.0" configVersion="1d6313262e1473cc9113fca6e4945f0d2b7cb547"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.УведомлениеОбУспешномАвтообновленииУправляемая" id="21aefc3d-094b-4b7e-a7b6-db337871c0e2" configVersion="21a505cb4825cbd2b0b35bfbb2eac71fea491c0a"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.УведомлениеОбУспешномАвтообновленииУправляемая.Form" id="21aefc3d-094b-4b7e-a7b6-db337871c0e2.0" configVersion="e47fc44adb3fd0c0b18066831b72fc269d33c4ce"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Форма" id="dace7aae-be38-4279-a771-5190ec8de57c" configVersion="dbee7725a8105ebfd908ad319dc4d2c56da0c4c7"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.Форма.Form" id="dace7aae-be38-4279-a771-5190ec8de57c.0" configVersion="8aa72c73f38d60c75075871941b72df86cc82e4b"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаHTMLСообщения" id="e8eff312-060b-47e5-ab0d-01955c076448" configVersion="bea4c288a2e4305a50d029f6bbb48c72be5139f0"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаHTMLСообщения.Form" id="e8eff312-060b-47e5-ab0d-01955c076448.0" configVersion="53c354f5f6152fdffc7325eb11b610b7cac16ad3"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаHTMLСообщенияУправляемая" id="a1cf8630-a726-44cc-b75a-85e1333576de" configVersion="ecc5e714a8ea27ba00e97181ed53f7f0e2772087"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаHTMLСообщенияУправляемая.Form" id="a1cf8630-a726-44cc-b75a-85e1333576de.0" configVersion="dc76a7a93030d6f7d06028cd886498dd68fdaf39"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаВвода" id="5633e8c5-8f44-49f8-9a85-5fcaa2c972d1" configVersion="ea39a5cc2e7167172d220ccc41bbd74e7862699a"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаВвода.Form" id="5633e8c5-8f44-49f8-9a85-5fcaa2c972d1.0" configVersion="0780a7882a004df70023a5f07d55ad8659c54bd2"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаВводаV2" id="9b682e64-e3a4-4419-8763-307002db622c" configVersion="5a290f3eb71d7895d9653ebd56c908fc0fd909ad"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаВводаV2.Form" id="9b682e64-e3a4-4419-8763-307002db622c.0" configVersion="2638189f86306a72c6eb3bd3ae81d3cd5739f41c"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаВводаV2Управляемая" id="99e105e1-6d2f-439c-9e28-99edb7ea586e" configVersion="a9902ba024b6d54ed92ecb7e28c51de62b703a3e"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаВводаV2Управляемая.Form" id="99e105e1-6d2f-439c-9e28-99edb7ea586e.0" configVersion="0fcdfce312b27e7d8bae59543668f2b15e03c4b8"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаВводаУправляемая" id="8153b030-1949-41d8-a873-3d163ca2a9b7" configVersion="299e91497716caeae338d592d92713a2ef5da3dc"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаВводаУправляемая.Form" id="8153b030-1949-41d8-a873-3d163ca2a9b7.0" configVersion="bb911041d17e4addc84f89e1f40702d292f628f6"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаВыбораЗначения" id="354d04bf-f743-4043-90f4-a68f8a44bc18" configVersion="978d5bc5123f9fc136b227a643e41b8085e0851e"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаВыбораЗначения.Form" id="354d04bf-f743-4043-90f4-a68f8a44bc18.0" configVersion="9b5f3ca6311922e5c3ecd3afb1b1626f73132077"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаВыбораЗначенияУправляемая" id="6cc5dfdd-f89d-48a8-b91c-500786d09861" configVersion="f29b6a5fffebfcc9910632e248c8fa33ae28b6ce"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаВыбораЗначенияУправляемая.Form" id="6cc5dfdd-f89d-48a8-b91c-500786d09861.0" configVersion="e92496aaf4b4fd051315db66596d81384ba030ed"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаВыбораИМ" id="edd173bf-79b0-4c57-8695-09417d2596a4" configVersion="02be23b57d22f08062487f5558c4ac99da70d355"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаВыбораИМ.Form" id="edd173bf-79b0-4c57-8695-09417d2596a4.0" configVersion="3879870065a9c5840acafb68179d739bb2b5523d"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаВыбораИМУправляемая" id="38f154e0-6cf3-4857-b7ce-79eee138d2df" configVersion="f4f838f36fa278c57933719968c6e76d05ff59ce"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаВыбораИМУправляемая.Form" id="38f154e0-6cf3-4857-b7ce-79eee138d2df.0" configVersion="4935f0fc1b628f05ca4762762c765b7be0d804b8"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаВыбранныйКонтрагентНеСопоставлен" id="1e21bdc0-2a27-46f2-a297-640cae7bef8f" configVersion="9e7aefb715e72df3cf3f0fb0c05d873dfb75e27b"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаВыбранныйКонтрагентНеСопоставлен.Form" id="1e21bdc0-2a27-46f2-a297-640cae7bef8f.0" configVersion="37a989110692e4200b8b5bf944bf74b89d53ce77"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаВыбранныйКонтрагентНеСопоставленУправляемая" id="176926dd-ee77-43ec-8a25-c5e5ae0728e7" configVersion="5e59e2675bc9682eb49ce572746e4a917b7eaebf"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаВыбранныйКонтрагентНеСопоставленУправляемая.Form" id="176926dd-ee77-43ec-8a25-c5e5ae0728e7.0" configVersion="b2be55193dab3d66da5b471b9cba4f5a9dd9de4a"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаОбновления" id="ab97f272-ad4c-4505-a250-f832e96c95db" configVersion="1923d12de1ab01adb32c9b6f56a24b5b62efe7fa"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаОбновления.Form" id="ab97f272-ad4c-4505-a250-f832e96c95db.0" configVersion="fc6fc07a0707a2ab9dcb8dc023f733da1e80af5d"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаОбновленияУправляемая" id="a9f2d36c-6b46-4f33-b5cf-421a3b70c78b" configVersion="ff94cccb367c4a7fad81dcef855100ab6f3566af"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаОбновленияУправляемая.Form" id="a9f2d36c-6b46-4f33-b5cf-421a3b70c78b.0" configVersion="af2a3c3f89a6adf65e5bd9dd6471b868e637c1f9"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаОтветаПоДокументу" id="e5711c09-d34c-4912-978a-77e20e2d9b26" configVersion="76ab6be1085c665cb031db9460bb4364894f4812"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаОтветаПоДокументу.Form" id="e5711c09-d34c-4912-978a-77e20e2d9b26.0" configVersion="99bd8c1bfa4527fd5c33c7f56234db73f66a354c"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаОтветаПоДокументуУправляемая" id="f0a880dc-258b-41d7-ba6d-ffec006a8032" configVersion="8be592103524bbed4f6e54059490295d46e657bf"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаОтветаПоДокументуУправляемая.Form" id="f0a880dc-258b-41d7-ba6d-ffec006a8032.0" configVersion="e579f339ee578c8385443d0f9e1aabcf1bc40afe"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаПакета" id="fb790c58-6641-43e9-bca8-0f3653bc5f98" configVersion="4f429ccf5d4baf5578d99cbbdcca6fe1d423cfde"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаПакета.Form" id="fb790c58-6641-43e9-bca8-0f3653bc5f98.0" configVersion="417a64233ee3f043a7e1b15ce547b116c77f8932"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаПакетаУправляемая" id="d030deae-7546-4968-8360-43e7f0d7ea1f" configVersion="15cc6b75f08e22fb8a42a451cf1b97f7eb7e8144"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаПакетаУправляемая.Form" id="d030deae-7546-4968-8360-43e7f0d7ea1f.0" configVersion="9c8599f7555171c3544688e1d325af69e56b392d"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаПодтвержденияПереотправкиДокумента" id="74e61ba6-a1b0-47a4-80f5-198e2ff829be" configVersion="245e9fc5b4322218e03b81a0d95f7b34988c81be"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаПодтвержденияПереотправкиДокумента.Form" id="74e61ba6-a1b0-47a4-80f5-198e2ff829be.0" configVersion="c17db2057683022dbff21e7ece260840c98f0506"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаПодтвержденияПереотправкиДокументаУправляемая" id="bba51b95-b1a7-425e-a836-49680406a5fa" configVersion="2d8c24eda93f0219ac898763c73521605c50747d"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаПодтвержденияПереотправкиДокументаУправляемая.Form" id="bba51b95-b1a7-425e-a836-49680406a5fa.0" configVersion="92e1e3e70607c7b775ebc6e0e6c085b2659d584c"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаПредупреждения" id="7f9f7cc6-73a2-4ff1-89f9-31d2ad0c5749" configVersion="603fa428ea974acfcf982c2874eff01974d65f06"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаПредупреждения.Form" id="7f9f7cc6-73a2-4ff1-89f9-31d2ad0c5749.0" configVersion="d91d912ed773ad3b101d4dc3b7f214e2f05e564d"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаПредупрежденияУправляемая" id="e3e534a7-1ab4-48d5-971e-d96ad81713d1" configVersion="f7f10e94ea484af1c8aaf32c651bea434876b996"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаПредупрежденияУправляемая.Form" id="e3e534a7-1ab4-48d5-971e-d96ad81713d1.0" configVersion="9cf00e8652845b5d1380ac2b031c38d507afd39f"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаПриглашения" id="ee1d6649-8ace-424b-8249-2ff294f70a6c" configVersion="1583837686e88961291e98b023363a845bc6a7ac"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаПриглашения.Form" id="ee1d6649-8ace-424b-8249-2ff294f70a6c.0" configVersion="d1b2d58e529d5ea30bd7148db3aa9a5762058634"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаПриглашенияУправляемая" id="f18b4929-7e59-4d54-a856-cf98ddfd9e02" configVersion="966e27915f168325db2bcaffd909c65042db748b"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаПриглашенияУправляемая.Form" id="f18b4929-7e59-4d54-a856-cf98ddfd9e02.0" configVersion="1f4aa03ca411f06004576b3eb5d61919130e7640"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаСпискаУведомлений" id="91e95268-d588-48c4-8a50-42cf8bdde665" configVersion="e84b48e01b195047db17155e8196517a027792f6"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаСпискаУведомлений.Form" id="91e95268-d588-48c4-8a50-42cf8bdde665.0" configVersion="06071f65a9b6484b2ab677b302ce26763f9fcbec"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаСпискаУведомленийУправляемая" id="c300449f-f071-4129-a5d7-963863953b48" configVersion="52bd2cf83d58b6ad785d3bd5708a76d15e41e42e"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаСпискаУведомленийУправляемая.Form" id="c300449f-f071-4129-a5d7-963863953b48.0" configVersion="5862df2ef050c2ae46212c2b08124f39bdcaf8ad"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаСправки" id="250a2216-ff90-458c-8cff-7e1e2280cab9" configVersion="598ee0cf4a9135a24342775704e5c7ac48729237"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаСправки.Form" id="250a2216-ff90-458c-8cff-7e1e2280cab9.0" configVersion="c5052f2bb47745e8626fef27b2e8a3da91d9ff35"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаСправкиУправляемая" id="1057b41e-8bc6-444b-b6cf-a589bc3b32b6" configVersion="66a2892acbfb5a7f343615f039d91d6a8a8e906f"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаСправкиУправляемая.Form" id="1057b41e-8bc6-444b-b6cf-a589bc3b32b6.0" configVersion="86b0e661ecbf252ee31ed2377736cf3321142823"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаТехническаяИнформация" id="d833ff00-f43e-433d-901d-8cac927a35e4" configVersion="45fe9ee16eea718e7d8b5c08abe9b4a576d27626"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаТехническаяИнформация.Form" id="d833ff00-f43e-433d-901d-8cac927a35e4.0" configVersion="d901b69a3a9f16801c076689ec109e00b58be5d1"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаТехническаяИнформацияУправляемая" id="9a8b7608-b9a3-4193-a124-68f8c48f6e59" configVersion="92e7ea348c4cab22e6f9a9b5270cd0918d2e415f"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаТехническаяИнформацияУправляемая.Form" id="9a8b7608-b9a3-4193-a124-68f8c48f6e59.0" configVersion="5031848fa79b474577f64cec44e9b159a4f73352"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаУправляемая" id="18e6c279-b9c5-40a8-9375-01d3126ecfb1" configVersion="d9a677f19d6f44cf6643f20ba2a8a9d0f617ff44"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаУправляемая.Form" id="18e6c279-b9c5-40a8-9375-01d3126ecfb1.0" configVersion="0a6391b74f4ee42c08226150023dbb462edc531f"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаФильтров" id="64d35cf5-1a78-4c47-b43e-e8ca8f02134f" configVersion="da9575dd7d43735535047cb618ee2292cdbe6ae7"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаФильтров.Form" id="64d35cf5-1a78-4c47-b43e-e8ca8f02134f.0" configVersion="557028ca90b91cfe98f67c1ce192368d284527f5"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаФильтровУправляемая" id="27e81d70-325f-4598-b311-e204ef4a9b7b" configVersion="32e56a5ec29199b4fe1ea060b782a3c31f245594"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаФильтровУправляемая.Form" id="27e81d70-325f-4598-b311-e204ef4a9b7b.0" configVersion="7141d67d4a5d017cbb87bde4cec2966986e9bdd9"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаЭлементаСправочника" id="18dad199-5c10-4e39-8769-139c22a17c75" configVersion="10ff12ed56eb993d6cd7145091bf85db2c99a6cd"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаЭлементаСправочника.Form" id="18dad199-5c10-4e39-8769-139c22a17c75.0" configVersion="2348c3bbd6fa75e116badec8d67a5495a560e1b3"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаЭлементаСправочникаУправляемая" id="af5c81fe-f5e0-44b7-8ae0-d7c24c7b8ce2" configVersion="02c3a0ddc657a7efeb7882eff3bd07bbbc0e24e5"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Form.ФормаЭлементаСправочникаУправляемая.Form" id="af5c81fe-f5e0-44b7-8ae0-d7c24c7b8ce2.0" configVersion="7c9f6fe211d786405a7772b18714386c1df12361"/>
+		<Metadata name="DataProcessor.КонтурЭДО.ObjectModule" id="857ef796-7153-444d-8e29-2ab2fa20b1c8.0" configVersion="2d0cf1dbb3a9403ca7bb938d3ee2be87b5f3d0f8"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.CHANGELOG_md" id="678be1b8-8ce2-4f1e-a0c8-cb250f8ede9e" configVersion="8e6ea85999ad578776ce306a7b2e0268915b421e"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.CHANGELOG_md.Template" id="678be1b8-8ce2-4f1e-a0c8-cb250f8ede9e.0" configVersion="f188e432e71c887bfb2f8d8d8475ea0c86111566"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.HTML_ЛентаСобытийКонтрагентовОнбординг" id="14c6bd53-2771-4a44-892b-a73f4a2f44f9" configVersion="b0e302209f3e5898262aa02c38c755778478a4c5"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.HTML_ЛентаСобытийКонтрагентовОнбординг.Template" id="14c6bd53-2771-4a44-892b-a73f4a2f44f9.0" configVersion="7043fa4da2e4493cb42ad24a7f59168b2ecb2172"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.HTML_НовоеВВерсииРаботаСКонтрагентами" id="94901346-b93f-4701-9f6b-8d658d4c3974" configVersion="93a8b19814a89e0e12b8bfd0b7744af0c881ecfe"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.HTML_НовоеВВерсииРаботаСКонтрагентами.Template" id="94901346-b93f-4701-9f6b-8d658d4c3974.0" configVersion="2ae6728f3d699b259aac77acafa610b14d7abcc5"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.HTML_ПодпискиИОплата" id="6c69dccd-d2ef-4c24-b785-31bb164f089e" configVersion="dd48f1dff4394f1075dcc905c6215df5b50965f3"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.HTML_ПодпискиИОплата.Template" id="6c69dccd-d2ef-4c24-b785-31bb164f089e.0" configVersion="be1f533c1ab746c5d6ebd2eedfe4d75ff1cbe49b"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.HTML_ПодпискиИОплатаОнбординг" id="080a580e-2cda-4cd7-9b15-457193083de1" configVersion="a01bf72508049580f380393db5959c8a45aaaab7"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.HTML_ПодпискиИОплатаОнбординг.Template" id="080a580e-2cda-4cd7-9b15-457193083de1.0" configVersion="ddc7c912cf1cd8c42e7d627cfaa39f7324ea24bd"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.HTML_ПричиныОтсутствияКонтрагента" id="d839116f-15c7-414d-bc05-6c4fcf898a74" configVersion="61f751abcba8a6cda6996261410e86cb7a2227c9"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.HTML_ПричиныОтсутствияКонтрагента.Template" id="d839116f-15c7-414d-bc05-6c4fcf898a74.0" configVersion="8245d77374bd4e3222b050f31469a73f2fe8d626"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.HTML_РезультатыПоискаДокумента1С" id="e7d915bb-cf93-41b4-bf93-d0221bf086b0" configVersion="84ea32bc579b7e303bd93c7fcf99c994588ce39f"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.HTML_РезультатыПоискаДокумента1С.Template" id="e7d915bb-cf93-41b4-bf93-d0221bf086b0.0" configVersion="141807b9457f453be4cd1b54517de7d1d341a180"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.HTML_СобытияМЧД" id="b3bf111f-50a6-4d93-9e38-bf8b43f5499d" configVersion="0b3afb882280233e0d601c056f240ccf3f13b202"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.HTML_СобытияМЧД.Template" id="b3bf111f-50a6-4d93-9e38-bf8b43f5499d.0" configVersion="2d486b0ff8dc017597c2df8d97ae8a15a97e992d"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.HTML_СопоставлениеСКонтрагентами1С" id="fa1f3b75-5448-4e05-8ebd-ac12e35c60a8" configVersion="d8cae121368cc991d09b307f52839a468e258f5a"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.HTML_СопоставлениеСКонтрагентами1С.Template" id="fa1f3b75-5448-4e05-8ebd-ac12e35c60a8.0" configVersion="04c217ed8567b44bd68083f52bff3c759b225d2a"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.VERSION_txt" id="3589bc7b-a829-42f6-a6ae-af90fe665009" configVersion="a927036e650f614e8d685bfb77b936d788e0c625"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.VERSION_txt.Template" id="3589bc7b-a829-42f6-a6ae-af90fe665009.0" configVersion="521da2887328dc5279efdb617193975f29365fad"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template._________HTML_________" id="0f4a85f5-c4c5-429f-ab40-e0ba4ae3c760" configVersion="02146f1cc97cfeeb66cba317ef0fe2be9e40e79c"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template._________HTML_________.Template" id="0f4a85f5-c4c5-429f-ab40-e0ba4ae3c760.0" configVersion="705c17455ee5e73877a452e3195150419a60338b"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.____________ВложенныеФайлы____________" id="5e9b5431-dd91-4a03-acd2-bf8e965334e9" configVersion="4a01211668ee129b0d548e67be7ee609430c43eb"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.____________ВложенныеФайлы____________.Template" id="5e9b5431-dd91-4a03-acd2-bf8e965334e9.0" configVersion="705c17455ee5e73877a452e3195150419a60338b"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.БиблиотекаКартинок" id="aaa4d6de-0768-4581-a1f0-8bc2e5ff2944" configVersion="3d0fa8896c72b84939530c606c8175ccfc966e7e"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.БиблиотекаКартинок.Template" id="aaa4d6de-0768-4581-a1f0-8bc2e5ff2944.0" configVersion="96a17c031c8b3ccd44571eb26971ef0d2a779ced"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.ЗапускРегламентныхЗаданий_epf" id="355c1879-f3ee-4614-a412-c23c4650a4c8" configVersion="a619afa37f3ecc186d0448629d3ca334cbca283c"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.ЗапускРегламентныхЗаданий_epf.Template" id="355c1879-f3ee-4614-a412-c23c4650a4c8.0" configVersion="80dda221a62e7674ea5bbd905a3500e703fc63ab"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокАпдейтКлиент" id="4d725e3a-e424-4833-89a0-6c7fa0253159" configVersion="34403d64f66cf5b62de3b943791c73c7a9416f7a"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокАутентификатор" id="3f49680b-1722-41a0-abfe-16f302bbdd8b" configVersion="b65cfe72339e605d59c596e52e6c83be2586a751"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокАутентификаторХранилище" id="a9d2d90a-dbf1-47ae-a603-0f436698f48d" configVersion="1037cb309ac504e3849846e9b01e07c2d3894ae7"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокВнешниеСервисы" id="407e9ee1-a65f-4597-8035-cc9612c8db72" configVersion="e18cae6327996ed4b4176686e7f8500c2512204f"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокВызовыПМ" id="13686cf7-94de-4dc6-89ce-88379562372c" configVersion="ba9c37d15b398111efd724718604c53e8d759140"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокГенерацияXML" id="ce49e166-6535-40cb-91ec-fedae7c7393e" configVersion="7c61efe4adacff03d38544065c48c0908dda81b5"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокИнтеграцияААА5" id="862a10b9-72d5-49ac-a8f4-326911229cab" configVersion="10e7ff5f3d2ac7708f8b0eed91c4ad407f5fdaca"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокИнтеграцияААА6" id="20534ba7-5d14-4183-aa08-2d0fc72f2725" configVersion="3b5d6111e37d9090406a2327df274c9a8a8ec5d1"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокИнтеграцияБГУ20" id="a8d49ed7-26fe-4ce1-b910-f4c67174894b" configVersion="0b613c978f3db5453e7d82d9ac2b959b4fc8ccaa"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокИнтеграцияБП20" id="e651a12b-39e5-466c-a700-ac0e915449d4" configVersion="2b7b121a7af789d8ea33d40bf7d784cb25721c12"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокИнтеграцияБП30" id="ded1a49a-7099-453a-a447-77345fba75fb" configVersion="984bbbc8c8689c4640d42ce10545072069f32232"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокИнтеграцияРозница2" id="d7905e11-b1a6-4b39-9999-4a9b2060ca28" configVersion="8a077f8c7e669e0ce4c266f82ec29aae995b3a4a"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокИнтеграцияТС" id="24f8592f-b356-43a5-9709-9e7dfedd9952" configVersion="4138507dc093b104696115744ff6502a48530bd9"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокИнтеграцияУНФ16" id="4c95b813-7310-415a-ab11-324b7d03eba1" configVersion="568cbd2a48da02c0867a0983383bb672825e85d8"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокИнтеграцияУТ103" id="92ae9078-138e-4c21-ba8f-10fd25ccb26b" configVersion="dd3e5ea8395ce3a4299d4e0f9b104e93dbe28417"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокИнтеграцияУТ11" id="b89cc62b-9f96-4070-bf75-7be5c4a63b95" configVersion="ced5663691e3bd978e13c2f072508452a3a6bdd7"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокКлиентУведомлений" id="2f488bcd-71dd-44ee-b633-83eba5cab71d" configVersion="1ded7f772aecc52fb39b1333775780501e39640b"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокКоннекторHTTP" id="7a6537d9-63a9-4ceb-9b4c-86126d454ce8" configVersion="d6baf8420f8ffde378d3773f4ba675999ffbe737"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокКоннекторHTTPДвоичныеДанные82Служебный" id="03e33656-7a01-4cca-aa67-0c0bbe0aa112" configVersion="c93fb25c7cea981219e4f88b33a7725404d766a9"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокКоннекторHTTPСлужебный83" id="d3b4b356-c3df-458c-8de0-5819c0bf7c8f" configVersion="0de30c310b044a92335b5c28b72bc1c0b277632c"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокКоннекторHTTPХешMD5" id="d238fe70-f287-4526-8a15-57cfeacc9c45" configVersion="b6bdd4076873d2e16544e9794bf986b1d7007e51"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокМенеджерИнтеграции" id="4acab887-df0b-4f4c-b76e-5db62aa63cd6" configVersion="1175084276b59584c3853a8f116c6a2c626cac2d"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокМенеджерКриптографии" id="ffa33b7e-5a46-45bb-8708-18ebaba1ccfa" configVersion="25224bf36a4b00373876f51b3186d7746ccee35d"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокМетодыAPI" id="f173294f-2d49-4df1-90c2-7c46fb1991c9" configVersion="32dabad771de1279d91cc345b8a8b9e0328b63c6"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокМетрики" id="69aeada5-55b8-4a17-b0cf-7b9a82a6337a" configVersion="31fcec2aa3cf381cbf423c3641c4d067b751fda9"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокОнлайнСчета" id="5cf7c333-5cb0-48ca-82f3-f285ba9591e7" configVersion="1c04c49612eb8eb752d79fbad6de16611f748f44"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокПарсерJSON" id="7bd0d6ef-6eff-463b-9184-49c5eea6bc82" configVersion="26551e7a21cdbf3d557319580accb27bc8a847b7"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокПечатныеФормы" id="931b93b8-28ee-40df-8016-f8e6d7cb6e40" configVersion="2d3d7c181de7eda76f1bd6464e9d7bb91c2d5b2c"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокПлагин1С" id="8fc2bce0-d9b9-459d-b645-dc1bf0d6a978" configVersion="62b27b47b8ced2f5241a535f7c3da737ba08b215"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокПлагины" id="6a0eb681-6f69-4bf7-89c6-f2f7159a26e6" configVersion="6d33a708a1f51a96fff53d13ce2c4343dcbe67c5"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокРаботаСЛогистикой" id="4b61de91-a1db-4826-8725-55d7a16a197f" configVersion="c92b7d822f2b5437d0f239ecef9d4d24d21cdf9c"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокРаботаСМаркировкой" id="8400a0c1-b5b1-4a67-bf08-0fc35951066c" configVersion="189d30c21d3772ea2d943baf3c904c5e168b5675"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокСтандартОФ" id="2aa76a5d-e2e7-49af-9828-e1fc130f11cc" configVersion="7d1e1429a61e18eb5d2e0dabdb681a14541e6098"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокСтандартУФ" id="870e8d12-fbe0-4780-bfcc-1288a06feb68" configVersion="9cbaffbb3f6925e000e6eb0913de7c8bb05b4d1a"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокСтд" id="1f4acce7-081e-478b-b677-743dcb702306" configVersion="78ff3aca26a686fe8abd025b45cb2ee731a65859"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокСтдJSON" id="6507f2c9-cd5f-4d0e-bce2-063ea1ccada8" configVersion="78b0c4950c74ccb097619c1197e7ec4398a5223b"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокСтдДиалоги" id="89e6c215-2813-450c-9e9b-aec413403507" configVersion="1d029cefe1cdf1ed124901dd2c0c715d658a30a7"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокСтдКоллекции" id="bdcdb6f2-de33-462a-acc2-6807f96a01bf" configVersion="5c98c265dff58311c0bce332ef45911c9a821f73"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокСтдОС" id="b048aeca-40ed-4292-88c1-cdf133ad9d88" configVersion="6b1528b0435cfc65735597593db4e5ba30f9d89e"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокСтдОбщегоНазначения" id="c8c03525-04e8-469c-b68d-80fa2aa8a38c" configVersion="37431933393bce252d629977b8c81aa0846de33d"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокСтдСтр" id="4c633f08-b43a-4838-8bef-cdf0015533b4" configVersion="dd6b457012246b3c4eb4c8d726e842e4f3833e4e"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокСтдСтрСлужебный83" id="d2884af1-97b4-4e9c-8ea0-e4e2ba320b99" configVersion="cf8c3028dea98914070bea5d1689ba5e1c85f524"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокСтдФС" id="64a28d53-4465-402d-9af9-83c3eecbfbb9" configVersion="5194644a06d7cf8b27ae9f01a41fb6b7d5489f8c"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокХранениеДанных" id="edaa2395-2e2d-4665-88eb-fdf193185709" configVersion="e85d079a5c384052e613c4e552c245273b40af7a"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокЦентрПоддержки" id="b5d4e6d9-1bc9-47e1-ad81-bcf831863296" configVersion="84c923f4543d85f9b460aa5f2a9dcae69625132a"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокШлюзАвторизации" id="0d341a39-759a-43bb-a437-8a67c9427ff5" configVersion="8ed1f2df7372225c8ee115d590c5fb74bb7b9b2c"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокЭмуляторТабДокумента" id="b968a7d9-828d-4a0e-b9c4-b74959361613" configVersion="a259e26b6fbf9b293131ac27cb7f73305b651b8c"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.КонтурДиадокЯдро" id="fa748d39-a673-465a-8c57-e763f5184258" configVersion="6d17c328d881d12cd5a59cc0681f1234f7921c61"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.МакетОтбора_ДиадокЮрФизЛица" id="97992220-545c-475f-adfc-15039eb0e954" configVersion="bc47b9672ebddd3220dde1e485706e52ac8f9438"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.МакетОтбора_ДиадокЮрФизЛица.Template" id="97992220-545c-475f-adfc-15039eb0e954.0" configVersion="a5299b54b78a299a459b1e48310699a184a598e7"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.МакетОтбора_Документы" id="f202a7b5-5625-4b5b-85ab-ed62b6355ae1" configVersion="a9128d32c140e89f5ceba2c60f5a12a2229364d2"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.МакетОтбора_Документы.Template" id="f202a7b5-5625-4b5b-85ab-ed62b6355ae1.0" configVersion="5a0709ec8133f396d2ebddfbaf09e7d50b6af4b9"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.ОбновлениеДляХраненияДанных_cf" id="f3af862f-44e6-4876-9d34-e1615022c968" configVersion="407d617ead85cf23439a5bba5c5df03c735db4d5"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.ОбновлениеДляХраненияДанных_cf.Template" id="f3af862f-44e6-4876-9d34-e1615022c968.0" configVersion="3338ff4ff9b7c0d0b91526f417a6c18a52ad8c5b"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.ОбновлениеДляХраненияДанных_cfe" id="b0eefcfc-1ece-45c7-bb11-c6642eca2543" configVersion="aa78d5fd1f345e212e10d0a8c9d3197378054d62"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.ОбновлениеДляХраненияДанных_cfe.Template" id="b0eefcfc-1ece-45c7-bb11-c6642eca2543.0" configVersion="89f0803ce7f8ea45e5a6d28b378f10cca38ef4e1"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.ПолномочияМЧД_mxl" id="cec21252-ea92-4000-b142-2b88f2ed614a" configVersion="487543c29fbaec76e4fa8575b1e8ba66680c8609"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.ПолномочияМЧД_mxl.Template" id="cec21252-ea92-4000-b142-2b88f2ed614a.0" configVersion="679a1899ee97f18f4608a7c39141d37ee1db9896"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.СведенияОбМЧД_mxl" id="53abf6c1-cf93-4cb5-9c92-89f359d69155" configVersion="0877bd1817965a44856b9fa36547b55436b2dcd7"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.СведенияОбМЧД_mxl.Template" id="53abf6c1-cf93-4cb5-9c92-89f359d69155.0" configVersion="3d2d6326ba17fe18a00333105ad211f23f02d8f1"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.СобытияПодключаемогоМодуля" id="80283be5-8eeb-4cd7-a5d7-e31db1bd91c2" configVersion="b1f5165839b09577e65175ceb9551838e7e88abc"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.СобытияПодключаемогоМодуля.Template" id="80283be5-8eeb-4cd7-a5d7-e31db1bd91c2.0" configVersion="5e69d994aee16c256675fb0e45ee4c00d0c091bb"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.ТипыДокументов" id="5630874d-b084-4bd4-a863-e53c7ad06e46" configVersion="c2947747cb081c45102396fb4b07df6156bb0e54"/>
+		<Metadata name="DataProcessor.КонтурЭДО.Template.ТипыДокументов.Template" id="5630874d-b084-4bd4-a863-e53c7ad06e46.0" configVersion="c797553bca19ba32b2791c1931cf10aa40dcc995"/>
+		<Metadata name="Language.Русский" id="18e43bd2-cc62-4066-8c70-b8740360511a" configVersion="efd4db6bff272c72cc3ed2c5dfa81e06a83b8944"/>
+		<Metadata name="Role.Диадок_БазовыеПрава" id="3cb42857-4968-4c8a-94e9-e4b189773427" configVersion="9eceb9e50ef4b5cd49fe0f5745f9b7112a754614"/>
+		<Metadata name="Role.Диадок_БазовыеПрава.Rights" id="3cb42857-4968-4c8a-94e9-e4b189773427.0" configVersion="b539cdd88328650456410c9e39c6a32e2fd9a4f7"/>
+		<Metadata name="Role.шхДиадок" id="f6f15e21-b2b5-4754-9565-56ab1341aa50" configVersion="3ef0a3714daf699150e227e6b966d6f38cecc964"/>
+		<Metadata name="Role.шхДиадок.Rights" id="f6f15e21-b2b5-4754-9565-56ab1341aa50.0" configVersion="26493a8e228b4b58ee6152c5dccbc0be05decdf5"/>
+		<Metadata name="SessionParameter.КонтурДиадокКонтекстСеанса" id="000dd0db-04ab-4059-8b84-480c916df917" configVersion="6bfdc4435516a7c0e838502516dc485a8248e137"/>
+		<Metadata name="Subsystem.КонтурДиадок" id="4bd2d20f-4997-4b63-bd64-936e9a1fccb4" configVersion="ce95b27fa88f719ae556539def02f7a303c45c1b"/>
+		<Metadata name="Subsystem.КонтурДиадок.Subsystem.КонтурДиадокБиблиотеки" id="fa75b60c-a4a5-4006-ba90-8c51a4fee076" configVersion="9eef7803e1c35b1edc0f00175e2b6cfe16eebfec"/>
+		<Metadata name="Subsystem.КонтурДиадок.Subsystem.КонтурДиадокБиблиотеки.Subsystem.КонтурДиадокАпдейт" id="1f30f3f5-b153-4883-a5af-dd35cdbfe9af" configVersion="13d486978128a93e56baae7f4d32986f7a59fea2"/>
+		<Metadata name="Subsystem.КонтурДиадок.Subsystem.КонтурДиадокБиблиотеки.Subsystem.КонтурДиадокАутентификатор" id="700d9b5f-565b-423c-a4ad-047a9ad45882" configVersion="17c9bd2ed8f657617428791f4f8b17230d9cdc18"/>
+		<Metadata name="Subsystem.КонтурДиадок.Subsystem.КонтурДиадокБиблиотеки.Subsystem.КонтурДиадокКлиентУведомлений" id="4b73f42f-474e-4913-b449-c9a6648d2cda" configVersion="a80ba3c40f102d3c08de0ccfb9514851557a4ed5"/>
+		<Metadata name="Subsystem.КонтурДиадок.Subsystem.КонтурДиадокБиблиотеки.Subsystem.КонтурДиадокКоннекторHTTP" id="a62e8519-a0de-44f3-b7e4-ad87dc0fb3e1" configVersion="5823e832d0018b05c0c2058d9fea7f95d2ec43af"/>
+		<Metadata name="Subsystem.КонтурДиадок.Subsystem.КонтурДиадокБиблиотеки.Subsystem.КонтурДиадокМенеджерКриптографии" id="d7c7e5d8-5222-474c-8ef0-44480b9f0c46" configVersion="398190695292c1d841703e0001d1353d40232e33"/>
+		<Metadata name="Subsystem.КонтурДиадок.Subsystem.КонтурДиадокБиблиотеки.Subsystem.КонтурДиадокМетрики" id="a72ed511-40cf-4d0f-95fb-f6000fae48e6" configVersion="5c5d0884e02427e6d7621fb5c50b8a6309e5984d"/>
+		<Metadata name="Subsystem.КонтурДиадок.Subsystem.КонтурДиадокБиблиотеки.Subsystem.КонтурДиадокСТД" id="099e9d41-0811-4195-8948-6920d3108040" configVersion="9094bac846ab074254d9e8032d3f3774ead7a9e1"/>
+		<Metadata name="Subsystem.КонтурДиадок.Subsystem.КонтурДиадокБиблиотеки.Subsystem.КонтурДиадокШлюзАвторизации" id="96daeb38-52b9-4ac4-b6b4-bc861b564424" configVersion="79a99d446657a8845f30ebce702c8a7c7b5e1713"/>
+		<Metadata name="Subsystem.КонтурДиадок.Subsystem.КонтурДиадокСтандартУФ" id="06c6bfef-4749-42be-b29e-e0cec5d220ef" configVersion="00d848483c38246793b8fd20be1623f1b78059d3"/>
+	</ConfigVersions>
+</ConfigDumpInfo>

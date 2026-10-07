@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://v8.1c.ru/8.2/data/spreadsheet" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<languageSettings>
+		<currentLanguage>ru</currentLanguage>
+		<defaultLanguage>ru</defaultLanguage>
+		<languageInfo>
+			<id>ru</id>
+			<code>Русский</code>
+			<description>Русский</description>
+		</languageInfo>
+	</languageSettings>
+	<columns>
+		<size>3</size>
+		<columnsItem>
+			<index>0</index>
+			<column>
+				<formatIndex>0</formatIndex>
+			</column>
+		</columnsItem>
+		<columnsItem>
+			<index>2</index>
+			<column>
+				<formatIndex>1</formatIndex>
+			</column>
+		</columnsItem>
+	</columns>
+	<rowsItem>
+		<index>0</index>
+		<indexTo>1</indexTo>
+		<row>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>2</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>2</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>3</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Зашифрованный документ</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>3</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>2</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Необходимо выполнить расшифровку документа</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>4</index>
+		<row>
+			<c>
+				<i>2</i>
+				<c>
+					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>подходящим сертификатом</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<drawing>
+		<drawingType>Picture</drawingType>
+		<id>1</id>
+		<formatIndex>5</formatIndex>
+		<beginRow>0</beginRow>
+		<beginRowOffset>42</beginRowOffset>
+		<endRow>7</endRow>
+		<endRowOffset>27</endRowOffset>
+		<beginColumn>0</beginColumn>
+		<beginColumnOffset>21</beginColumnOffset>
+		<endColumn>1</endColumn>
+		<endColumnOffset>168</endColumnOffset>
+		<autoSize>false</autoSize>
+		<pictureSize>RealSize</pictureSize>
+		<zOrder>1</zOrder>
+		<pictureIndex>1</pictureIndex>
+	</drawing>
+	<templateMode>true</templateMode>
+	<defaultFormatIndex>6</defaultFormatIndex>
+	<height>8</height>
+	<vgRows>8</vgRows>
+	<line width="1" gap="false">
+		<v8ui:style xsi:type="v8ui:SpreadsheetDocumentDrawingLineType">None</v8ui:style>
+	</line>
+	<font faceName="Arial" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Arial" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<format>
+		<width>351</width>
+	</format>
+	<format>
+		<font>0</font>
+	</format>
+	<format>
+		<font>1</font>
+		<width>72</width>
+	</format>
+	<format>
+		<font>2</font>
+		<width>72</width>
+	</format>
+	<format>
+		<print>true</print>
+		<drawingBorder>0</drawingBorder>
+	</format>
+	<format>
+		<width>72</width>
+	</format>
+	<picture>
+		<index>0</index>
+		<picture t="false">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</picture>
+	</picture>
+</document>

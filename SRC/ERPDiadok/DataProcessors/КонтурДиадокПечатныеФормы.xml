@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<DataProcessor uuid="589c5b95-78a3-4983-bf64-2837b8f5f0ed">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.КонтурДиадокПечатныеФормы" category="Object">
+				<xr:TypeId>cff3655f-7b93-41ee-8c99-89369e0d08a8</xr:TypeId>
+				<xr:ValueId>1e374aef-b84c-415f-b07f-9101a65c1578</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.КонтурДиадокПечатныеФормы" category="Manager">
+				<xr:TypeId>9e446f9c-aef7-4bf7-a4e0-03f3781c7893</xr:TypeId>
+				<xr:ValueId>8272e7f7-25d6-47c9-a05a-085fe3effa11</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>КонтурДиадокПечатныеФормы</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контур.Диадок: Печатные формы</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Template>СФ1137</Template>
+			<Template>СФ1137_534</Template>
+			<Template>СФ1137_534_Прослеж</Template>
+			<Template>СФ1137_1096_Прослеж</Template>
+			<Template>КСФ1137</Template>
+			<Template>КСФ1137_534</Template>
+			<Template>КСФ1137_534_Прослеж</Template>
+			<Template>КСФ1137_1096_Прослеж</Template>
+			<Template>ТОРГ12</Template>
+			<Template>Акт</Template>
+			<Template>АктУПД</Template>
+			<Template>УПД</Template>
+			<Template>УПД_534</Template>
+			<Template>УПД_534_Прослеж</Template>
+			<Template>УПД_1096_Прослеж</Template>
+			<Template>УКД</Template>
+			<Template>УКД_534</Template>
+			<Template>УКД_534_Прослеж</Template>
+			<Template>УКД_1096_Прослеж</Template>
+			<Template>Штампы</Template>
+			<Template>НадписьДокументЗашифрован</Template>
+			<Template>ПФ_MXL_ПечатнаяФормаОтсутствует</Template>
+			<Template>ПФ_MXL_ОшибкиФормированияПечатнойФормы</Template>
+			<Template>КодыРегионов</Template>
+			<Template>ОКЕИ</Template>
+			<Template>ОКСМ</Template>
+			<Template>ОКВ</Template>
+			<Template>АктСверки_405_БезРазногласий</Template>
+			<Template>АктСверки_405_СРазногласиями</Template>
+			<Template>ПФ_MXL_СчетНаОплату</Template>
+			<Template>ПФ_MXL_АктСверкиВзаиморасчетов</Template>
+			<Template>СчетНаОплату_29</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

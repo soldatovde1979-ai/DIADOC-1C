@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<SaveDataInSettings>UseList</SaveDataInSettings>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="BoxId" id="3">
+			<DataPath>BoxId</DataPath>
+			<ContextMenu name="BoxIdКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="BoxIdРасширеннаяПодсказка" id="20"/>
+		</InputField>
+		<Button name="Тест_GetBox1" id="7">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Тест_GetBox</CommandName>
+			<ExtendedTooltip name="Тест_GetBox1РасширеннаяПодсказка" id="21"/>
+		</Button>
+		<UsualGroup name="ГруппаНачатьВызов" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать вызов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа начать вызов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаНачатьВызовРасширеннаяПодсказка" id="22"/>
+			<ChildItems>
+				<Button name="Тест_НачатьВызов_cert_search" id="14">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.Тест_НачатьВызов_cert_search</CommandName>
+					<ExtendedTooltip name="Тест_НачатьВызов_cert_searchРасширеннаяПодсказка" id="23"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Button name="Тест_НачатьУстановкуПлагина" id="19">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Тест_НачатьУстановкуПлагина</CommandName>
+			<ExtendedTooltip name="Тест_НачатьУстановкуПлагинаРасширеннаяПодсказка" id="24"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонтурДиадокПлагин1С</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="BoxId" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>BoxId</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>BoxId</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Тест_Plugin" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Plugin</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест_Plugin</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Тест_Plugin</Action>
+		</Command>
+		<Command name="Тест_GetBox" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>GetBox</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест get box</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Тест_GetBox</Action>
+		</Command>
+		<Command name="Тест_НачатьВызов_GetBox" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>GetBox</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест начать вызов get box</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Тест_НачатьВызов_GetBox</Action>
+		</Command>
+		<Command name="Тест_НачатьВызов_cert_search" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>cert_search</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест начать вызов cert search</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Тест_НачатьВызов_cert_search</Action>
+		</Command>
+		<Command name="Тест_НачатьУстановкуПлагина" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать установку плагина</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест начать установку плагина</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Тест_НачатьУстановкуПлагина</Action>
+		</Command>
+	</Commands>
+</Form>

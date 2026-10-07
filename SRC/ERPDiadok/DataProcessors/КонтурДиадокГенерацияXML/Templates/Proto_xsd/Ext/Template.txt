@@ -1,0 +1,4315 @@
+﻿<xs:schema xmlns:ns1="http://v8.1c.ru/8.1/data/enterprise" xmlns:tns="http://diadoc.kontur.ru/dll_types" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://diadoc.kontur.ru/dll_types" attributeFormDefault="unqualified" elementFormDefault="qualified">
+	<xs:import namespace="http://v8.1c.ru/8.1/data/enterprise"/>
+	<xs:element name="Root_TovTorgBuyerContent" type="tns:TovTorgBuyerContent"/>
+	<xs:element name="Root_InvoiceCorrectionContent" type="tns:InvoiceCorrectionContent"/>
+	<xs:element name="Root_Act552BuyerContent" type="tns:Act552BuyerContent"/>
+	<xs:element name="Root_ContractContent" type="tns:AcceptanceCertificateSellerContent"/>
+	<xs:element name="Root_UtdBuyerContent" type="tns:UtdBuyerContent"/>
+	<xs:element name="Root_Utd820BuyerContent" type="tns:Utd820BuyerContent"/>
+	<xs:element name="Root_InvoiceContent" type="tns:InvoiceContent"/>
+	<xs:element name="Root_ProformaInvoiceSellerContent" type="tns:ProformaInvoiceSellerContent"/>
+	<xs:element name="Root_AcceptanceCertificateSellerContent" type="tns:AcceptanceCertificateSellerContent"/>
+	<xs:element name="Root_UtdSellerContent" type="tns:UtdSellerContent"/>
+	<xs:element name="Root_AcceptanceCertificateBuyerContent" type="tns:AcceptanceCertificateBuyerContent"/>
+	<xs:element name="Root_Utd820SellerContent" type="tns:Utd820SellerContent"/>
+	<xs:element name="Root_NonformilizedContent" type="tns:NonformilizedContent"/>
+	<xs:element name="Root_Act552SellerContent" type="tns:Act552SellerContent"/>
+	<xs:element name="Root_ProformaInvoiceContent" type="tns:ProformaInvoiceContent"/>
+	<xs:element name="Root_TovTorgSellerContent" type="tns:TovTorgSellerContent"/>
+	<xs:element name="Root_Torg12BuyerContent" type="tns:Torg12BuyerContent"/>
+	<xs:element name="Root_Torg12SellerContent" type="tns:Torg12SellerContent"/>
+	<xs:element name="Root_Torg2SenderTitle" type="tns:Torg2SenderTitle"/>
+	<xs:element name="Root_Torg2RecipientTitle" type="tns:Torg2RecipientTitle"/>
+	<xs:element name="Root_ReconciliationActSenderTitle" type="tns:ReconciliationActSenderTitle"/>
+	<xs:element name="Root_ReconciliationActRecipientTitle" type="tns:ReconciliationActRecipientTitle"/>
+	<xs:element name="Root_Utd970SellerContent" type="tns:Utd970SellerContent"/>
+	<xs:element name="Root_Utd970BuyerContent" type="tns:Utd970BuyerContent"/>
+	<xs:element name="Root_TorgBlrSellerContent" type="tns:TorgBlrSellerContent"/>
+	<xs:element name="Root_TorgBlrBuyerContent" type="tns:TorgBlrBuyerContent"/>
+	<xs:element name="Root_ProformaInvoice29SellerContent" type="tns:ProformaInvoice29SellerContent"/>
+	<xs:complexType name="AcceptanceCertificateBuyerContent">
+		<xs:sequence>
+			<xs:element name="Complaints" type="tns:String2000" minOccurs="0"/>
+			<xs:element name="SignatureDate" type="xs:date"/>
+			<xs:element name="Official" type="tns:Official"/>
+			<xs:element name="Attorney" type="tns:Attorney" minOccurs="0"/>
+			<xs:element name="Signer" type="tns:Signer"/>
+			<xs:element name="AdditionalInfo" type="xs:string" minOccurs="0"/>
+			<xs:element name="_Type_ReadOnly" type="xs:string" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="AcceptanceCertificateContent">
+		<xs:sequence>
+			<xs:element name="Date" type="xs:date" minOccurs="0"/>
+			<xs:element name="Number" type="xs:string" minOccurs="0"/>
+			<xs:element name="Grounds" type="xs:string" minOccurs="0"/>
+			<xs:element name="Total" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Vat" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="NeedRecipientSignature" type="xs:boolean"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="AcceptanceCertificateItem">
+		<xs:sequence>
+			<xs:element name="Name" type="tns:String1000" minOccurs="0"/>
+			<xs:element name="Description" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="10000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="UnitCode" type="tns:String4" minOccurs="0"/>
+			<xs:element name="UnitName" type="tns:String1000"/>
+			<xs:element name="Quantity" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Price" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="TotalWithVatExcluded" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Vat" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Total" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="AdditionalInfo" type="tns:String2000" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="AcceptanceCertificateSellerContent">
+		<xs:sequence>
+			<xs:element name="Date" type="xs:date"/>
+			<xs:element name="Number" type="tns:String256" minOccurs="0"/>
+			<xs:element name="Title" type="tns:String2000"/>
+			<xs:element name="SignatureDate" type="xs:date" minOccurs="0"/>
+			<xs:element name="Seller" type="tns:OrganizationInfo"/>
+			<xs:element name="Official" type="tns:Official"/>
+			<xs:element name="Attorney" type="tns:Attorney" minOccurs="0"/>
+			<xs:element name="Signer" type="tns:Signer" minOccurs="0"/>
+			<xs:element name="AdditionalInfo" type="xs:string"/>
+			<xs:element name="Items" type="tns:AcceptanceCertificateItem" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="_Type_ReadOnly" type="xs:string" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="AcceptanceContent"/>
+	<xs:complexType name="Act552BuyerContent">
+		<xs:sequence>
+			<xs:element name="Signers" type="tns:ExtendedSigner" maxOccurs="unbounded"/>
+			<xs:element name="DocumentCreator" type="tns:String1000"/>
+			<xs:element name="DocumentCreatorBase" type="tns:String120"/>
+			<xs:element name="OperationType" type="tns:String255"/>
+			<xs:element name="OperationContent" type="tns:String1000"/>
+			<xs:element name="AcceptanceDate" type="xs:date"/>
+			<xs:element name="CreatedThingAcceptDate" type="xs:date"/>
+			<xs:element name="CreatedThingInfo" type="tns:String1000"/>
+			<xs:element name="AdditionalInfoId" type="tns:AdditionalInfoId"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="Act552SellerContent">
+		<xs:sequence>
+			<xs:element name="Seller" type="tns:ExtendedOrganizationInfo"/>
+			<xs:element name="Buyer" type="tns:ExtendedOrganizationInfo"/>
+			<xs:element name="Signers" type="tns:ExtendedSigner" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Grounds" type="tns:GroundInfo" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Currency" type="tns:ОКВТип"/>
+			<xs:element name="CurrencyRate" type="xs:string"/>
+			<xs:element name="Works" type="tns:Act552WorkDescription" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="DocumentDate" type="xs:date"/>
+			<xs:element name="DocumentNumber" type="tns:String1000"/>
+			<xs:element name="RevisionDate" type="xs:date"/>
+			<xs:element name="RevisionNumber" type="tns:String256"/>
+			<xs:element name="DocumentCreator" type="tns:String1000"/>
+			<xs:element name="DocumentCreatorBase" type="tns:String120"/>
+			<xs:element name="OperationType" type="tns:String255" minOccurs="0"/>
+			<xs:element name="OperationTitle" type="tns:String2000" minOccurs="0"/>
+			<xs:element name="GovernmentContractInfo" type="tns:String255"/>
+			<xs:element name="AdditionalInfo" type="tns:AdditionalInfoId"/>
+			<xs:element name="DocumentName" type="tns:String255"/>
+			<xs:element name="TransferInfo" type="tns:Act552TransferInfo"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="Act552TransferInfo">
+		<xs:sequence>
+			<xs:element name="OperationInfo" type="tns:String255"/>
+			<xs:element name="TransferDate" type="xs:date" minOccurs="0"/>
+			<xs:element name="CreatedThingTransferDate" type="xs:date" minOccurs="0"/>
+			<xs:element name="CreatedThingInfo" type="tns:String1000" minOccurs="0"/>
+			<xs:element name="StructedAdditionalInfos" type="tns:AdditionalInfoItem" maxOccurs="unbounded"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="Act552WorkDescription">
+		<xs:sequence>
+			<xs:element name="StartingDate" type="xs:date" minOccurs="0"/>
+			<xs:element name="CompletionDate" type="xs:date" minOccurs="0"/>
+			<xs:element name="TotalWithVatExcluded" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="TotalVat" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Total" type="xs:decimal"/>
+			<xs:element name="Items" type="tns:Act552WorkItem" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="Act552WorkItem">
+		<xs:sequence>
+			<xs:element name="Name" type="tns:String1000" minOccurs="0"/>
+			<xs:element name="Description" type="tns:String10000" minOccurs="0"/>
+			<xs:element name="UnitCode" type="tns:String4" minOccurs="0"/>
+			<xs:element name="UnitName" type="tns:String1000" minOccurs="0"/>
+			<xs:element name="Price" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Quantity" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="SubtotalWithVatExcluded" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Vat" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Subtotal" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="StructedAdditionalInfos" type="tns:AdditionalInfoItem" maxOccurs="unbounded"/>
+			<xs:element name="TaxRate" type="tns:TaxRate" minOccurs="0"/>
+			<xs:element name="ItemAccountDebit" type="tns:String9" minOccurs="0"/>
+			<xs:element name="ItemAccountCredit" type="tns:String9" minOccurs="0"/>
+			<xs:element name="СлужебнаяИнформация" type="tns:ItemСлужебнаяИнформация" minOccurs="0"/>			
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="AdditionalInfoId">
+		<xs:sequence>
+			<xs:element name="InfoFileId" type="tns:String36"/>
+			<xs:element name="StructedAdditionalInfos" type="tns:AdditionalInfoItem" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AdditionalInfoItem">
+		<xs:sequence>
+			<xs:element name="Key">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Value">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="2000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="AddressInfo">
+		<xs:sequence>
+			<xs:element name="IsForeign" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="ZipCode" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="6"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="RegionCode" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Territory" type="tns:String50" minOccurs="0"/>
+			<xs:element name="City" type="tns:String50" minOccurs="0"/>
+			<xs:element name="Locality" type="tns:String50" minOccurs="0"/>
+			<xs:element name="Street" type="tns:String50" minOccurs="0"/>
+			<xs:element name="Building" type="tns:String20" minOccurs="0"/>
+			<xs:element name="Block" type="tns:String20" minOccurs="0"/>
+			<xs:element name="Apartment" type="tns:String20" minOccurs="0"/>
+			<xs:element name="CountryCode" type="tns:CountryCode" minOccurs="0"/>
+			<xs:element name="AddressText" type="tns:String1000" minOccurs="0"/>
+			<xs:element name="AddressCode" type="tns:String36" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="AmountsDiff">
+		<xs:sequence>
+			<xs:element name="Excise" type="xs:string" minOccurs="0"/>
+			<xs:element name="TotalWithVatExcluded" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Vat" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Total" type="xs:decimal" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="Attorney">
+		<xs:sequence>
+			<xs:element name="Date" type="xs:date"/>
+			<xs:element name="Number" type="tns:String255" minOccurs="0"/>
+			<xs:element name="Issuer" type="tns:Official"/>
+			<xs:element name="IssuerAdditionalInfo" type="tns:String1000" minOccurs="0"/>
+			<xs:element name="IssuerOrganizationName" type="tns:String1000" minOccurs="0"/>
+			<xs:element name="Recipient" type="tns:Official"/>
+			<xs:element name="RecipientAdditionalInfo" type="tns:String1000" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="BaseDocumentName">
+		<xs:sequence>
+			<xs:element name="BaseDocumentDate" type="xs:date"/>
+			<xs:element name="BaseDocumentNumber" type="xs:string"/>
+			<xs:element name="BaseDocumentName" type="xs:string"/>
+			<xs:element name="AdditionalInfo" type="xs:string"/>
+			<xs:element name="BaseIdFile" type="xs:string255"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="BuyerInfoCircumPublicProc">
+		<xs:sequence>
+			<xs:element name="InfoFundsLiab" type="tns:InfoFundsLiab" maxOccurs="unbounded"/>
+			<xs:element name="ProcCode" type="tns:String36"/>
+			<xs:element name="PersonalAccountBuyer">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="11"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NameFinAuthority" type="tns:String2000"/>
+			<xs:element name="BuyerRegistryEntryNumber">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BuyerLiabNumber">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="16"/>
+						<xs:maxLength value="19"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BuyerTreasuryCode">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SellerTreasuryName" type="tns:String2000"/>
+			<xs:element name="OKTMOBuy" type="tns:OKTMO"/>
+			<xs:element name="OKTMOPlaceDelivery" type="tns:OKTMO"/>
+			<xs:element name="PayDeadLine" type="xs:date"/>
+			<xs:element name="NumberFundsLiab">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="22"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PriorityPayment" type="tns:String1f"/>
+			<xs:element name="TypePayment" type="tns:String1f"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ContentOperCode">
+		<xs:sequence>
+			<xs:element name="TotalCode" type="tns:String1f"/>
+			<xs:element name="NameDiscrepDocument" type="tns:String255"/>
+			<xs:element name="TypeDiscrepDocument" type="tns:String1f"/>
+			<xs:element name="NumberDiscrepDocument" type="tns:String255"/>
+			<xs:element name="DateDiscrepDocument" type="xs:date"/>
+			<xs:element name="IdDiscrepDocument" type="tns:String255"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ContractContent">
+		<xs:sequence>
+			<xs:element name="Date" type="xs:date" minOccurs="0"/>
+			<xs:element name="Number" type="tns:String255" minOccurs="0"/>
+			<xs:element name="Price" type="xs:string" minOccurs="0"/>
+			<xs:element name="ContractType" type="xs:string" minOccurs="0"/>
+			<xs:element name="_Type_ReadOnly" type="xs:string" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="CorrectionRequestContent">
+		<xs:sequence>
+			<xs:element name="Comment" type="xs:string"/>
+			<xs:element name="Signer" type="tns:Signer" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="CountryCode">
+		<xs:restriction base="xs:string">
+			<xs:length value="3"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="CustomDeclaration">
+		<xs:sequence>
+			<xs:element name="CountryCode" type="tns:CountryCode"/>
+			<xs:element name="DeclarationNumber" type="tns:String29"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CustomDeclaration820">
+		<xs:complexContent>
+			<xs:extension base="tns:CustomDeclaration">
+				<xs:sequence>
+					<xs:element name="HyphenCountry" type="xs:boolean"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="DocumentShipment">
+		<xs:sequence>
+			<xs:element name="Name" type="tns:String255"/>
+			<xs:element name="Number" type="tns:String255"/>
+			<xs:element name="Date" type="xs:date" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Employee">
+		<xs:sequence>
+			<xs:element name="EmployeePosition" type="tns:String128"/>
+			<xs:element name="EmployeeInfo" type="tns:String255"/>
+			<xs:element name="EmployeeBase" type="tns:String120"/>
+			<xs:element name="Surname" type="tns:String60"/>
+			<xs:element name="FirstName" type="tns:String60"/>
+			<xs:element name="Patronymic" type="tns:String60"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="EventContent">
+		<xs:sequence>
+			<xs:element name="CostChangeInfo" type="xs:string"/>
+			<xs:element name="TransferDocDetails" type="xs:string"/>
+			<xs:element name="TransferDocDetails736" type="tns:BaseDocumentName" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="OperationContent" type="xs:string"/>
+			<xs:element name="NotificationDate" type="xs:dateTime"/>
+			<xs:element name="CorrectionBases" type="tns:BaseDocumentName" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ExtendedInvoiceCorrectionItem">
+		<xs:sequence>
+			<xs:element name="Product" type="tns:String1000" minOccurs="0"/>
+			<xs:element name="OriginalValues" type="tns:InvoiceItemFields"/>
+			<xs:element name="CorrectedValues" type="tns:InvoiceItemFields"/>
+			<xs:element name="AmountsInc" type="tns:AmountsDiff"/>
+			<xs:element name="AmountsDec" type="tns:AmountsDiff"/>
+			<xs:element name="ItemAccountDebit" type="xs:string"/>
+			<xs:element name="ItemAccountCredit" type="xs:string"/>
+			<xs:element name="StructedAdditionalInfos" type="tns:AdditionalInfoItem" maxOccurs="unbounded"/>
+			<xs:element name="OriginalNumber" type="integer6" minOccurs="0" />
+			<xs:element name="ItemTracingInfos" type="tns:ItemTracingInfo736" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="OriginalItemIdentificationNumbers" type="tns:ItemIdentificationNumber" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="CorrectedItemIdentificationNumbers" type="tns:ItemIdentificationNumber" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="ItemCharact" type="tns:String1000" minOccurs="0" />
+			<xs:element name="ItemKind" type="tns:string10" minOccurs="0" />
+			<xs:element name="ItemArticle" type="tns:string50" minOccurs="0" />
+			<xs:element name="ItemVendorCode" type="tns:string255" minOccurs="0" />
+			<xs:element name="ItemTypeCode" type="tns:string10" minOccurs="0" />
+			<xs:element name="СлужебнаяИнформация" type="tns:ItemСлужебнаяИнформация" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ItemTracingInfo736">
+		<xs:sequence>
+			<xs:element name="QuantityDiff" minOccurs="0">
+				<xs:complexType>
+					<xs:choice>
+						<xs:element name="QuantityInc">
+							<xs:simpleType>
+								<xs:restriction base="xs:decimal">
+									<xs:totalDigits value="26"/>
+									<xs:fractionDigits value="11"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="QuantityDec">
+							<xs:simpleType>
+								<xs:restriction base="xs:decimal">
+									<xs:totalDigits value="26"/>
+									<xs:fractionDigits value="11"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+					</xs:choice>
+					<xs:attribute name="OriginalQuantity" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:decimal">
+								<xs:totalDigits value="26"/>
+								<xs:fractionDigits value="11"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="CorrectedQuantity" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:decimal">
+								<xs:totalDigits value="26"/>
+								<xs:fractionDigits value="11"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="RegNumberUnit" type="string29" use="required" />
+		<xs:attribute name="Unit" type="tns:okei" use="required" />
+		<xs:attribute name="ItemAddInfo" type="string255" use="optional" />
+	</xs:complexType>
+	<xs:complexType name="ExtendedInvoiceItem">
+		<xs:sequence>
+			<xs:element name="Product" type="tns:String1000"/>
+			<xs:element name="UnitCode" type="tns:String4" minOccurs="0"/>
+			<xs:element name="UnitName" type="tns:String255"/>
+			<xs:element name="Quantity" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Price" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Excise" type="xs:string" minOccurs="0"/>
+			<xs:element name="TaxRate" type="tns:TaxRate"/>
+			<xs:element name="SubtotalWithVatExcluded" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Vat" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Subtotal" type="xs:decimal"/>
+			<xs:element name="ItemMark" type="tns:ItemMark"/>
+			<xs:element name="AdditionalProperty" type="tns:String4"/>
+			<xs:element name="VendorCode" type="tns:String255"/>
+			<xs:element name="ToRelease" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="AccountDebit" type="tns:String9"/>
+			<xs:element name="AccountCredit" type="tns:String9"/>
+			<xs:element name="CustomDeclarations" type="tns:CustomDeclaration" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="StructedAdditionalInfos" type="tns:AdditionalInfoItem" maxOccurs="unbounded"/>
+			<xs:element name="СсылкаНаЕИ" type="tns:Ссылка1С" minOccurs="0"/>
+			<xs:element name="СтранаПроисхожденияСсылка" type="tns:Ссылка1С" minOccurs="0"/>
+			<xs:element name="ЕдиницаИзмеренияСсылка" type="tns:Ссылка1С" minOccurs="0"/>
+			<xs:element name="СлужебнаяИнформация" type="tns:ItemСлужебнаяИнформация" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="ExtendedOrganizationInfo">
+		<xs:sequence>
+			<xs:element name="BoxId" type="xs:string"/>
+			<xs:element name="Name" type="xs:string"/>
+			<xs:element name="Inn" type="tns:Inn"/>
+			<xs:element name="Kpp" type="tns:Kpp" minOccurs="0"/>
+			<xs:element name="Address" type="tns:AddressInfo" minOccurs="0"/>
+			<xs:element name="FnsParticipantId" type="xs:string"/>
+			<xs:element name="Type" type="xs:string"/>
+			<xs:element name="Okopf" type="tns:String7" minOccurs="0"/>
+			<xs:element name="Okpo" type="tns:String10" minOccurs="0"/>
+			<xs:element name="Okdp" type="tns:String10" minOccurs="0"/>
+			<xs:element name="Phone" type="tns:String255" minOccurs="0"/>
+			<xs:element name="Email" type="tns:String255" minOccurs="0"/>
+			<xs:element name="CorrespondentAccount" type="tns:String20" minOccurs="0"/>
+			<xs:element name="BankAccountNumber" type="tns:String20" minOccurs="0"/>
+			<xs:element name="BankName" type="tns:String1000" minOccurs="0"/>
+			<xs:element name="BankId" type="tns:String9" minOccurs="0"/>
+			<xs:element name="Department" type="tns:String1000" minOccurs="0"/>
+			<xs:element name="AdditionalInfo" type="tns:String255" minOccurs="0"/>
+			<xs:element name="OrganizationOrPersonInfo" type="tns:String255" minOccurs="0"/>
+			<xs:element name="LegalEntityId" type="tns:String255" minOccurs="0"/>
+			<xs:element name="IndividualEntityRegistrationCertificate" type="tns:String100" minOccurs="0"/>
+			<xs:element name="Country" type="tns:String255" minOccurs="0"/>
+			<xs:element name="Ссылка" type="tns:Ссылка1С"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="ExtendedOrganizationInfo820">
+		<xs:complexContent>
+			<xs:extension base="tns:ExtendedOrganizationInfo">
+				<xs:sequence>
+					<xs:element name="HyphenInn" type="xs:boolean"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ExtendedSigner">
+		<xs:sequence>
+			<xs:element name="BoxId" type="xs:string"/>
+			<xs:element name="CertificateThumbprint" type="xs:string"/>
+			<xs:element name="SignerDetails" type="tns:ExtendedSignerDetails"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="ExtendedSignerDetails">
+		<xs:sequence>
+			<xs:element name="FirstName" type="tns:String60"/>
+			<xs:element name="Surname" type="tns:String60"/>
+			<xs:element name="Patronymic" type="tns:String60"/>
+			<xs:element name="JobTitle" type="tns:String128"/>
+			<xs:element name="Inn" type="tns:Inn"/>
+			<xs:element name="RegistrationCertificate" type="xs:string"/>
+			<xs:element name="SignerType" type="tns:SignerType"/>
+			<xs:element name="OrganizationName" type="tns:String1000"/>
+			<xs:element name="SignerInfo" type="tns:String255"/>
+			<xs:element name="Powers" type="tns:Powers"/>
+			<xs:element name="Status" type="tns:Status"/>
+			<xs:element name="PowersBase" type="tns:String255"/>
+			<xs:element name="OrganizationPowersBase" type="tns:String255"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="FormalizedRejectionContent">
+		<xs:sequence>
+			<xs:element name="Comment" type="xs:string"/>
+			<xs:element name="Signer" type="tns:Signer" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="GroundInfo">
+		<xs:sequence>
+			<xs:element name="Name" type="tns:String255"/>
+			<xs:element name="Number" type="tns:String255"/>
+			<xs:element name="Date" type="xs:date"/>
+			<xs:element name="Info" type="tns:String1000"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="InfoFundsLiab">
+		<xs:sequence>
+			<xs:element name="NumberString">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:totalDigits value="6"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ObjectCodeFAIP" type="tns:String24"/>
+			<xs:element name="TypeFundsSource" type="tns:String1f"/>
+			<xs:element name="BuyerBudjetClassCode" type="tns:String20f"/>
+			<xs:element name="BuyerTargetCode" type="tns:String20"/>
+			<xs:element name="AmountAdvance">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="19"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="Inn">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="10"/>
+			<xs:maxLength value="12"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="InvoiceContent">
+		<xs:sequence>
+			<xs:element name="InvoiceVersion" type="xs:string"/>
+			<xs:element name="Date" type="xs:date"/>
+			<xs:element name="Number" type="tns:String256"/>
+			<xs:element name="InvoiceRevisionDate" type="xs:date" minOccurs="0"/>
+			<xs:element name="InvoiceRevisionNumber" type="tns:String3" minOccurs="0"/>
+			<xs:element name="Currency" type="tns:ОКВТип"/>
+			<xs:element name="Seller" type="tns:OrganizationInfo"/>
+			<xs:element name="Buyer" type="tns:OrganizationInfo"/>
+			<xs:element name="Shipper" type="tns:ShipperOrConsigneeInfo" minOccurs="0"/>
+			<xs:element name="Consignee" type="tns:ShipperOrConsigneeInfo" minOccurs="0"/>
+			<xs:element name="Signer" type="tns:Signer" minOccurs="0"/>
+			<xs:element name="Totals" type="tns:InvoiceTotals" minOccurs="0"/>
+			<xs:element name="_Type_ReadOnly" type="xs:string" minOccurs="0"/>
+			<xs:element name="Items" type="tns:InvoiceItem" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="PaymentDocuments" type="tns:PaymentDocument" minOccurs="0" maxOccurs="10"/>
+			<xs:element name="StructedAdditionalInfos" type="tns:AdditionalInfoItem" maxOccurs="unbounded"/>
+			<xs:element name="ВалютаСсылка" type="tns:Ссылка1С"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="InvoiceCorrectionContent">
+		<xs:sequence>
+			<xs:element name="InvoiceVersion" type="xs:string"/>
+			<xs:element name="OriginalInvoices" type="tns:OriginalInvoice" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="InvoiceCorrectionDate" type="xs:date" minOccurs="0"/>
+			<xs:element name="InvoiceCorrectionNumber" type="tns:String256" minOccurs="0"/>
+			<xs:element name="InvoiceCorrectionRevisionDate" type="xs:date" minOccurs="0"/>
+			<xs:element name="InvoiceCorrectionRevisionNumber" type="tns:String3" minOccurs="0"/>
+			<xs:element name="Currency" type="tns:ОКВТип"/>
+			<xs:element name="Seller" type="tns:OrganizationInfo"/>
+			<xs:element name="Buyer" type="tns:OrganizationInfo"/>
+			<xs:element name="Signer" type="tns:Signer" minOccurs="0"/>
+			<xs:element name="_Type_ReadOnly" type="xs:string" minOccurs="0"/>
+			<xs:element name="Items" type="tns:InvoiceCorrectionItem" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="TotalsInc" type="tns:InvoiceTotalsDiff" minOccurs="0"/>
+			<xs:element name="TotalsDec" type="tns:InvoiceTotalsDiff" minOccurs="0"/>
+			<xs:element name="StructedAdditionalInfos" type="tns:AdditionalInfoItem" maxOccurs="unbounded"/>
+			<xs:element name="ВалютаСсылка" type="tns:Ссылка1С"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="InvoiceCorrectionItem">
+		<xs:sequence>
+			<xs:element name="Product" type="tns:String1000"/>
+			<xs:element name="OriginalValues" type="tns:InvoiceItemFields"/>
+			<xs:element name="CorrectedValues" type="tns:InvoiceItemFields"/>
+			<xs:element name="AmountsInc" type="tns:AmountsDiff"/>
+			<xs:element name="AmountsDec" type="tns:AmountsDiff"/>
+			<xs:element name="StructedAdditionalInfos" type="tns:AdditionalInfoItem" maxOccurs="unbounded"/>
+			<xs:element name="СлужебнаяИнформация" type="tns:ItemСлужебнаяИнформация" minOccurs="0"/>			
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="InvoiceCorrectionTable">
+		<xs:sequence>
+			<xs:element name="Items" type="tns:ExtendedInvoiceCorrectionItem" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="TotalsInc" type="tns:InvoiceTotalsDiff"/>
+			<xs:element name="TotalsDec" type="tns:InvoiceTotalsDiff"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="InvoiceForCorrectionInfo">
+		<xs:sequence>
+			<xs:element name="InvoiceDate" type="xs:date"/>
+			<xs:element name="InvoiceNumber" type="tns:String255"/>
+			<xs:element name="InvoiceRevisions" type="tns:InvoiceRevisionInfo" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="InvoiceItem">
+		<xs:sequence>
+			<xs:element name="Product" type="tns:String1000"/>
+			<xs:element name="UnitCode" type="tns:String4" minOccurs="0"/>
+			<xs:element name="Quantity" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Price" type="xs:string" minOccurs="0"/>
+			<xs:element name="TaxRate" type="tns:TaxRate"/>
+			<xs:element name="Excise" type="xs:string" minOccurs="0"/>
+			<xs:element name="TotalWithVatExcluded" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Vat" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Total" type="xs:decimal"/>
+			<xs:element name="StructedAdditionalInfos" type="tns:AdditionalInfoItem" maxOccurs="unbounded"/>
+			<xs:element name="СсылкаНаЕИ" type="tns:Ссылка1С" minOccurs="0"/>
+			<xs:element name="СтранаПроисхожденияСсылка" type="tns:Ссылка1С" minOccurs="0"/>
+			<xs:element name="CustomsDeclarationNumbers" type="xs:string" minOccurs="0"/>
+			<xs:element name="ЕдиницаИзмеренияСсылка" type="tns:Ссылка1С" minOccurs="0"/> 
+			<xs:element name="СлужебнаяИнформация" type="tns:ItemСлужебнаяИнформация" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="CountriesOfOrigin" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="29"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="InvoiceItemFields">
+		<xs:sequence>
+			<xs:element name="UnitCode" type="tns:String4" minOccurs="0"/>
+			<xs:element name="UnitName" type="tns:string255" minOccurs="0"/>
+			<xs:element name="Quantity" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Price" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="TaxRate" type="tns:TaxRate"/>
+			<xs:element name="Excise" type="xs:string" minOccurs="0"/>
+			<xs:element name="TotalWithVatExcluded" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Vat" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Total" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="WithoutVat" default="false">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="true"/>
+						<xs:enumeration value="false"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="InvoiceRevisionInfo">
+		<xs:sequence>
+			<xs:element name="RevisionDate" type="xs:date"/>
+			<xs:element name="RevisionNumber" type="tns:String255"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="InvoiceTable">
+		<xs:sequence>
+			<xs:element name="TotalWithVatExcluded" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Vat" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Total" type="xs:decimal"/>
+			<xs:element name="TotalNet" type="xs:decimal"/>
+			<xs:element name="Items" type="tns:ExtendedInvoiceItem" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="InvoiceTable820">
+		<xs:sequence>
+			<xs:element name="Items" type="tns:Item820" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="TotalWithVatExcluded">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="HyphenVat" type="xs:boolean"/>
+		<xs:attribute name="Vat">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="WithoutVat" default="false">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="true"/>
+					<xs:enumeration value="false"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="HyphenTotal" type="xs:boolean"/>
+		<xs:attribute name="Total">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="TotalNet">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="26"/>
+					<xs:fractionDigits value="11"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="InvoiceTotals">
+		<xs:sequence>
+			<xs:element name="TotalWithVatExcluded" type="xs:decimal"/>
+			<xs:element name="Vat" type="xs:decimal"/>
+			<xs:element name="Total" type="xs:decimal"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="InvoiceTotalsDiff">
+		<xs:sequence>
+			<xs:element name="TotalWithVatExcluded" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Vat" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Total" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="WithoutVat">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="true"/>
+						<xs:enumeration value="false"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="Item820">
+		<xs:choice>
+			<xs:element name="CustomDeclarations" type="tns:CustomDeclaration820" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="StructedAdditionalInfos" type="tns:AdditionalInfoItem" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="ItemTracingInfos" type="tns:ItemTracingInfo" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="ItemIdentificationNumbers" type="tns:ItemIdentificationNumber" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="СлужебнаяИнформация" type="tns:ItemСлужебнаяИнформация" minOccurs="0"/>
+		</xs:choice>
+		<xs:attribute name="Product"/>
+		<xs:attribute name="HyphenUnit" type="xs:boolean"/>
+		<xs:attribute name="Unit" type="tns:okei"/>
+		<xs:attribute name="UnitName" type="tns:String255"/>
+		<xs:attribute name="Quantity">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="26"/>
+					<xs:fractionDigits value="11"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Price">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="26"/>
+					<xs:fractionDigits value="11"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Excise">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="TaxRate" type="tns:TaxRate" use="required"/>
+		<xs:attribute name="SubtotalWithVatExcluded">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="HyphenVat" type="xs:boolean"/>
+		<xs:attribute name="Vat">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="WithoutVat" default="false">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="true"/>
+					<xs:enumeration value="false"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="HyphenSubtotal" type="xs:boolean"/>
+		<xs:attribute name="Subtotal">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="ItemMark" type="tns:ItemMark"/>
+		<xs:attribute name="AdditionalProperty">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="4"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="ItemVendorCode" type="tns:String100"/>
+		<xs:attribute name="ItemToRelease">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="26"/>
+					<xs:fractionDigits value="11"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="ItemCharact" type="tns:String1000"/>
+		<xs:attribute name="ItemArticle" type="tns:String50"/>
+		<xs:attribute name="ItemKind" type="tns:String10"/>
+		<xs:attribute name="CatalogCode">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:length value="27"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="ItemTypeCode">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:length value="10"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="ItemIdentificationNumber">
+		<xs:choice>
+			<xs:element name="Units" type="tns:String255" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="PackageIds" type="tns:String255" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+		<xs:attribute name="TransPackageId" type="tns:String255"/>
+	</xs:complexType>
+	<xs:simpleType name="ItemMark">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="NotSpecified"/>
+			<xs:enumeration value="Property"/>
+			<xs:enumeration value="Job"/>
+			<xs:enumeration value="Service"/>
+			<xs:enumeration value="PropertyRights"/>
+			<xs:enumeration value="Other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="ItemTracingInfo">
+		<xs:sequence>
+			<xs:element name="UnitName" type="tns:String255"/>
+		</xs:sequence>
+		<xs:attribute name="RegNumberUnit" type="tns:String29" use="required"/>
+		<xs:attribute name="Unit" type="tns:okei" use="required"/>
+		<xs:attribute name="Quantity" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="26"/>
+					<xs:fractionDigits value="11"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="ItemAddInfo" type="tns:String255"/>
+	</xs:complexType>
+	<xs:complexType name="ItemСлужебнаяИнформация">
+		<xs:sequence>
+			<xs:element name="Номенклатура" type="tns:Ссылка1С" minOccurs="0"/>
+			<xs:element name="Характеристика" type="tns:Ссылка1С" minOccurs="0"/>
+			<xs:element name="СтранаПроисхождения" type="tns:Ссылка1С" minOccurs="0"/>
+			<xs:element name="Серия" type="tns:Ссылка1С" minOccurs="0"/>
+			<xs:element name="Упаковка" type="tns:Ссылка1С" minOccurs="0"/>
+			<xs:element name="УпаковкаДоИзменения" type="tns:Ссылка1С" minOccurs="0"/>
+			<xs:element name="СтавкаНДС" type="tns:Ссылка1С" minOccurs="0"/>
+			<xs:element name="СтавкаНДСДоИзменения" type="tns:Ссылка1С" minOccurs="0"/>
+			<xs:element name="ДокументОтгрузки" type="tns:Ссылка1С" minOccurs="0"/>
+			<xs:element name="НомерГТД" type="tns:Ссылка1С" minOccurs="0"/>
+			<xs:element name="ЕдиницаИзмерения" type="tns:Ссылка1С" minOccurs="0"/>
+			<xs:element name="ЕдиницаИзмеренияДоИзменения" type="tns:Ссылка1С" minOccurs="0"/>
+			<xs:element name="ПрослеживаемыйТовар" type="xs:boolean"/>
+			<xs:element name="ИдентификаторСтроки" type="tns:String50" minOccurs="0"/>
+			<xs:element name="ПутьКИдентификаторуСтроки" type="tns:String1000" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="Kpp">
+		<xs:restriction base="xs:string">
+			<xs:length value="9"/>
+			<xs:minLength value="9"/>
+			<xs:maxLength value="9"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="NonformilizedContent">
+		<xs:sequence>
+			<xs:element name="_Type_ReadOnly">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="XmlAcceptanceCertificateContent"/>
+						<xs:enumeration value="XmlAcceptanceCertificateBuyerTitle"/>
+						<xs:enumeration value="DocumentSignature"/>
+						<xs:enumeration value="AcceptanceCertificatey"/>
+						<xs:enumeration value="NonformalizedProforma"/>
+						<xs:enumeration value="Torg12"/>
+						<xs:enumeration value="Contract"/>
+						<xs:enumeration value="InvoiceCorrectionRequest"/>
+						<xs:enumeration value="XmlSignatureRejection"/>
+						<xs:enumeration value="InvoiceContent"/>
+						<xs:enumeration value="InvoiceCorrectionContent"/>
+						<xs:enumeration value="CertificateRegistry"/>
+						<xs:enumeration value="PriceList"/>
+						<xs:enumeration value="PriceListAgreement"/>
+						<xs:enumeration value="ReconciliationAct"/>
+						<xs:enumeration value="ServiceDetails"/>
+						<xs:enumeration value="SupplementaryAgreement"/>
+						<xs:enumeration value="NonformilizedDocumentContent"/>
+						<xs:enumeration value="PackageContent"/>
+						<xs:enumeration value="SignatureRequestRejection"/>
+						<xs:enumeration value="RevocationRequest"/>
+						<xs:enumeration value="XmlTorg12BuyerTitle"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Date" type="xs:date" minOccurs="0"/>
+			<xs:element name="Number" type="xs:string" minOccurs="0"/>
+			<xs:element name="NeedRecipientSignature" type="xs:boolean"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:simpleType name="OKDP">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="7"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="OKTMO">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="8"/>
+			<xs:maxLength value="11"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="Official">
+		<xs:sequence>
+			<xs:element name="FirstName" type="tns:String60"/>
+			<xs:element name="Surname" type="tns:String60"/>
+			<xs:element name="Patronymic" type="tns:String60"/>
+			<xs:element name="JobTitle" type="tns:String128"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="OrganizationInfo">
+		<xs:sequence>
+			<xs:element name="IsSoleProprietor" type="xs:boolean"/>
+			<xs:element name="Name" type="xs:string"/>
+			<xs:element name="Inn" type="tns:Inn"/>
+			<xs:element name="Kpp" type="tns:Kpp" minOccurs="0"/>
+			<xs:element name="Address" type="tns:AddressInfo" minOccurs="0"/>
+			<xs:element name="Phone" type="tns:String20" minOccurs="0"/>
+			<xs:element name="Fax" type="tns:String20" minOccurs="0"/>
+			<xs:element name="Okopf" type="tns:String7" minOccurs="0"/>
+			<xs:element name="Okpo" type="tns:String10" minOccurs="0"/>
+			<xs:element name="BankAccountNumber" type="tns:String20" minOccurs="0"/>
+			<xs:element name="BankId" type="tns:String9" minOccurs="0"/>
+			<xs:element name="BankName" type="tns:String1000" minOccurs="0"/>
+			<xs:element name="FnsParticipantId" type="xs:string"/>
+			<xs:element name="Ссылка" type="tns:Ссылка1С"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="OriginalInvoice">
+		<xs:sequence>
+			<xs:element name="Date" type="xs:date"/>
+			<xs:element name="Number" type="tns:String256"/>
+			<xs:element name="InvoiceRevisionDate" type="xs:date" minOccurs="0"/>
+			<xs:element name="InvoiceRevisionNumber" type="tns:String3" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="OtherIssuer">
+		<xs:sequence>
+			<xs:element name="EmployeePosition" type="tns:String128"/>
+			<xs:element name="EmployeeInfo" type="tns:String255"/>
+			<xs:element name="OrganizationName" type="tns:String255"/>
+			<xs:element name="OrganizationBase" type="tns:String120"/>
+			<xs:element name="EmployeeBase" type="tns:String120"/>
+			<xs:element name="Surname" type="tns:String60"/>
+			<xs:element name="FirstName" type="tns:String60"/>
+			<xs:element name="Patronymic" type="tns:String60"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PaymentDocument">
+		<xs:sequence>
+			<xs:element name="Date" type="xs:date"/>
+			<xs:element name="Number">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PaymentDocumentInfo">
+		<xs:attribute name="Date" type="xs:date" use="required"/>
+		<xs:attribute name="Number" use="required"/>
+		<xs:attribute name="Total">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="PersonalAccountInfo">
+		<xs:attribute name="Key" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="128"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Value" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:simpleType name="Powers">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="InvoiceSigner"/>
+			<xs:enumeration value="PersonMadeOperation"/>
+			<xs:enumeration value="MadeAndSignOperation"/>
+			<xs:enumeration value="PersonDocumentedOperation"/>
+			<xs:enumeration value="MadeOperationAndSignedInvoice"/>
+			<xs:enumeration value="MadeAndResponsibleForOperationAndSignedInvoice"/>
+			<xs:enumeration value="ResponsibleForOperationAndSignerForInvoice"/>
+			<xs:enumeration value="ChairmanCommission"/>
+			<xs:enumeration value="MemberCommission"/>
+			<xs:enumeration value="PersonApprovedDocument"/>
+			<xs:enumeration value="PersonConfirmedDocument"/>
+			<xs:enumeration value="PersonAgreedOnDocument"/>
+			<xs:enumeration value="PersonOtherPower"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="ProformaInvoiceContent">
+		<xs:sequence>
+			<xs:element name="Date" type="xs:date" minOccurs="0"/>
+			<xs:element name="Number" type="xs:string" minOccurs="0"/>
+			<xs:element name="Grounds" type="xs:string" minOccurs="0"/>
+			<xs:element name="Total" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Vat" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="_Type_ReadOnly" type="xs:string" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="ProformaInvoiceItem">
+		<xs:sequence>
+			<xs:element name="Excise" type="xs:string" minOccurs="0"/>
+			<xs:element name="Vat" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="StructedAdditionalInfos" type="tns:AdditionalInfoItem" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="Product" use="required"/>
+		<xs:attribute name="UnitName" use="required"/>
+		<xs:attribute name="Unit" type="tns:String4"/>
+		<xs:attribute name="Quantity" type="xs:decimal"/>
+		<xs:attribute name="Price" type="xs:decimal"/>
+		<xs:attribute name="SubtotalWithVatExcluded" type="xs:decimal"/>
+		<xs:attribute name="TaxRate" type="tns:TaxRate"/>
+		<xs:attribute name="Subtotal" type="xs:decimal" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="ProformaInvoiceSellerContent">
+		<xs:sequence>
+			<xs:element name="Seller" type="tns:ExtendedOrganizationInfo"/>
+			<xs:element name="Buyer" type="tns:ExtendedOrganizationInfo"/>
+			<xs:element name="Recipient" type="tns:ExtendedOrganizationInfo" minOccurs="0"/>
+			<xs:element name="Payer" type="tns:ExtendedOrganizationInfo" minOccurs="0"/>
+			<xs:element name="Signer" type="tns:Signer"/>
+			<xs:element name="Contract" minOccurs="0">
+				<xs:complexType>
+					<xs:attribute name="Name" use="required"/>
+					<xs:attribute name="Number"/>
+					<xs:attribute name="Date" type="xs:date"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="StructedAdditionalInfos" type="tns:AdditionalInfoItem" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="PersonalAccountInfo" type="tns:PersonalAccountInfo" minOccurs="0" maxOccurs="30"/>
+			<xs:element name="ProformaInvoiceTable" type="tns:ProformaInvoiceTable"/>
+		</xs:sequence>
+		<xs:attribute name="DocumentDate" type="xs:date" use="required"/>
+		<xs:attribute name="DocumentNumber"/>
+		<xs:attribute name="GovernmentContractInfo"/>
+		<xs:attribute name="PaymentPurpose"/>
+		<xs:attribute name="Currency" type="tns:ОКВТип"/>
+		<xs:attribute name="CurrencyRate" type="xs:decimal"/>
+	</xs:complexType>
+	<xs:complexType name="ProformaInvoiceTable">
+		<xs:sequence>
+			<xs:element name="Items" type="tns:ProformaInvoiceItem" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="TotalWithVatExcluded" type="xs:decimal" use="required"/>
+		<xs:attribute name="TotalVat" type="xs:decimal" use="required"/>
+		<xs:attribute name="Total" type="xs:decimal" use="required"/>
+		<xs:attribute name="GrandTotal" type="xs:decimal"/>
+	</xs:complexType>
+	<xs:complexType name="RejectionContent">
+		<xs:sequence>
+			<xs:element name="Comment" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SellerInfoCircumPublicProc">
+		<xs:attribute name="DateStateContract" type="xs:date" use="required"/>
+		<xs:attribute name="NumberStateContract" type="tns:String100" use="required"/>
+		<xs:attribute name="PersonalAccountSeller">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:length value="11"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="SellerBudjetClassCode" type="tns:String20f"/>
+		<xs:attribute name="SellerTargetCode" type="tns:String20f"/>
+		<xs:attribute name="SellerTreasuryCode">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="4"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="SellerTreasuryName" type="tns:String2000"/>
+	</xs:complexType>
+	<xs:complexType name="Shipper">
+		<xs:sequence>
+			<xs:element name="SameAsSeller" type="xs:boolean"/>
+			<xs:element name="OrganizationInfo" type="tns:ExtendedOrganizationInfo"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="Shipper820">
+		<xs:sequence>
+			<xs:element name="SameAsSeller" type="xs:boolean"/>
+			<xs:element name="OrganizationInfo" type="tns:ExtendedOrganizationInfo820"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="ShipperOrConsigneeInfo">
+		<xs:sequence>
+			<xs:element name="IsSoleProprietor" type="xs:boolean"/>
+			<xs:element name="Name" type="xs:string"/>
+			<xs:element name="Address" type="tns:AddressInfo" minOccurs="0"/>
+			<xs:element name="SameAsSellerOrBuyer" type="xs:boolean"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="Signer">
+		<xs:sequence>
+			<xs:element name="IsSoleProprietor" type="xs:boolean"/>
+			<xs:element name="Inn" type="tns:Inn"/>
+			<xs:element name="FirstName" type="tns:String60"/>
+			<xs:element name="Surname" type="tns:String60"/>
+			<xs:element name="Patronymic" type="tns:String60"/>
+			<xs:element name="JobTitle" type="tns:String128"/>
+			<xs:element name="SoleProprietorRegistrationCertificate" type="tns:String128"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:simpleType name="SignerType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="LegalEntity"/>
+			<xs:enumeration value="IndividualEntity"/>
+			<xs:enumeration value="PhysicalPerson"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Status">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="SellerEmployee"/>
+			<xs:enumeration value="InformationCreatorEmployee"/>
+			<xs:enumeration value="OtherOrganizationEmployee"/>
+			<xs:enumeration value="AuthorizedPerson"/>
+			<xs:enumeration value="BuyerEmployee"/>
+			<xs:enumeration value="InformationCreatorBuyerEmployee"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String10">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="10"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String100">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="100"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string100nz">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="100" />
+			<xs:minLength value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String1000">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="1000"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string1000nz">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1" />
+			<xs:maxLength value="1000" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String10000">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="10000"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String120">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="120"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string120nz">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1" />
+			<xs:maxLength value="120" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String128">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="128"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String14f">
+		<xs:restriction base="xs:string">
+			<xs:length value="14"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String1f">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String20">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="20"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string20nz">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1" />
+			<xs:maxLength value="20" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String200">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="200"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string200nz">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1" />
+			<xs:maxLength value="200" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String2000">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="2000"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string2000nz">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1" />
+			<xs:maxLength value="2000" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String20f">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="20"/>
+			<xs:maxLength value="20"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String24">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="24"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String255">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="255"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string255nz">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1" />
+			<xs:maxLength value="255" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String256">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="256"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String29">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="29"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String3">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="3"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String36">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="36"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string36nz">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1" />
+			<xs:maxLength value="36" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String4">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="4"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string40nz">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1" />
+			<xs:maxLength value="40" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String50">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="50"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string50nz">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1" />
+			<xs:maxLength value="50" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string500nz">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1" />
+			<xs:maxLength value="500" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String60">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="60"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string60nz">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1" />
+			<xs:maxLength value="60" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String7">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="7"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String8">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="8"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String9">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="9"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TaxRate">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="50"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="Torg12BuyerContent">
+		<xs:sequence>
+			<xs:element name="ShipmentReceiptDate" type="xs:date"/>
+			<xs:element name="Attorney" type="tns:Attorney" minOccurs="0"/>
+			<xs:element name="Receiver" type="tns:Official"/>
+			<xs:element name="Accepter" type="tns:Official"/>
+			<xs:element name="Signer" type="tns:Signer" minOccurs="0"/>
+			<xs:element name="AdditionalInfo" type="xs:string" minOccurs="0"/>
+			<xs:element name="_Type_ReadOnly" type="xs:string" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="Torg12Commons">
+		<xs:sequence>
+			<xs:element name="TotalParcelsQuantity" type="xs:integer" minOccurs="0"/>
+			<xs:element name="TotalGrossQuantity" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="TotalQuantity" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="TotalSum" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="TotalParcelsQuantityInWords" type="xs:string" minOccurs="0"/>
+			<xs:element name="TotalGrossQuantityInWords" type="xs:string" minOccurs="0"/>
+			<xs:element name="TotalQuantityInWords" type="xs:string" minOccurs="0"/>
+			<xs:element name="TotalSumInWords" type="xs:string" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="Torg12Item">
+		<xs:sequence>
+			<xs:element name="Product" type="tns:String1000"/>
+			<xs:element name="ProductCode" type="tns:String100" minOccurs="0"/>
+			<xs:element name="Feature" type="tns:String1000" minOccurs="0"/>
+			<xs:element name="Sort" type="tns:String10" minOccurs="0"/>
+			<xs:element name="Article" type="tns:String50" minOccurs="0"/>
+			<xs:element name="UnitCode" type="tns:String4" minOccurs="0"/>
+			<xs:element name="UnitName" type="tns:String1000"/>
+			<xs:element name="ParcelsQuantity" type="xs:integer" minOccurs="0"/>
+			<xs:element name="ParcelType" type="tns:String100" minOccurs="0"/>
+			<xs:element name="ParcelCapacity" type="xs:integer" minOccurs="0"/>
+			<xs:element name="GrossQuantity" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Quantity" type="xs:decimal"/>
+			<xs:element name="Price" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="TotalWithVatExcluded" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="TaxRate" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value=""/>
+						<xs:enumeration value="без НДС"/>
+						<xs:enumeration value="0"/>
+						<xs:enumeration value="10"/>
+						<xs:enumeration value="18"/>
+						<xs:enumeration value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Vat" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Total" type="xs:decimal"/>
+			<xs:element name="AdditionalInfo">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ExternalCode" type="xs:string"/>
+			<xs:element name="СсылкаНаЕИ" type="tns:Ссылка1С" minOccurs="0"/>
+			<xs:element name="СлужебнаяИнформация" type="tns:ItemСлужебнаяИнформация" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="Torg12SellerContent">
+		<xs:sequence>
+			<xs:element name="Date" type="xs:date"/>
+			<xs:element name="Number" type="tns:String256"/>
+			<xs:element name="WaybillDate" type="xs:date" minOccurs="0"/>
+			<xs:element name="WaybillNumber" type="tns:String256" minOccurs="0"/>
+			<xs:element name="OperationCode" type="tns:String255" minOccurs="0"/>
+			<xs:element name="GroundName" type="tns:String255" minOccurs="0"/>
+			<xs:element name="GroundDate" type="xs:date" minOccurs="0"/>
+			<xs:element name="GroundNumber" type="tns:String256" minOccurs="0"/>
+			<xs:element name="Seller" type="tns:OrganizationInfo"/>
+			<xs:element name="Buyer" type="tns:OrganizationInfo"/>
+			<xs:element name="Shipper" type="tns:OrganizationInfo" minOccurs="0"/>
+			<xs:element name="ShipperDepartment" type="tns:String1000" minOccurs="0"/>
+			<xs:element name="ShipperOkdp" type="tns:OKDP" minOccurs="0"/>
+			<xs:element name="Consignee" type="tns:OrganizationInfo" minOccurs="0"/>
+			<xs:element name="Items" type="tns:Torg12Item" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Totals" type="tns:Torg12Totals" minOccurs="0"/>
+			<xs:element name="Commons" type="tns:Torg12Commons" minOccurs="0"/>
+			<xs:element name="AttachmentSheetsQuantity" type="xs:integer" minOccurs="0"/>
+			<xs:element name="SupplyAllowedBy" type="tns:Official" minOccurs="0"/>
+			<xs:element name="ChiefAccountant" type="tns:Official" minOccurs="0"/>
+			<xs:element name="SupplyPerformedBy" type="tns:Official" minOccurs="0"/>
+			<xs:element name="SupplyDate" type="xs:date" minOccurs="0"/>
+			<xs:element name="Signer" type="tns:Signer"/>
+			<xs:element name="AdditionalInfo" type="xs:string"/>
+			<xs:element name="_Type_ReadOnly" type="xs:string"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="Torg12Totals">
+		<xs:sequence>
+			<xs:element name="ParcelsQuantity" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="GrossQuantity" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Quantity" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="TotalWithVatExcluded" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Vat" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Total" type="xs:decimal" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="TovTorgBuyerContent">
+		<xs:sequence>
+			<xs:element name="DocumentCreator" type="tns:String1000"/>
+			<xs:element name="DocumentCreatorBase" type="tns:String120"/>
+			<xs:element name="OperationCode" type="tns:String255"/>
+			<xs:element name="OperationContent" type="tns:String1000"/>
+			<xs:element name="AcceptanceDate" type="xs:date"/>
+			<xs:element name="Employee" type="tns:Employee"/>
+			<xs:element name="OtherIssuer" type="tns:OtherIssuer"/>
+			<xs:element name="AdditionalInfo" type="tns:AdditionalInfoId"/>
+			<xs:element name="Signers" type="tns:ExtendedSigner" maxOccurs="unbounded"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="TovTorgItem">
+		<xs:sequence>
+			<xs:element name="Product" type="tns:String1000" minOccurs="0"/>
+			<xs:element name="Feature" type="tns:String1000" minOccurs="0"/>
+			<xs:element name="Sort" type="tns:String10" minOccurs="0"/>
+			<xs:element name="VendorCode" type="tns:String50" minOccurs="0"/>
+			<xs:element name="ProductCode" type="tns:String100" minOccurs="0"/>
+			<xs:element name="UnitName" type="tns:String1000"/>
+			<xs:element name="Unit" type="tns:String4"/>
+			<xs:element name="PackageType" type="tns:String1000" minOccurs="0"/>
+			<xs:element name="QuantityInPack" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Quantity" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Gross" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Net" type="xs:decimal"/>
+			<xs:element name="ItemToRelease" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Price" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="SubtotalWithVatExcluded" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="TaxRate" type="tns:TaxRate"/>
+			<xs:element name="Vat" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Subtotal" type="xs:decimal"/>
+			<xs:element name="ItemAccountDebit" type="tns:String9" minOccurs="0"/>
+			<xs:element name="ItemAccountCredit" type="tns:String9" minOccurs="0"/>
+			<xs:element name="StructedAdditionalInfos" type="tns:AdditionalInfoItem" maxOccurs="unbounded"/>
+			<xs:element name="СлужебнаяИнформация" type="tns:ItemСлужебнаяИнформация" minOccurs="0"/>		
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TovTorgSellerContent">
+		<xs:sequence>
+			<xs:element name="Seller" type="tns:ExtendedOrganizationInfo"/>
+			<xs:element name="Buyer" type="tns:ExtendedOrganizationInfo"/>
+			<xs:element name="Shipper" type="tns:ExtendedOrganizationInfo" minOccurs="0"/>
+			<xs:element name="Consignee" type="tns:ExtendedOrganizationInfo" minOccurs="0"/>
+			<xs:element name="Carrier" type="tns:ExtendedOrganizationInfo" minOccurs="0"/>
+			<xs:element name="Signers" type="tns:ExtendedSigner" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Grounds" type="tns:GroundInfo" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Currency" type="tns:ОКВТип"/>
+			<xs:element name="CurrencyRate" type="xs:string"/>
+			<xs:element name="DocumentDate" type="xs:date"/>
+			<xs:element name="DocumentNumber" type="tns:String1000"/>
+			<xs:element name="RevisionDate" type="xs:date"/>
+			<xs:element name="RevisionNumber" type="tns:String256"/>
+			<xs:element name="TransferInfo" type="tns:TovTorgTransferInfo"/>
+			<xs:element name="DocumentCreator" type="tns:String1000"/>
+			<xs:element name="DocumentCreatorBase" type="tns:String120"/>
+			<xs:element name="OperationType" type="tns:String255" minOccurs="0"/>
+			<xs:element name="GovernmentContractInfo" type="tns:String255"/>
+			<xs:element name="Table" type="tns:TovTorgTable" minOccurs="0"/>
+			<xs:element name="AdditionalInfoId" type="tns:AdditionalInfoId"/>
+			<xs:element name="DocumentName" type="tns:String255"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="TovTorgTable">
+		<xs:sequence>
+			<xs:element name="Items" type="tns:TovTorgItem" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="TotalQuantity" type="xs:decimal"/>
+			<xs:element name="TotalGross" type="xs:decimal"/>
+			<xs:element name="TotalNet" type="xs:decimal"/>
+			<xs:element name="TotalWithVatExcluded" type="xs:decimal"/>
+			<xs:element name="TotalVat" type="xs:decimal"/>
+			<xs:element name="Total" type="xs:decimal"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TovTorgTransferInfo">
+		<xs:sequence>
+			<xs:element name="OperationInfo" type="tns:String255"/>
+			<xs:element name="TransferDate" type="xs:date" minOccurs="0"/>
+			<xs:element name="Attachment" type="tns:String255" minOccurs="0"/>
+			<xs:element name="Waybills" type="tns:Waybill" maxOccurs="unbounded"/>
+			<xs:element name="Employee" type="tns:Employee"/>
+			<xs:element name="OtherIssuer" type="tns:OtherIssuer"/>
+			<xs:element name="StructedAdditionalInfos" type="tns:AdditionalInfoItem" maxOccurs="unbounded"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="TransferBase">
+		<xs:sequence>
+			<xs:element name="DocumentName" type="tns:String255"/>
+			<xs:element name="DocumentNumber" type="tns:String255"/>
+			<xs:element name="DocumentDate" type="xs:date"/>
+			<xs:element name="DocumentInfo" type="tns:String1000"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TransferBase820">
+		<xs:complexContent>
+			<xs:extension base="tns:TransferBase">
+				<xs:sequence>
+					<xs:element name="СлужебнаяИнформация" type="tns:ItemTransferBasesСлужебнаяИнформация" minOccurs="0"/>
+				</xs:sequence>
+				<xs:attribute name="BaseDocumentId" type="tns:String255"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TransferInfo">
+		<xs:sequence>
+			<xs:element name="OperationInfo" type="tns:String255"/>
+			<xs:element name="OperationType" type="tns:String255"/>
+			<xs:element name="TransferDate" type="xs:date"/>
+			<xs:element name="TransferTextInfo" type="tns:String1000"/>
+			<xs:element name="Carrier" type="tns:ExtendedOrganizationInfo"/>
+			<xs:element name="Employee" type="tns:Employee"/>
+			<xs:element name="OtherIssuer" type="tns:OtherIssuer"/>
+			<xs:element name="CreatedThingTransferDate" type="xs:date"/>
+			<xs:element name="CreatedThingInfo" type="xs:string"/>
+			<xs:element name="AdditionalInfoId" type="tns:AdditionalInfoId"/>
+			<xs:element name="TransferBases" type="tns:TransferBase" maxOccurs="unbounded"/>
+			<xs:element name="Waybills" type="tns:Waybill" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TransferInfo820">
+		<xs:sequence>
+			<xs:element name="OperationInfo" type="tns:String255"/>
+			<xs:element name="OperationType" type="tns:String255"/>
+			<xs:element name="TransferDate" type="xs:date"/>
+			<xs:element name="TransferTextInfo" type="tns:String1000"/>
+			<xs:element name="Carrier" type="tns:ExtendedOrganizationInfo820"/>
+			<xs:element name="Employee" type="tns:Employee"/>
+			<xs:element name="OtherIssuer" type="tns:OtherIssuer"/>
+			<xs:element name="CreatedThingTransferDate" type="xs:date"/>
+			<xs:element name="CreatedThingInfo" type="xs:string"/>
+			<xs:element name="AdditionalInfoId" type="tns:AdditionalInfoId"/>
+			<xs:element name="TransferBases" type="tns:TransferBase820" maxOccurs="unbounded"/>
+			<xs:element name="Waybills" type="tns:Waybill" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="TransferStartDate" type="xs:date"/>
+		<xs:attribute name="TransferEndDate" type="xs:date"/>
+	</xs:complexType>
+	<xs:complexType name="UcdSellerContent">
+		<xs:sequence>
+			<xs:element name="FormatVersion" type="xs:string" minOccurs="0"/>
+			<xs:element name="Function" type="xs:string"/>
+			<xs:element name="Name" type="tns:String255"/>
+			<xs:element name="Date" type="xs:date"/>
+			<xs:element name="Number" type="tns:String1000"/>
+			<xs:element name="Invoices" type="tns:InvoiceForCorrectionInfo" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Seller" type="tns:ExtendedOrganizationInfo"/>
+			<xs:element name="Buyer" type="tns:ExtendedOrganizationInfo"/>
+			<xs:element name="Signers" type="tns:ExtendedSigner" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="EventContent" type="tns:EventContent" minOccurs="0"/>
+			<xs:element name="InvoiceCorrectionTable" type="tns:InvoiceCorrectionTable"/>
+			<xs:element name="Currency" type="tns:ОКВТип"/>
+			<xs:element name="CurrencyName" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="1" />
+						<xs:enumeration value="0" />
+					</xs:restriction> 
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CurrencyRate" type="xs:string"/>
+			<xs:element name="RevisionDate" type="xs:date"/>
+			<xs:element name="RevisionNumber" type="tns:String256"/>
+			<xs:element name="AdditionalInfoId" type="tns:AdditionalInfoId"/>
+			<xs:element name="Creator" type="tns:String1000"/>
+			<xs:element name="CreatorBase" type="tns:String120"/>
+			<xs:element name="GovernmentContractInfo" type="tns:String255" minOccurs="0"/>
+			<xs:element name="ВалютаСсылка" type="tns:Ссылка1С"/>
+			<xs:element name="ОшибкиВДанных" type="tns:ОшибкиВДанныхТип" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="Utd820BuyerContent">
+		<xs:sequence>
+			<xs:element name="DocumentCreator" type="tns:String1000"/>
+			<xs:element name="DocumentCreatorBase" type="tns:String120"/>
+			<xs:element name="OperationCode" type="tns:String255"/>
+			<xs:element name="OperationContent" type="tns:String255"/>
+			<xs:element name="AcceptanceDate" type="xs:date"/>
+			<xs:element name="Employee" type="tns:Employee"/>
+			<xs:element name="OtherIssuer" type="tns:OtherIssuer"/>
+			<xs:element name="AdditionalInfoId" type="tns:AdditionalInfoId" minOccurs="0"/>
+			<xs:element name="ContentOperCode" type="tns:ContentOperCode" minOccurs="0"/>
+			<xs:element name="BuyerInfoCircumPublicProc" type="tns:BuyerInfoCircumPublicProc" minOccurs="0"/>
+			<xs:element name="Signers" type="tns:ExtendedSigner" maxOccurs="unbounded"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="Utd820SellerContent">
+		<xs:choice>
+			<xs:element name="Sellers" type="tns:ExtendedOrganizationInfo820" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Buyers" type="tns:ExtendedOrganizationInfo820" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Shippers" type="tns:Shipper820" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Consignees" type="tns:ExtendedOrganizationInfo820" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Signers" type="tns:ExtendedSigner" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="PaymentDocuments" type="tns:PaymentDocumentInfo" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="AdditionalInfoId" type="tns:AdditionalInfoId" minOccurs="0"/>
+			<xs:element name="Table" type="tns:InvoiceTable820" minOccurs="0"/>
+			<xs:element name="TransferInfo" type="tns:TransferInfo820" minOccurs="0"/>
+			<xs:element name="FactorInfo" type="tns:ExtendedOrganizationInfo820" minOccurs="0"/>
+			<xs:element name="MainAssignMonetaryClaim" type="tns:TransferBase820" minOccurs="0"/>
+			<xs:element name="SellerInfoCircumPublicProc" type="tns:SellerInfoCircumPublicProc" minOccurs="0"/>
+			<xs:element name="DocumentShipments" type="tns:DocumentShipment" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="ОшибкиВДанных" type="tns:ОшибкиВДанныхТип" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+		<xs:attribute name="Function" type="xs:string" use="required"/>
+		<xs:attribute name="ApprovedStructureAdditionalInfoFields" type="tns:String14f"/>
+		<xs:attribute name="DocumentName" type="tns:String255"/>
+		<xs:attribute name="DocumentDate" type="xs:date" use="required"/>
+		<xs:attribute name="DocumentNumber" type="tns:String1000" use="required"/>
+		<xs:attribute name="Currency" type="tns:okv" use="required"/>
+		<xs:attribute name="CurrencyRate" type="xs:string"/>
+		<xs:attribute name="HyphenRevisionDate" type="xs:boolean"/>
+		<xs:attribute name="RevisionDate" type="xs:date"/>
+		<xs:attribute name="HyphenRevisionNumber" type="xs:boolean"/>
+		<xs:attribute name="RevisionNumber">
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="1"/>
+					<xs:totalDigits value="3"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="DocumentCreator" type="tns:String1000" use="required"/>
+		<xs:attribute name="DocumentCreatorBase" type="tns:String120"/>
+		<xs:attribute name="GovernmentContractInfo">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="20"/>
+					<xs:maxLength value="25"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="CircumFormatInvoice" type="xs:string"/>
+	</xs:complexType>
+	<xs:complexType name="UtdBuyerContent">
+		<xs:sequence>
+			<xs:element name="Creator" type="tns:String1000"/>
+			<xs:element name="CreatorBase" type="tns:String120"/>
+			<xs:element name="OperationCode" type="tns:String255"/>
+			<xs:element name="AcceptanceDate" type="xs:date"/>
+			<xs:element name="Employee" type="tns:Employee"/>
+			<xs:element name="OtherIssuer" type="tns:OtherIssuer"/>
+			<xs:element name="AdditionalInfoId" type="tns:AdditionalInfoId"/>
+			<xs:element name="Signers" type="tns:ExtendedSigner" maxOccurs="unbounded"/>
+			<xs:element name="OperationContent" type="tns:String255"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="UtdSellerContent">
+		<xs:sequence>
+			<xs:element name="Function" type="xs:string"/>
+			<xs:element name="Name" type="tns:String255"/>
+			<xs:element name="Date" type="xs:date"/>
+			<xs:element name="Number" type="tns:String1000"/>
+			<xs:element name="Seller" type="tns:ExtendedOrganizationInfo"/>
+			<xs:element name="Buyer" type="tns:ExtendedOrganizationInfo"/>
+			<xs:element name="Shipper" type="tns:Shipper" minOccurs="0"/>
+			<xs:element name="Consignee" type="tns:ExtendedOrganizationInfo" minOccurs="0"/>
+			<xs:element name="InvoiceTable" type="tns:InvoiceTable" minOccurs="0"/>
+			<xs:element name="Currency" type="tns:ОКВТип"/>
+			<xs:element name="CurrencyRate" type="xs:string"/>
+			<xs:element name="RevisionDate" type="xs:date"/>
+			<xs:element name="RevisionNumber" type="tns:String256"/>
+			<xs:element name="AdditionalInfoId" type="tns:AdditionalInfoId"/>
+			<xs:element name="TransferInfo" type="tns:TransferInfo"/>
+			<xs:element name="Creator" type="tns:String1000"/>
+			<xs:element name="CreatorBase" type="tns:String120"/>
+			<xs:element name="GovernmentContractInfo" type="tns:String255"/>
+			<xs:element name="Signers" type="tns:ExtendedSigner" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="PaymentDocuments" type="tns:PaymentDocument" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="ВалютаСсылка" type="tns:Ссылка1С"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="Waybill">
+		<xs:sequence>
+			<xs:element name="DocumentNumber" type="tns:String255"/>
+			<xs:element name="DocumentDate" type="xs:date"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="guid">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})|(\{[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}\})"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="okei">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="3"/>
+			<xs:maxLength value="4"/>
+			<xs:pattern value="[0-9]{3}"/>
+			<xs:pattern value="[0-9]{4}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="okv">
+		<xs:restriction base="xs:string">
+			<xs:length value="3"/>
+			<xs:pattern value="[0-9]{3}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ОКВТип">
+		<xs:restriction base="xs:string">
+			<xs:length value="3"/>
+			<xs:pattern value="[0-9]{3}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Ссылка1С">
+		<xs:restriction base="ns1:AnyRef"/>
+	</xs:simpleType>
+	<xs:complexType name="Torg2SenderTitle">
+		<xs:all>
+			<xs:element name="RevisionInfo" minOccurs="0">
+				<xs:complexType>
+					<xs:attribute name="RevisionDate" type="xs:date" use="required"/>
+					<xs:attribute name="RevisionNumber" type="tns:CommonRevisionNumber" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="CircumstancesAcceptanceInfo" type="tns:CircumstancesAcceptanceInfo"/>
+			<xs:element name="EvidenceAcceptanceInfo" type="tns:EvidenceAcceptanceInfo"/>
+			<xs:element name="Signers" type="tns:Signer_Torg2" maxOccurs="unbounded"/>
+			<xs:element name="DocumentAdditionalInfos">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="DocumentAdditionalInfo" maxOccurs="unbounded">
+							<xs:simpleType>
+								<xs:restriction base="xs:integer">
+									<xs:enumeration value="1" />
+									<xs:enumeration value="2" />
+									<xs:enumeration value="3" />
+									<xs:enumeration value="4" />
+									<xs:enumeration value="5" />
+									<xs:enumeration value="6" />
+									<xs:enumeration value="7" />
+									<xs:enumeration value="8" />
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:all>
+		<xs:attribute name="DocumentNumber" type="tns:string255nz" use="required"/>
+		<xs:attribute name="DocumentDate" type="xs:date" use="required"/>
+		<xs:attribute name="DocumentName" type="tns:string255nz" use="required"/>
+		<xs:attribute name="SenderFnsParticipantId" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="4" />
+					<xs:maxLength value="46" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="RecipientFnsParticipantId" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="4" />
+					<xs:maxLength value="46" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="DocumentCreator" type="tns:string1000nz" use="required"/>
+		<xs:attribute name="DocumentCreatorBase" type="tns:string120nz" use="optional"/>
+		<xs:attribute name="AdditionalInfosPurpose" type="tns:string2000nz" use="optional"/>
+		<xs:attribute name="CircumDraft" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:enumeration value="1" />
+					<xs:enumeration value="2" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="IsInformed" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:length value="1" />
+					<xs:enumeration value="1" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="ReconciliationActSenderTitle">
+		<xs:sequence>
+			<xs:element name="ReconciliationAct" type="tns:SenderData_ReconciliationAct"/>
+			<xs:element name="ОшибкиВДанных" type="tns:ОшибкиВДанныхТип" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="СлужебнаяИнформация" type="tns:ReconciliationActСлужебнаяИнформация" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="DateCreateFile" type="xs:date" use="required"/>
+		<xs:attribute name="TimeCreateFile" type="xs:string" use="required"/>
+		<xs:attribute name="ReconcilationDateFrom" type="xs:date" use="required"/>
+		<xs:attribute name="ReconcilationDateTo" type="xs:date" use="required"/>
+		<xs:attribute name="ActNumber" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="SenderData_ReconciliationAct">
+		<xs:sequence>
+			<xs:element name="AdditionalInfoReconciliationAct" type="tns:AdditionalInfoReconciliationAct" minOccurs="0"/>
+			<xs:element name="ReconciliationActTable" type="tns:SenderReconciliationActTable" minOccurs="0"/>
+			<xs:element name="Signer" type="tns:Signer_ReconciliationAct"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AdditionalInfoReconciliationAct">
+		<xs:sequence>
+			<xs:element name="Sender" type="tns:ExtendedOrganizationInfo_ReconciliationAct"/>
+			<xs:element name="Recipient" type="tns:ExtendedOrganizationInfo_ReconciliationAct"/>
+		</xs:sequence>
+		<xs:attribute name="Currency" type="tns:okv" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="ExtendedOrganizationInfo_ReconciliationAct">
+		<xs:sequence>
+			<xs:element name="Name" type="xs:string"/>
+			<xs:element name="Inn" type="tns:Inn"/>
+			<xs:element name="Kpp" type="tns:Kpp" minOccurs="0"/>
+			<xs:element name="Ogrn" type="xs:string"/>
+			<xs:element name="Type" type="xs:string"/>
+			<xs:element name="Phone" type="tns:String255" minOccurs="0"/>
+			<xs:element name="Email" type="tns:String255" minOccurs="0"/>
+			<xs:element name="AdditionalCont" type="tns:String255" minOccurs="0"/>
+			<xs:element name="Department" type="tns:String1000" minOccurs="0"/>
+			<xs:element name="AdditionalInfo" type="tns:String255" minOccurs="0"/>
+			<xs:element name="OrganizationOrPersonInfo" type="tns:String255" minOccurs="0"/>
+			<xs:element name="LegalEntityId" type="tns:String255" minOccurs="0"/>
+			<xs:element name="FnsParticipantId" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SenderReconciliationActTable">
+		<xs:sequence>
+			<xs:element name="ContractInfo" type="tns:SenderContractInfo_ReconciliationAct" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="BalanceDebitFrom" type="xs:decimal" use="optional"/>
+		<xs:attribute name="BalanceAmountFrom" type="xs:decimal" use="optional"/>
+		<xs:attribute name="TurnoverDebit" type="xs:decimal" use="optional"/>
+		<xs:attribute name="TurnoverAmount" type="xs:decimal" use="optional"/>
+		<xs:attribute name="BalanceDebitEnd" type="xs:decimal" use="optional"/>
+		<xs:attribute name="BalanceAmountEnd" type="xs:decimal" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="SenderContractInfo_ReconciliationAct">
+		<xs:sequence>
+			<xs:element name="DocumentInfo" type="tns:SenderDocumentInfo_ReconciliationAct" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="ContractId" type="xs:string" use="optional"/>
+		<xs:attribute name="ContractAdditionalInfo" type="xs:string" use="optional"/>
+		<xs:attribute name="ContractNumber" type="xs:string" use="optional"/>
+		<xs:attribute name="ContractDate" type="xs:date" use="optional"/>
+		<xs:attribute name="BalanceDebitFrom" type="xs:decimal" use="optional"/>
+		<xs:attribute name="BalanceAmountFrom" type="xs:decimal" use="optional"/>
+		<xs:attribute name="TurnoverDebit" type="xs:decimal" use="optional"/>
+		<xs:attribute name="TurnoverAmount" type="xs:decimal" use="optional"/>
+		<xs:attribute name="BalanceDebitEnd" type="xs:decimal" use="optional"/>
+		<xs:attribute name="BalanceAmountEnd" type="xs:decimal" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="SenderDocumentInfo_ReconciliationAct">
+		<xs:sequence>
+			<xs:element name="OperationInfo" type="tns:SenderOperationInfo_ReconciliationAct" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="DocumentName" type="xs:string" use="required"/>
+		<xs:attribute name="DocumentNumber" type="xs:string" use="required"/>
+		<xs:attribute name="DocumentDate" type="xs:date" use="required"/>
+		<xs:attribute name="DocumentId" type="xs:string" use="optional"/>
+		<xs:attribute name="AdditionalInfo" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="SenderOperationInfo_ReconciliationAct">
+		<xs:attribute name="StringNumber" type="xs:string" use="required"/>
+		<xs:attribute name="OperationDate" type="xs:date" use="required"/>
+		<xs:attribute name="OperationName" type="xs:string" use="required"/>
+		<xs:attribute name="SumDebit" type="xs:decimal" use="optional"/>
+		<xs:attribute name="SumAmount" type="xs:decimal" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="Signer_ReconciliationAct">
+		<xs:sequence>
+			<xs:element name="Official" type="tns:Official"/>
+			<xs:element name="DigitalAttorneyInfo" type="tns:DigitalAttorneyInfo_ReconciliationAct" minOccurs="0"/>
+			<xs:element name="PaperAttorneyInfo" type="tns:PaperAttorneyInfo_ReconciliationAct" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="SignerStatus" type="xs:string" use="optional"/>
+		<xs:attribute name="SignatureType" type="xs:string" use="optional"/>
+		<xs:attribute name="IdSystemStorage" type="xs:string" use="optional"/>
+		<xs:attribute name="JobTitle" type="xs:string" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="DigitalAttorneyInfo_ReconciliationAct">
+		<xs:attribute name="Number" type="xs:string" use="optional"/>
+		<xs:attribute name="Date" type="xs:date" use="optional"/>
+		<xs:attribute name="InternalNumber" type="xs:string" use="optional"/>
+		<xs:attribute name="InternalDate" type="xs:date" use="optional"/>
+		<xs:attribute name="CancelAdditionalInfo" type="xs:string" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="PaperAttorneyInfo_ReconciliationAct">
+		<xs:sequence>
+			<xs:element name="Official" type="tns:Official" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="Date" type="xs:date" use="optional"/>
+		<xs:attribute name="InternalNumber" type="xs:string" use="optional"/>
+		<xs:attribute name="IssuerAdditionalInfo" type="xs:string" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="ReconciliationActRecipientTitle">
+		<xs:sequence>
+			<xs:element name="ReconciliationAct" type="tns:RecipientData_ReconciliationAct"/>
+			<xs:element name="ОшибкиВДанных" type="tns:ОшибкиВДанныхТип" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="СлужебнаяИнформация" type="tns:ReconciliationActСлужебнаяИнформация" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="DateCreateFile" type="xs:date" use="required"/>
+		<xs:attribute name="TimeCreateFile" type="xs:string" use="required"/>
+		<xs:attribute name="SignDisagreement" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="RecipientData_ReconciliationAct">
+		<xs:sequence>
+			<xs:element name="IdentityInfoSender" type="tns:IdentityInfoSender"/>
+			<xs:element name="ReconciliationActTable" type="tns:RecipientReconciliationActTable" minOccurs="0"/>
+			<xs:element name="Signer" type="tns:Signer_ReconciliationAct"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="IdentityInfoSender">
+		<xs:attribute name="BaseIdFile" type="xs:string" use="required"/>
+		<xs:attribute name="DateFileInfoSender" type="xs:date" use="required"/>
+		<xs:attribute name="TimeFileInfoSender" type="xs:string" use="required"/>
+		<xs:attribute name="SignSender" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="RecipientReconciliationActTable">
+		<xs:sequence>
+			<xs:element name="ContractInfo" type="tns:RecipientContractInfo_ReconciliationAct" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="BalanceDebitFrom" type="xs:decimal" use="optional"/>
+		<xs:attribute name="BalanceAmountFrom" type="xs:decimal" use="optional"/>
+		<xs:attribute name="TurnoverDebit" type="xs:decimal" use="optional"/>
+		<xs:attribute name="TurnoverAmount" type="xs:decimal" use="optional"/>
+		<xs:attribute name="BalanceDebitEnd" type="xs:decimal" use="optional"/>
+		<xs:attribute name="BalanceAmountEnd" type="xs:decimal" use="optional"/>
+		<xs:attribute name="TotalConsumptionDebit" type="xs:decimal" use="optional"/>
+		<xs:attribute name="TotalConsumptionAmount" type="xs:decimal" use="optional"/>
+		<xs:attribute name="AdditionalInfo" type="xs:string" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="RecipientContractInfo_ReconciliationAct">
+		<xs:sequence>
+			<xs:element name="DocumentInfo" type="tns:RecipientDocumentInfo_ReconciliationAct" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="ContractId" type="xs:string" use="optional"/>
+		<xs:attribute name="ContractAdditionalInfo" type="xs:string" use="optional"/>
+		<xs:attribute name="ContractNumber" type="xs:string" use="optional"/>
+		<xs:attribute name="ContractDate" type="xs:date" use="optional"/>
+		<xs:attribute name="BalanceDebitFrom" type="xs:decimal" use="optional"/>
+		<xs:attribute name="BalanceAmountFrom" type="xs:decimal" use="optional"/>
+		<xs:attribute name="TurnoverDebit" type="xs:decimal" use="optional"/>
+		<xs:attribute name="TurnoverAmount" type="xs:decimal" use="optional"/>
+		<xs:attribute name="BalanceDebitEnd" type="xs:decimal" use="optional"/>
+		<xs:attribute name="BalanceAmountEnd" type="xs:decimal" use="optional"/>
+		<xs:attribute name="TotalConsumptionDebit" type="xs:decimal" use="optional"/>
+		<xs:attribute name="TotalConsumptionAmount" type="xs:decimal" use="optional"/>
+		<xs:attribute name="AdditionalInfo" type="xs:string" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="RecipientDocumentInfo_ReconciliationAct">
+		<xs:sequence>
+			<xs:element name="OperationInfo" type="tns:RecipientOperationInfo_ReconciliationAct" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="DocumentName" type="xs:string" use="required"/>
+		<xs:attribute name="DocumentNumber" type="xs:string" use="required"/>
+		<xs:attribute name="DocumentDate" type="xs:date" use="required"/>
+		<xs:attribute name="DocumentId" type="xs:string" use="optional"/>
+		<xs:attribute name="TotalConsumption" type="xs:decimal" use="required"/>
+		<xs:attribute name="AdditionalInfo" type="xs:string" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="RecipientOperationInfo_ReconciliationAct">
+		<xs:attribute name="StringNumber" type="xs:string" use="required"/>
+		<xs:attribute name="OperationDate" type="xs:date" use="required"/>
+		<xs:attribute name="OperationName" type="xs:string" use="required"/>
+		<xs:attribute name="SumDebit" type="xs:decimal" use="optional"/>
+		<xs:attribute name="SumAmount" type="xs:decimal" use="optional"/>
+		<xs:attribute name="AdditionalInfo" type="xs:string" use="optional"/>
+	</xs:complexType>
+	<xs:simpleType name="time">
+		<xs:restriction base="xs:string">
+			<xs:length value="8" />
+			<xs:pattern value="([0-1]{1}[0-9]{1}|2[0-3]{1})\.([0-5]{1}[0-9]{1})\.([0-5]{1}[0-9]{1})" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CommonRevisionNumber">
+		<xs:restriction base="xs:integer">
+		<xs:totalDigits value="3" />
+		<xs:minInclusive value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="CircumstancesAcceptanceInfo">
+		<xs:all>
+			<xs:element name="Seller" type="tns:ExtendedOrganizationInfo_Torg2"/>
+			<xs:element name="Buyer" type="tns:ExtendedOrganizationInfo_Torg2"/>
+			<xs:element name="Shipper" type="tns:ExtendedOrganizationInfo_Torg2" minOccurs="0"/>
+			<xs:element name="Consignee" type="tns:ExtendedOrganizationInfo_Torg2" minOccurs="0"/>
+			<xs:element name="InsuranceCompany" type="tns:ExtendedOrganizationInfo_Torg2" minOccurs="0"/>
+			<xs:element name="Order" minOccurs="0">
+				<xs:complexType>
+					<xs:attribute name="Date" type="xs:date" use="required"/>
+					<xs:attribute name="Number" type="tns:string255nz" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="CargoInspectionInformation" minOccurs="0">
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="CertificateConformityNumbers" minOccurs="0">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="CertificateConformityNumber" maxOccurs="unbounded"  type="tns:string50nz"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AccompanyingDocumentInfo" type="tns:AccompanyingDocument"/>
+						<xs:element name="AdditionalInfoId" minOccurs="0" type="tns:AdditionalInfoId_Torg2"/>
+					</xs:all>
+					<xs:attribute name="ReceptionDate" type="xs:date" use="optional"/>
+					<xs:attribute name="ReceptionPlace" type="tns:string100nz" use="optional"/>
+					<xs:attribute name="ReceptionStartTime" type="tns:time" use="optional"/>
+					<xs:attribute name="ReceptionFinishTime" type="tns:time" use="optional"/>
+					<xs:attribute name="DeliveryDate" type="xs:date" use="optional"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ReceptionInformation" minOccurs="0" >
+				<xs:complexType>
+					<xs:attribute name="CargoArrivalDateTime" type="xs:datetime" use="optional"/>
+					<xs:attribute name="DeliveryPoint" type="xs:datetime" use="optional"/>
+					<xs:attribute name="CargoOpeningDateTime" type="xs:datetime" use="optional"/>
+					<xs:attribute name="DeliveryDateTime" type="xs:datetime" use="optional"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="AccompanyingDocumentTable" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Item" type="tns:Item_Torg2" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="PersonAcceptedCargoInfo" minOccurs="0">
+				<xs:complexType>
+					<xs:choice>
+						<xs:element name="Employee" type="tns:Employee_Torg2"/>
+						<xs:element name="OtherIssuer" type="tns:OtherIssuer_Torg2"/>
+					</xs:choice>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="OtherCircumstancesAcceptanceInfo" minOccurs="0">
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="Carrier" type="tns:ExtendedOrganizationInfo_Torg2" minOccurs="0"/>
+						<xs:element name="AccompanyingTransferDocumentInfo" type="tns:AccompanyingDocument" minOccurs="0"/>
+					</xs:all>
+					<xs:attribute name="StorageConditions" type="tns:string1000nz" use="optional"/>
+					<xs:attribute name="CargoActualState" type="tns:string1000nz" use="optional"/>
+					<xs:attribute name="MissingAssets" type="tns:string200nz" use="optional"/>
+					<xs:attribute name="AdditionalInfo" type="tns:string1000nz" use="optional"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="AdditionalInfoId" type="tns:AdditionalInfoId_Torg2" minOccurs="0"/>
+		</xs:all>
+		<xs:attribute name="CircumFormat" type="string4f" use="optional" />
+		<xs:attribute name="GovernmentContractInfo" type="string255" use="optional" />
+	</xs:complexType>
+	<xs:complexType name="WeightCargo">
+		<xs:attribute name="GrossWeight" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+				<xs:totalDigits value="26" />
+				<xs:fractionDigits value="11" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="NetWeight" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+				<xs:totalDigits value="26" />
+				<xs:fractionDigits value="11" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="Item_Torg2">
+		<xs:all>
+			<xs:element name="DocumentWeight" type="tns:WeightCargo" minOccurs="0"/>
+			<xs:element name="FactWeight" type="tns:WeightCargo" minOccurs="0"/>
+			<xs:element name="AdditionalInfo" type="tns:AdditionalInfo" minOccurs="0"/>
+		</xs:all>
+		<xs:attribute name="SealingMark" type="tns:string20nz" use="optional"/>
+		<xs:attribute name="PackingType" type="tns:string100" use="optional"/>
+		<xs:attribute name="Quantity" type="tns:integer12z" use="optional"/>
+		<xs:attribute name="CargoName" type="tns:string1000nz" use="required"/>
+		<xs:attribute name="Unit" type="tns:okei" use="optional"/>
+		<xs:attribute name="UnitName" type="tns:string255" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="AdditionalInfo">
+		<xs:attribute name="Id" type="tns:string50nz" use="required"/>
+		<xs:attribute name="Value" type="tns:string2000nz" use="required"/>
+	</xs:complexType>
+	<xs:simpleType name="integer12z">
+		<xs:restriction base="xs:integer">
+			<xs:totalDigits value="12" />
+			<xs:minInclusive value="0" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="integer6">
+		<xs:restriction base="xs:integer">
+			<xs:totalDigits value="6" />
+		</xs:restriction>
+  	</xs:simpleType>
+	<xs:complexType name="Employee_Torg2">
+		<xs:attribute name="Position" type="tns:String128" use="required"/>
+		<xs:attribute name="EmployeeInfo" type="tns:string255nz" use="optional"/>
+		<xs:attribute name="EmployeeBase" type="tns:string120nz" use="optional"/>
+		<xs:attribute name="LastName" type="tns:string60nz" use="required" />
+		<xs:attribute name="FirstName" type="tns:string60nz" use="required" />
+		<xs:attribute name="MiddleName" type="tns:string60nz" use="optional" />
+	</xs:complexType>
+	<xs:complexType name="OtherIssuer_Torg2">
+		<xs:attribute name="Position" type="tns:String128" use="optional"/>
+		<xs:attribute name="EmployeeInfo" type="tns:string255nz" use="optional"/>
+		<xs:attribute name="EmployeeBase" type="tns:string120nz" use="optional"/>
+		<xs:attribute name="OrganizationName" type="tns:String128" use="optional"/>
+		<xs:attribute name="OrganizationBase" type="tns:string120nz" use="optional"/>
+		<xs:attribute name="LastName" type="tns:string60nz" use="required" />
+		<xs:attribute name="FirstName" type="tns:string60nz" use="required" />
+		<xs:attribute name="MiddleName" type="tns:string60nz" use="optional" />
+	</xs:complexType>
+	<xs:complexType name="AccompanyingDocument">
+		<xs:attribute name="Name" type="tns:string200nz" use="required"/>
+		<xs:attribute name="Number" type="tns:string100nz" use="optional"/>
+		<xs:attribute name="Date" type="xs:date" use="optional"/>
+		<xs:attribute name="AdditionalIdentifier" type="tns:string255nz" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="AdditionalInfoId_Torg2">
+		<xs:sequence>
+			<xs:element name="AdditionalInfo" type="tns:AdditionalInfo" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="InfoFileId" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+				<xs:length value="36" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="ExtendedOrganizationInfo_Torg2">
+		<xs:choice>
+			<xs:element name="OrganizationDetails" type="tns:ExtendedOrganizationDetails_Torg2" />
+			<xs:element name="OrganizationReference" type="tns:ExtendedOrganizationReference" />
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="ExtendedOrganizationDetails_Torg2">
+		<xs:complexContent mixed="false">
+			<xs:extension base="tns:ExtendedOrganizationDetails_ManualFilling_Torg2">
+				<xs:sequence>
+					<xs:element name="Address" type="tns:Address_Torg2" minOccurs="0"/>
+				</xs:sequence>
+				<xs:attribute name="OrgName" type="tns:string1000nz" use="required"/>
+				<xs:attribute name="Inn" type="tns:string60nz" use="optional"/>
+				<xs:attribute name="Kpp" type="tns:string1000nz" use="optional"/>
+				<xs:attribute name="FnsParticipantId" type="tns:string1000nz" use="optional"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="Address_Torg2">
+		<xs:choice>
+			<xs:element name="RussianAddress" type="tns:RussianAddress" />
+			<xs:element name="ForeignAddress" type="tns:ForeignAddress" />
+			<xs:element name="AddressCode" type="tns:string36nz" />
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="RussianAddress">
+		<xs:attribute name="ZipCode" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:length value="6" />
+					<xs:pattern value="[0-9]{6}" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Region" type="tns:string50nz" use="required"/>
+		<xs:attribute name="Territory" type="tns:string50nz" use="optional"/>
+		<xs:attribute name="City" type="tns:string50nz" use="optional"/>
+		<xs:attribute name="Locality" type="tns:string50nz" use="optional"/>
+		<xs:attribute name="Street" type="tns:string50nz" use="optional"/>
+		<xs:attribute name="Building" type="tns:string20nz" use="optional"/>
+		<xs:attribute name="Block" type="tns:string20nz" use="optional"/>
+		<xs:attribute name="Apartment" type="tns:string20nz" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="ForeignAddress">
+		<xs:attribute name="Country" type="tns:string60nz" use="required"/>
+		<xs:attribute name="Address" type="tns:string255nz" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="ExtendedOrganizationDetails_ManualFilling_Torg2">
+		<xs:attribute name="OrgType" type="tns:OrganizationType" use="required"/>
+		<xs:attribute name="Okpo" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1" />
+					<xs:maxLength value="10" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Phone" type="tns:string255nz" use="optional"/>
+		<xs:attribute name="Email" type="tns:string255nz" use="optional"/>
+		<xs:attribute name="CorrespondentAccount" type="tns:string20nz" use="optional"/>
+		<xs:attribute name="BankAccountNumber" type="tns:string20nz" use="optional"/>
+		<xs:attribute name="BankName" type="tns:string1000nz" use="optional"/>
+		<xs:attribute name="BankId" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:length value="9" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Department" type="tns:string1000nz" use="optional"/>
+		<xs:attribute name="OrganizationAdditionalInfo" type="tns:string255nz" use="optional"/>
+		<xs:attribute name="OrganizationOrPersonInfo" type="tns:string255nz" use="optional"/>
+		<xs:attribute name="IndividualEntityRegistrationCertificate" type="tns:string100nz" use="optional"/>
+		<xs:attribute name="LegalEntityId" type="tns:string255nz" use="optional"/>
+		<xs:attribute name="ShortOrgName" type="tns:string255nz" use="optional"/>
+		<xs:attribute name="Country" type="tns:string255nz" use="optional"/>
+	</xs:complexType>
+	<xs:simpleType name="OrganizationType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="LegalEntity" />
+			<xs:enumeration value="IndividualEntity" />
+			<xs:enumeration value="ForeignEntity" />
+			<xs:enumeration value="PhysicalEntity" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="ExtendedOrganizationReference">
+		<xs:complexContent mixed="false">
+			<xs:extension base="tns:ExtendedOrganizationDetails_ManualFilling">
+				<xs:attribute name="BoxId" type="tns:guid" use="required" />
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ExtendedOrganizationDetails_ManualFilling">
+		<xs:attribute name="OrgType" type="tns:OrganizationType" use="required"/>
+		<xs:attribute name="Okopf" use="optional"/>
+		<xs:attribute name="Okpo" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1" />
+					<xs:maxLength value="10" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Okdp" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1" />
+					<xs:maxLength value="7" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Phone" type="tns:string255nz" use="optional"/>
+		<xs:attribute name="Email" type="tns:string255nz" use="optional"/>
+		<xs:attribute name="CorrespondentAccount" type="tns:string20nz" use="optional"/>
+		<xs:attribute name="BankAccountNumber" type="tns:string20nz" use="optional"/>
+		<xs:attribute name="BankName" type="tns:string1000nz" use="optional"/>
+		<xs:attribute name="BankId" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:length value="9" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Department" type="tns:string1000nz" use="optional"/>
+		<xs:attribute name="OrganizationAdditionalInfo" type="tns:string255nz" use="optional"/>
+		<xs:attribute name="OrganizationOrPersonInfo" type="tns:string255nz" use="optional"/>
+		<xs:attribute name="IndividualEntityRegistrationCertificate" type="tns:string100nz" use="optional"/>
+		<xs:attribute name="LegalEntityId" type="tns:string255nz" use="optional"/>
+		<xs:attribute name="ShortOrgName" type="tns:string255nz" use="optional"/>
+		<xs:attribute name="Country" type="tns:string255nz" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="EvidenceAcceptanceInfo">
+		<xs:all>
+			<xs:element name="AcceptanceResults">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="AcceptanceResult" type="tns:AcceptanceResult" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="AttachedDocuments" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="AttachedDocument" type="tns:AttachedDocument" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="OperationType" type="tns:string255nz" minOccurs="0"/>
+			<xs:element name="AdditionalInfos" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="AdditionalInfo" type="tns:AdditionalInfo" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:all>
+		<xs:attribute name="EventSummary" type="tns:string2000nz" use="required"/>
+		<xs:attribute name="Conclusion" type="tns:string2000nz" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="AttachedDocument">
+		<xs:attribute name="Type" type="tns:string500nz" use="required"/>
+		<xs:attribute name="Number" type="tns:string40nz" use="required"/>
+		<xs:attribute name="Date" type="xs:date" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="AcceptanceResult">
+		<xs:all>
+			<xs:element name="Assets">
+				<xs:complexType>
+					<xs:attribute name="AccompanyingDocumentLineNumber" type="tns:integer6" use="optional"/>
+					<xs:attribute name="Product" type="tns:string1000nz" use="optional"/>
+					<xs:attribute name="ItemCharact" type="tns:string1000nz" use="optional"/>
+					<xs:attribute name="ItemKind" type="tns:string50nz" use="optional"/>
+					<xs:attribute name="ItemArticle" type="tns:string50nz" use="optional"/>
+					<xs:attribute name="ItemVendorCode" type="tns:string100nz" use="optional"/>
+					<xs:attribute name="PassportNumber" type="tns:string100nz" use="optional"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="AccordingToSellerDocument" type="tns:AcceptedProductData" minOccurs="0"/>
+			<xs:element name="ActuallyAccepted" type="tns:AcceptedProductData" minOccurs="0"/>
+			<xs:element name="Breakage" type="tns:DiscrepancyData" minOccurs="0"/>
+			<xs:element name="Surplus" type="tns:DiscrepancyData" minOccurs="0"/>
+			<xs:element name="Shortfall" type="tns:DiscrepancyData" minOccurs="0"/>
+			<xs:element name="Reject" type="tns:DiscrepancyData" minOccurs="0"/>
+			<xs:element name="PriceDeviations">
+				<xs:complexType>
+					<xs:choice>
+						<xs:element name="PositiveDeviations" type="tns:Delta"/>
+						<xs:element name="NegativeDeviations" type="tns:Delta"/>
+					</xs:choice>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="AdditionalInfos" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="AdditionalInfo" type="tns:AdditionalInfo" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:all>
+		<xs:attribute name="Unit" type="tns:okei" use="optional"/>
+		<xs:attribute name="AcceptanceDiscrepancyInfo" type="tns:string2000nz" use="optional"/>
+		<xs:attribute name="UnitName" type="tns:string255nz" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="AcceptedProductData">
+		<xs:sequence>
+			<xs:element name="ItemIdentificationNumbers" type="tns:ItemIdentificationNumbers" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="Quantity" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="26" />
+					<xs:fractionDigits value="11" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Vat" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19" />
+					<xs:fractionDigits value="2" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Subtotal" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19" />
+					<xs:fractionDigits value="2" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Price" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="26" />
+					<xs:fractionDigits value="11" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="TaxRate" type="tns:TaxRate" use="optional"/>
+	</xs:complexType>
+	<xs:simpleType name="TaxRate_Torg2">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="NoVat" />
+			<xs:enumeration value="ZeroPercent" />
+			<xs:enumeration value="TenPercent" />
+			<xs:enumeration value="EighteenPercent" />
+			<xs:enumeration value="TwentyPercent" />
+			<xs:enumeration value="TenFraction" />
+			<xs:enumeration value="EighteenFraction" />
+			<xs:enumeration value="TwentyFraction" />
+			<xs:enumeration value="TaxedByAgent" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="DiscrepancyData">
+		<xs:sequence>
+			<xs:element name="ItemIdentificationNumbers" type="tns:ItemIdentificationNumbers" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="Quantity" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="26" />
+					<xs:fractionDigits value="11" />
+					<xs:minInclusive value="0" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Vat" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19" />
+					<xs:fractionDigits value="2" />
+					<xs:minInclusive value="0" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Subtotal" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19" />
+					<xs:fractionDigits value="2" />
+					<xs:minInclusive value="0" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Explanations" type="tns:string255nz" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="ItemIdentificationNumbers">
+		<xs:sequence>
+			<xs:element name="ItemIdentificationNumber" type="tns:ItemIdentificationNumber_Torg2" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ItemIdentificationNumber_Torg2">
+		<xs:choice>
+			<xs:element name="Unit" type="tns:string255nz" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="PackageId" type="tns:string255nz" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+		<xs:attribute name="TransPackageId" type="tns:string255nz" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="Delta">
+		<xs:attribute name="Price" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19" />
+					<xs:fractionDigits value="2" />
+					<xs:minInclusive value="0" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Subtotal" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19" />
+					<xs:fractionDigits value="2" />
+					<xs:minInclusive value="0" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Vat" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19" />
+					<xs:fractionDigits value="2" />
+					<xs:minInclusive value="0" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Explanations" type="tns:string255nz" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="SignerReference">
+		<xs:attribute name="BoxId" type="tns:string100nz" use="required"/>
+		<xs:attribute name="CertificateBytes" type="xs:base64Binary" use="optional"/>
+		<xs:attribute name="CertificateThumbprint" type="tns:string100nz" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="ExtendedSignerDetailsBase">
+		<xs:attribute name="LastName" type="tns:string60nz" use="required" />
+		<xs:attribute name="FirstName" type="tns:string60nz" use="required" />
+		<xs:attribute name="MiddleName" type="tns:string60nz" use="optional" />
+		<xs:attribute name="Position" type="tns:String128" use="optional"/>
+		<xs:attribute name="Inn" type="tns:Inn" use="optional"/>
+		<xs:attribute name="RegistrationCertificate" type="tns:string100nz" use="optional"/>
+		<xs:attribute name="SignerType" type="tns:SignerType" use="required"/>
+		<xs:attribute name="SignerOrganizationName" type="tns:string1000nz" use="optional"/>
+		<xs:attribute name="SignerInfo" type="tns:string255nz" use="optional"/>
+		<xs:attribute name="SignerPowersBase" type="tns:string255nz" use="optional"/>
+		<xs:attribute name="SignerOrgPowersBase" type="tns:string255nz" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="Torg2RecipientTitle">
+		<xs:all>
+			<xs:element name="AdditionalInfoId" type="tns:AdditionalInfoId_Torg2" minOccurs="0"/>
+			<xs:element name="Signers" type="tns:Signer_Torg2" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:all>
+		<xs:attribute name="DocumentCreator" type="tns:string1000nz" use="required"/>
+		<xs:attribute name="DocumentCreatorBase" type="tns:string120nz" use="optional"/>
+		<xs:attribute name="CompilationInfoDate" type="xs:date" use="required"/>
+		<xs:attribute name="TotalAcceptanceContent" type="tns:string1000nz" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="Signer_Torg2">
+		<xs:choice>
+			<xs:element name="SignerReference" type="tns:SignerReference" />
+			<xs:element name="SignerDetails" type="tns:ExtendedSignerDetailsTorg2" />
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="ExtendedSignerDetailsTorg2">
+		<xs:complexContent mixed="false">
+			<xs:extension base="tns:ExtendedSignerDetailsBase">
+				<xs:attribute name="SignerPowers" type="tns:Powers" use="required"/>
+				<xs:attribute name="SignerStatus" type="tns:Status" use="required"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ОшибкиВДанныхТип">
+		<xs:sequence>
+			<xs:element name="ТекстОшибки" type="xs:string"/>
+			<xs:element name="Обрамление" type="xs:string"/>
+			<xs:element name="СсылкаДляИсправления" type="tns:Ссылка1С"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Utd970SellerContent">
+		<xs:choice>
+			<xs:element name="DocumentCreatorBase" type="tns:DocumentCreatorBase" minOccurs="0"/>
+			<xs:element name="Sellers" type="tns:ExtendedOrganizationInfo970" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Buyers" type="tns:ExtendedOrganizationInfo970" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Shippers" type="tns:Shipper970" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Consignees" type="tns:ExtendedOrganizationInfo970" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Signers" type="tns:Signer970" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="PaymentDocuments" type="tns:PaymentDocumentInfo" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="AdditionalInfoId" type="tns:AdditionalInfoId" minOccurs="0"/>
+			<xs:element name="Table" type="tns:InvoiceTable970" minOccurs="0"/>
+			<xs:element name="TransferInfo" type="tns:TransferInfo970" minOccurs="0"/>
+			<xs:element name="FactorInfo" type="tns:ExtendedOrganizationInfo970" minOccurs="0"/>
+			<xs:element name="MainAssignMonetaryClaim" type="tns:MainAssignMonetaryClaim" minOccurs="0"/>
+			<xs:element name="SellerInfoCircumPublicProc" type="tns:SellerInfoCircumPublicProc" minOccurs="0"/>
+			<xs:element name="DocumentShipments" type="tns:DocumentShipment970" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="AccompanyingDocuments" type="tns:AccompanyingDocument970" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="CommitmentType" type="tns:CommitmentType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="СлужебнаяИнформация" type="tns:СлужебнаяИнформация" minOccurs="0"/>
+		</xs:choice>
+		<xs:attribute name="Function" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="6"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="ApprovedStructureAdditionalInfoFields" type="tns:String14f"/>
+		<xs:attribute name="DocumentName" type="tns:String255"/>
+		<xs:attribute name="DocumentDate" type="xs:date" use="required"/>
+		<xs:attribute name="DocumentNumber" type="tns:String1000" use="required"/>
+		<xs:attribute name="Currency" type="tns:okv" use="required"/>
+		<xs:attribute name="CurrencyRate">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="10"/>
+					<xs:fractionDigits value="4"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="RevisionDate" type="xs:date"/>
+		<xs:attribute name="RevisionNumber">
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="1"/>
+					<xs:totalDigits value="3"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="DocumentCreator" type="tns:String1000" use="required"/>
+		<xs:attribute name="GovernmentContractInfo">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="20"/>
+					<xs:maxLength value="25"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="CircumFormatInvoice">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="5"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="CurrencyName" type="tns:String100" use="required"/>
+		<xs:attribute name="SourceFileNameSeller" type="tns:String255"/>
+		<xs:attribute name="SourceFileNameBuyer" type="tns:String255"/>
+		<xs:attribute name="DocumentUID" type="tns:String36"/>
+	</xs:complexType>
+	<xs:complexType name="AccompanyingDocument970">
+		<xs:complexContent>
+			<xs:extension base="tns:DocumentDetails"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="AdditionalInfoStateSystem">
+		<xs:choice>
+			<xs:element name="IDUnit" type="tns:String255" maxOccurs="unbounded"/>
+		</xs:choice>
+		<xs:attribute name="SystemName" type="tns:string255nz" use="required"/>
+		<xs:attribute name="Unit" type="tns:String1000"/>
+		<xs:attribute name="OtherInfo" type="tns:String255"/>
+	</xs:complexType>
+	<xs:complexType name="AddressInfo970">
+		<xs:sequence>
+			<xs:element name="Type">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="AddressRF"/>
+						<xs:enumeration value="AddressSAR"/>
+						<xs:enumeration value="AddressText"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="GLN" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="13"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AddressRF" type="tns:AddressRFInfo" minOccurs="0"/>
+			<xs:element name="AddressSAR" type="tns:AddressSARInfo" minOccurs="0"/>
+			<xs:element name="AddressText" type="tns:AddressTextInfo" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AddressRFInfo">
+		<xs:sequence>
+			<xs:element name="ZipCode" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="6"/>
+						<xs:pattern value="[0-9]{6}"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="RegionCode">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Territory" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="City" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Locality" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Street" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Building" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Block" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Apartment" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Region">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="51"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AdditionalInfo" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AddressSARInfo">
+		<xs:sequence>
+			<xs:element name="ID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="36"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ZipCode" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="6"/>
+						<xs:pattern value="[0-9]{6}"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Region">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="51"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="RegionCode">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MunicipalDistrict" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MunicipalDistrictCode" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Settlement" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SettlementCode" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Locality" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="LocalityType" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PlanningElement" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PlanningElementType" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="StreetElement" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="StreetElementType" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="LandPlot" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Buildings" type="tns:AddressObjectNumberInfo" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="House" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="HouseType" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Apartment" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ApartmentType" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AddressTextInfo">
+		<xs:sequence>
+			<xs:element name="CountryCode" type="tns:CountryCode"/>
+			<xs:element name="Country">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AddressText">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CommitmentType">
+		<xs:attribute name="Code">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="255"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Name">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="255"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="CreatedThingTransferDoc">
+		<xs:complexContent>
+			<xs:extension base="tns:DocumentDetails"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="DocumentCreatorBase">
+		<xs:complexContent>
+			<xs:extension base="tns:DocumentDetails"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="DocumentDetails">
+		<xs:sequence>
+			<xs:element name="EconomicEntities" type="tns:EconomicEntities" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="Name" type="tns:String255" use="required"/>
+		<xs:attribute name="Number" type="tns:String255" use="required"/>
+		<xs:attribute name="Date" type="xs:date" use="required"/>
+		<xs:attribute name="FileID" type="tns:String255"/>
+		<xs:attribute name="ID" type="tns:String255"/>
+		<xs:attribute name="StorageID">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="500"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="URL">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="500"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="AdditionalInfo" type="tns:String2000"/>
+	</xs:complexType>
+	<xs:complexType name="DocumentShipment970">
+		<xs:complexContent>
+			<xs:extension base="tns:DocumentDetails"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="EconomicEntities">
+		<xs:attribute name="Type" type="tns:ExtendedOrganizationType" use="required"/>
+		<xs:attribute name="Name" type="tns:String1000"/>
+		<xs:attribute name="Inn" type="tns:Inn"/>
+		<xs:attribute name="CountryCode">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="3"/>
+					<xs:maxLength value="3"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Country" type="tns:String255"/>
+		<xs:attribute name="LegalEntityID" type="tns:String255"/>
+		<xs:attribute name="OtherInfo" type="tns:String255"/>
+	</xs:complexType>
+	<xs:complexType name="ElectronicAttorneyInfo970">
+		<xs:sequence>
+			<xs:element name="ID" type="tns:string36nz"/>
+			<xs:element name="IssueDate" type="xs:date"/>
+			<xs:element name="Number" type="tns:String50" minOccurs="0"/>
+			<xs:element name="RegistrationDate" type="xs:date" minOccurs="0"/>
+			<xs:element name="StorageID" type="tns:string500nz"/>
+			<xs:element name="URL" type="tns:string500nz" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PaperAttorneyInfo970">
+		<xs:attribute name="IssuerFirstName" type="tns:string60nz" use="required"/>
+		<xs:attribute name="IssuerSurname" type="tns:string60nz" use="required"/>
+		<xs:attribute name="IssuerPatronymic" type="tns:String60"/>
+		<xs:attribute name="Number" type="tns:String50" use="required"/>
+		<xs:attribute name="IssueDate" type="xs:date" use="required"/>
+		<xs:attribute name="PrincipalInfo" type="tns:String1000"/>
+	</xs:complexType>
+	<xs:complexType name="Signer970">
+		<xs:sequence>
+			<xs:element name="FirstName" type="tns:String60"/>
+			<xs:element name="Surname" type="tns:String60"/>
+			<xs:element name="Patronymic" type="tns:String60" minOccurs="0"/>
+			<xs:element name="ElectronicPOA" type="tns:ElectronicAttorneyInfo970" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="PaperPOA" type="tns:PaperAttorneyInfo970" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="JobTitle" type="tns:String255"/>
+		<xs:attribute name="SignType">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="11"/>
+					<xs:enumeration value="Qualified"/>
+					<xs:enumeration value="Unqualified"/>
+					<xs:enumeration value="Simple"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="DateSigningDocument" type="xs:date"/>
+		<xs:attribute name="ConfirmCredentials" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:length value="1"/>
+					<xs:enumeration value="1"/>
+					<xs:enumeration value="2"/>
+					<xs:enumeration value="3"/>
+					<xs:enumeration value="4"/>
+					<xs:enumeration value="5"/>
+					<xs:enumeration value="6"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="AdditionalInfo" type="tns:String255"/>
+	</xs:complexType>
+	<xs:complexType name="EmployeeBase">
+		<xs:complexContent>
+			<xs:extension base="tns:DocumentDetails"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ExtendedOrganizationInfo970">
+		<xs:sequence>
+			<xs:element name="Name" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Inn" type="tns:Inn"/>
+			<xs:element name="Kpp" type="tns:Kpp" minOccurs="0"/>
+			<xs:element name="Address" type="tns:AddressInfo970" minOccurs="0"/>
+			<xs:element name="FnsParticipantId" type="xs:string"/>
+			<xs:element name="Okopf" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="2"/>
+						<xs:maxLength value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Okpo" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Phone" minOccurs="0" maxOccurs="unbounded">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Email" minOccurs="0" maxOccurs="unbounded">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CorrespondentAccount" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="34"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BankAccountNumber" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="34"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BankName" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BankId" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="9"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Department" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="500"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AdditionalInfo" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="OrganizationOrPersonInfo" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="LegalEntityId" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="IndividualEntityRegistrationCertificate" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Country">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PhysicalEntityStatusID" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+						<xs:enumeration value="0"/>
+						<xs:enumeration value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="IndividualEntityRegistrationNumber" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="15"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="IndividualEntityRegistrationDate" type="xs:date" minOccurs="0"/>
+			<xs:element name="FullNameOPF" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="4"/>
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="OtherContactInfo" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CountryCode" base="xs:string" minOccurs="0"/>
+			<xs:element name="СлужебнаяИнформация" type="tns:OrganizationСлужебнаяИнформация" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="Type" type="tns:ExtendedOrganizationType" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="ItemAccompanyingDocuments">
+		<xs:complexContent>
+			<xs:extension base="tns:DocumentDetails"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ItemIdentificationNumber970">
+		<xs:complexContent>
+			<xs:extension base="tns:ItemIdentificationNumber">
+				<xs:attribute name="MarkedItemsQuantity">
+					<xs:simpleType>
+						<xs:restriction base="xs:decimal">
+							<xs:totalDigits value="26"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+				<xs:attribute name="BatchCode">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="55"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="Item970">
+		<xs:choice>
+			<xs:element name="CustomDeclarations" type="tns:CustomDeclaration" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="StructedAdditionalInfos" type="tns:AdditionalInfoItem" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="ItemTracingInfos" type="tns:ItemTracingInfo970" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="ItemIdentificationNumbers" type="tns:ItemIdentificationNumber970" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="AdditionalInfoStateSystem" type="tns:AdditionalInfoStateSystem" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="ItemAccompanyingDocuments" type="tns:ItemAccompanyingDocuments" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="TaxDeprication" type="tns:TaxDeprication" minOccurs="0"/>
+			<xs:element name="СлужебнаяИнформация" type="tns:ItemСлужебнаяИнформация" minOccurs="0"/>
+		</xs:choice>
+		<xs:attribute name="Product" type="xs:string"/>
+		<xs:attribute name="Unit" type="tns:okei"/>
+		<xs:attribute name="UnitName" type="tns:String255"/>
+		<xs:attribute name="Quantity">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="26"/>
+					<xs:fractionDigits value="11"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Price">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="26"/>
+					<xs:fractionDigits value="11"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Excise">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="TaxRate" type="tns:TaxRate" use="required"/>
+		<xs:attribute name="SubtotalWithVatExcluded">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Vat">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="WithoutVat" default="false">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="true"/>
+					<xs:enumeration value="false"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Subtotal">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="ItemMark" type="tns:ItemMark"/>
+		<xs:attribute name="AdditionalProperty">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="4"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="ItemVendorCode" type="tns:String100"/>
+		<xs:attribute name="ItemToRelease">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="26"/>
+					<xs:fractionDigits value="11"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="ItemCharact" type="tns:String1000"/>
+		<xs:attribute name="ItemArticle" type="tns:String50"/>
+		<xs:attribute name="ItemKind" type="tns:String10"/>
+		<xs:attribute name="CatalogCode">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:length value="27"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="ItemTypeCode">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:length value="10"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Series">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="50"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="GTIN">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="14"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="ProductTypeCode">
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:totalDigits value="3"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="CodeRCPEA">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="12"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="AdditionalInfoTypeOperations">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="5"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="RecoveredVat">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="RecoveredWithoutVat" default="false">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="true"/>
+					<xs:enumeration value="false"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Country" type="tns:String255"/>
+	</xs:complexType>
+	<xs:complexType name="ItemTracingInfo970">
+		<xs:complexContent>
+			<xs:extension base="tns:ItemTracingInfo">
+				<xs:attribute name="SumWithoutVat" use="required">
+					<xs:simpleType>
+						<xs:restriction base="xs:decimal">
+							<xs:totalDigits value="19"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="MainAssignMonetaryClaim">
+		<xs:complexContent>
+			<xs:extension base="tns:DocumentDetails"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="OrganizationBase">
+		<xs:complexContent>
+			<xs:extension base="tns:DocumentDetails"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="OrganizationСлужебнаяИнформация">
+		<xs:sequence>
+			<xs:element name="Ссылка" type="tns:Ссылка1С"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Shipper970">
+		<xs:sequence>
+			<xs:element name="SameAsSeller" type="xs:boolean"/>
+			<xs:element name="OrganizationInfo" type="tns:ExtendedOrganizationInfo970" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="TaxDeprication">
+		<xs:attribute name="Code" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="OKOF" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="16"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="UsefulPeriod" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="3"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="ActualPeriod" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="3"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="TransferBase970">
+		<xs:complexContent>
+			<xs:extension base="tns:DocumentDetails">
+				<xs:sequence>
+					<xs:element name="СлужебнаяИнформация" type="tns:ItemTransferBasesСлужебнаяИнформация" minOccurs="0"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TransferInfo970">
+		<xs:sequence>
+			<xs:element name="Employee" type="tns:Employee970"/>
+			<xs:element name="OtherIssuer" type="tns:OtherIssuer970"/>
+			<xs:element name="AdditionalInfoId" type="tns:AdditionalInfoId"/>
+			<xs:element name="TransferBases" type="tns:TransferBase970" maxOccurs="unbounded"/>
+			<xs:element name="CreatedThingTransferDoc" type="tns:CreatedThingTransferDoc" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="TransferStartDate" type="xs:date"/>
+		<xs:attribute name="TransferEndDate" type="xs:date"/>
+		<xs:attribute name="OperationInfo" type="tns:String255"/>
+		<xs:attribute name="OperationType" type="tns:String255"/>
+		<xs:attribute name="TransferDate" type="xs:date"/>
+		<xs:attribute name="TransferTextInfo" type="tns:String1000"/>
+		<xs:attribute name="CreatedThingTransferDate" type="xs:date" minOccurs="0"/>
+		<xs:attribute name="CreatedThingInfo" type="xs:string" minOccurs="0"/>
+		<xs:attribute name="WithoutTransferBase" type="xs:boolean" minOccurs="0"/>
+		<xs:attribute name="Incoterms" type="tns:String3" minOccurs="0"/>
+		<xs:attribute name="IncotermsVersion" type="tns:String4" minOccurs="0"/>
+ 	</xs:complexType>
+	<xs:complexType name="ОшибкиВДанныхТип">
+		<xs:sequence>
+			<xs:element name="ТекстОшибки" type="xs:string"/>
+			<xs:element name="Обрамление" type="xs:string"/>
+			<xs:element name="СсылкаДляИсправления" type="tns:Ссылка1С"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="СлужебнаяИнформация">
+		<xs:sequence>
+			<xs:element name="ОшибкиВДанных" type="tns:ОшибкиВДанныхТип" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="ContentsDocumentProductsType" type="tns:ContentsDocumentProductsType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="ExtendedOrganizationType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="LegalEntity"/>
+			<xs:enumeration value="IndividualEntity"/>
+			<xs:enumeration value="ForeignEntity"/>
+			<xs:enumeration value="PhysicalEntity"/>
+			<xs:enumeration value="ForeignPhysicalEntity"/>
+			<xs:enumeration value="AuthorityEntitry"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="InvoiceTable970">
+		<xs:sequence>
+			<xs:element name="Items" type="tns:Item970" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="TotalWithVatExcluded">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Vat">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="WithoutVat" default="false">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="true"/>
+					<xs:enumeration value="false"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Total">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="TotalNet">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="26"/>
+					<xs:fractionDigits value="11"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="OtherIssuer970">
+		<xs:sequence>
+			<xs:element name="EmployeeBase" type="tns:EmployeeBase" minOccurs="0"/>
+			<xs:element name="OrganizationBase" type="tns:OrganizationBase" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="EmployeePosition" type="tns:String255"/>
+		<xs:attribute name="EmployeeInfo" type="tns:String255"/>
+		<xs:attribute name="OrganizationName" type="tns:String255"/>
+		<xs:attribute name="Surname" type="tns:String60"/>
+		<xs:attribute name="FirstName" type="tns:String60"/>
+		<xs:attribute name="Patronymic" type="tns:String60"/>
+		<xs:attribute name="Inn"/>
+	</xs:complexType>
+	<xs:complexType name="Employee970">
+		<xs:attribute name="EmployeePosition" type="tns:String255"/>
+		<xs:attribute name="EmployeeInfo" type="tns:String255"/>
+		<xs:attribute name="Surname" type="tns:String60"/>
+		<xs:attribute name="FirstName" type="tns:String60"/>
+		<xs:attribute name="Patronymic" type="tns:String60"/>
+	</xs:complexType>
+	<xs:complexType name="AddressObjectNumberInfo">
+		<xs:attribute name="Type" type="tns:String50" use="required"/>
+		<xs:attribute name="Number" type="tns:String255" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="Utd970BuyerContent">
+		<xs:sequence>
+			<xs:element name="DocumentCreator" type="tns:String1000"/>
+			<xs:element name="DocumentCreatorBase" type="tns:DocumentCreatorBase"/>
+			<xs:element name="OperationCode" type="tns:String255"/>
+			<xs:element name="OperationContent" type="tns:String255"/>
+			<xs:element name="AcceptanceDate" type="xs:date"/>
+			<xs:element name="Employee" type="tns:Employee970"/>
+			<xs:element name="OtherIssuer" type="tns:OtherIssuer970"/>
+			<xs:element name="AdditionalInfoId" type="tns:AdditionalInfoId" minOccurs="0"/>
+			<xs:element name="ContentOperCode" type="tns:ContentOperCode970" minOccurs="0"/>
+			<xs:element name="BuyerInfoCircumPublicProc" type="tns:BuyerInfoCircumPublicProc" minOccurs="0"/>
+			<xs:element name="Signers" type="tns:Signer970" maxOccurs="unbounded"/>
+			<xs:element name="ОшибкиВДанных" type="tns:ОшибкиВДанныхТип" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ContentOperCode970">
+		<xs:sequence>
+			<xs:element name="TotalCode" type="tns:String1f"/>
+			<xs:element name="DiscrepDocument" type="tns:DiscrepDocument"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ContentsDocumentProductsType">
+		<xs:attribute name="ContainsTraceableProducts" default="0" type="xs:boolean"/>
+		<xs:attribute name="ContainsMarkedProducts" default="0" type="xs:boolean"/>
+		<xs:attribute name="ContainsAlcoholeProducts" default="0" type="xs:boolean"/>
+		<xs:attribute name="ContainsTobaccoProducts" default="0" type="xs:boolean"/>
+		<xs:attribute name="ContainsPetroleumProducts" default="0" type="xs:boolean"/>
+	</xs:complexType>
+	<xs:complexType name="DiscrepDocument">
+		<xs:complexContent>
+			<xs:extension base="tns:DocumentDetails"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ItemTransferBasesСлужебнаяИнформация">
+		<xs:attribute name="ОснованиеСсылка" type="tns:Ссылка1С"/>
+		<xs:attribute name="ПредставлениеВТекстеОшибки" type="tns:String1000"/>
+	</xs:complexType>
+	<xs:complexType name="ReconciliationActСлужебнаяИнформация">
+		<xs:sequence>
+			<xs:element name="Ссылка" type="tns:Ссылка1С"/>
+			<xs:element name="Организация" type="tns:Ссылка1С"/>
+			<xs:element name="Контрагент" type="tns:Ссылка1С"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TorgBlrSellerContent">
+		<xs:sequence>
+			<xs:element name="DocumentCreator" type="tns:String1000"/>
+			<xs:element name="DocumentCreatorBase" type="tns:DocumentCreatorBase"/>
+			<xs:element name="OperationCode" type="tns:String255"/>
+			<xs:element name="OperationContent" type="tns:String255"/>
+			<xs:element name="AcceptanceDate" type="xs:date"/>
+			<xs:element name="Employee" type="tns:Employee970"/>
+			<xs:element name="OtherIssuer" type="tns:OtherIssuer970"/>
+			<xs:element name="AdditionalInfoId" type="tns:AdditionalInfoId" minOccurs="0"/>
+			<xs:element name="ContentOperCode" type="tns:ContentOperCode970" minOccurs="0"/>
+			<xs:element name="BuyerInfoCircumPublicProc" type="tns:BuyerInfoCircumPublicProc" minOccurs="0"/>
+			<xs:element name="Signers" type="tns:Signer970" maxOccurs="unbounded"/>
+			<xs:element name="ОшибкиВДанных" type="tns:ОшибкиВДанныхТип" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TorgBlrBuyerContent">
+		<xs:sequence>
+			<xs:element name="DocumentCreator" type="tns:String1000"/>
+			<xs:element name="DocumentCreatorBase" type="tns:DocumentCreatorBase"/>
+			<xs:element name="OperationCode" type="tns:String255"/>
+			<xs:element name="OperationContent" type="tns:String255"/>
+			<xs:element name="AcceptanceDate" type="xs:date"/>
+			<xs:element name="Employee" type="tns:Employee970"/>
+			<xs:element name="OtherIssuer" type="tns:OtherIssuer970"/>
+			<xs:element name="AdditionalInfoId" type="tns:AdditionalInfoId" minOccurs="0"/>
+			<xs:element name="ContentOperCode" type="tns:ContentOperCode970" minOccurs="0"/>
+			<xs:element name="BuyerInfoCircumPublicProc" type="tns:BuyerInfoCircumPublicProc" minOccurs="0"/>
+			<xs:element name="Signers" type="tns:Signer970" maxOccurs="unbounded"/>
+			<xs:element name="ОшибкиВДанных" type="tns:ОшибкиВДанныхТип" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ProformaInvoice29SellerContent">
+		<xs:all>
+			<xs:element name="ProformaInvoiceBases" type="tns:ProformaInvoice29Base" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="MoneyRecipient" type="tns:ExtendedOrganizationInfoXmlProformaInvoice29" minOccurs="0"/>
+			<xs:element name="Seller" type="tns:ExtendedOrganizationInfoXmlProformaInvoice29"/>
+			<xs:element name="Buyer" type="tns:ExtendedOrganizationInfoXmlProformaInvoice29"/>
+			<xs:element name="Payer" type="tns:ExtendedOrganizationInfoXmlProformaInvoice29" minOccurs="0"/>
+			<xs:element name="Shipper" type="tns:ExtendedOrganizationInfoXmlProformaInvoice29" minOccurs="0"/>
+			<xs:element name="Consignee" type="tns:ExtendedOrganizationInfoXmlProformaInvoice29" minOccurs="0"/>
+			<xs:element name="CommitmentTypes" type="tns:CommitmentType29" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Table" type="tns:ProformaInvoiceTable29"/>
+			<xs:element name="Signers" type="tns:Signer970" maxOccurs="unbounded"/>
+			<xs:element name="ProformaInvoiceAdditionalInfo" type="tns:ProformaInvoiceAdditionalInfo" minOccurs="0"/>
+			<xs:element name="AdditionalInfoId" type="tns:AdditionalInfoId" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="СлужебнаяИнформация" type="tns:СлужебнаяИнформация" minOccurs="0"/>
+		</xs:all>
+		<xs:attribute name="DocumentDate" type="xs:date" use="required"/>
+		<xs:attribute name="DocumentNumber" type="tns:string255" use="required"/>
+		<xs:attribute name="Currency" type="tns:ОКВТип"/>
+		<xs:attribute name="CurrencyRate">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="10"/>
+					<xs:fractionDigits value="4"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="IsConventionalUnit" type="xs:boolean" default="false"/>
+		<xs:attribute name="ConventionalUnitDefinition" type="tns:string255"/>
+		<xs:attribute name="TotalItems">
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:totalDigits value="6"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="ProformaInvoice29Base">
+		<xs:sequence>
+			<xs:element name="OtherBase" type="tns:string1000"/>
+			<xs:element name="ProformaInvoiceBaseDocument" type="tns:DocumentRequisitesType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DocumentRequisitesType">
+		<xs:sequence>
+			<xs:element name="IdentificationDetails" type="tns:IdentificationDetail" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="DocumentName" type="tns:string255" use="required"/>
+		<xs:attribute name="DocumentNumber" type="tns:string255" use="required"/>
+		<xs:attribute name="DocumentDate" type="xs:date" use="required"/>
+		<xs:attribute name="FileId" type="tns:string255"/>
+		<xs:attribute name="Id" type="tns:string255"/>
+		<xs:attribute name="SystemId" type="tns:string500"/>
+		<xs:attribute name="SystemUrl" type="tns:string255"/>
+		<xs:attribute name="AdditionalInfo" type="tns:string2000"/>
+	</xs:complexType>
+	<xs:complexType name="IdentificationDetail">
+		<xs:attribute name="Inn" type="tns:inn"/>
+		<xs:attribute name="ShortNameExecutiveAuthority" type="tns:string255"/>
+		<xs:attribute name="StatusId">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="LegalEntity"/>
+					<xs:enumeration value="PhysicalPerson"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Country">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:length value="3"/>
+					<xs:pattern value="[0-9]{3}"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="OrgName" type="tns:string1000"/>
+		<xs:attribute name="LegalEntityId" type="tns:string255"/>
+		<xs:attribute name="OrganizationOrPersonInfo" type="tns:string255"/>
+	</xs:complexType>
+	<xs:complexType name="CommitmentType29">
+		<xs:attribute name="CommitmentTypeCode" type="tns:string255"/>
+		<xs:attribute name="CommitmentTypeName" type="tns:string255"/>
+	</xs:complexType>
+	<xs:complexType name="ExtendedOrganizationInfoXmlProformaInvoice29">
+		<xs:sequence>
+			<xs:element name="Name" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Inn" type="tns:Inn"/>
+			<xs:element name="Kpp" type="tns:Kpp" minOccurs="0"/>
+			<xs:element name="Address" type="tns:AddressInfo970" minOccurs="0"/>
+			<xs:element name="FnsParticipantId" type="xs:string"/>
+			<xs:element name="ShortOrgName" type="tns:string510"/>
+			<xs:element name="Ogrn" minOccurs="0" type="xs:string"/>
+			<xs:element name="Okopf" minOccurs="0" type="xs:string"/>
+			<xs:element name="Okpo" minOccurs="0" type="xs:string"/>
+			<xs:element name="Phone" minOccurs="0" maxOccurs="unbounded">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Email" minOccurs="0" maxOccurs="unbounded">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CorrespondentAccount" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="34"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BankAccountNumber" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="34"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BankName" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BankId" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="9"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BankInn" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="10"/>
+						<xs:pattern value="([0-9]{1}[1-9]{1}|[1-9]{1}[0-9]{1})[0-9]{8}"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BankKpp" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="9"/>
+						<xs:minLength value="9"/>
+						<xs:maxLength value="9"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SwiftCode" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="8"/>
+						<xs:maxLength value="11"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Department" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="500"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AdditionalInfo" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="OrganizationOrPersonInfo" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="LegalEntityId" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="IndividualEntityRegistrationCertificate" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Snils" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="14"/>
+						<xs:pattern value="[0-9]{3}\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}"/>
+						<xs:pattern value="[0-9]{3}\-[0-9]{3}\-[0-9]{3} [0-9]{2}"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Country">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PhysicalEntityStatusID" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+						<xs:enumeration value="0"/>
+						<xs:enumeration value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="IndividualEntityRegistrationNumber" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="15"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="IndividualEntityRegistrationDate" type="xs:date" minOccurs="0"/>
+			<xs:element name="FullNameOPF" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="4"/>
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="OtherContactInfo" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CountryCode" base="xs:string" minOccurs="0"/>
+			<xs:element name="СлужебнаяИнформация" type="tns:OrganizationСлужебнаяИнформация" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="Type" type="tns:ExtendedOrganizationType" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="ProformaInvoiceTable29">
+		<xs:sequence>
+			<xs:element name="Items" type="tns:Item29" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="TotalWithVatExcluded" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+					<xs:minInclusive value="0"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Vat">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+					<xs:minInclusive value="0"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="WithoutVat" default="false">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="true"/>
+					<xs:enumeration value="false"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Total" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+					<xs:minInclusive value="0"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="TotalDiscountSum">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="Item29">
+		<xs:all>
+			<xs:element name="AdditionalInfoId" type="tns:AdditionalInfoId" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="StateSystemItemInfos" type="tns:StateSystemItemInfo" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:all>
+		<xs:attribute name="Product" type="tns:string2000"/>
+		<xs:attribute name="Unit" type="tns:okei"/>
+		<xs:attribute name="UnitName" type="tns:string255"/>
+		<xs:attribute name="Quantity">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="26"/>
+					<xs:fractionDigits value="11"/>
+					<xs:minExclusive value="0"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Price">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="26"/>
+					<xs:fractionDigits value="11"/>
+					<xs:minInclusive value="0"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="PriceWithoutDiscount">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="26"/>
+					<xs:fractionDigits value="11"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="TaxRate" type="tns:TaxRate"/>
+		<xs:attribute name="OtherTaxRate" type="tns:string35"/>
+		<xs:attribute name="DiscountSum">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="DiscountPercent">
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:totalDigits value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="SubtotalWithVatExcluded" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+					<xs:minInclusive value="0"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="SubtotalWithoutVatAndDiscount">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Vat">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+					<xs:minInclusive value="0"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="VatWithoutDiscount">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+					<xs:minInclusive value="0"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="WithoutVat" default="false">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="true"/>
+					<xs:enumeration value="false"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="Subtotal" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+					<xs:minInclusive value="0"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="SubtotalWithoutDiscount">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="19"/>
+					<xs:fractionDigits value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="ItemMark">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="NotSpecified"/>
+					<xs:enumeration value="Property"/>
+					<xs:enumeration value="Job"/>
+					<xs:enumeration value="Service"/>
+					<xs:enumeration value="PropertyRights"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="AdditionalProperty" type="tns:string4"/>
+		<xs:attribute name="ItemVendorCode" type="tns:string100"/>
+		<xs:attribute name="Country">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:length value="3"/>
+					<xs:pattern value="[0-9]{3}"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="ItemCharact" type="tns:string1000"/>
+		<xs:attribute name="ItemArticle" type="tns:string50"/>
+		<xs:attribute name="ItemKind" type="tns:string10"/>
+		<xs:attribute name="ItemSeries" type="tns:string50"/>
+		<xs:attribute name="CatalogCode" type="tns:string27f"/>
+		<xs:attribute name="ItemTypeCode" type="tns:string10"/>
+		<xs:element name="СлужебнаяИнформация" type="tns:ItemСлужебнаяИнформация" minOccurs="0"/>
+	</xs:complexType>
+	<xs:complexType name="StateSystemItemInfo">
+		<xs:sequence>
+			<xs:element name="StateSystemId" type="tns:string255" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="StateSystemName" type="tns:string255" use="required"/>
+		<xs:attribute name="AccountingUnit" type="tns:string255"/>
+		<xs:attribute name="OtherInfo" type="tns:string1000"/>
+	</xs:complexType>
+	<xs:simpleType name="string35">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string27f">
+		<xs:restriction base="xs:string">
+			<xs:length value="27"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string255z">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="0"/>
+			<xs:maxLength value="255"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string500">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="500"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string510">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="510"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string9f">
+		<xs:restriction base="xs:string">
+			<xs:length value="9"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="ProformaInvoiceAdditionalInfo">
+		<xs:all>
+			<xs:element name="PaymentTerms" minOccurs="0" maxOccurs="20">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ShipmentTerms" minOccurs="0" maxOccurs="20">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AdditionalInfoId" type="tns:AdditionalInfoId" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:all>
+		<xs:attribute name="DateRestriction" type="xs:date"/>
+		<xs:attribute name="DateAndTimeRestriction" type="tns:datetimeutc"/>
+		<xs:attribute name="StartShipmentDate" type="xs:date"/>
+		<xs:attribute name="PaymentPurpose" type="tns:string210" use="required"/>
+		<xs:attribute name="UniquePaymentInfo" type="tns:string2000"/>
+		<xs:attribute name="PaymentMethod" type="tns:string255"/>
+	</xs:complexType>
+	<xs:simpleType name="datetimeutc">
+		<xs:restriction base="xs:string">
+			<xs:length value="25"/>
+			<xs:pattern value="(((((0[1-9]{1}|1[0-9]{1}|2[0-8]{1})\.(0[1-9]{1}|1[0-2]{1}))|((29|30)\.(01|0[3-9]{1}|1[0-2]{1}))|(31\.(01|03|05|07|08|10|12)))\.((19|20)[0-9]{2}))|(29\.02\.((19|20)(((0|2|4|6|8)(0|4|8))|((1|3|5|7|9)(2|6))))))([T]([0-1]{1}[0-9]{1}|2[0-3]{1}):([0-5]{1}[0-9]{1}):([0-5]{1}[0-9]{1})([+|-]([01][0-9])[:]([0-5][0-9])))"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string210">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="210"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

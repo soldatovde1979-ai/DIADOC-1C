@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="c5457a51-beb8-4b9e-9138-323f3e826a21">
+		<Properties>
+			<Name>КонтурДиадокКоннекторHTTP</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Работа с HTTP (Контур)</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонтурДиадокКоннекторHTTP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КонтурДиадокКоннекторHTTP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КонтурДиадокКоннекторHTTPХешMD5КлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КонтурДиадокКоннекторHTTPСлужебный83</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонтурДиадокКоннекторHTTPСлужебный83</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонтурДиадокКоннекторHTTPХешMD5</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КонтурДиадокКоннекторHTTPСлужебныйПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КонтурДиадокКоннекторHTTPДвоичныеДанные82Служебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонтурДиадокКоннекторHTTPДвоичныеДанные82Служебный</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

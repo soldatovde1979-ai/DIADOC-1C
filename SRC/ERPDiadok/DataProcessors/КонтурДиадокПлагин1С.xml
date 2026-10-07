@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<DataProcessor uuid="c5cdccf8-5553-42da-960b-9527ef5d47ee">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.КонтурДиадокПлагин1С" category="Object">
+				<xr:TypeId>bbb4d243-823a-4dc9-9cf0-eece9aa76f5a</xr:TypeId>
+				<xr:ValueId>3cb54634-8526-4ddd-8543-3e2f3b360b87</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.КонтурДиадокПлагин1С" category="Manager">
+				<xr:TypeId>82634142-fee2-4d98-a09b-99fb4a400715</xr:TypeId>
+				<xr:ValueId>39f4b843-1f48-453f-964a-15b11ca8ce69</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>КонтурДиадокПлагин1С</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контур.Диадок: Плагин 1С</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<DefaultForm>DataProcessor.КонтурДиадокПлагин1С.Form.ФормаОтладки</DefaultForm>
+			<AuxiliaryForm>DataProcessor.КонтурДиадокПлагин1С.Form.ФормаОтладкиУправляемая</AuxiliaryForm>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>КлиентскиеВызовы</Form>
+			<Form>ФормаОтладки</Form>
+			<Form>ФормаОтладкиУправляемая</Form>
+			<Template>Plugin</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

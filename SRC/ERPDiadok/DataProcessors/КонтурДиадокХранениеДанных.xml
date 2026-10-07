@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<DataProcessor uuid="74835fc7-0fbc-4603-bfca-26f62f0f1883">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.КонтурДиадокХранениеДанных" category="Object">
+				<xr:TypeId>24eb90b5-d6aa-46c8-b092-62d3be939d43</xr:TypeId>
+				<xr:ValueId>1e73ad29-51f7-467d-8aba-df1db291ed37</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.КонтурДиадокХранениеДанных" category="Manager">
+				<xr:TypeId>16c168ab-3ee5-4150-81da-3236da021fbc</xr:TypeId>
+				<xr:ValueId>e52c7197-ca98-489a-b7a2-271674cc6622</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>КонтурДиадокХранениеДанных</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контур.Диадок: Хранение данных</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>ШХ / Обработка для чтения и записи данных сервиса Диадок в локальной базе 1C</Comment>
+			<UseStandardCommands>false</UseStandardCommands>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Template>ТаблицаПерекодировки</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

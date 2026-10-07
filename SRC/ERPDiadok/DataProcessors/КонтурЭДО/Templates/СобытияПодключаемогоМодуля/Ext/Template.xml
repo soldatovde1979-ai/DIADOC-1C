@@ -1,0 +1,3458 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://v8.1c.ru/8.2/data/spreadsheet" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<languageSettings>
+		<currentLanguage>ru</currentLanguage>
+		<defaultLanguage>ru</defaultLanguage>
+		<languageInfo>
+			<id>ru</id>
+			<code>Русский</code>
+			<description>Русский</description>
+		</languageInfo>
+	</languageSettings>
+	<columns>
+		<size>5</size>
+		<columnsItem>
+			<index>0</index>
+			<column>
+				<formatIndex>1</formatIndex>
+			</column>
+		</columnsItem>
+		<columnsItem>
+			<index>1</index>
+			<column>
+				<formatIndex>2</formatIndex>
+			</column>
+		</columnsItem>
+		<columnsItem>
+			<index>2</index>
+			<column>
+				<formatIndex>3</formatIndex>
+			</column>
+		</columnsItem>
+		<columnsItem>
+			<index>3</index>
+			<column>
+				<formatIndex>4</formatIndex>
+			</column>
+		</columnsItem>
+		<columnsItem>
+			<index>4</index>
+			<column>
+				<formatIndex>5</formatIndex>
+			</column>
+		</columnsItem>
+	</columns>
+	<columns>
+		<id>57d4af22-3135-4140-aeaf-6378983ea4a9</id>
+		<size>2</size>
+		<columnsItem>
+			<index>0</index>
+			<column>
+				<formatIndex>6</formatIndex>
+			</column>
+		</columnsItem>
+		<columnsItem>
+			<index>1</index>
+			<column>
+				<formatIndex>7</formatIndex>
+			</column>
+		</columnsItem>
+		<columnsItem>
+			<index>2</index>
+			<column>
+				<formatIndex>3</formatIndex>
+			</column>
+		</columnsItem>
+		<columnsItem>
+			<index>3</index>
+			<column>
+				<formatIndex>4</formatIndex>
+			</column>
+		</columnsItem>
+	</columns>
+	<rowsItem>
+		<index>0</index>
+		<row>
+			<c>
+				<c>
+					<f>8</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Родитель</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>АдресСправки</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>10</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процедурный тип события</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>1</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отправка пакетов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПолучитьТаблицуИспользуемыхПакетов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Poluchit%27TablitsuIspol%27zuyemykhPaketov.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Определяет список используемых исходящих видов пакетов, которые необходимо отправить за указанный период в рамках, сопоставленных с ящиками Диадок, организаций и контрагентов.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>2</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отправка пакетов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПолучитьТаблицуИспользуемыхВидовДокументов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Poluchit%27TablitsuIspol%27zuyemykhVidovDokumentov.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Определяет список исходящих видов документов, которые включаются в пакет.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>3</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отправка пакетов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПолучитьТекстЗапросаДляСпискаПакетовНаОтправкуПоМассивуВидовПакетов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Poluchit%27TekstZaprosaDlyaSpiskaPaketovNaOtpravkuPoMassivuVidovPaketov.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описывается текст запроса для выборки основных документов, характеризующих готовность пакетов к отправке.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>4</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отправка пакетов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПодготовитьПакет</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Podgotovit%27Paket.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Определяет основную логику формирования пакета: какие документы и какого типа будут включаться в состав пакета.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>5</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отправка пакетов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПодготовитьЭлектронныйДокумент</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Podgotovit%27ElektronnyyDokument.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заполнение контента всех документов, которые необходимо включить в пакет для отправки. </v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>6</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отправка пакетов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПодготовитьЭлектронныйДокументПоВнешнейПечатнойФорме</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/ПодготовитьЭлектронныйДокументПоВнешнейПечатнойФорме.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подготовка документа для отпарвки с использованием внешней печатной формы.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>7</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отправка пакетов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЗаполнитьРеквизитыДокумента</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/ЗаполнитьРеквизитыДокумента.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заполнение реквизитов документа для вывода в список на отправку, при включенной настройке "Показывать содержимое пакета на отправку".</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>8</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отправка пакетов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПослеПодготовкиПакета</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/PoslePodgotovkiPaketa.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В функции можно изменить любые свойства подготовленного пакета до его отправки. Например, переопределить отправителя, получателя, подразделение, заблокированность, тестовость и т.д.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>9</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отправка пакетов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПослеОтправкиПакета</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Posle_Otpravki_Paketa.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Функция используется в случае необходимости изменения данных в 1С, после отправки пакета на сервер Диадок, когда пакету и документам присвоены ID.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>10</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка входящих</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>НайтиСопоставлениеДокумента</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Nayti_Sopostavleniye_Dokumenta.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Осуществляется поиск документа в 1С, соответствующего электронному документу в Диадоке.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>11</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка входящих</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>СписокТиповДокументовДляСоздания</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/СписокТиповДокументовДляСоздания.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Определяет список доступных типов документов для создания в 1С, на основании полученного электронного документа.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>12</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка входящих</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>16</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЗаполнитьТаблицуСопоставленияНоменклатуры</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заполняет таблицу сопоставления номенклатуры из входящих электронных документов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>13</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка входящих</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>16</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПрочитатьСопоставлениеНоменклатуры</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заполняет в таблице сопоставления колонки со сведениями о номенклатуре информационной базы</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>14</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка входящих</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПолучитьЗаполненныйОбъектДокумента1С</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Poluchit%27_Zapolnennyy_Obyekt_Dokumenta_1S.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Создание документа по данным из Диадока.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>15</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка входящих</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>СопоставитьНоменклатуруПоставщика</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Sopostavit%27_Nomenklaturu_Postavshchika.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запись сопоставленной пользователем номенклатуры поставщика</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>16</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка входящих</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ОтборСопоставленияНоменклатуры</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Otbor_Sopostavleniya_Nomenklatury.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Позволяет выполнить сопоставление номенклатуры с определенным фильтром.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>17</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка входящих</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПровестиАнализДокумента</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Provesti_Analiz_Dokumenta.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполняет анализ отдельно взятого входящего документа.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>18</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка входящих</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПослеАнализаПакета</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Posle_Analiza_Paketa.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вызывается действием «Выполнить анализ пакета»: сначала для каждого документа выполняется событие ПровестиАнализДокумента, потом ПослеАнализаПакета.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>19</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка входящих</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ВыполнитьТребуемоеДействие</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Vypolnit%27_Trebuyemoye_Deystviye.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполняется требуемое действие, сохраненое в обрабатываемом документе 1С подсистемы Диадок.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>20</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка входящих</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПравилаСопоставленияДокумента</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Pravila_Sopostavleniya_Dokumenta.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задает ограничения на типы документов 1С, которые выпадают при ручном сопоставлении документа ЭДО</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>21</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочие события</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ВыполнитьРегламентныеДействия</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Vypolnit%27_Reglamentnyye_Deystviya.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполняет регламентные действия, требующие инициализацию основного модуля.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>22</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочие события</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПослеУстановкиСтатусаДокумента</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Posle_Ustanovki_Statusa_Dokumenta.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вызывается при записи статуса документа при очередном обмене с сервером Диадока.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>23</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочие события</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПолучитьНастройкиДополнительныхКолонокСпискаДокументов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Poluchit%27_Nastroyki_Dopolnitel%27nykh_Kolonok_Spiska_Dokumentov.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Определение дополнительных колонок списка документов/пакетов (не более 5 штук).</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>24</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочие события</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПослеОбновленияСпискаДокументов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Posle_Obnovleniya_Spiska_Dokumentov.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработчики заполнения доп. колонок, которые задали в ПолучитьНастройкиДополнительныхКолонокСпискаДокументов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>25</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочие события</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЗаполнитьСписокДополнительныхКнопок</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Zapolnit%27_Spisok_Dopolnitel%27nykh_Knopok.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Определение дополнительных кнопок в меню «Действия» основной формы через дополнение таблицы значений «ТаблицаКнопок».</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>26</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочие события</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>НажатиеДополнительнойКнопки</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Nazhatiye_Dopolnitel%27noy_Knopki.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработчики нажатия дополнительных кнопок, которые задали в ЗаполнитьСписокДополнительныхКнопок.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>27</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочие события</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ОпределитьТипЗначенияОбъекта</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Opredelit%27_Tip_Znacheniya_Obyekta.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Определение справочников хранения организаций и контаргентов в отраслевых или самописных конфигурациях 1С.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>28</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочие события</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПолучитьКоличествоДокументовЗаПериод</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Poluchit%27_Kolichestvo_Dokumentov_Za_Period.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Используется для списка контрагентов в основном модуле для режима "Поиск и приглашение".</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>29</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочие события</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПослеОбработкиЛентыСобытий</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Posle_Obrabotki_Lenty_Sobytiy.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Используется для выполнения методов API для новых/измененных документов при чтении ленты событий</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>30</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочие события</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПриОткрытииФормы</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Pri_Otkrytii_Formy.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Используется для доступа к свойствам обычной формы</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>31</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочие события</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПриПолученииДанныхТабличнойЧасти</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Pri_Poluchenii_Dannykh_Tablichnoy_Chasti.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Используется для доступа к свойствам табличной части обычной формы</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>32</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочие события</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УстановитьУсловноеОформление</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/Ustanovit%27_Uslovnoye_Oformleniye.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Используется для доступа  к свойствам управляемой формы в целом, а также к коллекции ее элементов управления</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>33</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочие события</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ОбновитьКомментарийДокументаУчета</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/ОбновитьКомментарийДокументаУчета.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>34</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочие события</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПечатнаяФормаДокумента</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://developer.kontur.ru/Docs/Diadoc_UM/func/PechatnayaFormaDocumenta.html</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Для переопределения печатной формы документа, формализованного или произвольного. Должна вернуть ТабличныйДокумент.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>35</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Генерация контента</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Акт приемки-сдачи (по приказу №552)</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Act552SellerContent</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>36</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Генерация контента</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Товарная накладная (по приказу №551)</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>TovTorgSellerContent</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>37</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Генерация контента</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УКД (по приказу №736)</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>UcdSellerContent</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>38</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Генерация контента</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УПД (по приказу №820)</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Utd820SellerContent</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>39</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Генерация контента</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УПД (по приказу №970)</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Utd970SellerContent</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>40</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Генерация контента</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счет на оплату (xml)</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>17</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ProformaInvoiceSellerContent</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>41</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Генерация контента</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТОРГ-2</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Torg2SenderTitle</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>42</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Другое</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Формирование внешней печатной формы</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ВПФ</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>43</index>
+		<indexTo>45</indexTo>
+		<row>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>46</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>
+Функция НовыйКонтент(ИмяКонтента)
+	
+	Возврат ОсновнойМодуль.ДД_Компонента_ПолучитьПустойКонтент(ИмяКонтента,Истина);
+	
+КонецФункции
+
+Функция НовыйЭлементСпискаXDTO(СписокXDTO) Экспорт
+	
+	Возврат СписокXDTO.Добавить(НовыйКонтент(СписокXDTO.ВладеющееСвойство.Тип.Имя));
+	
+КонецФункции
+
+Процедура УстановитьЗначениеXDTO(Элемент, ИмяРеквизита, ЗначениеРеквизита, ЭтоСсылка = Ложь)
+
+	Если ЗначениеРеквизита=Неопределено
+		Или ЗначениеРеквизита=NULL Тогда
+		Возврат;
+	КонецЕсли;
+	
+	Попытка
+		//здесь можно добавить проверки на заполненность, вывод сообщений и т.д.
+		
+		Если ЭтоСсылка Тогда
+			Элемент[ИмяРеквизита] = ЗначениеВСтрокуВнутр(ЗначениеРеквизита);
+		Иначе	
+			Элемент[ИмяРеквизита] = ЗначениеРеквизита;
+		КонецЕсли;
+		
+		//Элемент.Установить(ИмяРеквизита,ЗначениеРеквизита);
+		
+	Исключение
+		Сообщить("Исключение при заполнении реквизита """+ИмяРеквизита+""":
+		|"+ОписаниеОшибки());
+	КонецПопытки;
+
+КонецПроцедуры
+</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<i>4</i>
+				<c>
+					<f>18</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>47</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+				</c>
+			</c>
+			<c>
+				<i>4</i>
+				<c>
+					<f>18</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>48</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>
+Функция СведенияОВнешнейОбработке() Экспорт
+	
+	ПараметрыРегистрации = Новый Структура;
+	ПараметрыРегистрации.Вставить("Вид",			 	"ДополнительнаяОбработка");
+	ПараметрыРегистрации.Вставить("Наименование", 		"Диадок (СКБ Контур): Подключаемый модуль");
+	ПараметрыРегистрации.Вставить("БезопасныйРежим", 	Ложь);
+	ПараметрыРегистрации.Вставить("Версия", 			ЭДО_ВерсияAPIПодключаемогоМодуля());
+	ПараметрыРегистрации.Вставить("Информация", 		"Модуль работы с электронными первичными документами через Диадок (подключаемая часть)");
+	
+	ТаблицаКоманд = ПолучитьТаблицуКоманд();
+	
+	ДобавитьКоманду(ТаблицаКоманд, "Выполнение регламентных операций подключаемого модуля Диадок", "ВыполнитьРегламентныеДействияПМ", "ВызовСерверногоМетода");
+	
+	ПараметрыРегистрации.Вставить("Команды", ТаблицаКоманд);
+	
+	Возврат ПараметрыРегистрации;
+	
+КонецФункции
+
+Функция ПолучитьТаблицуКоманд()
+	
+	Команды = Новый ТаблицаЗначений;
+	
+	Команды.Колонки.Добавить("Представление", 			Новый ОписаниеТипов("Строка")); 
+	Команды.Колонки.Добавить("Идентификатор", 			Новый ОписаниеТипов("Строка"));
+	Команды.Колонки.Добавить("Использование", 			Новый ОписаниеТипов("Строка"));
+	Команды.Колонки.Добавить("ПоказыватьОповещение", 	Новый ОписаниеТипов("Булево"));
+	Команды.Колонки.Добавить("Модификатор", 			Новый ОписаниеТипов("Строка"));
+	
+	Возврат Команды;
+	
+КонецФункции
+
+Процедура ДобавитьКоманду(ТаблицаКоманд, Представление, Идентификатор, Использование, ПоказыватьОповещение = Ложь, Модификатор = "")
+	
+	НоваяКоманда						= ТаблицаКоманд.Добавить();
+	НоваяКоманда.Представление			= Представление;
+	НоваяКоманда.Идентификатор			= Идентификатор;
+	НоваяКоманда.Использование			= Использование;
+	НоваяКоманда.ПоказыватьОповещение	= ПоказыватьОповещение;
+	НоваяКоманда.Модификатор			= Модификатор;
+	
+КонецПроцедуры
+
+Процедура ВыполнитьКоманду(ИдентификаторКоманды, ПараметрыВыполненияКоманды = Неопределено) Экспорт
+	
+	Если ИдентификаторКоманды = "ВыполнитьРегламентныеДействияПМ" Тогда
+		ВыполнитьРегламентныеДействияПМ(ПараметрыВыполненияКоманды);
+	КонецЕсли;
+	
+КонецПроцедуры
+
+Процедура ВыполнитьРегламентныеДействияПМ(Параметры)
+	// Регламентные действия, НЕ требующие инициализации основного модуля
+КонецПроцедуры
+
+Функция ЭДО_ВерсияAPIПодключаемогоМодуля() Экспорт
+	
+	Возврат 4;
+	
+КонецФункции</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<i>4</i>
+				<c>
+					<f>18</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>49</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+				</c>
+			</c>
+			<c>
+				<i>4</i>
+				<c>
+					<f>18</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>50</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>
+Функция СформироватьВнешнююПечатнуюФорму(Документ,	ВнешняяПечатнаяФорма, ИдентификаторКомандыПечатнойФормы=Неопределено)
+	
+	ИмяФайлаВПФ = КаталогВременныхФайлов()+"PrnForm.tmp";
+	ОбъектВПФ = ВнешняяПечатнаяФорма.ПолучитьОбъект();	
+	ДвоичныеДанные = ОбъектВПФ.ХранилищеВнешнейОбработки.Получить();
+	//ДвоичныеДанные	= ОбъектВПФ.Хранилище.Получить(); // ААА
+	ДвоичныеДанные.Записать(ИмяФайлаВПФ);
+	Обработка = ВнешниеОбработки.Создать(ИмяФайлаВПФ);
+	УдалитьФайлы(ИмяФайлаВПФ);
+	
+	Обработка.СсылкаНаОбъект = Документ;
+	//Обработка.ДокументСсылка = Документ; // ААА
+	ТабличныйДокумент = Обработка.Печать();
+	//ТабличныйДокумент = Обработка.Печать(ДокументОбъект, Новый ТабличныйДокумент); // ААА
+	
+	ИмяВременногоФайла = ПолучитьИмяВременногоФайла();	
+	ИмяФайла = ВнешняяПечатнаяФорма.Наименование + " № " + Документ.Номер + " от " + Формат(Документ.Дата,"ДФ=dd.MM.yyyy") + ".pdf";
+	
+	ТабличныйДокумент.Записать(ИмяВременногоФайла, ТипФайлаТабличногоДокумента.PDF);
+			
+	Возврат Новый Структура("ИмяВременногоФайла, ИмяФайла", ИмяВременногоФайла, ИмяФайла);
+	
+КонецФункции</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<i>4</i>
+				<c>
+					<f>18</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>51</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>
+Функция СформироватьВнешнююПечатнуюФорму(Документ,	ВнешняяПечатнаяФорма, ИдентификаторКомандыПечатнойФормы=Неопределено)
+	
+	ИсточникМакета = Новый Структура("СсылкаНаВнешнююОбработку, НомерСтроки", ВнешняяПечатнаяФорма, 1);	
+	ТабличныйДокумент = УниверсальныеМеханизмы.НапечататьВнешнююФорму(Документ, ИсточникМакета);
+	
+	ИмяВременногоФайла = ПолучитьИмяВременногоФайла();	
+	ИмяФайла = ВнешняяПечатнаяФорма.Наименование + " № " + Документ.Номер + " от " + Формат(Документ.Дата,"ДФ=dd.MM.yyyy") + ".pdf";
+	
+	ТабличныйДокумент.Записать(ИмяВременногоФайла, ТипФайлаТабличногоДокумента.PDF);
+			
+	Возврат Новый Структура("ИмяВременногоФайла, ИмяФайла", ИмяВременногоФайла, ИмяФайла);
+	
+КонецФункции</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<i>4</i>
+				<c>
+					<f>18</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>52</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>
+Функция СформироватьВнешнююПечатнуюФорму(Документ,	ВнешняяПечатнаяФорма, ИдентификаторКомандыПечатнойФормы)
+			
+	РезультатПечати 	= Неопределено;	
+	ПараметрыВывода 	= Неопределено;	
+	ОбъектыНазначения 	= Новый Массив;
+	ПараметрыИсточника 	= Новый Структура("ИдентификаторКоманды, ОбъектыНазначения", ИдентификаторКомандыПечатнойФормы, ОбъектыНазначения);
+	ОбъектыПечати 		= Новый СписокЗначений;
+	
+	ОбъектыНазначения.Добавить(Документ);
+	
+	МодульДополнительныеОтчетыИОбработки = ОбщегоНазначения.ОбщийМодуль("ДополнительныеОтчетыИОбработки");
+	МодульДополнительныеОтчетыИОбработки.ПечатьПоВнешнемуИсточнику(ВнешняяПечатнаяФорма, ПараметрыИсточника, РезультатПечати, ОбъектыПечати, ПараметрыВывода);
+		
+	Если ТипЗнч(РезультатПечати) &lt;&gt; Тип("ТаблицаЗначений") ИЛИ РезультатПечати.Количество() &lt;&gt; 1 Тогда
+		ВызватьИсключение "Не удалось сформировать печатную форму """ + ВнешняяПечатнаяФорма + """ для документа " + Документ;
+	КонецЕсли;
+	
+	ИмяВременногоФайла = ПолучитьИмяВременногоФайла();
+	ИмяФайла = РезультатПечати[0].СинонимМакета + " № " + Документ.Номер + " от " + Формат(Документ.Дата,"ДФ=dd.MM.yyyy") + ".pdf";
+	
+	РезультатПечати[0].ТабличныйДокумент.Записать(ИмяВременногоФайла, ТипФайлаТабличногоДокумента.PDF);		
+			
+	Возврат Новый Структура("ИмяВременногоФайла, ИмяФайла", ИмяВременногоФайла, ИмяФайла);
+	
+КонецФункции</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<i>4</i>
+				<c>
+					<f>18</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>53</index>
+		<indexTo>55</indexTo>
+		<row>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>56</index>
+		<row>
+			<columnsID>57d4af22-3135-4140-aeaf-6378983ea4a9</columnsID>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>	ТЗ  = Новый ТаблицаЗначений;
+	ОсновнойМодуль.ЭДО_Служебные_ДобавитьКолонкиВТаблицуЗначений(ТЗ, "ID, Наименование, УПД");
+	ОсновнойМодуль.ЭДО_Служебные_ДобавитьСтрокуВТаблицуЗначений(ТЗ, "ID_ПАКЕТА", "НАИМЕНОВАНИЕ ПАКЕТА");
+			
+	Возврат ТЗ;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>		ТЗ  = Параметры.Результат_ИМ;
+		ОсновнойМодуль.ЭДО_Служебные_ДобавитьСтрокуВТаблицуЗначений(ТЗ, "ID_ПАКЕТА", "НАИМЕНОВАНИЕ ПАКЕТА");
+			
+		Возврат ТЗ;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>57</index>
+		<row>
+			<columnsID>57d4af22-3135-4140-aeaf-6378983ea4a9</columnsID>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>58</index>
+		<row>
+			<columnsID>57d4af22-3135-4140-aeaf-6378983ea4a9</columnsID>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>	ТЗ  = Новый ТаблицаЗначений;
+	ОсновнойМодуль.ЭДО_Служебные_ДобавитьКолонкиВТаблицуЗначений(ТЗ, "ID, Наименование, ТипДокументаAPI, ТипКонтентаAPI, ФункцияДокументаAPI");
+	ОсновнойМодуль.ЭДО_Служебные_ДобавитьСтрокуВТаблицуЗначений(ТЗ, "ID_ДОКУМЕНТА", "НАИМЕНОВАНИЕ ДОКУМЕНТА", "Nonformalized", "");
+
+	Возврат ТЗ;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>		ТЗ  = Параметры.Результат_ИМ;
+		ОсновнойМодуль.ЭДО_Служебные_ДобавитьСтрокуВТаблицуЗначений(ТЗ, "ID_ДОКУМЕНТА", "НАИМЕНОВАНИЕ ДОКУМЕНТА", "Nonformalized", "");
+
+		Возврат ТЗ;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>59</index>
+		<row>
+			<columnsID>57d4af22-3135-4140-aeaf-6378983ea4a9</columnsID>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>60</index>
+		<row>
+			<columnsID>57d4af22-3135-4140-aeaf-6378983ea4a9</columnsID>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>	Если Параметры.ВидПакетаРазвернутый.ID = "ID_ПАКЕТА" Тогда	
+		ОсновнойМодуль.ЭДО_ДокументМенеджер_ПодготовитьИДобавитьДокументВПакет(Параметры.Пакет, Параметры.СтрокаСписка.Документ, "ID_ДОКУМЕНТА");
+	КонецЕсли;
+	
+	Возврат Истина;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>		Если Параметры.ВидПакетаРазвернутый.ID = "ID_ПАКЕТА" Тогда	
+			ОсновнойМодуль.ЭДО_ДокументМенеджер_ПодготовитьИДобавитьДокументВПакет(Параметры.Пакет, Параметры.СтрокаСписка.Документ, "ID_ДОКУМЕНТА");
+		КонецЕсли;
+	
+		Возврат Истина;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>61</index>
+		<row>
+			<columnsID>57d4af22-3135-4140-aeaf-6378983ea4a9</columnsID>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>62</index>
+		<row>
+			<columnsID>57d4af22-3135-4140-aeaf-6378983ea4a9</columnsID>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>	Документ1С = Параметры.Результат.Документ1С;
+
+	Если Параметры.ВидДокументаРазвернутый.ID = "ID_ДОКУМЕНТА" Тогда
+
+		//ВПФ = Справочники.ВнешниеОбработки.НайтиПоКоду(""); // ДополнительныеОтчетыИОбработки
+		//ДанныеПечатнойФормы = СформироватьВнешнююПечатнуюФорму(Документ1С, ВПФ, "");
+		//Параметры.Результат.ДвоичныеДанные = Новый ДвоичныеДанные(ДанныеПечатнойФормы.ИмяВременногоФайла);
+		//Параметры.Результат.ЗапрашиватьОтветнуюПодпись = Истина;
+		//Параметры.Результат.Метаданные.FileName	= ДанныеПечатнойФормы.ИмяФайла;
+		//Параметры.Результат.Метаданные.DocumentNumber	= Документ1С.Номер;
+		//Параметры.Результат.Метаданные.DocumentDate	= Документ1С.Дата;
+
+	КонецЕсли;
+
+	Возврат Истина;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>		Документ1С = Параметры.Результат.Документ1С;
+
+		Если Параметры.ВидДокументаРазвернутый.ID = "ID_ДОКУМЕНТА" Тогда
+
+			//ВПФ = Справочники.ВнешниеОбработки.НайтиПоКоду(""); // ДополнительныеОтчетыИОбработки
+			//ДанныеПечатнойФормы = СформироватьВнешнююПечатнуюФорму(Документ1С, ВПФ, "");
+			//Параметры.Результат.ДвоичныеДанные = Новый ДвоичныеДанные(ДанныеПечатнойФормы.ИмяВременногоФайла);
+			//Параметры.Результат.ЗапрашиватьОтветнуюПодпись = Истина;
+			//Параметры.Результат.Метаданные.FileName	= ДанныеПечатнойФормы.ИмяФайла;
+			//Параметры.Результат.Метаданные.DocumentNumber	= Документ1С.Номер;
+			//Параметры.Результат.Метаданные.DocumentDate	= Документ1С.Дата;
+
+		КонецЕсли;
+
+		Возврат Истина;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>63</index>
+		<row>
+			<columnsID>57d4af22-3135-4140-aeaf-6378983ea4a9</columnsID>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>64</index>
+		<row>
+			<columnsID>57d4af22-3135-4140-aeaf-6378983ea4a9</columnsID>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>	//Если Параметры.РежимОтображенияДокументов = "ПолученныеДокументы" Тогда
+	//	
+	//	НовСтрока = Параметры.ТаблицаКнопок.Добавить();
+	//	НовСтрока.Имя		= "ИмяДополнительнойКнопки";
+	//	НовСтрока.Заголовок	= "Представление кнопки в меню";
+	//	
+	//КонецЕсли;
+
+	Возврат Истина;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>		//Если Параметры.РежимОтображенияДокументов = "ПолученныеДокументы" Тогда
+		//	
+		//	НовСтрока = Параметры.ТаблицаКнопок.Добавить();
+		//	НовСтрока.Имя		= "ИмяДополнительнойКнопки";
+		//	НовСтрока.Заголовок	= "Представление кнопки в меню";
+		//	
+		//КонецЕсли;
+
+		Возврат Истина;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>65</index>
+		<row>
+			<columnsID>57d4af22-3135-4140-aeaf-6378983ea4a9</columnsID>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>66</index>
+		<row>
+			<columnsID>57d4af22-3135-4140-aeaf-6378983ea4a9</columnsID>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>	//Если Параметры.РежимОтображенияДокументов = "ПолученныеДокументы" И Параметры.ИмяКнопки = "ИмяДополнительнойКнопки" Тогда
+	//	ВыделенныеСтроки = Параметры.ВыделенныеСтроки;
+	//КонецЕсли;
+
+	Возврат Истина;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>		//Если Параметры.РежимОтображенияДокументов = "ПолученныеДокументы" И Параметры.ИмяКнопки = "ИмяДополнительнойКнопки" Тогда
+		//	ВыделенныеСтроки = Параметры.ВыделенныеСтроки;
+		//КонецЕсли;
+
+		Возврат Истина;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>67</index>
+		<row>
+			<columnsID>57d4af22-3135-4140-aeaf-6378983ea4a9</columnsID>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>68</index>
+		<row>
+			<columnsID>57d4af22-3135-4140-aeaf-6378983ea4a9</columnsID>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>	Если Параметры.Синоним = "Организации" Тогда
+		Результат = "СправочникСсылка.Организации";
+	ИначеЕсли Параметры.Синоним = "Контрагенты" Тогда	
+		Результат = "СправочникСсылка.Контрагенты";
+	Иначе
+		Результат = Неопределено;
+	КонецЕсли;
+	
+	Возврат Результат;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>		Результат = Параметры.Результат_ИМ;		
+
+		//Если Параметры.Синоним = "Организации" Тогда
+		//	Результат = "СправочникСсылка.Фирмы";
+		//ИначеЕсли Параметры.Синоним = "Контрагенты" Тогда	
+		//	Результат = "СправочникСсылка.Клиенты";
+		//КонецЕсли;
+		
+		Возврат Результат;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>69</index>
+		<row>
+			<columnsID>57d4af22-3135-4140-aeaf-6378983ea4a9</columnsID>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>70</index>
+		<row>
+			<columnsID>57d4af22-3135-4140-aeaf-6378983ea4a9</columnsID>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>	ТаблицаНоменклатурыДляСопоставления = Параметры;
+	Результат = ОсновнойМодуль.НовыйРезультатФункции();
+
+	НачатьТранзакцию();
+	
+	Попытка
+
+		// код записи сопоставления в базу
+
+	Исключение
+		ОтменитьТранзакцию();
+		Результат.ОписаниеОшибки = ОписаниеОшибки();
+		Возврат Результат;
+	КонецПопытки;
+	
+	Возврат Результат;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>		ТаблицаНоменклатурыДляСопоставления = Параметры.ДанныеДляОбработки;
+		Результат = ОсновнойМодуль.НовыйРезультатФункции();
+
+		// код дополнительной обработки выполненного сопоставления
+	
+		Возврат Результат;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>71</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl/>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>72</index>
+		<row>
+			<columnsID>57d4af22-3135-4140-aeaf-6378983ea4a9</columnsID>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>	Если Параметры.Документ.Тип.ТипДокумента = "UniversalTransferDocument"
+		Или Параметры.Документ.Тип.ТипДокумента = "Invoice" Тогда
+		
+		Результат = Новый ТабличныйДокумент;
+		
+		Область = Результат.ПолучитьОбласть(1,1,1,1);
+		Область.ТекущаяОбласть.Текст = "Пример нестандартной печатной формы";
+		Результат.Вывести(Область);
+		
+		Возврат Результат;
+		
+	КонецЕсли;	
+</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>	Если Параметры.Документ.Тип.ТипДокумента = "UniversalTransferDocument"
+		Или Параметры.Документ.Тип.ТипДокумента = "Invoice" Тогда
+		
+		Результат = Новый ТабличныйДокумент;
+		
+		Область = Результат.ПолучитьОбласть(1,1,1,1);
+		Область.ТекущаяОбласть.Текст = "Пример нестандартной печатной формы";
+		Результат.Вывести(Область);
+		
+		Возврат Результат;
+		
+	КонецЕсли;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<templateMode>true</templateMode>
+	<defaultFormatIndex>19</defaultFormatIndex>
+	<height>73</height>
+	<vgRows>73</vgRows>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Обработка</name>
+		<area>
+			<type>Columns</type>
+			<beginRow>-1</beginRow>
+			<endRow>-1</endRow>
+			<beginColumn>1</beginColumn>
+			<endColumn>1</endColumn>
+			<columnsID>57d4af22-3135-4140-aeaf-6378983ea4a9</columnsID>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ОбщийКод</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>48</beginRow>
+			<endRow>48</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ОбщийКодXDTO</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>46</beginRow>
+			<endRow>46</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ОбщийКодФормированияВПФ_ДополнительныеОтчетыИОбработки</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>52</beginRow>
+			<endRow>52</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ОбщийКодФормированияВПФ_МодульОбъекта</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>50</beginRow>
+			<endRow>50</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ОбщийКодФормированияВПФ_УниверсальныеМеханизмы</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>51</beginRow>
+			<endRow>51</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Переопределение</name>
+		<area>
+			<type>Columns</type>
+			<beginRow>-1</beginRow>
+			<endRow>-1</endRow>
+			<beginColumn>0</beginColumn>
+			<endColumn>0</endColumn>
+			<columnsID>57d4af22-3135-4140-aeaf-6378983ea4a9</columnsID>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>События</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>1</beginRow>
+			<endRow>42</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Шаблон_ЗаполнитьСписокДополнительныхКнопок</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>64</beginRow>
+			<endRow>64</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Шаблон_НажатиеДополнительнойКнопки</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>66</beginRow>
+			<endRow>66</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Шаблон_ОпределитьТипЗначенияОбъекта</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>68</beginRow>
+			<endRow>68</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Шаблон_ПечатнаяФормаДокумента</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>72</beginRow>
+			<endRow>72</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Шаблон_ПодготовитьПакет</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>60</beginRow>
+			<endRow>60</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Шаблон_ПодготовитьЭлектронныйДокумент</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>62</beginRow>
+			<endRow>62</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Шаблон_ПолучитьТаблицуИспользуемыхВидовДокументов</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>58</beginRow>
+			<endRow>58</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+			<columnsID>57d4af22-3135-4140-aeaf-6378983ea4a9</columnsID>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Шаблон_ПолучитьТаблицуИспользуемыхПакетов</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>56</beginRow>
+			<endRow>56</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+			<columnsID>57d4af22-3135-4140-aeaf-6378983ea4a9</columnsID>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Шаблон_СопоставитьНоменклатуруПоставщика</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>70</beginRow>
+			<endRow>70</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<line width="1" gap="false">
+		<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+	</line>
+	<font faceName="Arial" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<format>
+		<width>161</width>
+	</format>
+	<format>
+		<width>486</width>
+	</format>
+	<format>
+		<width>559</width>
+	</format>
+	<format>
+		<width>1145</width>
+	</format>
+	<format>
+		<width>166</width>
+		<horizontalAlignment>Center</horizontalAlignment>
+	</format>
+	<format>
+		<width>736</width>
+	</format>
+	<format>
+		<width>766</width>
+	</format>
+	<format>
+		<font>0</font>
+		<border>0</border>
+		<width>161</width>
+		<backColor>style:ToolTipBackColor</backColor>
+	</format>
+	<format>
+		<font>0</font>
+		<border>0</border>
+		<backColor>style:ToolTipBackColor</backColor>
+	</format>
+	<format>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<backColor>style:ToolTipBackColor</backColor>
+	</format>
+	<format>
+		<font>0</font>
+		<border>0</border>
+		<width>161</width>
+		<backColor>style:FieldBackColor</backColor>
+	</format>
+	<format>
+		<border>0</border>
+	</format>
+	<format>
+		<border>0</border>
+		<horizontalAlignment>Center</horizontalAlignment>
+	</format>
+	<format>
+		<border>0</border>
+		<width>166</width>
+		<horizontalAlignment>Center</horizontalAlignment>
+	</format>
+	<format>
+		<border>0</border>
+		<width>559</width>
+	</format>
+	<format>
+		<border>0</border>
+		<width>486</width>
+	</format>
+	<format>
+		<width>232</width>
+		<textPlacement>Wrap</textPlacement>
+	</format>
+	<format>
+		<horizontalAlignment>Center</horizontalAlignment>
+	</format>
+	<format>
+		<width>72</width>
+	</format>
+</document>

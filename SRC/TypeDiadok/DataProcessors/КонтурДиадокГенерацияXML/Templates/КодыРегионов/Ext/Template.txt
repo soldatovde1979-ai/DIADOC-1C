@@ -1,0 +1,350 @@
+﻿<Map xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<pair>
+		<Key xsi:type="xs:decimal">1</Key>
+		<Value xsi:type="xs:string">Республика Адыгея (Адыгея)</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">2</Key>
+		<Value xsi:type="xs:string">Республика Башкортостан</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">3</Key>
+		<Value xsi:type="xs:string">Республика Бурятия</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">4</Key>
+		<Value xsi:type="xs:string">Республика Алтай</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">5</Key>
+		<Value xsi:type="xs:string">Республика Дагестан</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">6</Key>
+		<Value xsi:type="xs:string">Республика Ингушетия</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">7</Key>
+		<Value xsi:type="xs:string">Кабардино-Балкарская Республика</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">8</Key>
+		<Value xsi:type="xs:string">Республика Калмыкия</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">9</Key>
+		<Value xsi:type="xs:string">Карачаево-Черкесская Республика</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">10</Key>
+		<Value xsi:type="xs:string">Республика Карелия</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">11</Key>
+		<Value xsi:type="xs:string">Республика Коми</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">12</Key>
+		<Value xsi:type="xs:string">Республика Марий Эл</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">13</Key>
+		<Value xsi:type="xs:string">Республика Мордовия</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">14</Key>
+		<Value xsi:type="xs:string">Республика Саха (Якутия)</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">15</Key>
+		<Value xsi:type="xs:string">Республика Северная Осетия — Алания</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">16</Key>
+		<Value xsi:type="xs:string">Республика Татарстан (Татарстан)</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">17</Key>
+		<Value xsi:type="xs:string">Республика Тыва</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">18</Key>
+		<Value xsi:type="xs:string">Удмуртская Республика</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">19</Key>
+		<Value xsi:type="xs:string">Республика Хакасия</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">20</Key>
+		<Value xsi:type="xs:string">Чеченская Республика</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">21</Key>
+		<Value xsi:type="xs:string">Чувашская Республика - Чувашия</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">22</Key>
+		<Value xsi:type="xs:string">Алтайский край</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">23</Key>
+		<Value xsi:type="xs:string">Краснодарский край</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">24</Key>
+		<Value xsi:type="xs:string">Красноярский край</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">25</Key>
+		<Value xsi:type="xs:string">Приморский край</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">26</Key>
+		<Value xsi:type="xs:string">Ставропольский край</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">27</Key>
+		<Value xsi:type="xs:string">Хабаровский край</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">28</Key>
+		<Value xsi:type="xs:string">Амурская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">29</Key>
+		<Value xsi:type="xs:string">Архангельская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">30</Key>
+		<Value xsi:type="xs:string">Астраханская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">31</Key>
+		<Value xsi:type="xs:string">Белгородская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">32</Key>
+		<Value xsi:type="xs:string">Брянская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">33</Key>
+		<Value xsi:type="xs:string">Владимирская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">34</Key>
+		<Value xsi:type="xs:string">Волгоградская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">35</Key>
+		<Value xsi:type="xs:string">Вологодская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">36</Key>
+		<Value xsi:type="xs:string">Воронежская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">37</Key>
+		<Value xsi:type="xs:string">Ивановская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">38</Key>
+		<Value xsi:type="xs:string">Иркутская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">39</Key>
+		<Value xsi:type="xs:string">Калининградская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">40</Key>
+		<Value xsi:type="xs:string">Калужская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">41</Key>
+		<Value xsi:type="xs:string">Камчатский край</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">42</Key>
+		<Value xsi:type="xs:string">Кемеровская область - Кузбасс</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">43</Key>
+		<Value xsi:type="xs:string">Кировская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">44</Key>
+		<Value xsi:type="xs:string">Костромская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">45</Key>
+		<Value xsi:type="xs:string">Курганская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">46</Key>
+		<Value xsi:type="xs:string">Курская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">47</Key>
+		<Value xsi:type="xs:string">Ленинградская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">48</Key>
+		<Value xsi:type="xs:string">Липецкая область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">49</Key>
+		<Value xsi:type="xs:string">Магаданская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">50</Key>
+		<Value xsi:type="xs:string">Московская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">51</Key>
+		<Value xsi:type="xs:string">Мурманская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">52</Key>
+		<Value xsi:type="xs:string">Нижегородская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">53</Key>
+		<Value xsi:type="xs:string">Новгородская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">54</Key>
+		<Value xsi:type="xs:string">Новосибирская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">55</Key>
+		<Value xsi:type="xs:string">Омская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">56</Key>
+		<Value xsi:type="xs:string">Оренбургская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">57</Key>
+		<Value xsi:type="xs:string">Орловская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">58</Key>
+		<Value xsi:type="xs:string">Пензенская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">59</Key>
+		<Value xsi:type="xs:string">Пермский край</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">60</Key>
+		<Value xsi:type="xs:string">Псковская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">61</Key>
+		<Value xsi:type="xs:string">Ростовская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">62</Key>
+		<Value xsi:type="xs:string">Рязанская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">63</Key>
+		<Value xsi:type="xs:string">Самарская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">64</Key>
+		<Value xsi:type="xs:string">Саратовская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">65</Key>
+		<Value xsi:type="xs:string">Сахалинская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">66</Key>
+		<Value xsi:type="xs:string">Свердловская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">67</Key>
+		<Value xsi:type="xs:string">Смоленская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">68</Key>
+		<Value xsi:type="xs:string">Тамбовская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">69</Key>
+		<Value xsi:type="xs:string">Тверская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">70</Key>
+		<Value xsi:type="xs:string">Томская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">71</Key>
+		<Value xsi:type="xs:string">Тульская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">72</Key>
+		<Value xsi:type="xs:string">Тюменская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">73</Key>
+		<Value xsi:type="xs:string">Ульяновская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">74</Key>
+		<Value xsi:type="xs:string">Челябинская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">75</Key>
+		<Value xsi:type="xs:string">Забайкальский край</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">76</Key>
+		<Value xsi:type="xs:string">Ярославская область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">77</Key>
+		<Value xsi:type="xs:string">г. Москва</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">78</Key>
+		<Value xsi:type="xs:string">г. Санкт-Петербург</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">79</Key>
+		<Value xsi:type="xs:string">Еврейская автономная область</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">80</Key>
+		<Value xsi:type="xs:string">Забайкальский край</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">83</Key>
+		<Value xsi:type="xs:string">Ненецкий автономный округ</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">86</Key>
+		<Value xsi:type="xs:string">Ханты-Мансийский автономный округ - Югра</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">87</Key>
+		<Value xsi:type="xs:string">Чукотский автономный округ</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">89</Key>
+		<Value xsi:type="xs:string">Ямало-Ненецкий автономный округ</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">91</Key>
+		<Value xsi:type="xs:string">Республика Крым</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">92</Key>
+		<Value xsi:type="xs:string">г. Севастополь</Value>
+	</pair>
+	<pair>
+		<Key xsi:type="xs:decimal">99</Key>
+		<Value xsi:type="xs:string">иные территории, включая город и космодром Байконур</Value>
+	</pair>
+</Map>

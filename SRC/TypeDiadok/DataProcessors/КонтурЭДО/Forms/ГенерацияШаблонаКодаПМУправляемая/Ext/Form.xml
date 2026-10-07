@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Генерация шаблона кода ПМ</v8:content>
+		</v8:item>
+	</Title>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ДеревоСобытий" id="95">
+			<Representation>Tree</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>ДеревоСобытий</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<ContextMenu name="ДеревоСобытийКонтекстноеМеню" id="96"/>
+			<AutoCommandBar name="ДеревоСобытийКоманднаяПанель" id="97">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДеревоСобытийРасширеннаяПодсказка" id="112"/>
+			<SearchStringAddition name="ДеревоСобытийСтрокаПоиска" id="113">
+				<AdditionSource>
+					<Item>ДеревоСобытий</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоСобытийСтрокаПоискаКонтекстноеМеню" id="114"/>
+				<ExtendedTooltip name="ДеревоСобытийСтрокаПоискаРасширеннаяПодсказка" id="115"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДеревоСобытийСостояниеПросмотра" id="116">
+				<AdditionSource>
+					<Item>ДеревоСобытий</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоСобытийСостояниеПросмотраКонтекстноеМеню" id="117"/>
+				<ExtendedTooltip name="ДеревоСобытийСостояниеПросмотраРасширеннаяПодсказка" id="118"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДеревоСобытийУправлениеПоиском" id="119">
+				<AdditionSource>
+					<Item>ДеревоСобытий</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоСобытийУправлениеПоискомКонтекстноеМеню" id="120"/>
+				<ExtendedTooltip name="ДеревоСобытийУправлениеПоискомРасширеннаяПодсказка" id="121"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnEditEnd">ДеревоСобытийПриОкончанииРедактирования</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ДеревоСобытийИмя" id="98">
+					<DataPath>ДеревоСобытий.Имя</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Событие ПМ</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоСобытийИмяКонтекстноеМеню" id="99"/>
+					<ExtendedTooltip name="ДеревоСобытийИмяРасширеннаяПодсказка" id="122"/>
+				</InputField>
+				<CheckBoxField name="ДеревоСобытийОбработатьТиповойРезультат" id="110">
+					<DataPath>ДеревоСобытий.ОбработатьТиповойРезультат</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДеревоСобытийОбработатьТиповойРезультатКонтекстноеМеню" id="111"/>
+					<ExtendedTooltip name="ДеревоСобытийОбработатьТиповойРезультатРасширеннаяПодсказка" id="123"/>
+				</CheckBoxField>
+				<CheckBoxField name="ДеревоСобытийПереопределитьПолностью" id="108">
+					<DataPath>ДеревоСобытий.ПереопределитьПолностью</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДеревоСобытийПереопределитьПолностьюКонтекстноеМеню" id="109"/>
+					<ExtendedTooltip name="ДеревоСобытийПереопределитьПолностьюРасширеннаяПодсказка" id="124"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+		<LabelField name="Описание" id="106">
+			<DataPath>Items.ДеревоСобытий.CurrentData.Описание</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<TitleLocation>None</TitleLocation>
+			<Height>2</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<ContextMenu name="ОписаниеКонтекстноеМеню" id="107"/>
+			<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="125"/>
+		</LabelField>
+		<LabelField name="АдресСправки" id="104">
+			<DataPath>Items.ДеревоСобытий.CurrentData.АдресСправки</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<TitleLocation>None</TitleLocation>
+			<Height>1</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Hiperlink>true</Hiperlink>
+			<ContextMenu name="АдресСправкиКонтекстноеМеню" id="105"/>
+			<ExtendedTooltip name="АдресСправкиРасширеннаяПодсказка" id="126"/>
+			<Events>
+				<Event name="Click">АдресСправкиНажатие</Event>
+			</Events>
+		</LabelField>
+		<CommandBar name="Группа1" id="90">
+			<HorizontalLocation>Right</HorizontalLocation>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="127"/>
+			<ChildItems>
+				<Button name="ВыполнитьСопоставление" id="92">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.Command.СгенерироватьШаблонКодаПМ</CommandName>
+					<Font bold="true" kind="AutoFont"/>
+					<ExtendedTooltip name="ВыполнитьСопоставлениеРасширеннаяПодсказка" id="128"/>
+				</Button>
+				<Button name="Отмена" id="94">
+					<Type>CommandBarButton</Type>
+					<Representation>PictureAndText</Representation>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.StandardCommand.Close</CommandName>
+					<Font bold="true" kind="AutoFont"/>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отмена</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ОтменаРасширеннаяПодсказка" id="129"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонтурЭДО</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ДеревоСобытий" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево событий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Имя" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="АдресСправки" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адрес справки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Описание" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПереопределитьПолностью" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Переопределить полностью</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ОбработатьТиповойРезультат" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработать типовой результат</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЭтоГруппа" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это группа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПроцедурныйТипСобытия" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процедурный тип события</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоСобытий</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоСобытий.ЭтоГруппа</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ReportHeaderBackColor</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="СгенерироватьШаблонКодаПМ" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать шаблон кода ПМ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать шаблон кода ПМ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СгенерироватьШаблонКодаПМ</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ФормаОткрытаКакВыбор">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>

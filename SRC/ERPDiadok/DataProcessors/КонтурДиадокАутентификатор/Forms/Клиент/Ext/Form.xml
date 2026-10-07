@@ -1,0 +1,1125 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Авторизация</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаЕдиногоЗаголовка" id="65">
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<Group>Vertical</Group>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЕдиногоЗаголовкаРасширеннаяПодсказка" id="66"/>
+			<ChildItems>
+				<LabelDecoration name="ДекорацияОтступСверхуЗаголовка" id="67">
+					<Shortcut>Ctrl+V</Shortcut>
+					<ToolTipRepresentation>None</ToolTipRepresentation>
+					<ContextMenu name="ДекорацияОтступСверхуЗаголовкаКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="ДекорацияОтступСверхуЗаголовкаРасширеннаяПодсказка" id="69"/>
+				</LabelDecoration>
+				<PictureDecoration name="ДекорацияЛогоЗаголовка" id="70">
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="ДекорацияЛогоЗаголовкаКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="ДекорацияЛогоЗаголовкаРасширеннаяПодсказка" id="72"/>
+				</PictureDecoration>
+				<LabelDecoration name="ДекорацияНадписьЗаголовка" id="73">
+					<TextColor>#757575</TextColor>
+					<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Единый вход в модули 1С</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияНадписьЗаголовкаКонтекстноеМеню" id="74"/>
+					<ExtendedTooltip name="ДекорацияНадписьЗаголовкаРасширеннаяПодсказка" id="75"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаФормы" id="181">
+			<ToolTipRepresentation>None</ToolTipRepresentation>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаФормыРасширеннаяПодсказка" id="182"/>
+			<ChildItems>
+				<UsualGroup name="ОтступСлева" id="78">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отступ слева</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>NormalSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ОтступСлеваРасширеннаяПодсказка" id="79"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация3" id="80">
+							<ContextMenu name="Декорация3КонтекстноеМеню" id="81"/>
+							<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="82"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКонтента" id="183">
+					<ToolTipRepresentation>None</ToolTipRepresentation>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКонтентаРасширеннаяПодсказка" id="184"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОжидания" id="148">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОжиданияРасширеннаяПодсказка" id="149"/>
+							<ChildItems>
+								<Pages name="СтраницыДляСсылки" id="194">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы для ссылки</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="СтраницыДляСсылкиРасширеннаяПодсказка" id="195"/>
+									<ChildItems>
+										<Page name="ОсновнойКонтент" id="196">
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ОсновнойКонтентРасширеннаяПодсказка" id="197"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация2" id="162">
+													<Height>1</Height>
+													<ContextMenu name="Декорация2КонтекстноеМеню" id="163"/>
+													<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="164"/>
+												</LabelDecoration>
+												<LabelDecoration name="ЗаголовокОжидания" id="165">
+													<Font ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Ждем пока войдете</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ЗаголовокОжиданияКонтекстноеМеню" id="166"/>
+													<ExtendedTooltip name="ЗаголовокОжиданияРасширеннаяПодсказка" id="167"/>
+												</LabelDecoration>
+												<LabelDecoration name="ПояснениеОжидания" id="168">
+													<HorizontalStretch>false</HorizontalStretch>
+													<Font ref="style:NormalTextFont" height="12" kind="StyleItem" scale="100"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Если браузер не открылся, скопируйте ссылку, вставьте ее в браузер и войдите</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПояснениеОжиданияКонтекстноеМеню" id="169"/>
+													<ExtendedTooltip name="ПояснениеОжиданияРасширеннаяПодсказка" id="170"/>
+												</LabelDecoration>
+												<LabelDecoration name="Декорация10" id="171">
+													<Font ref="style:NormalTextFont" height="3" kind="StyleItem" scale="100"/>
+													<ContextMenu name="Декорация10КонтекстноеМеню" id="172"/>
+													<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="173"/>
+												</LabelDecoration>
+												<Button name="КнопкаСкопироватьСсылку" id="174">
+													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
+													<SkipOnInput>true</SkipOnInput>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>35</MaxWidth>
+													<HorizontalStretch>true</HorizontalStretch>
+													<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+													<CommandName>Form.Command.ПоСсылке</CommandName>
+													<Font ref="style:NormalTextFont" height="13" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+													<Picture>
+														<xr:Abs>Picture.png</xr:Abs>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Скопировать ссылку</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTipRepresentation>None</ToolTipRepresentation>
+													<ExtendedTooltip name="КнопкаСкопироватьСсылкуРасширеннаяПодсказка" id="175"/>
+												</Button>
+												<LabelDecoration name="Декорация16" id="176">
+													<Height>1</Height>
+													<Font ref="style:NormalTextFont" height="3" kind="StyleItem" scale="100"/>
+													<ContextMenu name="Декорация16КонтекстноеМеню" id="177"/>
+													<ExtendedTooltip name="Декорация16РасширеннаяПодсказка" id="178"/>
+												</LabelDecoration>
+												<Button name="НазадИзОжидания" id="179">
+													<Type>UsualButton</Type>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>35</MaxWidth>
+													<HorizontalStretch>true</HorizontalStretch>
+													<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+													<CommandName>Form.Command.НазадИзОжидания</CommandName>
+													<Font ref="style:NormalTextFont" height="13" kind="StyleItem" scale="100"/>
+													<Picture>
+														<xr:Abs>Picture.png</xr:Abs>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Назад</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTipRepresentation>None</ToolTipRepresentation>
+													<ExtendedTooltip name="НазадИзОжиданияРасширеннаяПодсказка" id="180"/>
+												</Button>
+												<PictureDecoration name="Декорация8" id="185">
+													<Height>1</Height>
+													<ContextMenu name="Декорация8КонтекстноеМеню" id="186"/>
+													<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="187"/>
+												</PictureDecoration>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаСсылки" id="198">
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="СтраницаСсылкиРасширеннаяПодсказка" id="199"/>
+											<ChildItems>
+												<HTMLDocumentField name="БуферОбмена" id="203">
+													<DataPath>БуферОбмена</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<ToolTipRepresentation>None</ToolTipRepresentation>
+													<Width>30</Width>
+													<Height>1</Height>
+													<HorizontalStretch>false</HorizontalStretch>
+													<VerticalStretch>false</VerticalStretch>
+													<ContextMenu name="БуферОбменаКонтекстноеМеню" id="204"/>
+													<ExtendedTooltip name="БуферОбменаРасширеннаяПодсказка" id="205"/>
+												</HTMLDocumentField>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОсновная" id="83">
+							<Visible>false</Visible>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОсновнаяРасширеннаяПодсказка" id="84"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация1" id="85">
+									<Height>1</Height>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="86"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="87"/>
+								</LabelDecoration>
+								<LabelDecoration name="ЗаголовокВхода" id="88">
+									<Font ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Войдите через браузер</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ЗаголовокВходаКонтекстноеМеню" id="89"/>
+									<ExtendedTooltip name="ЗаголовокВходаРасширеннаяПодсказка" id="90"/>
+								</LabelDecoration>
+								<LabelDecoration name="ПояснениеВхода" id="91">
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem" scale="100"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вы будете направлены на страницу входа. 
+Когда войдете, возвращайтесь в 1С</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПояснениеВходаКонтекстноеМеню" id="92"/>
+									<ExtendedTooltip name="ПояснениеВходаРасширеннаяПодсказка" id="93"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация7" id="94">
+									<Font ref="style:NormalTextFont" height="3" kind="StyleItem" scale="100"/>
+									<ContextMenu name="Декорация7КонтекстноеМеню" id="95"/>
+									<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="96"/>
+								</LabelDecoration>
+								<Button name="КнопкаВходаЧерезБраузер" id="97">
+									<Type>UsualButton</Type>
+									<DefaultButton>true</DefaultButton>
+									<SkipOnInput>true</SkipOnInput>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>35</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<CommandName>Form.Command.ВойтиЧерезБраузер</CommandName>
+									<Font ref="style:NormalTextFont" height="13" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Войти через браузер</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<ExtendedTooltip name="КнопкаВходаЧерезБраузерРасширеннаяПодсказка" id="98"/>
+								</Button>
+								<LabelDecoration name="Декорация4" id="99">
+									<Height>1</Height>
+									<ContextMenu name="Декорация4КонтекстноеМеню" id="100"/>
+									<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="101"/>
+								</LabelDecoration>
+								<LabelDecoration name="НадписьИли" id="102">
+									<HorizontalStretch>false</HorizontalStretch>
+									<TextColor>#757575</TextColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem" scale="100"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>или через</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<ContextMenu name="НадписьИлиКонтекстноеМеню" id="103"/>
+									<ExtendedTooltip name="НадписьИлиРасширеннаяПодсказка" id="104"/>
+								</LabelDecoration>
+								<Button name="КнопкаQR" id="105">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>35</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<CommandName>Form.Command.ПоQRКоду</CommandName>
+									<Font ref="style:NormalTextFont" height="13" kind="StyleItem" scale="100"/>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>QR-код</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<PictureLocation>Left</PictureLocation>
+									<ExtendedTooltip name="КнопкаQRРасширеннаяПодсказка" id="106"/>
+								</Button>
+								<Button name="КнопкаПоПаролю" id="107">
+									<Type>UsualButton</Type>
+									<Visible>false</Visible>
+									<Representation>PictureAndText</Representation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>35</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<CommandName>Form.Command.ПоПаролю</CommandName>
+									<Font ref="style:NormalTextFont" height="13" kind="StyleItem" scale="100"/>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пароль</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<ExtendedTooltip name="КнопкаПоПаролюРасширеннаяПодсказка" id="108"/>
+								</Button>
+								<LabelDecoration name="ОпциональнаяГиперссылка" id="109">
+									<Height>1</Height>
+									<Font ref="style:NormalTextFont" height="13" kind="StyleItem" scale="100"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Зарегистрироваться</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+									<Hyperlink>true</Hyperlink>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ОпциональнаяГиперссылкаКонтекстноеМеню" id="110"/>
+									<ExtendedTooltip name="ОпциональнаяГиперссылкаРасширеннаяПодсказка" id="111"/>
+									<Events>
+										<Event name="Click">ОпциональнаяГиперссылкаНажатие</Event>
+									</Events>
+								</LabelDecoration>
+								<PictureDecoration name="Декорация5" id="112">
+									<Height>1</Height>
+									<ContextMenu name="Декорация5КонтекстноеМеню" id="113"/>
+									<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="114"/>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВходаПоQR" id="127">
+							<Visible>false</Visible>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВходаПоQRРасширеннаяПодсказка" id="128"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация15" id="129">
+									<Height>1</Height>
+									<ContextMenu name="Декорация15КонтекстноеМеню" id="130"/>
+									<ExtendedTooltip name="Декорация15РасширеннаяПодсказка" id="131"/>
+								</PictureDecoration>
+								<LabelDecoration name="НадписьНаведитеКамеру" id="132">
+									<Font ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Наведите камеру на QR-код</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<ContextMenu name="НадписьНаведитеКамеруКонтекстноеМеню" id="133"/>
+									<ExtendedTooltip name="НадписьНаведитеКамеруРасширеннаяПодсказка" id="134"/>
+								</LabelDecoration>
+								<PictureField name="КартинкаQrКод" id="31">
+									<DataPath>КартинкаQrКод</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<Width>22</Width>
+									<Height>8</Height>
+									<HorizontalStretch>false</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<Border width="1">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+									</Border>
+									<ContextMenu name="КартинкаQrКодКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="КартинкаQrКодРасширеннаяПодсказка" id="33"/>
+								</PictureField>
+								<LabelDecoration name="Декорация9" id="191">
+									<ContextMenu name="Декорация9КонтекстноеМеню" id="192"/>
+									<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="193"/>
+								</LabelDecoration>
+								<Button name="НазадИзQR" id="138">
+									<Type>UsualButton</Type>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>35</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<CommandName>Form.Command.НазадИзQR</CommandName>
+									<Font ref="style:NormalTextFont" height="13" kind="StyleItem" scale="100"/>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Назад</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<ExtendedTooltip name="НазадИзQRРасширеннаяПодсказка" id="139"/>
+								</Button>
+								<PictureDecoration name="Декорация14" id="140">
+									<Height>1</Height>
+									<ContextMenu name="Декорация14КонтекстноеМеню" id="141"/>
+									<ExtendedTooltip name="Декорация14РасширеннаяПодсказка" id="142"/>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОтказ" id="206">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отказ</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отказ</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОтказРасширеннаяПодсказка" id="207"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация17" id="221">
+									<Height>1</Height>
+									<ContextMenu name="Декорация17КонтекстноеМеню" id="222"/>
+									<ExtendedTooltip name="Декорация17РасширеннаяПодсказка" id="223"/>
+								</LabelDecoration>
+								<UsualGroup name="ГруппаОтказСообщение" id="213">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа отказ сообщение</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа отказ сообщение</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<VerticalAlign>Center</VerticalAlign>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОтказСообщениеРасширеннаяПодсказка" id="214"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация12" id="215">
+											<Font ref="style:NormalTextFont" height="28" kind="StyleItem" scale="100"/>
+											<PictureSize>ByFontSize</PictureSize>
+											<Zoomable>true</Zoomable>
+											<Picture>
+												<xr:Abs>Picture.png</xr:Abs>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="Декорация12КонтекстноеМеню" id="216"/>
+											<ExtendedTooltip name="Декорация12РасширеннаяПодсказка" id="217"/>
+										</PictureDecoration>
+										<LabelDecoration name="Декорация13" id="218">
+											<ContextMenu name="Декорация13КонтекстноеМеню" id="219"/>
+											<ExtendedTooltip name="Декорация13РасширеннаяПодсказка" id="220"/>
+										</LabelDecoration>
+										<LabelDecoration name="Декорация11" id="208">
+											<Font ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>В доступе отказано</v8:content>
+												</v8:item>
+											</Title>
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<ContextMenu name="Декорация11КонтекстноеМеню" id="209"/>
+											<ExtendedTooltip name="Декорация11РасширеннаяПодсказка" id="210"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<LabelDecoration name="Декорация19" id="227">
+									<ContextMenu name="Декорация19КонтекстноеМеню" id="228"/>
+									<ExtendedTooltip name="Декорация19РасширеннаяПодсказка" id="229"/>
+								</LabelDecoration>
+								<Button name="НазадИзОтказа" id="211">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>35</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<CommandName>Form.Command.НазадИзОтказа</CommandName>
+									<Font ref="style:NormalTextFont" height="13" kind="StyleItem" scale="100"/>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<ExtendedTooltip name="НазадИзОтказаРасширеннаяПодсказка" id="212"/>
+								</Button>
+								<PictureDecoration name="Декорация18" id="224">
+									<Height>1</Height>
+									<ContextMenu name="Декорация18КонтекстноеМеню" id="225"/>
+									<ExtendedTooltip name="Декорация18РасширеннаяПодсказка" id="226"/>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ОтступСправа" id="115">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отступ справа</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>NormalSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ОтступСправаРасширеннаяПодсказка" id="116"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация6" id="117">
+							<ContextMenu name="Декорация6КонтекстноеМеню" id="118"/>
+							<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="119"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Страницы" id="1">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Page name="СтраницаДлительнаяОперация" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница длительная операция</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаДлительнаяОперацияРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияУведомление" id="5">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Font bold="true" kind="AutoFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Авторизуйтесь в браузере</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<ContextMenu name="ДекорацияУведомлениеКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ДекорацияУведомлениеРасширеннаяПодсказка" id="7"/>
+						</LabelDecoration>
+						<PictureDecoration name="ДекорацияЛоготип" id="23">
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация логотип</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Abs>Picture.gif</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ДекорацияЛоготипКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="ДекорацияЛоготипРасширеннаяПодсказка" id="25"/>
+						</PictureDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницQrКод" id="29">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страниц qr код</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страниц qr код</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ExtendedTooltip name="СтраницQrКодРасширеннаяПодсказка" id="30"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияБраузерОткроетсяАвтоматически1" id="34">
+							<Font height="12" bold="true" kind="AutoFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Браузер откроется автоматически</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияБраузерОткроетсяАвтоматически1КонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ДекорацияБраузерОткроетсяАвтоматически1РасширеннаяПодсказка" id="36"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаПанельВыборДействия" id="37">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа панель выбор действия</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПанельВыборДействияРасширеннаяПодсказка" id="38"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаПоСсылке" id="43">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа по ссылке</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа по ссылке</v8:content>
+										</v8:item>
+									</ToolTip>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПоСсылкеРасширеннаяПодсказка" id="44"/>
+									<ChildItems>
+										<Button name="ПоСсылке" id="41">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ПоСсылке</CommandName>
+											<Font height="12" bold="true" kind="AutoFont"/>
+											<ExtendedTooltip name="ПоСсылкеРасширеннаяПодсказка" id="42"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПоQrКоду" id="45">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа по qr коду</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа по qr коду</v8:content>
+										</v8:item>
+									</ToolTip>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<ShowTitle>false</ShowTitle>
+									<BackColor>style:ToolTipBackColor</BackColor>
+									<ExtendedTooltip name="ГруппаПоQrКодуРасширеннаяПодсказка" id="46"/>
+									<ChildItems>
+										<Button name="ПоQRКоду" id="39">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ПоQRКоду</CommandName>
+											<Font height="12" bold="true" kind="AutoFont"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>По QR-коду</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ПоQRКодуРасширеннаяПодсказка" id="40"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаУведомление1" id="57">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа уведомление</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаУведомление1РасширеннаяПодсказка" id="58"/>
+							<ChildItems>
+								<PictureDecoration name="ДекорацияКартинкаВнимание1" id="59">
+									<Width>3</Width>
+									<Height>2</Height>
+									<PictureSize>Proportionally</PictureSize>
+									<ContextMenu name="ДекорацияКартинкаВнимание1КонтекстноеМеню" id="60"/>
+									<ExtendedTooltip name="ДекорацияКартинкаВнимание1РасширеннаяПодсказка" id="61"/>
+								</PictureDecoration>
+								<LabelDecoration name="ДекорацияУведомлениеОшибкаБраузер1" id="62">
+									<Height>2</Height>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem" scale="100"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Если этого не произошло, отсканируйте QR-код на телефоне и авторизуйтесь</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияУведомлениеОшибкаБраузер1КонтекстноеМеню" id="63"/>
+									<ExtendedTooltip name="ДекорацияУведомлениеОшибкаБраузер1РасширеннаяПодсказка" id="64"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ТутБылаКартинакQR" id="188">
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТутБылаКартинакQRКонтекстноеМеню" id="189"/>
+							<ExtendedTooltip name="ТутБылаКартинакQRРасширеннаяПодсказка" id="190"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаСсылкаНаАвторизацию" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница ссылка на авторизацию</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница ссылка на авторизацию</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаСсылкаНаАвторизациюРасширеннаяПодсказка" id="9"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияБраузерОткроетсяАвтоматически" id="26">
+							<Font height="12" bold="true" kind="AutoFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Браузер откроется автоматически</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияБраузерОткроетсяАвтоматическиКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="ДекорацияБраузерОткроетсяАвтоматическиРасширеннаяПодсказка" id="28"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаПанельВыборДействия1" id="47">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа панель выбор действия</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПанельВыборДействия1РасширеннаяПодсказка" id="48"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаПоСсылке1" id="49">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа по ссылке</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа по ссылке</v8:content>
+										</v8:item>
+									</ToolTip>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<ShowTitle>false</ShowTitle>
+									<BackColor>style:ToolTipBackColor</BackColor>
+									<ExtendedTooltip name="ГруппаПоСсылке1РасширеннаяПодсказка" id="50"/>
+									<ChildItems>
+										<Button name="ПоСсылке1" id="51">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ПоСсылке</CommandName>
+											<Font height="12" bold="true" kind="AutoFont"/>
+											<ExtendedTooltip name="ПоСсылке1РасширеннаяПодсказка" id="52"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПоQrКоду1" id="53">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа по qr коду</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа по qr коду</v8:content>
+										</v8:item>
+									</ToolTip>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПоQrКоду1РасширеннаяПодсказка" id="54"/>
+									<ChildItems>
+										<Button name="ПоQRКоду1" id="55">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ПоQRКоду</CommandName>
+											<Font height="12" bold="true" kind="AutoFont"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>По QR-коду</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ПоQRКоду1РасширеннаяПодсказка" id="56"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаУведомлениеОшибкаБраузера" id="10">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа уведомление ошибка браузера</v8:content>
+								</v8:item>
+							</Title>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаУведомлениеОшибкаБраузераРасширеннаяПодсказка" id="11"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаУведомление" id="12">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа уведомление</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаУведомлениеРасширеннаяПодсказка" id="13"/>
+									<ChildItems>
+										<PictureDecoration name="ДекорацияКартинкаВнимание" id="14">
+											<Width>3</Width>
+											<Height>2</Height>
+											<PictureSize>Proportionally</PictureSize>
+											<ContextMenu name="ДекорацияКартинкаВниманиеКонтекстноеМеню" id="15"/>
+											<ExtendedTooltip name="ДекорацияКартинкаВниманиеРасширеннаяПодсказка" id="16"/>
+										</PictureDecoration>
+										<LabelDecoration name="ДекорацияУведомлениеОшибкаБраузер" id="17">
+											<Font ref="style:NormalTextFont" height="12" kind="StyleItem" scale="100"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Если этого не произошло, скопируйте ссылку, и откройте ее в браузере.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДекорацияУведомлениеОшибкаБраузерКонтекстноеМеню" id="18"/>
+											<ExtendedTooltip name="ДекорацияУведомлениеОшибкаБраузерРасширеннаяПодсказка" id="19"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="СсылкаАвторизации" id="20">
+							<DataPath>СсылкаАвторизации</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
+							<Height>2</Height>
+							<VerticalStretch>false</VerticalStretch>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СсылкаАвторизацииКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="СсылкаАвторизацииРасширеннаяПодсказка" id="22"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонтурДиадокАутентификатор</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СсылкаАвторизации" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка авторизации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>500</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоВнешняяОбработка" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это внешняя обработка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КонфигурацияПриложения" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конфигурация приложения</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ОтборСессий" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор сессий</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ХранилищеСессий" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Хранилище сессий</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="КонфигурацияПровайдера" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конфигурация провайдера</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ПространствоИмен" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пространство имен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МодульГенерацииШтрихкодаЕсть" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Модуль генерации штрихкода есть</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КартинкаQrКод" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Картинка qr код</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>900</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КомпонентаГенерацииQrЕсть" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Компонента генерации qr есть</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="БуферОбмена" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Буфер обмена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПоСсылке" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По ссылке</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПоСсылке</Action>
+		</Command>
+		<Command name="ПоQRКоду" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По QRКоду</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПоQRКоду</Action>
+		</Command>
+		<Command name="ПоПаролю" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По паролю</v8:content>
+				</v8:item>
+			</Title>
+		</Command>
+		<Command name="НазадИзQR" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назад</v8:content>
+				</v8:item>
+			</Title>
+			<Action>НазадИзQR</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="НазадИзОжидания" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назад</v8:content>
+				</v8:item>
+			</Title>
+			<Action>НазадИзОжидания</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ВойтиЧерезБраузер" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Войти через браузер</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Войти через браузер</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВойтиЧерезБраузер</Action>
+		</Command>
+		<Command name="НазадИзОтказа" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назад</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назад из отказа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НазадИзОтказа</Action>
+		</Command>
+	</Commands>
+</Form>

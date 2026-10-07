@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="4bd2d20f-4997-4b63-bd64-936e9a1fccb4">
+		<Properties>
+			<Name>КонтурДиадок</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контур.Диадок</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.КонтурДиадок</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">2cb18f56-2fdd-4ed5-aae7-25f812a209e8</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонтурЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.КонтурДиадокОткрыть</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КонтурДиадок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.КонтурДиадокКонтекстСеанса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КонтурИнтеграцияМодульДиадок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КонтурДиадокКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.Диадок_БазовыеПрава</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КонтурДиадокВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КонтурИнтеграцияМодульДиадокКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КонтурИнтеграцияМодульДиадокВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КонтурИнтеграцияМодульДиадокКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">31a98d23-64b7-4ad6-aa89-c6905e0b3cf9</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КонтурДиадокСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонтурДиадокИнтеграцияУТ11</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">d2b087a8-3535-4296-8353-20370bc64286</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонтурДиадокВнешниеСервисы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонтурДиадокВызовыПМ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонтурДиадокГенерацияXML</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонтурДиадокМенеджерИнтеграции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонтурДиадокЭмуляторТабДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонтурДиадокМетодыAPI</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонтурДиадокОнлайнСчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонтурДиадокПарсерJSON</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонтурДиадокПечатныеФормы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонтурДиадокПлагин1С</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонтурДиадокПлагины</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">c55e39cd-7d15-4925-82df-8fdc846f06e5</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонтурДиадокРаботаСМаркировкой</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонтурДиадокХранениеДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонтурДиадокЦентрПоддержки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонтурДиадокЯдро</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонтурДиадокРаботаСЛогистикой</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">4da70f2a-f099-4676-b4ea-8ad5aceefeef</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">8ea57b46-b1b7-4480-9002-4d5b8cb6aff3</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">eb6afcff-0e5e-40ed-aecb-e4195549df02</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">39b66c7f-05f2-4fa1-85dc-77675a398f17</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ee216019-24e6-419e-93e8-208aa80be69f</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>КонтурДиадокБиблиотеки</Subsystem>
+			<Subsystem>КонтурДиадокСтандартУФ</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

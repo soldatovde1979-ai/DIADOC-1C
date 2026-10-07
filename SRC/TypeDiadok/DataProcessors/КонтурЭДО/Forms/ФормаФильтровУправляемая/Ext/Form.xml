@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Фильтры</v8:content>
+		</v8:item>
+	</Title>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницыФормы" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы формы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыФормыРасширеннаяПодсказка" id="200"/>
+			<Events>
+				<Event name="OnCurrentPageChange">ГруппаСтраницыФормыПриСменеСтраницы</Event>
+			</Events>
+			<ChildItems>
+				<Page name="ВсеФильтры" id="7">
+					<EnableContentChange>true</EnableContentChange>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Все фильтры</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Все фильтры</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ВсеФильтрыРасширеннаяПодсказка" id="201"/>
+					<ChildItems>
+						<Table name="ФильтрыСпискаДокументов" id="9">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<Autofill>true</Autofill>
+							<ChangeRowSet>false</ChangeRowSet>
+							<Width>60</Width>
+							<InitialTreeView>ExpandAllLevels</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.КомпоновщикНастроекОтбора.Settings.Filter</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<ViewMode>All</ViewMode>
+							<SettingsNamedItemDetailedRepresentation>false</SettingsNamedItemDetailedRepresentation>
+							<ContextMenu name="ФильтрыСпискаДокументовКонтекстноеМеню" id="10"/>
+							<AutoCommandBar name="ФильтрыСпискаДокументовКоманднаяПанель" id="11"/>
+							<ExtendedTooltip name="ФильтрыСпискаДокументовРасширеннаяПодсказка" id="202"/>
+							<SearchStringAddition name="ФильтрыСпискаДокументовСтрокаПоиска" id="203">
+								<AdditionSource>
+									<Item>ФильтрыСпискаДокументов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ФильтрыСпискаДокументовСтрокаПоискаКонтекстноеМеню" id="204"/>
+								<ExtendedTooltip name="ФильтрыСпискаДокументовСтрокаПоискаРасширеннаяПодсказка" id="205"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ФильтрыСпискаДокументовСостояниеПросмотра" id="206">
+								<AdditionSource>
+									<Item>ФильтрыСпискаДокументов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ФильтрыСпискаДокументовСостояниеПросмотраКонтекстноеМеню" id="207"/>
+								<ExtendedTooltip name="ФильтрыСпискаДокументовСостояниеПросмотраРасширеннаяПодсказка" id="208"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ФильтрыСпискаДокументовУправлениеПоиском" id="209">
+								<AdditionSource>
+									<Item>ФильтрыСпискаДокументов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ФильтрыСпискаДокументовУправлениеПоискомКонтекстноеМеню" id="210"/>
+								<ExtendedTooltip name="ФильтрыСпискаДокументовУправлениеПоискомРасширеннаяПодсказка" id="211"/>
+							</SearchControlAddition>
+						</Table>
+						<UsualGroup name="Группа1" id="119">
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="212"/>
+							<ChildItems>
+								<LabelDecoration name="СохранитьФильтры" id="113">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сохранить выбранные</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="СохранитьФильтрыКонтекстноеМеню" id="114"/>
+									<ExtendedTooltip name="СохранитьФильтрыРасширеннаяПодсказка" id="213"/>
+									<Events>
+										<Event name="Click">СохранитьФильтрыНажатие</Event>
+									</Events>
+								</LabelDecoration>
+								<LabelDecoration name="ПоказатьОстальныеФильтры" id="116">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Показать остальные фильтры</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ПоказатьОстальныеФильтрыКонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="ПоказатьОстальныеФильтрыРасширеннаяПодсказка" id="214"/>
+									<Events>
+										<Event name="Click">ПоказатьОстальныеФильтрыНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="Сохраненные" id="82">
+					<EnableContentChange>true</EnableContentChange>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сохраненные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сохраненные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СохраненныеРасширеннаяПодсказка" id="215"/>
+					<ChildItems>
+						<Table name="ДеревоСохраненныхФильтров" id="121">
+							<Representation>Tree</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ДеревоСохраненныхФильтров</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<ContextMenu name="ДеревоСохраненныхФильтровКонтекстноеМеню" id="122"/>
+							<AutoCommandBar name="ДеревоСохраненныхФильтровКоманднаяПанель" id="123"/>
+							<ExtendedTooltip name="ДеревоСохраненныхФильтровРасширеннаяПодсказка" id="216"/>
+							<SearchStringAddition name="ДеревоСохраненныхФильтровСтрокаПоиска" id="217">
+								<AdditionSource>
+									<Item>ДеревоСохраненныхФильтров</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоСохраненныхФильтровСтрокаПоискаКонтекстноеМеню" id="218"/>
+								<ExtendedTooltip name="ДеревоСохраненныхФильтровСтрокаПоискаРасширеннаяПодсказка" id="219"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДеревоСохраненныхФильтровСостояниеПросмотра" id="220">
+								<AdditionSource>
+									<Item>ДеревоСохраненныхФильтров</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоСохраненныхФильтровСостояниеПросмотраКонтекстноеМеню" id="221"/>
+								<ExtendedTooltip name="ДеревоСохраненныхФильтровСостояниеПросмотраРасширеннаяПодсказка" id="222"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДеревоСохраненныхФильтровУправлениеПоиском" id="223">
+								<AdditionSource>
+									<Item>ДеревоСохраненныхФильтров</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоСохраненныхФильтровУправлениеПоискомКонтекстноеМеню" id="224"/>
+								<ExtendedTooltip name="ДеревоСохраненныхФильтровУправлениеПоискомРасширеннаяПодсказка" id="225"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<CheckBoxField name="ДеревоСохраненныхФильтровПометка" id="185">
+									<DataPath>ДеревоСохраненныхФильтров.Пометка</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДеревоСохраненныхФильтровПометкаКонтекстноеМеню" id="186"/>
+									<ExtendedTooltip name="ДеревоСохраненныхФильтровПометкаРасширеннаяПодсказка" id="226"/>
+									<Events>
+										<Event name="OnChange">ДеревоСохраненныхФильтровПометкаПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<InputField name="ДеревоСохраненныхФильтровНазваниеФильтр" id="134">
+									<DataPath>ДеревоСохраненныхФильтров.НазваниеФильтр</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоСохраненныхФильтровНазваниеФильтрКонтекстноеМеню" id="135"/>
+									<ExtendedTooltip name="ДеревоСохраненныхФильтровНазваниеФильтрРасширеннаяПодсказка" id="227"/>
+								</InputField>
+								<InputField name="ДеревоСохраненныхФильтровВидСравнения" id="137">
+									<DataPath>ДеревоСохраненныхФильтров.ВидСравнения</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоСохраненныхФильтровВидСравненияКонтекстноеМеню" id="138"/>
+									<ExtendedTooltip name="ДеревоСохраненныхФильтровВидСравненияРасширеннаяПодсказка" id="228"/>
+								</InputField>
+								<InputField name="ДеревоСохраненныхФильтровЗначение" id="140">
+									<DataPath>ДеревоСохраненныхФильтров.Значение</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоСохраненныхФильтровЗначениеКонтекстноеМеню" id="141"/>
+									<ExtendedTooltip name="ДеревоСохраненныхФильтровЗначениеРасширеннаяПодсказка" id="229"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<LabelDecoration name="Удалить" id="97">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Удалить</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="УдалитьКонтекстноеМеню" id="98"/>
+							<ExtendedTooltip name="УдалитьРасширеннаяПодсказка" id="230"/>
+							<Events>
+								<Event name="Click">УдалитьНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="Группа2" id="188">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="231"/>
+			<ChildItems>
+				<UsualGroup name="Группа3" id="197">
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="232"/>
+					<ChildItems>
+						<Button name="Применить" id="190">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.Применить</CommandName>
+							<ExtendedTooltip name="ПрименитьРасширеннаяПодсказка" id="233"/>
+						</Button>
+						<Button name="Отменить" id="192">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.Отменить</CommandName>
+							<ExtendedTooltip name="ОтменитьРасширеннаяПодсказка" id="234"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаСбросить" id="199">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сбросить</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сбросить</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСброситьРасширеннаяПодсказка" id="235"/>
+					<ChildItems>
+						<LabelDecoration name="Сбросить" id="194">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сбросить</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<ContextMenu name="СброситьКонтекстноеМеню" id="195"/>
+							<ExtendedTooltip name="СброситьРасширеннаяПодсказка" id="236"/>
+							<Events>
+								<Event name="Click">Сбросить</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонтурЭДО</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="РежимОтображенияДокументов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим отображения документов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДеревоСохраненныхФильтров" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево сохраненных фильтров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="НазваниеФильтр" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Название / фильтр</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВидСравнения" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид сравнения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Значение" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Пометка" id="4">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ОтображениеПометки" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отображение пометки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="НаименованиеОтбора" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование отбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокИсполнителей_Подразделение" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список исполнителей подразделение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокИсполнителей_Пользовалель" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список исполнителей пользовалель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокТиповИсполнителей" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список типов исполнителей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоСохраненныхФильтровПометка</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоСохраненныхФильтров.ОтображениеПометки</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Доступность</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="Применить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Применить</Action>
+		</Command>
+		<Command name="Отменить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отменить</Action>
+		</Command>
+		<Command name="Сбросить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сбросить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сбросить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сбросить</Action>
+		</Command>
+	</Commands>
+</Form>
