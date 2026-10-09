@@ -34,7 +34,7 @@
 | Справочники `Диадок_*` приходят отдельным `diadoc_storage_cfg.cf` и уже стоят в основной конфигурации | то же |
 | Признаки расширения — только в `Configuration.xml` (`ObjectBelonging=Adopted`, `ConfigurationExtensionPurpose`, `NamePrefix`, `KeepMappingToExtendedConfigurationObjectsByIDs`, `ConfigurationExtensionCompatibilityMode`, `PropertyState Extended` у `SessionModule` и `MainSectionCommandInterface`) и в `Languages/Русский.xml` | то же |
 | Вендор предусматривает работу модуля из конфигурации: в Ядре `Перечисление_МестоположенияМодуля` есть `ОбработкаКонфигурации` | `КонтурДиадокЯдро` |
-| UUID расширения и объектов прода ≠ `SRC/TypeDiadok` той же 4.61.1 | R1, ТЗ-0 Ф18 |
+| UUID расширения и объектов прода ≠ `SRC/TypeDiadok` той же 4.61.1 | R1, ТЗ-0 v3 Ф18 |
 
 ### 1.2. Что говорит Контур
 
